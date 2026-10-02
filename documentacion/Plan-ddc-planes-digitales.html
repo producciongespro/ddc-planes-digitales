@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Plan Maestro de Reestructuración - ddc-planes-digitales</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 15mm 20mm 15mm;
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #24292f;
+      background-color: #ffffff;
+      padding: 0;
+      margin: 0;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      border-bottom: 2px solid #0969da;
+      padding-bottom: 8px;
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #0969da;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 6px;
+      margin-top: 24px;
+      margin-bottom: 10px;
+      color: #1f2328;
+      page-break-after: avoid;
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      color: #24292f;
+      page-break-after: avoid;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    blockquote {
+      margin: 12px 0;
+      padding: 8px 14px;
+      color: #57606a;
+      background-color: #f6f8fa;
+      border-left: 4px solid #0969da;
+      border-radius: 4px;
+      font-size: 12.5px;
+    }
+    blockquote.note {
+      border-left-color: #0969da;
+      background-color: #ddf4ff;
+      color: #0969da;
+    }
+    blockquote.important {
+      border-left-color: #8250df;
+      background-color: #fbefff;
+      color: #5c2b97;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 11.5px;
+      page-break-inside: avoid;
+    }
+    th, td {
+      border: 1px solid #d0d7de;
+      padding: 6px 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f6f8fa;
+      font-weight: 600;
+      color: #24292f;
+    }
+    tr:nth-child(even) {
+      background-color: #fbfcfd;
+    }
+    pre {
+      background-color: #f6f8fa;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      padding: 12px;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 11px;
+      line-height: 1.45;
+      overflow-x: auto;
+      margin: 12px 0;
+      page-break-inside: avoid;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11.5px;
+      background-color: #eff1f3;
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: #0969da;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 7px;
+      font-size: 10.5px;
+      font-weight: 600;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-primary { background: #ddf4ff; color: #0969da; border: 1px solid #54aeff; }
+    .badge-success { background: #dafbe1; color: #1a7f37; border: 1px solid #4ac26b; }
+    .badge-purple { background: #fbefff; color: #8250df; border: 1px solid #c297ff; }
+    .header-box {
+      background: #f6f8fa;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 18px;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: #d0d7de;
+      margin: 18px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-box">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <span class="badge badge-primary">Plan de Arquitectura v2.0</span>
+      <span style="font-size: 11px; color: #57606a;">02 de Octubre de 2026</span>
+    </div>
+    <h1 style="margin: 8px 0 4px 0; font-size: 22px;">Plan Maestro de Reestructuración Curricular</h1>
+    <p style="margin: 0; font-weight: 600; color: #57606a; font-size: 12px;">
+      ddc-planes-digitales | Ministerio de Educación Pública de Costa Rica (MEP) — Dirección de Desarrollo Curricular
+    </p>
+  </div>
+
+  <h2>1. Resumen Ejecutivo y Diagnóstico</h2>
+  <p>
+    El prototipo inicial de la aplicación se construyó con una simplificación provisional de 2 carpetas (<code>Primer ciclo</code> y <code>Segundo ciclo</code>) con 4 asignaturas y 24 documentos. Tras una exhaustiva investigación sobre el currículo oficial del MEP, se determinó la necesidad imperativa de alinear la arquitectura de datos y el repositorio físico a la <strong>taxonomía curricular real de la educación pública costarricense</strong>:
+  </p>
+  <ul>
+    <li><strong>Primaria:</strong> Se divide en <strong>I Ciclo</strong> (1.°, 2.°, 3.°) y <strong>II Ciclo</strong> (4.°, 5.°, 6.°).</li>
+    <li><strong>Secundaria:</strong> Se divide en <strong>III Ciclo</strong> (7.°, 8.°, 9.°) y <strong>Educación Diversificada</strong> (10.°, 11.°, 12.°).</li>
+    <li><strong>Modalidades en Diversificada:</strong> Se formaliza la división entre <strong>Modalidad Académica</strong> (culmina en 11.° año) y <strong>Modalidad Técnica - CTP</strong> (culmina en 12.° año con título técnico).</li>
+    <li><strong>Desglose de Ciencias:</strong> En Educación Diversificada la materia <em>Ciencias</em> se desglosa oficialmente en <strong>Biología</strong>, <strong>Física</strong> y <strong>Química</strong>.</li>
+    <li><strong>Catálogo Completo MEP:</strong> Se integran asignaturas <em>Básicas</em> y <em>Complementarias</em> (Idiomas, Artes, Música, Educación Física, Religión, Filosofía), totalizando <strong>144 planes de estudio oficiales</strong>.</li>
+  </ul>
+
+  <h2>2. Jerarquía de 5 Niveles Normalizada (Carpetas sin acentos)</h2>
+  <p>
+    Para garantizar máxima compatibilidad con sistemas de archivos, enlaces URL web y scripts de automatización, los nombres físicos de carpetas se mantienen en <strong>texto completo sin tildes ni acentos</strong>:
+  </p>
+
+  <pre><code>app/public/mep-ddc-planes-digitales/
+├── Primaria/
+│   ├── I Ciclo/
+│   │   ├── Basicas/
+│   │   │   ├── Espanol/ (Primero, Segundo, Tercero)
+│   │   │   ├── Matematicas/ (Primero, Segundo, Tercero)
+│   │   │   ├── Ciencias/ (Primero, Segundo, Tercero)
+│   │   │   └── Estudios Sociales/ (Primero, Segundo, Tercero)
+│   │   └── Complementarias/
+│   │       ├── Ingles/ (Primero, Segundo, Tercero)
+│   │       ├── Educacion Fisica/ (Primero, Segundo, Tercero)
+│   │       ├── Educacion Musical/ (Primero, Segundo, Tercero)
+│   │       ├── Artes Plasticas/ (Primero, Segundo, Tercero)
+│   │       └── Educacion Religiosa/ (Primero, Segundo, Tercero)
+│   └── II Ciclo/
+│       ├── Basicas/
+│       │   ├── Espanol/ (Cuarto, Quinto, Sexto)
+│       │   ├── Matematicas/ (Cuarto, Quinto, Sexto)
+│       │   ├── Ciencias/ (Cuarto, Quinto, Sexto)
+│       │   └── Estudios Sociales/ (Cuarto, Quinto, Sexto)
+│       └── Complementarias/
+│           ├── Ingles/ (Cuarto, Quinto, Sexto)
+│           ├── Educacion Fisica/ (Cuarto, Quinto, Sexto)
+│           ├── Educacion Musical/ (Cuarto, Quinto, Sexto)
+│           ├── Artes Plasticas/ (Cuarto, Quinto, Sexto)
+│           └── Educacion Religiosa/ (Cuarto, Quinto, Sexto)
+└── Secundaria/
+    ├── III Ciclo/
+    │   ├── Basicas/
+    │   │   ├── Espanol/ (Setimo, Octavo, Noveno)
+    │   │   ├── Matematicas/ (Setimo, Octavo, Noveno)
+    │   │   ├── Ciencias/ (Setimo, Octavo, Noveno)  <-- Ciencias unificada
+    │   │   ├── Estudios Sociales/ (Setimo, Octavo, Noveno)
+    │   │   └── Educacion Civica/ (Setimo, Octavo, Noveno)
+    │   └── Complementarias/
+    │       ├── Ingles/ (Setimo, Octavo, Noveno)
+    │       ├── Frances/ (Setimo, Octavo, Noveno)
+    │       ├── Educacion Fisica/ (Setimo, Octavo, Noveno)
+    │       ├── Educacion Musical/ (Setimo, Octavo, Noveno)
+    │       ├── Artes Plasticas/ (Setimo, Octavo, Noveno)
+    │       └── Educacion Religiosa/ (Setimo, Octavo, Noveno)
+    └── Educacion Diversificada/
+        ├── Academica/
+        │   ├── Basicas/
+        │   │   ├── Espanol/ (Decimo, Undecimo)
+        │   │   ├── Matematicas/ (Decimo, Undecimo)
+        │   │   ├── Estudios Sociales/ (Decimo, Undecimo)
+        │   │   ├── Educacion Civica/ (Decimo, Undecimo)
+        │   │   ├── Biologia/ (Decimo, Undecimo)  <-- Separadas
+        │   │   ├── Fisica/ (Decimo, Undecimo)
+        │   │   └── Quimica/ (Decimo, Undecimo)
+        │   └── Complementarias/
+        │       ├── Ingles/ (Decimo, Undecimo)
+        │       ├── Frances/ (Decimo, Undecimo)
+        │       ├── Educacion Fisica/ (Decimo, Undecimo)
+        │       ├── Educacion Religiosa/ (Decimo, Undecimo)
+        │       └── Filosofia/ (Decimo, Undecimo)
+        └── Tecnica/
+            ├── Basicas/
+            │   ├── Espanol/ (Decimo, Undecimo, Duodecimo)
+            │   ├── Matematicas/ (Decimo, Undecimo, Duodecimo)
+            │   ├── Estudios Sociales/ (Decimo, Undecimo, Duodecimo)
+            │   ├── Educacion Civica/ (Decimo, Undecimo, Duodecimo)
+            │   ├── Biologia/ (Decimo, Undecimo, Duodecimo)
+            │   ├── Fisica/ (Decimo, Undecimo, Duodecimo)
+            │   └── Quimica/ (Decimo, Undecimo, Duodecimo)
+            └── Complementarias/
+                ├── Ingles/ (Decimo, Undecimo, Duodecimo)
+                ├── Frances/ (Decimo, Undecimo, Duodecimo)
+                ├── Educacion Fisica/ (Decimo, Undecimo, Duodecimo)
+                └── Educacion Religiosa/ (Decimo, Undecimo, Duodecimo)</code></pre>
+
+  <div class="page-break"></div>
+
+  <h2>3. Matriz del Catálogo Completo Oficial (144 Planes)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nivel Educativo</th>
+        <th>Ciclo</th>
+        <th>Modalidad</th>
+        <th>Tipo</th>
+        <th>Asignaturas Incluidas</th>
+        <th>Grados</th>
+        <th style="text-align: center;">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Primaria</strong></td>
+        <td>I Ciclo</td>
+        <td>Regular</td>
+        <td><span class="badge badge-primary">Básicas</span></td>
+        <td>Español, Matemáticas, Ciencias, Estudios Sociales (4)</td>
+        <td>Primero, Segundo, Tercero</td>
+        <td style="text-align: center; font-weight: bold;">12</td>
+      </tr>
+      <tr>
+        <td><strong>Primaria</strong></td>
+        <td>I Ciclo</td>
+        <td>Regular</td>
+        <td><span class="badge badge-success">Complementarias</span></td>
+        <td>Inglés, Educación Física, Música, Artes Plásticas, Religión (5)</td>
+        <td>Primero, Segundo, Tercero</td>
+        <td style="text-align: center; font-weight: bold;">15</td>
+      </tr>
+      <tr>
+        <td><strong>Primaria</strong></td>
+        <td>II Ciclo</td>
+        <td>Regular</td>
+        <td><span class="badge badge-primary">Básicas</span></td>
+        <td>Español, Matemáticas, Ciencias, Estudios Sociales (4)</td>
+        <td>Cuarto, Quinto, Sexto</td>
+        <td style="text-align: center; font-weight: bold;">12</td>
+      </tr>
+      <tr>
+        <td><strong>Primaria</strong></td>
+        <td>II Ciclo</td>
+        <td>Regular</td>
+        <td><span class="badge badge-success">Complementarias</span></td>
+        <td>Inglés, Educación Física, Música, Artes Plásticas, Religión (5)</td>
+        <td>Cuarto, Quinto, Sexto</td>
+        <td style="text-align: center; font-weight: bold;">15</td>
+      </tr>
+      <tr>
+        <td><strong>Secundaria</strong></td>
+        <td>III Ciclo</td>
+        <td>Regular</td>
+        <td><span class="badge badge-primary">Básicas</span></td>
+        <td>Español, Matemáticas, Ciencias, Estudios Sociales, Cívica (5)</td>
+        <td>Sétimo, Octavo, Noveno</td>
+        <td style="text-align: center; font-weight: bold;">15</td>
+      </tr>
+      <tr>
+        <td><strong>Secundaria</strong></td>
+        <td>III Ciclo</td>
+        <td>Regular</td>
+        <td><span class="badge badge-success">Complementarias</span></td>
+        <td>Inglés, Francés, Educación Física, Música, Artes, Religión (6)</td>
+        <td>Sétimo, Octavo, Noveno</td>
+        <td style="text-align: center; font-weight: bold;">18</td>
+      </tr>
+      <tr>
+        <td><strong>Secundaria</strong></td>
+        <td>Ed. Diversificada</td>
+        <td>Académica</td>
+        <td><span class="badge badge-primary">Básicas</span></td>
+        <td>Español, Matemáticas, Sociales, Cívica, Biología, Física, Química (7)</td>
+        <td>Décimo, Undécimo</td>
+        <td style="text-align: center; font-weight: bold;">14</td>
+      </tr>
+      <tr>
+        <td><strong>Secundaria</strong></td>
+        <td>Ed. Diversificada</td>
+        <td>Académica</td>
+        <td><span class="badge badge-success">Complementarias</span></td>
+        <td>Inglés, Francés, Educación Física, Religión, Filosofía (5)</td>
+        <td>Décimo, Undécimo</td>
+        <td style="text-align: center; font-weight: bold;">10</td>
+      </tr>
+      <tr>
+        <td><strong>Secundaria</strong></td>
+        <td>Ed. Diversificada</td>
+        <td>Técnica</td>
+        <td><span class="badge badge-primary">Básicas</span></td>
+        <td>Español, Matemáticas, Sociales, Cívica, Biología, Física, Química (7)</td>
+        <td>Décimo, Undécimo, Duodécimo</td>
+        <td style="text-align: center; font-weight: bold;">21</td>
+      </tr>
+      <tr>
+        <td><strong>Secundaria</strong></td>
+        <td>Ed. Diversificada</td>
+        <td>Técnica</td>
+        <td><span class="badge badge-success">Complementarias</span></td>
+        <td>Inglés, Francés, Educación Física, Religión (4)</td>
+        <td>Décimo, Undécimo, Duodécimo</td>
+        <td style="text-align: center; font-weight: bold;">12</td>
+      </tr>
+      <tr style="background-color: #f0f6fc; border-top: 2px solid #0969da;">
+        <td colspan="6" style="text-align: right; font-weight: bold; font-size: 13px;">GRAN TOTAL DE DOCUMENTOS OFICIALES VERIFICADOS:</td>
+        <td style="text-align: center; font-weight: bold; font-size: 14px; color: #0969da;">144 Planes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Actualización de la Interfaz Web</h2>
+  <h3>4.1. Filtros en Cascada Reactiva (<code>SearchArea.jsx</code>)</h3>
+  <ol>
+    <li><strong>Texto Libre:</strong> Búsqueda en vivo por nombre, código curricular o asignatura.</li>
+    <li><strong>Nivel Educativo:</strong> <code>Todos</code> | <code>Primaria</code> | <code>Secundaria</code>.</li>
+    <li><strong>Ciclo:</strong> Desplegable adaptativo según Nivel (<code>I Ciclo</code>, <code>II Ciclo</code>, <code>III Ciclo</code>, <code>Educación Diversificada</code>).</li>
+    <li><strong>Modalidad:</strong> Visible y activo al elegir Educación Diversificada (<code>Todas</code>, <code>Académica</code>, <code>Técnica</code>).</li>
+    <li><strong>Tipo de Asignatura:</strong> <code>Todas</code> | <code>Básica</code> | <code>Complementaria</code>.</li>
+    <li><strong>Asignatura:</strong> Lista contextual filtrada automáticamente según ciclo y tipo.</li>
+    <li><strong>Grado / Nivel:</strong> Ajustado dinámicamente según ciclo y modalidad (habilita Duodécimo solo en Técnica).</li>
+  </ol>
+
+  <h3>4.2. Columnas en la Tabla General (<code>GeneralTable.jsx</code>)</h3>
+  <ul>
+    <li><strong>Nivel Educativo:</strong> Badge con código de color (Primaria / Secundaria).</li>
+    <li><strong>Ciclo & Modalidad:</strong> Identificador claro (ej. <em>Ed. Diversificada — Técnica</em>).</li>
+    <li><strong>Tipo:</strong> Indicador visual de Básica o Complementaria.</li>
+    <li><strong>Asignatura:</strong> Icono temático nativo + Nombre completo.</li>
+    <li><strong>Grado:</strong> Grado oficial (1.° a 12.°).</li>
+    <li><strong>Código Oficial:</strong> Código normado MEP (ej. <code>MEP-SEC-DIV-TEC-BIO-12</code>).</li>
+    <li><strong>Descargas:</strong> Contador dinámico persistido.</li>
+    <li><strong>Acciones:</strong> Botones de visualización y descarga directa.</li>
+  </ul>
+
+  <h2>5. Modelo de Datos JSON (<code>localStorage: "mep-ddc-planes"</code>)</h2>
+  <pre><code>{
+  "id": "MEP-SEC-DIV-TEC-BIO-12",
+  "nombre": "Plan de Estudio Oficial de Biología - Duodécimo Año (Técnica)",
+  "nivelEducativo": "Secundaria",
+  "ciclo": "Educación Diversificada",
+  "modalidad": "Técnica",
+  "tipo": "Básica",
+  "asignatura": "Biología",
+  "grado": "Duodécimo",
+  "codigo": "MEP-BIO-12-TEC",
+  "ruta": "/mep-ddc-planes-digitales/Secundaria/Educacion Diversificada/Tecnica/Basicas/Biologia/Duodecimo/Plan_Biologia_Duodecimo.pdf",
+  "archivo": "Plan_Biologia_Duodecimo.pdf",
+  "descargas": 0,
+  "fechaActualizacion": "2026"
+}</code></pre>
+
+  <h2>6. Gobernanza y Actualización de Archivos de Control</h2>
+  <ul>
+    <li><strong><code>app/AGENTS.md</code>:</strong>
+      Actualizar la sección de repositorio con la jerarquía de 5 niveles, actualizar la métrica de verificación a 144 planes, registrar las reglas de no acentos en carpetas y la preservación del visor PDF único.
+    </li>
+    <li><strong><code>app/MEMORY.md</code>:</strong>
+      Creación de la memoria técnica de arquitectura que documenta la justificación curricular del MEP, el mapeo de rutas y la estrategia de reinicio transparente de caché local para evitar errores 404 con rutas obsoletas.
+    </li>
+  </ul>
+
+  <hr>
+  <p style="font-size: 11px; color: #57606a; text-align: center;">
+    Dirección de Desarrollo Curricular (DDC) — Ministerio de Educación Pública de Costa Rica | Documento Técnico de Arquitectura
+  </p>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Icono institucional para Estudios Sociales (Globo / Sociedad / Historia)
+// 1. Estudios Sociales (Globo / Sociedad / Historia)
 export function IconEstudiosSociales({ className = "w-6 h-6" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -11,7 +11,7 @@ export function IconEstudiosSociales({ className = "w-6 h-6" }) {
   );
 }
 
-// Icono institucional para Matemáticas (Cálculo / Geometría / Pi)
+// 2. Matemáticas (Cálculo / Geometría / Símbolos)
 export function IconMatematicas({ className = "w-6 h-6" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -25,7 +25,7 @@ export function IconMatematicas({ className = "w-6 h-6" }) {
   );
 }
 
-// Icono institucional para Español (Lengua / Libro abierto / Pluma)
+// 3. Español (Lengua / Libro abierto / Literatura)
 export function IconEspanol({ className = "w-6 h-6" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -37,7 +37,7 @@ export function IconEspanol({ className = "w-6 h-6" }) {
   );
 }
 
-// Icono institucional para Ciencias (Átomo / Matraz / Laboratorio)
+// 4. Ciencias (General / Matraz de laboratorio)
 export function IconCiencias({ className = "w-6 h-6" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -48,7 +48,137 @@ export function IconCiencias({ className = "w-6 h-6" }) {
   );
 }
 
-// Selector dinámico de icono por asignatura
+// 5. Educación Cívica (Balanza de la justicia y democracia)
+export function IconEducacionCivica({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="12" y1="3" x2="12" y2="21" />
+      <path d="M5 21h14" />
+      <path d="M4 7l8-4 8 4" />
+      <path d="M6 10l-3 5h6l-3-5z" />
+      <path d="M18 10l-3 5h6l-3-5z" />
+    </svg>
+  );
+}
+
+// 6. Biología (ADN y naturaleza)
+export function IconBiologia({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2 15c6.667-6 13.333 0 20-6" />
+      <path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993" />
+      <path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" />
+      <path d="M17 6a5 5 0 0 0-5 5v1a5 5 0 0 0 5 5h2a5 5 0 0 0 5-5v-1a5 5 0 0 0-5-5z" />
+    </svg>
+  );
+}
+
+// 7. Física (Átomo con órbitas electrónicas)
+export function IconFisica({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="2" fill="currentColor" />
+      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)" />
+      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-30 12 12)" />
+    </svg>
+  );
+}
+
+// 8. Química (Tubo de ensayo y reacción química)
+export function IconQuimica({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5s-2.5-1.1-2.5-2.5V2" />
+      <path d="M8.5 2h7" />
+      <path d="M9.5 12h5" />
+      <circle cx="11" cy="17" r="1" fill="currentColor" />
+      <circle cx="13" cy="15" r="1" fill="currentColor" />
+    </svg>
+  );
+}
+
+// 9. Inglés (Lengua extranjera global / Diálogo internacional)
+export function IconIngles({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M2 12h20" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10" />
+      <path d="M7 9h2a2 2 0 1 1 0 4H7" />
+      <line x1="7" y1="7" x2="7" y2="15" />
+    </svg>
+  );
+}
+
+// 10. Francés (Torre / Lengua francesa)
+export function IconFrances({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2v20" />
+      <path d="M8 22l4-18 4 18" />
+      <line x1="9" y1="15" x2="15" y2="15" />
+      <path d="M7 22h10" />
+    </svg>
+  );
+}
+
+// 11. Educación Física (Movimiento y deporte / Silbato)
+export function IconEducacionFisica({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="5" r="3" />
+      <path d="M5 22l4-9 3 3 5-7" />
+      <path d="M12 12l5 3 2 7" />
+      <path d="M4 11l5-2 3 2" />
+    </svg>
+  );
+}
+
+// 12. Educación Musical (Notas musicales)
+export function IconEducacionMusical({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 18V5l12-2v13" />
+      <circle cx="6" cy="18" r="3" />
+      <circle cx="18" cy="16" r="3" />
+    </svg>
+  );
+}
+
+// 13. Artes Plásticas (Paleta de pintura y creación visual)
+export function IconArtesPlasticas({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2C6.5 2 2 6.5 2 12c0 3.6 2 6.8 5 8.2 1.4.7 3.2-.2 3.2-1.8v-.4c0-.8.7-1.5 1.5-1.5h1.8c4.7 0 8.5-3.8 8.5-8.5C22 6.5 17.5 2 12 2z" />
+      <circle cx="7.5" cy="10.5" r="1.5" fill="currentColor" />
+      <circle cx="12" cy="7.5" r="1.5" fill="currentColor" />
+      <circle cx="16.5" cy="10.5" r="1.5" fill="currentColor" />
+    </svg>
+  );
+}
+
+// 14. Educación Religiosa (Valores espirituales / Luz)
+export function IconEducacionReligiosa({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="12" y1="4" x2="12" y2="20" />
+      <line x1="7" y1="9" x2="17" y2="9" />
+      <circle cx="12" cy="4" r="1.5" />
+    </svg>
+  );
+}
+
+// 15. Filosofía (Pensamiento reflexivo y sabiduría)
+export function IconFilosofia({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-5.04z" />
+      <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-5.04z" />
+    </svg>
+  );
+}
+
+// Selector dinámico institucional de icono por asignatura
 export function AsignaturaIcon({ asignatura, className = "w-6 h-6" }) {
   switch (asignatura) {
     case 'Estudios Sociales':
@@ -59,6 +189,28 @@ export function AsignaturaIcon({ asignatura, className = "w-6 h-6" }) {
       return <IconEspanol className={className} />;
     case 'Ciencias':
       return <IconCiencias className={className} />;
+    case 'Educación Cívica':
+      return <IconEducacionCivica className={className} />;
+    case 'Biología':
+      return <IconBiologia className={className} />;
+    case 'Física':
+      return <IconFisica className={className} />;
+    case 'Química':
+      return <IconQuimica className={className} />;
+    case 'Inglés':
+      return <IconIngles className={className} />;
+    case 'Francés':
+      return <IconFrances className={className} />;
+    case 'Educación Física':
+      return <IconEducacionFisica className={className} />;
+    case 'Educación Musical':
+      return <IconEducacionMusical className={className} />;
+    case 'Artes Plásticas':
+      return <IconArtesPlasticas className={className} />;
+    case 'Educación Religiosa':
+      return <IconEducacionReligiosa className={className} />;
+    case 'Filosofía':
+      return <IconFilosofia className={className} />;
     default:
       return <IconDocument className={className} />;
   }
@@ -179,4 +331,3 @@ export function IconMoon({ className = "w-5 h-5" }) {
     </svg>
   );
 }
-

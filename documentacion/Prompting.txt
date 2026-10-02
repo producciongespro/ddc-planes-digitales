@@ -14,3 +14,13 @@ información.
 
 
 
+P#3:
+
+
+Investiga en minternet cuanles son las asgnaturas que el MEP imparte en educación pública tanto de primer ciclo como en segundo ciclo. Con esa información crea la estructura de carpetas que falta en la app (ciclo->asginatura->nivel) y agrega el PDF de pruebas faltante.
+Antes de escribir código prepara un plan con:
+1. Cómo vas a calcular la mejor racha a partir de las sesiones guardadas, respetando las
+reglas de fechas y racha de AGENTS.md.
+2. Qué archivos vas a modificar y qué cambia en cada uno.
+3. Los casos límite y las dudas que debo decidir yo antes de empezar.
+4. Qué actualizarías en AGENTS.md y en MEMORY.md.

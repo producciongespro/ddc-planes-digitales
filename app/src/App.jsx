@@ -127,12 +127,12 @@ export default function App() {
               Bienvenido al Sistema de Gestión Curricular Digital (DDC)
             </h2>
             <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
-              Consulte, previsualice y descargue los programas oficiales para el planeamiento didáctico de Primer Ciclo (1° a 6°) y Segundo Ciclo (7° a 12°).
+              Consulte, previsualice y descargue los programas oficiales para el planeamiento didáctico de Primaria (I y II Ciclo) y Secundaria (III Ciclo y Diversificada Académica / Técnica).
             </p>
           </div>
           <div className="flex items-center gap-2 text-xs font-semibold text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700">
             <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span>24 Planes Oficiales Verificados</span>
+            <span>144 Planes Oficiales Verificados</span>
           </div>
         </div>
 

@@ -2,108 +2,184 @@ import React, { useState, useMemo } from 'react';
 import { AsignaturaIcon, IconSearch, IconFilter, IconRefresh, IconEye, IconDownload } from './Icons';
 
 export function SearchArea({ planes, onPreview, onDownload }) {
-  const [filtroNombre, setFiltroNombre] = useState('');
+  const [filtroTexto, setFiltroTexto] = useState('');
+  const [filtroNivelEducativo, setFiltroNivelEducativo] = useState('');
   const [filtroCiclo, setFiltroCiclo] = useState('');
+  const [filtroModalidad, setFiltroModalidad] = useState('');
+  const [filtroTipo, setFiltroTipo] = useState('');
   const [filtroAsignatura, setFiltroAsignatura] = useState('');
-  const [filtroNivel, setFiltroNivel] = useState('');
+  const [filtroGrado, setFiltroGrado] = useState('');
 
-  // Opciones dinámicas de asignaturas según ciclo seleccionado
+  // Ciclos disponibles según Nivel Educativo
+  const ciclosDisponibles = useMemo(() => {
+    if (filtroNivelEducativo === 'Primaria') {
+      return ['I Ciclo', 'II Ciclo'];
+    }
+    if (filtroNivelEducativo === 'Secundaria') {
+      return ['III Ciclo', 'Educación Diversificada'];
+    }
+    return ['I Ciclo', 'II Ciclo', 'III Ciclo', 'Educación Diversificada'];
+  }, [filtroNivelEducativo]);
+
+  // Si el ciclo seleccionado es Educación Diversificada, la modalidad es relevante
+  const mostrarModalidad = filtroCiclo === 'Educación Diversificada' || (!filtroCiclo && filtroNivelEducativo === 'Secundaria');
+
+  // Asignaturas disponibles dinámicamente según filtros previos
   const asignaturasDisponibles = useMemo(() => {
-    if (filtroCiclo === 'Primer ciclo') {
-      return ['Estudios Sociales', 'Matemáticas'];
-    }
-    if (filtroCiclo === 'Segundo ciclo') {
-      return ['Español', 'Ciencias'];
-    }
-    return ['Estudios Sociales', 'Matemáticas', 'Español', 'Ciencias'];
-  }, [filtroCiclo]);
+    const subset = planes.filter((doc) => {
+      if (filtroNivelEducativo && doc.nivelEducativo !== filtroNivelEducativo) return false;
+      if (filtroCiclo && doc.ciclo !== filtroCiclo) return false;
+      if (filtroModalidad && doc.modalidad !== filtroModalidad && doc.modalidad !== 'Regular') return false;
+      if (filtroTipo && doc.tipo !== filtroTipo) return false;
+      return true;
+    });
+    return Array.from(new Set(subset.map((d) => d.asignatura))).sort((a, b) => a.localeCompare(b, 'es'));
+  }, [planes, filtroNivelEducativo, filtroCiclo, filtroModalidad, filtroTipo]);
 
-  // Opciones dinámicas de niveles según ciclo seleccionado
-  const nivelesDisponibles = useMemo(() => {
-    if (filtroCiclo === 'Primer ciclo') {
-      return ['Primero', 'Segundo', 'Tercero', 'Cuarto', 'Quinto', 'Sexto'];
-    }
-    if (filtroCiclo === 'Segundo ciclo') {
-      return ['Sétimo', 'Octavo', 'Noveno', 'Décimo', 'Undécimo', 'Duodécimo'];
-    }
-    return [
+  // Grados disponibles dinámicamente según filtros previos
+  const gradosDisponibles = useMemo(() => {
+    const subset = planes.filter((doc) => {
+      if (filtroNivelEducativo && doc.nivelEducativo !== filtroNivelEducativo) return false;
+      if (filtroCiclo && doc.ciclo !== filtroCiclo) return false;
+      if (filtroModalidad && doc.modalidad !== filtroModalidad && doc.modalidad !== 'Regular') return false;
+      if (filtroTipo && doc.tipo !== filtroTipo) return false;
+      if (filtroAsignatura && doc.asignatura !== filtroAsignatura) return false;
+      return true;
+    });
+
+    const ordenGrados = [
       'Primero', 'Segundo', 'Tercero', 'Cuarto', 'Quinto', 'Sexto',
       'Sétimo', 'Octavo', 'Noveno', 'Décimo', 'Undécimo', 'Duodécimo'
     ];
-  }, [filtroCiclo]);
+    const gradosEncontrados = new Set(subset.map((d) => d.grado));
+    return ordenGrados.filter((g) => gradosEncontrados.has(g));
+  }, [planes, filtroNivelEducativo, filtroCiclo, filtroModalidad, filtroTipo, filtroAsignatura]);
 
-  // Manejar cambio de ciclo para sincronizar asignatura o nivel si ya no son válidos
+  // Manejo sincronizado de cambios en cascada
+  const handleNivelEducativoChange = (e) => {
+    const nuevoNivel = e.target.value;
+    setFiltroNivelEducativo(nuevoNivel);
+    setFiltroCiclo('');
+    setFiltroModalidad('');
+    setFiltroAsignatura('');
+    setFiltroGrado('');
+  };
+
   const handleCicloChange = (e) => {
     const nuevoCiclo = e.target.value;
     setFiltroCiclo(nuevoCiclo);
-
-    if (nuevoCiclo === 'Primer ciclo' && (filtroAsignatura === 'Español' || filtroAsignatura === 'Ciencias')) {
-      setFiltroAsignatura('');
-    } else if (nuevoCiclo === 'Segundo ciclo' && (filtroAsignatura === 'Estudios Sociales' || filtroAsignatura === 'Matemáticas')) {
-      setFiltroAsignatura('');
+    if (nuevoCiclo !== 'Educación Diversificada') {
+      setFiltroModalidad('');
     }
+    setFiltroAsignatura('');
+    setFiltroGrado('');
+  };
 
-    const nivelesPrimerCiclo = ['Primero', 'Segundo', 'Tercero', 'Cuarto', 'Quinto', 'Sexto'];
-    const nivelesSegundoCiclo = ['Sétimo', 'Octavo', 'Noveno', 'Décimo', 'Undécimo', 'Duodécimo'];
+  const handleModalidadChange = (e) => {
+    setFiltroModalidad(e.target.value);
+    setFiltroGrado('');
+  };
 
-    if (nuevoCiclo === 'Primer ciclo' && nivelesSegundoCiclo.includes(filtroNivel)) {
-      setFiltroNivel('');
-    } else if (nuevoCiclo === 'Segundo ciclo' && nivelesPrimerCiclo.includes(filtroNivel)) {
-      setFiltroNivel('');
-    }
+  const handleTipoChange = (e) => {
+    setFiltroTipo(e.target.value);
+    setFiltroAsignatura('');
   };
 
   const handleLimpiar = () => {
-    setFiltroNombre('');
+    setFiltroTexto('');
+    setFiltroNivelEducativo('');
     setFiltroCiclo('');
+    setFiltroModalidad('');
+    setFiltroTipo('');
     setFiltroAsignatura('');
-    setFiltroNivel('');
+    setFiltroGrado('');
   };
 
-  // Filtrado reactivo de los planes
+  // Filtrado reactivo de todos los planes
   const planesFiltrados = useMemo(() => {
     return planes.filter((doc) => {
-      if (filtroNombre.trim()) {
-        const busqueda = filtroNombre.toLowerCase();
+      if (filtroTexto.trim()) {
+        const busqueda = filtroTexto.toLowerCase();
         const coincideNombre = doc.nombre.toLowerCase().includes(busqueda);
         const coincideCodigo = doc.codigo.toLowerCase().includes(busqueda);
-        if (!coincideNombre && !coincideCodigo) return false;
+        const coincideAsig = doc.asignatura.toLowerCase().includes(busqueda);
+        if (!coincideNombre && !coincideCodigo && !coincideAsig) return false;
       }
-      if (filtroCiclo && doc.ciclo !== filtroCiclo) {
-        return false;
-      }
-      if (filtroAsignatura && doc.asignatura !== filtroAsignatura) {
-        return false;
-      }
-      if (filtroNivel && doc.nivel !== filtroNivel) {
-        return false;
-      }
+      if (filtroNivelEducativo && doc.nivelEducativo !== filtroNivelEducativo) return false;
+      if (filtroCiclo && doc.ciclo !== filtroCiclo) return false;
+      if (filtroModalidad && doc.modalidad !== filtroModalidad) return false;
+      if (filtroTipo && doc.tipo !== filtroTipo) return false;
+      if (filtroAsignatura && doc.asignatura !== filtroAsignatura) return false;
+      if (filtroGrado && doc.grado !== filtroGrado) return false;
       return true;
     });
-  }, [planes, filtroNombre, filtroCiclo, filtroAsignatura, filtroNivel]);
+  }, [planes, filtroTexto, filtroNivelEducativo, filtroCiclo, filtroModalidad, filtroTipo, filtroAsignatura, filtroGrado]);
 
-  // Colores distintivos según asignatura
+  // Colores e iconos según asignatura
   const getSubjectColorClasses = (asignatura) => {
     switch (asignatura) {
-      case 'Estudios Sociales':
+      case 'Español':
         return {
-          badge: 'bg-amber-100 dark:bg-amber-950/70 text-amber-900 dark:text-amber-300 border-amber-300 dark:border-amber-800',
-          iconBg: 'bg-amber-500 text-white'
+          badge: 'bg-indigo-100 dark:bg-indigo-950/70 text-indigo-900 dark:text-indigo-300 border-indigo-300 dark:border-indigo-800',
+          iconBg: 'bg-indigo-600 text-white'
         };
       case 'Matemáticas':
         return {
           badge: 'bg-emerald-100 dark:bg-emerald-950/70 text-emerald-900 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800',
           iconBg: 'bg-emerald-600 text-white'
         };
-      case 'Español':
-        return {
-          badge: 'bg-indigo-100 dark:bg-indigo-950/70 text-indigo-900 dark:text-indigo-300 border-indigo-300 dark:border-indigo-800',
-          iconBg: 'bg-indigo-600 text-white'
-        };
       case 'Ciencias':
         return {
           badge: 'bg-cyan-100 dark:bg-cyan-950/70 text-cyan-900 dark:text-cyan-300 border-cyan-300 dark:border-cyan-800',
           iconBg: 'bg-cyan-600 text-white'
+        };
+      case 'Estudios Sociales':
+        return {
+          badge: 'bg-amber-100 dark:bg-amber-950/70 text-amber-900 dark:text-amber-300 border-amber-300 dark:border-amber-800',
+          iconBg: 'bg-amber-500 text-white'
+        };
+      case 'Educación Cívica':
+        return {
+          badge: 'bg-blue-100 dark:bg-blue-950/70 text-blue-900 dark:text-blue-300 border-blue-300 dark:border-blue-800',
+          iconBg: 'bg-blue-600 text-white'
+        };
+      case 'Biología':
+        return {
+          badge: 'bg-teal-100 dark:bg-teal-950/70 text-teal-900 dark:text-teal-300 border-teal-300 dark:border-teal-800',
+          iconBg: 'bg-teal-600 text-white'
+        };
+      case 'Física':
+        return {
+          badge: 'bg-violet-100 dark:bg-violet-950/70 text-violet-900 dark:text-violet-300 border-violet-300 dark:border-violet-800',
+          iconBg: 'bg-violet-600 text-white'
+        };
+      case 'Química':
+        return {
+          badge: 'bg-orange-100 dark:bg-orange-950/70 text-orange-900 dark:text-orange-300 border-orange-300 dark:border-orange-800',
+          iconBg: 'bg-orange-600 text-white'
+        };
+      case 'Inglés':
+      case 'Francés':
+        return {
+          badge: 'bg-sky-100 dark:bg-sky-950/70 text-sky-900 dark:text-sky-300 border-sky-300 dark:border-sky-800',
+          iconBg: 'bg-sky-600 text-white'
+        };
+      case 'Educación Musical':
+      case 'Artes Plásticas':
+        return {
+          badge: 'bg-pink-100 dark:bg-pink-950/70 text-pink-900 dark:text-pink-300 border-pink-300 dark:border-pink-800',
+          iconBg: 'bg-pink-600 text-white'
+        };
+      case 'Educación Física':
+        return {
+          badge: 'bg-lime-100 dark:bg-lime-950/70 text-lime-900 dark:text-lime-300 border-lime-300 dark:border-lime-800',
+          iconBg: 'bg-lime-600 text-white'
+        };
+      case 'Filosofía':
+      case 'Educación Religiosa':
+        return {
+          badge: 'bg-purple-100 dark:bg-purple-950/70 text-purple-900 dark:text-purple-300 border-purple-300 dark:border-purple-800',
+          iconBg: 'bg-purple-600 text-white'
         };
       default:
         return {
@@ -113,7 +189,9 @@ export function SearchArea({ planes, onPreview, onDownload }) {
     }
   };
 
-  const hayFiltrosActivos = Boolean(filtroNombre || filtroCiclo || filtroAsignatura || filtroNivel);
+  const hayFiltrosActivos = Boolean(
+    filtroTexto || filtroNivelEducativo || filtroCiclo || filtroModalidad || filtroTipo || filtroAsignatura || filtroGrado
+  );
 
   return (
     <section className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden mb-10 transition-colors duration-200">
@@ -124,29 +202,29 @@ export function SearchArea({ planes, onPreview, onDownload }) {
             <IconSearch className="w-5 h-5" />
           </div>
           <h2 className="text-xl sm:text-2xl font-bold tracking-tight">
-            1. Búsqueda y Consulta de Planes de Estudio
+            1. Búsqueda y Consulta de Planes de Estudio Oficiales
           </h2>
         </div>
-        <p className="text-slate-300 text-sm max-w-3xl">
-          Filtre el catálogo oficial por nombre de documento, ciclo formativo, asignatura pedagógica y nivel educativo para localizar rápidamente el plan que necesita.
+        <p className="text-slate-300 text-sm max-w-4xl">
+          Consulte el catálogo institucional completo del MEP. Filtre dinámicamente por nivel, ciclo, modalidad (Académica / Técnica), tipo, asignatura y grado para acceder de inmediato al documento PDF normado.
         </p>
       </div>
 
-      {/* Formulario de filtros */}
+      {/* Formulario de filtros en cascada */}
       <div className="p-6 bg-slate-50/70 dark:bg-slate-800/40 border-b border-slate-200 dark:border-slate-800">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* Filtro: Nombre */}
-          <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3.5">
+          {/* 1. Filtro: Texto */}
+          <div className="xl:col-span-2">
             <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Nombre o Palabra Clave
+              Palabra Clave o Código
             </label>
             <div className="relative">
               <input
                 type="text"
-                value={filtroNombre}
-                onChange={(e) => setFiltroNombre(e.target.value)}
-                placeholder="Ej. Matemáticas, Primero..."
-                className="w-full pl-9 pr-3 py-2.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
+                value={filtroTexto}
+                onChange={(e) => setFiltroTexto(e.target.value)}
+                placeholder="Ej. Biología, MEP-SEC..."
+                className="w-full pl-9 pr-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
               />
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 dark:text-slate-500">
                 <IconSearch className="w-4 h-4" />
@@ -154,23 +232,74 @@ export function SearchArea({ planes, onPreview, onDownload }) {
             </div>
           </div>
 
-          {/* Filtro: Ciclo */}
+          {/* 2. Filtro: Nivel Educativo */}
           <div>
             <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Ciclo Educativo
+              Nivel Educativo
+            </label>
+            <select
+              value={filtroNivelEducativo}
+              onChange={handleNivelEducativoChange}
+              className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
+            >
+              <option value="">Todos los niveles</option>
+              <option value="Primaria">Primaria</option>
+              <option value="Secundaria">Secundaria</option>
+            </select>
+          </div>
+
+          {/* 3. Filtro: Ciclo */}
+          <div>
+            <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+              Ciclo Curricular
             </label>
             <select
               value={filtroCiclo}
               onChange={handleCicloChange}
-              className="w-full px-3 py-2.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
+              className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
             >
               <option value="">Todos los ciclos</option>
-              <option value="Primer ciclo">Primer ciclo</option>
-              <option value="Segundo ciclo">Segundo ciclo</option>
+              {ciclosDisponibles.map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
             </select>
           </div>
 
-          {/* Filtro: Asignatura */}
+          {/* 4. Filtro: Modalidad (Académica / Técnica) */}
+          <div>
+            <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+              Modalidad {mostrarModalidad && <span className="text-amber-500">*</span>}
+            </label>
+            <select
+              value={filtroModalidad}
+              onChange={handleModalidadChange}
+              disabled={!mostrarModalidad && filtroNivelEducativo === 'Primaria'}
+              className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 disabled:opacity-50 disabled:bg-slate-100 dark:disabled:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
+            >
+              <option value="">Todas las modalidades</option>
+              <option value="Académica">Académica</option>
+              <option value="Técnica">Técnica (CTP)</option>
+              <option value="Regular">Regular (General)</option>
+            </select>
+          </div>
+
+          {/* 5. Filtro: Tipo de Asignatura */}
+          <div>
+            <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+              Tipo Materia
+            </label>
+            <select
+              value={filtroTipo}
+              onChange={handleTipoChange}
+              className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
+            >
+              <option value="">Todos los tipos</option>
+              <option value="Básica">Básica</option>
+              <option value="Complementaria">Complementaria</option>
+            </select>
+          </div>
+
+          {/* 6. Filtro: Asignatura */}
           <div>
             <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
               Asignatura
@@ -178,50 +307,47 @@ export function SearchArea({ planes, onPreview, onDownload }) {
             <select
               value={filtroAsignatura}
               onChange={(e) => setFiltroAsignatura(e.target.value)}
-              className="w-full px-3 py-2.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
+              className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
             >
-              <option value="">Todas las asignaturas</option>
+              <option value="">Todas ({asignaturasDisponibles.length})</option>
               {asignaturasDisponibles.map((asig) => (
-                <option key={asig} value={asig}>
-                  {asig}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Filtro: Nivel */}
-          <div>
-            <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Nivel / Grado
-            </label>
-            <select
-              value={filtroNivel}
-              onChange={(e) => setFiltroNivel(e.target.value)}
-              className="w-full px-3 py-2.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
-            >
-              <option value="">Todos los niveles</option>
-              {nivelesDisponibles.map((nv) => (
-                <option key={nv} value={nv}>
-                  {nv}
-                </option>
+                <option key={asig} value={asig}>{asig}</option>
               ))}
             </select>
           </div>
         </div>
 
-        {/* Barra de estado de filtros y botones de acción */}
-        <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700/80 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
-            <IconFilter className="w-4 h-4 text-slate-400" />
-            <span>
-              Mostrando <strong className="text-blue-900 dark:text-blue-400">{planesFiltrados.length}</strong> de{' '}
-              <strong>{planes.length}</strong> planes curriculares
-            </span>
-            {hayFiltrosActivos && (
-              <span className="bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1 border border-blue-200 dark:border-blue-800">
-                Filtros aplicados
+        {/* 7. Fila complementaria: Grado / Nivel y barra de acciones */}
+        <div className="mt-3 pt-3 border-t border-slate-200 dark:border-slate-700/80 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
+                Grado / Año:
               </span>
-            )}
+              <select
+                value={filtroGrado}
+                onChange={(e) => setFiltroGrado(e.target.value)}
+                className="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-xs font-medium text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm"
+              >
+                <option value="">Todos los grados ({gradosDisponibles.length})</option>
+                {gradosDisponibles.map((g) => (
+                  <option key={g} value={g}>{g}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+              <IconFilter className="w-4 h-4 text-slate-400" />
+              <span>
+                Mostrando <strong className="text-blue-900 dark:text-blue-400">{planesFiltrados.length}</strong> de{' '}
+                <strong>{planes.length}</strong> planes
+              </span>
+              {hayFiltrosActivos && (
+                <span className="bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 text-[11px] font-semibold px-2 py-0.5 rounded-full border border-blue-200 dark:border-blue-800">
+                  Filtros activos
+                </span>
+              )}
+            </div>
           </div>
 
           {hayFiltrosActivos && (
@@ -230,7 +356,7 @@ export function SearchArea({ planes, onPreview, onDownload }) {
               className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 rounded-lg transition-colors shadow-sm"
             >
               <IconRefresh className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
-              <span>Limpiar filtros</span>
+              <span>Restablecer filtros</span>
             </button>
           )}
         </div>
@@ -244,22 +370,24 @@ export function SearchArea({ planes, onPreview, onDownload }) {
               <IconSearch className="w-6 h-6" />
             </div>
             <h3 className="text-base font-bold text-slate-700 dark:text-slate-200 mb-1">
-              No se encontraron planes que coincidan con la búsqueda
+              No se encontraron planes con los filtros seleccionados
             </h3>
             <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto mb-4">
-              Pruebe cambiando los términos del filtro o presione limpiar para ver todo el catálogo.
+              Pruebe ajustando el ciclo, la modalidad o la asignatura para explorar otros documentos.
             </p>
             <button
               onClick={handleLimpiar}
               className="px-4 py-2 bg-blue-700 hover:bg-blue-600 text-white text-xs font-semibold rounded-lg transition"
             >
-              Restablecer todos los filtros
+              Ver los 144 planes oficiales
             </button>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {planesFiltrados.map((doc) => {
               const colors = getSubjectColorClasses(doc.asignatura);
+              const isPrimaria = doc.nivelEducativo === 'Primaria';
+
               return (
                 <div
                   key={doc.id}
@@ -290,19 +418,39 @@ export function SearchArea({ planes, onPreview, onDownload }) {
                     </div>
 
                     {/* Nombre del documento */}
-                    <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors mb-2">
+                    <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors mb-2 line-clamp-2">
                       {doc.nombre}
                     </h3>
 
-                    {/* Badges de metadatos */}
+                    {/* Badges de metadatos jerárquicos */}
                     <div className="flex flex-wrap items-center gap-1.5 text-xs mt-3">
-                      <span className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-600 font-medium">
+                      <span className={`px-2 py-0.5 rounded font-semibold text-[11px] ${
+                        isPrimaria
+                          ? 'bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800'
+                          : 'bg-blue-100 dark:bg-blue-950/70 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-800'
+                      }`}>
+                        {doc.nivelEducativo}
+                      </span>
+
+                      <span className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-600 font-medium text-[11px]">
                         {doc.ciclo}
                       </span>
-                      <span className={`px-2 py-0.5 rounded border font-semibold ${colors.badge}`}>
-                        Nivel {doc.nivel}
+
+                      {doc.modalidad && doc.modalidad !== 'Regular' && (
+                        <span className={`px-2 py-0.5 rounded font-semibold text-[11px] ${
+                          doc.modalidad === 'Técnica'
+                            ? 'bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800'
+                            : 'bg-indigo-100 dark:bg-indigo-950/70 text-indigo-800 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-800'
+                        }`}>
+                          {doc.modalidad}
+                        </span>
+                      )}
+
+                      <span className={`px-2 py-0.5 rounded border font-semibold text-[11px] ${colors.badge}`}>
+                        {doc.grado}
                       </span>
-                      <span className="px-2 py-0.5 rounded bg-red-50 dark:bg-red-950/60 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800 font-bold text-[11px]">
+
+                      <span className="px-2 py-0.5 rounded bg-red-50 dark:bg-red-950/60 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800 font-bold text-[10px]">
                         PDF
                       </span>
                     </div>

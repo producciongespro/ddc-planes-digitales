@@ -81,6 +81,9 @@ export function TopDownloads({ planes, onPreview, onDownload }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {topPlanes.map((doc, index) => {
             const rank = getRankBadge(index);
+            const isPrimaria = doc.nivelEducativo === 'Primaria';
+            const gradoTexto = doc.grado || doc.nivel;
+
             return (
               <div
                 key={doc.id}
@@ -96,7 +99,7 @@ export function TopDownloads({ planes, onPreview, onDownload }) {
                   </span>
                 </div>
 
-                {/* Icono de asignatura, Nombre y Nivel requeridos */}
+                {/* Icono de asignatura, Nombre y Grado */}
                 <div className="mb-4">
                   <div className="flex items-center gap-3 mb-2.5">
                     <div className="p-2.5 rounded-lg bg-blue-50 dark:bg-slate-700/80 border border-blue-200 dark:border-slate-600 text-blue-800 dark:text-amber-400 group-hover:bg-amber-50 group-hover:border-amber-300 group-hover:text-amber-800 dark:group-hover:bg-slate-700 transition-colors">
@@ -106,9 +109,9 @@ export function TopDownloads({ planes, onPreview, onDownload }) {
                       <span className="text-xs uppercase font-semibold text-slate-500 dark:text-slate-400 tracking-wider block">
                         {doc.asignatura}
                       </span>
-                      {/* Nivel */}
+                      {/* Grado */}
                       <span className="text-xs font-bold text-blue-900 dark:text-blue-300 bg-blue-100/70 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 px-2 py-0.5 rounded-md inline-block mt-0.5">
-                        Nivel {doc.nivel}
+                        {gradoTexto} Año
                       </span>
                     </div>
                   </div>
@@ -117,6 +120,25 @@ export function TopDownloads({ planes, onPreview, onDownload }) {
                   <h3 className="text-sm font-bold text-slate-900 dark:text-white line-clamp-2 mt-2 leading-snug group-hover:text-blue-700 dark:group-hover:text-amber-400 transition-colors">
                     {doc.nombre}
                   </h3>
+
+                  {/* Badges de ciclo y modalidad */}
+                  <div className="flex flex-wrap items-center gap-1.5 mt-2.5">
+                    <span className={`text-[10px] px-1.5 py-0.5 rounded font-bold ${
+                      isPrimaria
+                        ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300'
+                        : 'bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300'
+                    }`}>
+                      {doc.nivelEducativo}
+                    </span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
+                      {doc.ciclo}
+                    </span>
+                    {doc.modalidad && doc.modalidad !== 'Regular' && (
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 font-semibold">
+                        {doc.modalidad}
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 {/* Total de descargas */}
