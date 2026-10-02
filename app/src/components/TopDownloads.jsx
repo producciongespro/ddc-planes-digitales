@@ -41,7 +41,7 @@ export function TopDownloads({ planes, onPreview, onDownload }) {
   return (
     <section className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden mb-10 transition-colors duration-200">
       {/* Encabezado del área */}
-      <div className="bg-gradient-to-r from-[#172554] to-[#1e3a8a] dark:from-[#0f1d38] dark:to-[#172e5c] p-6 text-white border-b-2 border-amber-500 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div className="bg-gradient-to-r from-[#172554] to-[#1e3a8a] dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091] p-6 text-white border-b-2 border-amber-500 shadow-xs flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <div className="flex items-center gap-3 mb-1.5">
             <div className="p-2 rounded-lg bg-amber-500 text-white shadow-md">
@@ -87,7 +87,7 @@ export function TopDownloads({ planes, onPreview, onDownload }) {
             return (
               <div
                 key={doc.id}
-                className="relative bg-gradient-to-b from-white to-slate-50 dark:from-slate-800 dark:to-slate-850 border border-slate-200 dark:border-slate-700/80 rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group hover:border-amber-400 dark:hover:border-amber-400"
+                className="relative bg-gradient-to-b from-slate-100 via-slate-200/90 to-slate-300/80 dark:from-[#3d5377] dark:via-[#2a3c57] dark:to-[#182537] border border-slate-300 dark:border-slate-500/80 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between group hover:border-amber-400 dark:hover:border-amber-400"
               >
                 {/* Posición / Ranking badge */}
                 <div className="flex items-center justify-between mb-3">

@@ -196,7 +196,7 @@ export function SearchArea({ planes, onPreview, onDownload }) {
   return (
     <section className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden mb-10 transition-colors duration-200">
       {/* Encabezado del área de búsqueda */}
-      <div className="bg-gradient-to-r from-[#0f2942] to-[#1e3a5f] dark:from-[#0a1b2b] dark:to-[#13283f] p-6 text-white border-b-2 border-amber-500">
+      <div className="bg-gradient-to-r from-[#0f2942] to-[#1e3a5f] dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091] p-6 text-white border-b-2 border-amber-500 shadow-xs">
         <div className="flex items-center gap-3 mb-2">
           <div className="p-2 rounded-lg bg-white/10 text-amber-400">
             <IconSearch className="w-5 h-5" />
@@ -391,34 +391,34 @@ export function SearchArea({ planes, onPreview, onDownload }) {
               return (
                 <div
                   key={doc.id}
-                  className="bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700/80 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group hover:border-blue-400 dark:hover:border-blue-500"
+                  className="relative bg-gradient-to-b from-slate-100 via-slate-200/90 to-slate-300/80 dark:from-[#3d5377] dark:via-[#2a3c57] dark:to-[#182537] border border-slate-300 dark:border-slate-500/80 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden group hover:border-blue-500 dark:hover:border-amber-400"
                 >
-                  <div className="p-5">
+                  <div className="p-5 flex-1">
                     {/* Fila superior: Asignatura e Icono */}
                     <div className="flex items-start justify-between gap-3 mb-3">
-                      <div className="flex items-center gap-2.5">
-                        <div className={`p-2 rounded-lg ${colors.iconBg} shadow-sm`}>
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <div className={`p-2.5 rounded-lg ${colors.iconBg} shadow-xs flex-shrink-0 transition-colors`}>
                           <AsignaturaIcon asignatura={doc.asignatura} className="w-5 h-5" />
                         </div>
-                        <div>
-                          <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 block uppercase tracking-wider">
+                        <div className="min-w-0">
+                          <span className="text-xs font-bold text-slate-600 dark:text-slate-300 block uppercase tracking-wider truncate">
                             {doc.asignatura}
                           </span>
-                          <span className="text-[11px] font-mono text-slate-400 dark:text-slate-500">
+                          <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-1.5 py-0.5 rounded border border-slate-200/60 dark:border-slate-700/60 inline-block mt-0.5">
                             {doc.codigo}
                           </span>
                         </div>
                       </div>
 
                       {/* Descargas totales */}
-                      <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-1 rounded bg-slate-100 dark:bg-slate-700/80 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600">
-                        <IconDownload className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+                      <span className="inline-flex items-center gap-1 text-xs font-semibold px-2 py-1 rounded-lg bg-blue-50 dark:bg-slate-800/90 text-blue-900 dark:text-amber-400 border border-blue-200/70 dark:border-slate-700 shadow-2xs flex-shrink-0">
+                        <IconDownload className="w-3.5 h-3.5 text-blue-600 dark:text-amber-400" />
                         <strong>{doc.descargas}</strong>
                       </span>
                     </div>
 
-                    {/* Nombre del documento */}
-                    <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors mb-2 line-clamp-2">
+                    {/* Nombre del documento con realce en hover */}
+                    <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-700 dark:group-hover:text-amber-400 transition-colors mb-2 line-clamp-2 leading-snug">
                       {doc.nombre}
                     </h3>
 
@@ -432,7 +432,7 @@ export function SearchArea({ planes, onPreview, onDownload }) {
                         {doc.nivelEducativo}
                       </span>
 
-                      <span className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-600 font-medium text-[11px]">
+                      <span className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 font-medium text-[11px]">
                         {doc.ciclo}
                       </span>
 
@@ -456,12 +456,12 @@ export function SearchArea({ planes, onPreview, onDownload }) {
                     </div>
                   </div>
 
-                  {/* Acciones de la tarjeta */}
-                  <div className="bg-slate-50 dark:bg-slate-800/40 px-5 py-3 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between gap-2">
+                  {/* Acciones de la tarjeta con flujo transparente integrado sobre el degradado */}
+                  <div className="px-5 pb-5 pt-3 mt-auto flex items-center justify-between gap-2 border-t border-slate-200/60 dark:border-slate-700/50">
                     <button
                       type="button"
                       onClick={() => onPreview(doc)}
-                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 border border-slate-300 dark:border-slate-600 rounded-lg transition-colors shadow-sm"
+                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white/90 dark:bg-slate-800/90 hover:bg-white dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-lg transition-colors shadow-2xs backdrop-blur-xs"
                     >
                       <IconEye className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                       <span>Previsualizar</span>
@@ -469,7 +469,7 @@ export function SearchArea({ planes, onPreview, onDownload }) {
                     <button
                       type="button"
                       onClick={() => onDownload(doc)}
-                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-600 rounded-lg transition-colors shadow-sm"
+                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500 rounded-lg transition-colors shadow-2xs"
                     >
                       <IconDownload className="w-4 h-4" />
                       <span>Descargar</span>

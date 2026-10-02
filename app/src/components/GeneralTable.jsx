@@ -62,7 +62,7 @@ export function GeneralTable({ planes, onPreview, onDownload }) {
   return (
     <section className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden mb-10 transition-colors duration-200">
       {/* Encabezado de la tabla */}
-      <div className="bg-gradient-to-r from-[#0f2942] to-[#1e293b] dark:from-[#091522] dark:to-[#111c2a] p-6 text-white border-b-2 border-amber-500 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div className="bg-gradient-to-r from-[#0f2942] to-[#1e293b] dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091] p-6 text-white border-b-2 border-amber-500 shadow-xs flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
           <div className="flex items-center gap-3 mb-1.5">
             <div className="p-2 rounded-lg bg-blue-600/60 text-white shadow">

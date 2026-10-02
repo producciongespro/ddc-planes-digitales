@@ -18,6 +18,7 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - **Filtros en cascada (7 filtros):** Búsqueda de texto, Nivel, Ciclo, Modalidad, Tipo, Asignatura y Grado con actualización reactiva para evitar combinaciones vacías.
 - **Paginación en tabla general:** Para renderizar fluidamente los 144 documentos sin degradar el rendimiento del navegador.
 - **Botón de reinicio:** Aislado con `import.meta.env.DEV` para existir únicamente en desarrollo local y eliminarse por tree-shaking en producción.
+- **Calibración visual y contraste UI (Modo Oscuro/Claro):** Encabezados con degradado azul zafiro institucional ('dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091]') y borde ámbar; tarjetas con gradiente continuo de alto contraste ('from-slate-100 to-slate-300' en claro / 'from-[#3d5377] to-[#182537]' en oscuro) para máxima presencia visual y legibilidad.
 
 ## Aprendizajes y errores a evitar
 - Nunca usar `localStorage` sin validación de versión o esquema; los datos cacheados obsoletos generaban 404 con rutas previas de 2 niveles.
