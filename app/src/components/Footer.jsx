@@ -24,11 +24,11 @@ export function Footer() {
             <ul className="text-sm text-slate-400 space-y-2">
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-                <span><strong>Primer ciclo:</strong> Estudios Sociales y Matemáticas (1° a 6°)</span>
+                <span><strong>Primaria:</strong> I Ciclo (1° a 3°) y II Ciclo (4° a 6°)</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
-                <span><strong>Segundo ciclo:</strong> Español y Ciencias (7° a 12°)</span>
+                <span><strong>Secundaria:</strong> III Ciclo (7° a 9°) y Educación Diversificada</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -61,7 +61,7 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950 dark:bg-emerald-900/40 text-emerald-300 border border-emerald-800 text-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Sistema Activo v1.1
+              Sistema Activo v2.0
             </span>
           </div>
         </div>

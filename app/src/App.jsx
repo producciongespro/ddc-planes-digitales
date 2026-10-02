@@ -120,22 +120,6 @@ export default function App() {
 
       {/* 2. SECCIÓN: CONTENIDO PRINCIPAL */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Banner de bienvenida estilo Biblioteca Digital Corporativa */}
-        <div className="mb-8 bg-white dark:bg-slate-900 border-l-4 border-blue-700 dark:border-blue-500 rounded-r-xl p-5 shadow-sm border-y border-r border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-colors">
-          <div>
-            <h2 className="text-lg font-bold text-slate-900 dark:text-white">
-              Bienvenido al Sistema de Gestión Curricular Digital (DDC)
-            </h2>
-            <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
-              Consulte, previsualice y descargue los programas oficiales para el planeamiento didáctico de Primaria (I y II Ciclo) y Secundaria (III Ciclo y Diversificada Académica / Técnica).
-            </p>
-          </div>
-          <div className="flex items-center gap-2 text-xs font-semibold text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700">
-            <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span>144 Planes Oficiales Verificados</span>
-          </div>
-        </div>
-
         {/* 2.1 PRIMER ÁREA: BÚSQUEDA DE DOCUMENTOS POR FILTROS */}
         <SearchArea
           planes={planes}

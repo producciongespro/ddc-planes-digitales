@@ -17,6 +17,7 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - **Nombres de carpetas:** Nombres completos sin acentos en el sistema de archivos (`Setimo`, `Decimo`, `Matematicas`, `Educacion Diversificada`) para máxima compatibilidad cross-platform, y nombres con tilde en la interfaz visual.
 - **Filtros en cascada (7 filtros):** Búsqueda de texto, Nivel, Ciclo, Modalidad, Tipo, Asignatura y Grado con actualización reactiva para evitar combinaciones vacías.
 - **Paginación en tabla general:** Para renderizar fluidamente los 144 documentos sin degradar el rendimiento del navegador.
+- **Botón de reinicio:** Aislado con `import.meta.env.DEV` para existir únicamente en desarrollo local y eliminarse por tree-shaking en producción.
 
 ## Aprendizajes y errores a evitar
 - Nunca usar `localStorage` sin validación de versión o esquema; los datos cacheados obsoletos generaban 404 con rutas previas de 2 niveles.
