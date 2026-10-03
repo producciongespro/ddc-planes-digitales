@@ -23,6 +23,9 @@ export default function App() {
   // Estado para el modal institucional "Acerca de la DDC"
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
 
+  // Clave para disparar la limpieza de filtros en SearchArea
+  const [searchResetKey, setSearchResetKey] = useState(0);
+
   // Estado del tema Claro / Oscuro con persistencia en localStorage
   const [darkMode, setDarkMode] = useState(() => {
     try {
@@ -112,11 +115,13 @@ export default function App() {
     setIsResetModalOpen(true);
   };
 
-  // Confirmar y ejecutar restablecimiento de fábrica
+  // Confirmar y ejecutar restablecimiento de fábrica (a 0 descargas y limpieza de filtros)
   const handleConfirmReset = () => {
-    savePlanesToStorage(INITIAL_PLANES);
-    setPlanes(INITIAL_PLANES);
+    const planesCero = planes.map((p) => ({ ...p, descargas: 0 }));
+    savePlanesToStorage(planesCero);
+    setPlanes(planesCero);
     setPreviewDoc(null);
+    setSearchResetKey((prev) => prev + 1);
   };
 
   return (
@@ -144,6 +149,7 @@ export default function App() {
             planes={planes}
             onPreview={handlePreview}
             onDownload={handleDownload}
+            resetKey={searchResetKey}
           />
 
           {/* 2.2 SEGUNDA ÁREA: TOP DE DESCARGAS (4 a 16 DOCUMENTOS) */}

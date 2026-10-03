@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { AsignaturaIcon, IconSearch, IconFilter, IconRefresh, IconEye, IconDownload } from './Icons';
 
-export function SearchArea({ planes, onPreview, onDownload }) {
+export function SearchArea({ planes, onPreview, onDownload, resetKey }) {
   const [filtroTexto, setFiltroTexto] = useState('');
   const [filtroNivelEducativo, setFiltroNivelEducativo] = useState('');
   const [filtroCiclo, setFiltroCiclo] = useState('');
@@ -9,6 +9,20 @@ export function SearchArea({ planes, onPreview, onDownload }) {
   const [filtroTipo, setFiltroTipo] = useState('');
   const [filtroAsignatura, setFiltroAsignatura] = useState('');
   const [filtroGrado, setFiltroGrado] = useState('');
+
+  // Escuchar evento de reinicio global desde el Header
+  useEffect(() => {
+    if (resetKey) {
+      setFiltroTexto('');
+      setFiltroNivelEducativo('');
+      setFiltroCiclo('');
+      setFiltroModalidad('');
+      setFiltroTipo('');
+      setFiltroAsignatura('');
+      setFiltroGrado('');
+      setPaginaActual(1);
+    }
+  }, [resetKey]);
 
   // Ciclos disponibles según Nivel Educativo
   const ciclosDisponibles = useMemo(() => {

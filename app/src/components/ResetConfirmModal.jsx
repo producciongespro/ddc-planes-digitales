@@ -54,15 +54,15 @@ export function ResetConfirmModal({ isOpen, onClose, onConfirm }) {
         {/* Cuerpo del modal */}
         <div className="p-6 space-y-4">
           <p className="text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
-            ¿Está seguro de que desea restablecer los contadores de descargas a sus valores originales de fábrica?
+            ¿Está seguro de que desea restablecer todos los contadores de descargas a cero (0) y limpiar los filtros de búsqueda?
           </p>
 
           <div className="bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 rounded-xl p-3.5 text-xs text-amber-900 dark:text-amber-200 leading-normal flex items-start gap-2.5">
             <span className="text-amber-600 dark:text-amber-400 text-base leading-none mt-0.5 font-bold">ℹ️</span>
             <div>
-              <p className="font-semibold mb-0.5">Efecto de la acción:</p>
+              <p className="font-semibold mb-0.5">Efecto del reinicio:</p>
               <p className="text-amber-800 dark:text-amber-300">
-                Se limpiarán las modificaciones en el almacenamiento local (<code className="font-mono bg-amber-100 dark:bg-amber-900/50 px-1 py-0.5 rounded">localStorage</code>) y se reiniciarán las métricas de los <strong>144 planes de estudio</strong>.
+                Se pondrán en <strong>cero (0) descargas</strong> los 144 planes de estudio en <code className="font-mono bg-amber-100 dark:bg-amber-900/50 px-1 py-0.5 rounded">localStorage</code>, se dejará limpio el Top de Descargas y se restablecerán todos los filtros de búsqueda aplicados.
               </p>
             </div>
           </div>
