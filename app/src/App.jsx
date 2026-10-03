@@ -164,6 +164,7 @@ export default function App() {
             planes={planes}
             onPreview={handlePreview}
             onDownload={handleDownload}
+            resetKey={searchResetKey}
           />
         </main>
       </div>

@@ -20,7 +20,6 @@ export function SearchArea({ planes, onPreview, onDownload, resetKey }) {
       setFiltroTipo('');
       setFiltroAsignatura('');
       setFiltroGrado('');
-      setPaginaActual(1);
     }
   }, [resetKey]);
 

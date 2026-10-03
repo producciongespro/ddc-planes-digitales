@@ -1,11 +1,20 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { AsignaturaIcon, IconTable, IconEye, IconDownload } from './Icons';
 
-export function GeneralTable({ planes, onPreview, onDownload }) {
+export function GeneralTable({ planes, onPreview, onDownload, resetKey }) {
   const [filtroAgrupacion, setFiltroAgrupacion] = useState('');
   const [filtroTipoTabla, setFiltroTipoTabla] = useState('');
   const [paginaActual, setPaginaActual] = useState(1);
   const [elementosPorPagina, setElementosPorPagina] = useState(20);
+
+  // Escuchar evento de reinicio global
+  useEffect(() => {
+    if (resetKey) {
+      setFiltroAgrupacion('');
+      setFiltroTipoTabla('');
+      setPaginaActual(1);
+    }
+  }, [resetKey]);
 
   // Estadísticas consolidadas
   const metricas = useMemo(() => {
