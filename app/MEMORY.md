@@ -9,7 +9,7 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - Modo Claro / Oscuro persistente en `localStorage` (`mep-theme`).
 - Persistencia de descargas en `localStorage` (`mep-ddc-planes`) con migración automática a 144 planes.
 - 15 iconos temáticos oficiales en SVG nativo sin librerías externas.
-- Control centralizado de versión y releases en `app/src/data/version.json`.
+- Control centralizado de versión y releases en `app/src/data/version.json` (concatenación DRY de versión + compilado).
 
 ## Decisiones tomadas (y por qué)
 - **144 planes generados en PDF institucional:** El MEP distingue materias Básicas y Complementarias en I, II, III Ciclo y Educación Diversificada (Académica y Técnica CTP).
@@ -22,6 +22,8 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - **Calibración visual y contraste UI (Modo Oscuro/Claro):** Encabezados con degradado azul zafiro institucional ('dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091]') y borde ámbar; tarjetas con gradiente continuo de alto contraste ('from-slate-100 to-slate-300' en claro / 'from-[#3d5377] to-[#182537]' en oscuro) para máxima presencia visual y legibilidad.
 - **Optimización de columnas en tabla general:** Se sustituyó 'Disponibilidad' por 'Descargas' y se retiró 'Código Oficial' para suprimir el scroll horizontal indeseado y ajustar la vista fluidamente al 100% de la pantalla.
 - **Arquitectura App Shell (Viewport Layout):** Header fijo arriba (`flex-shrink-0 z-20`) y Footer fijo abajo (`flex-shrink-0 z-20`), confinando el scroll vertical exclusivamente al contenedor principal central (`flex-1 overflow-y-auto`).
+- **Pie de página dinámico institucional (Footer):** Alternancia suave (fade-in/fade-out de 300ms) entre Institución y Dirección cada 4.5s sobre fondo `footer.jpg`, con tipografía vectorizada nativa (#92A1CA) y badge reactivo de estado y versión.
+- **Encabezado Hero compacto y modal Acerca de (WelcomeHero & AboutModal):** Franja de bienvenida institucional previa a los filtros controlada desde `version.json` (`heroTitulo`, `heroSubtitulo`) y botón "Acerca de" en el Header con modal institucional que expone la misión de la DDC, el alcance de los 144 planes normados y el marco legal del CSE.
 
 ## Aprendizajes y errores a evitar
 - Nunca usar `localStorage` sin validación de versión o esquema; los datos cacheados obsoletos generaban 404 con rutas previas de 2 niveles.

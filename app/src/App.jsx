@@ -7,6 +7,8 @@ import { GeneralTable } from './components/GeneralTable';
 import { Footer } from './components/Footer';
 import { PdfPreviewModal } from './components/PdfPreviewModal';
 import { ResetConfirmModal } from './components/ResetConfirmModal';
+import { WelcomeHero } from './components/WelcomeHero';
+import { AboutModal } from './components/AboutModal';
 
 export default function App() {
   // Estado principal de los planes cargados desde localStorage con la clave 'mep-ddc-planes'
@@ -17,6 +19,9 @@ export default function App() {
 
   // Estado para el modal profesional de confirmación de reseteo
   const [isResetModalOpen, setIsResetModalOpen] = useState(false);
+
+  // Estado para el modal institucional "Acerca de la DDC"
+  const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
 
   // Estado del tema Claro / Oscuro con persistencia en localStorage
   const [darkMode, setDarkMode] = useState(() => {
@@ -124,12 +129,16 @@ export default function App() {
           onResetData={handleOpenResetModal}
           darkMode={darkMode}
           onToggleTheme={toggleTheme}
+          onOpenAbout={() => setIsAboutModalOpen(true)}
         />
       </div>
 
       {/* 2. SECCIÓN: CONTENIDO PRINCIPAL (Única área con scroll vertical) */}
       <div className="flex-1 overflow-y-auto min-h-0 focus:outline-none">
         <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {/* BANNER INSTITUCIONAL COMPACTO DE BIENVENIDA (DDC · MEP) */}
+          <WelcomeHero onOpenAbout={() => setIsAboutModalOpen(true)} />
+
           {/* 2.1 PRIMER ÁREA: BÚSQUEDA DE DOCUMENTOS POR FILTROS */}
           <SearchArea
             planes={planes}
@@ -170,6 +179,12 @@ export default function App() {
         isOpen={isResetModalOpen}
         onClose={() => setIsResetModalOpen(false)}
         onConfirm={handleConfirmReset}
+      />
+
+      {/* MODAL INSTITUCIONAL "ACERCA DE LA DDC Y EL REPOSITORIO" */}
+      <AboutModal
+        isOpen={isAboutModalOpen}
+        onClose={() => setIsAboutModalOpen(false)}
       />
     </div>
   );
