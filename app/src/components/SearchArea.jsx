@@ -212,11 +212,12 @@ export function SearchArea({ planes, onPreview, onDownload }) {
 
       {/* Formulario de filtros en cascada */}
       <div className="p-6 bg-slate-50/70 dark:bg-slate-800/40 border-b border-slate-200 dark:border-slate-800">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {/* --- FILA 1: 4 FILTROS --- */}
           {/* 1. Filtro: Texto */}
-          <div className="xl:col-span-2">
+          <div>
             <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Palabra Clave o Código
+              Palabra Clave
             </label>
             <div className="relative">
               <input
@@ -283,10 +284,11 @@ export function SearchArea({ planes, onPreview, onDownload }) {
             </select>
           </div>
 
+          {/* --- FILA 2: 3 FILTROS + 1 ESPACIO LIBRE --- */}
           {/* 5. Filtro: Tipo de Asignatura */}
           <div>
             <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Tipo Materia
+              Tipo de Materia
             </label>
             <select
               value={filtroTipo}
@@ -315,50 +317,67 @@ export function SearchArea({ planes, onPreview, onDownload }) {
               ))}
             </select>
           </div>
-        </div>
 
-        {/* 7. Fila complementaria: Grado / Nivel y barra de acciones */}
-        <div className="mt-3 pt-3 border-t border-slate-200 dark:border-slate-700/80 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-3">
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
-                Grado / Año:
-              </span>
-              <select
-                value={filtroGrado}
-                onChange={(e) => setFiltroGrado(e.target.value)}
-                className="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-xs font-medium text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm"
-              >
-                <option value="">Todos los grados ({gradosDisponibles.length})</option>
-                {gradosDisponibles.map((g) => (
-                  <option key={g} value={g}>{g}</option>
-                ))}
-              </select>
-            </div>
-
-            <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
-              <IconFilter className="w-4 h-4 text-slate-400" />
-              <span>
-                Mostrando <strong className="text-blue-900 dark:text-blue-400">{planesFiltrados.length}</strong> de{' '}
-                <strong>{planes.length}</strong> planes
-              </span>
-              {hayFiltrosActivos && (
-                <span className="bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 text-[11px] font-semibold px-2 py-0.5 rounded-full border border-blue-200 dark:border-blue-800">
-                  Filtros activos
-                </span>
-              )}
-            </div>
+          {/* 7. Filtro: Grado / Año */}
+          <div>
+            <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+              Grado / Año
+            </label>
+            <select
+              value={filtroGrado}
+              onChange={(e) => setFiltroGrado(e.target.value)}
+              className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
+            >
+              <option value="">Todos los grados ({gradosDisponibles.length})</option>
+              {gradosDisponibles.map((g) => (
+                <option key={g} value={g}>{g}</option>
+              ))}
+            </select>
           </div>
 
-          {hayFiltrosActivos && (
-            <button
-              onClick={handleLimpiar}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 rounded-lg transition-colors shadow-sm"
-            >
-              <IconRefresh className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
-              <span>Restablecer filtros</span>
-            </button>
-          )}
+          {/* Espacio libre para balance de la cuadrícula de 4 columnas */}
+          <div className="hidden lg:block" aria-hidden="true" />
+        </div>
+
+        {/* --- FILA 3: BARRA DE ESTADO Y ACCIONES --- */}
+        <div className="mt-5 pt-3.5 border-t border-slate-200 dark:border-slate-700/80 flex flex-col sm:flex-row items-center justify-between gap-3">
+          {/* Izquierda: Estadísticas y badge de filtros activos */}
+          <div className="flex flex-wrap items-center gap-2.5 text-xs text-slate-600 dark:text-slate-400">
+            <IconFilter className="w-4 h-4 text-slate-400" />
+            <span>
+              Mostrando <strong className="text-blue-900 dark:text-blue-400 font-bold">{planesFiltrados.length}</strong> de{' '}
+              <strong>{planes.length}</strong> planes registrados
+            </span>
+            {hayFiltrosActivos && (
+              <span className="bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 text-[11px] font-semibold px-2 py-0.5 rounded-full border border-blue-200 dark:border-blue-800">
+                Filtros activos
+              </span>
+            )}
+          </div>
+
+          {/* Derecha: Botón Restablecer filtros */}
+          <div>
+            {hayFiltrosActivos ? (
+              <button
+                type="button"
+                onClick={handleLimpiar}
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold text-rose-700 dark:text-rose-300 bg-rose-50 dark:bg-rose-950/50 hover:bg-rose-100 dark:hover:bg-rose-900/60 border border-rose-200 dark:border-rose-800 rounded-lg transition-all shadow-xs cursor-pointer"
+                title="Limpiar todos los filtros y volver a ver los 144 planes"
+              >
+                <IconRefresh className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400" />
+                <span>Restablecer filtros</span>
+              </button>
+            ) : (
+              <button
+                type="button"
+                disabled
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium text-slate-400 dark:text-slate-600 bg-slate-100 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 rounded-lg cursor-not-allowed opacity-60"
+              >
+                <IconRefresh className="w-3.5 h-3.5 text-slate-400 dark:text-slate-600" />
+                <span>Restablecer filtros</span>
+              </button>
+            )}
+          </div>
         </div>
       </div>
 

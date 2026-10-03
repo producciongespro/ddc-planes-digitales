@@ -180,12 +180,6 @@ export function GeneralTable({ planes, onPreview, onDownload }) {
               <th scope="col" className="px-5 py-3.5">
                 Grado / Nivel
               </th>
-              <th scope="col" className="px-5 py-3.5">
-                Código Oficial
-              </th>
-              <th scope="col" className="px-5 py-3.5 text-center">
-                Disponibilidad
-              </th>
               <th scope="col" className="px-5 py-3.5 text-center">
                 Descargas
               </th>
@@ -259,19 +253,6 @@ export function GeneralTable({ planes, onPreview, onDownload }) {
                   <td className="px-5 py-3.5 whitespace-nowrap">
                     <span className="font-bold text-blue-900 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/80 border border-blue-200 dark:border-blue-800 px-2 py-0.5 rounded text-xs">
                       {doc.grado} Año
-                    </span>
-                  </td>
-
-                  {/* Código oficial */}
-                  <td className="px-5 py-3.5 font-mono text-xs text-slate-500 dark:text-slate-400 whitespace-nowrap">
-                    {doc.codigo}
-                  </td>
-
-                  {/* Disponibilidad */}
-                  <td className="px-5 py-3.5 text-center whitespace-nowrap">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-full">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                      PDF Oficial
                     </span>
                   </td>
 

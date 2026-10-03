@@ -56,10 +56,10 @@ export function TopDownloads({ planes, onPreview, onDownload }) {
           </p>
         </div>
 
-        {/* Selector de cantidad de descargas (4 a 10) */}
+        {/* Selector de cantidad de descargas (múltiplos de 4: 4, 8, 12, 16) */}
         <div className="flex items-center gap-2 self-start sm:self-auto bg-blue-950/70 border border-blue-800 px-3 py-1.5 rounded-lg text-xs">
           <span className="text-blue-200 font-medium">Ver top:</span>
-          {[4, 6, 8, 10].map((num) => (
+          {[4, 8, 12, 16].map((num) => (
             <button
               key={num}
               type="button"
