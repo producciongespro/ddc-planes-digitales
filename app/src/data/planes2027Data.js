@@ -45,3 +45,34 @@ export function savePlanesToStorage(planes) {
     console.error('Error guardando planes en localStorage:', err);
   }
 }
+
+/**
+ * Consulta la API dinámica (PHP en XAMPP o Middleware en Vite)
+ * para detectar archivos reales en el disco en tiempo real.
+ */
+export async function fetchPlanesDynamic() {
+  try {
+    // 1. Intentar llamar al endpoint PHP oficial
+    const res = await fetch('/api/listar_planes.php');
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data.length > 0) {
+        return data;
+      }
+    }
+
+    // 2. Intentar llamar al endpoint sin extensión .php
+    const resClean = await fetch('/api/listar_planes');
+    if (resClean.ok) {
+      const dataClean = await resClean.json();
+      if (Array.isArray(dataClean) && dataClean.length > 0) {
+        return dataClean;
+      }
+    }
+    return null;
+  } catch (err) {
+    // En caso de hosting estático o sin backend activo, se usa el catálogo local como fallback
+    console.info('Modo híbrido: ejecutando con catálogo local (API dinámica no requerida).');
+    return null;
+  }
+}

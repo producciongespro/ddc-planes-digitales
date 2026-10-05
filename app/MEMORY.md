@@ -10,6 +10,7 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - 15 iconos temáticos en SVG nativo sin dependencias externas.
 
 ## Decisiones tomadas (y por qué)
+- **Arquitectura Híbrida Dinámica (Sin dependencia manual de JSON):** Endpoint dual (`app/public/api/listar_planes.php` en Apache/XAMPP y middleware en Vite) que escanea en tiempo real el sistema de archivos físico (`aplicativo-planeamientos-2027/`), soportando múltiples archivos ZIP por carpeta sin editar código, con fallback automático al catálogo local.
 - **Barra de Herramientas Unificada (Opción A):** Franja de una sola fila compacta con buscador predictivo global, contador reactivo, botón restablecer y selector de elementos por página.
 - **Filtros en Cabeceras de Columna (ColumnFilter):** Popovers flotantes con estado borrador (draft) que congelan la tabla mientras se seleccionan checkboxes, aplicando cambios únicamente al presionar *Aplicar Filtro*, con botones de *Cancelar*, *Desmarcar todas* y *Marcar todas*.
 - **Altura Mínima de Tabla (`min-h-[480px]`):** Evita el colapso vertical cuando hay pocos registros (1 a 8 líneas) y previene el recorte o solapamiento del menú flotante de filtros.

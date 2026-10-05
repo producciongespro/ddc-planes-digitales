@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { loadPlanesFromStorage, savePlanesToStorage } from './data/planes2027Data';
+import { loadPlanesFromStorage, savePlanesToStorage, fetchPlanesDynamic } from './data/planes2027Data';
 import { Header } from './components/Header';
 import { WelcomeHero } from './components/WelcomeHero';
 import { GeneralTable } from './components/GeneralTable';
@@ -11,6 +11,35 @@ import { AboutModal } from './components/AboutModal';
 export default function App() {
   // Estado principal de los 197 planeamientos 2027 persistidos en localStorage
   const [planes, setPlanes] = useState(() => loadPlanesFromStorage());
+
+  // Sincronización híbrida en tiempo real con el sistema de archivos (XAMPP PHP / Vite)
+  useEffect(() => {
+    let isMounted = true;
+    fetchPlanesDynamic().then((planesDinamicos) => {
+      if (!isMounted || !planesDinamicos || !Array.isArray(planesDinamicos)) return;
+
+      setPlanes((prevPlanes) => {
+        const downloadsMap = new Map();
+        prevPlanes.forEach((p) => {
+          if (p && p.id && typeof p.descargas === 'number') {
+            downloadsMap.set(p.id, p.descargas);
+          }
+        });
+
+        const actualizados = planesDinamicos.map((p) => ({
+          ...p,
+          descargas: downloadsMap.get(p.id) || p.descargas || 0
+        }));
+
+        savePlanesToStorage(actualizados);
+        return actualizados;
+      });
+    });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   // Estado unificado de filtros
   const [filtros, setFiltros] = useState({
