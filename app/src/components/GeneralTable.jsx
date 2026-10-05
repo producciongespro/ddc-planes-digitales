@@ -285,7 +285,7 @@ export function GeneralTable({
 
       {/* 3. TABLA GENERAL SIN SCROLL HORIZONTAL Y CON FILTROS EN COLUMNAS */}
       {planesFiltrados.length === 0 ? (
-        <div className="p-12 text-center bg-slate-50/50 dark:bg-slate-950/30">
+        <div className="p-12 text-center bg-slate-50/50 dark:bg-slate-950/30 min-h-[420px] flex flex-col items-center justify-center">
           <div className="w-14 h-14 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400 mx-auto mb-3">
             <IconSearch className="w-6 h-6" />
           </div>
@@ -304,7 +304,7 @@ export function GeneralTable({
           </button>
         </div>
       ) : (
-        <div className="w-full overflow-x-auto">
+        <div className="w-full overflow-x-auto min-h-[480px] pb-32">
           <table className="w-full text-left text-xs sm:text-sm text-slate-600 dark:text-slate-300 border-collapse table-auto">
             <thead className="bg-slate-100/90 dark:bg-slate-800/80 text-[11px] sm:text-xs font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700">
               <tr>

@@ -11,7 +11,8 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 
 ## Decisiones tomadas (y por qué)
 - **Barra de Herramientas Unificada (Opción A):** Franja de una sola fila compacta con buscador predictivo global, contador reactivo, botón restablecer y selector de elementos por página.
-- **Filtros en Cabeceras de Columna (ColumnFilter):** Se sustituyeron los selectores externos por popovers flotantes con checkboxes multiselección y buscador interno en las columnas *Oferta Educativa*, *Asignatura* y *Grado*.
+- **Filtros en Cabeceras de Columna (ColumnFilter):** Popovers flotantes con estado borrador (draft) que congelan la tabla mientras se seleccionan checkboxes, aplicando cambios únicamente al presionar *Aplicar Filtro*, con botones de *Cancelar*, *Desmarcar todas* y *Marcar todas*.
+- **Altura Mínima de Tabla (`min-h-[480px]`):** Evita el colapso vertical cuando hay pocos registros (1 a 8 líneas) y previene el recorte o solapamiento del menú flotante de filtros.
 - **Eliminación de la Columna Código:** Removida por carecer de valor pedagógico directo para el docente, liberando más de 120px de ancho para máxima legibilidad de las materias y grados.
 - **Eliminación del Scroll Horizontal:** Ajuste milimétrico de columnas, anchos responsivos y botón de acción compacto solo con icono (`IconDownload`) en azul zafiro institucional.
 - **Paginación Matemática Segura:** Generador de ventana deslizante (`paginasVisibles`) estricto con `key` única que previene duplicación de índices o clonación de nodos DOM al navegar por páginas altas (ej. 9 y 10).
