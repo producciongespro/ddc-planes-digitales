@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { AsignaturaIcon, IconTable, IconDownload, IconSearch, IconFilter, IconRefresh } from './Icons';
+import { ColumnFilter } from './ColumnFilter';
 
 export function GeneralTable({
   planes,
@@ -11,7 +12,7 @@ export function GeneralTable({
   const [paginaActual, setPaginaActual] = useState(1);
   const [elementosPorPagina, setElementosPorPagina] = useState(20);
 
-  // 1. Lista de Ofertas Educativas ordenadas según la estructura institucional de la DDC
+  // 1. Lista de Ofertas Educativas con conteo ordenadas según estructura oficial DDC
   const ofertasDisponibles = useMemo(() => {
     const orden = [
       'Educación Preescolar',
@@ -22,43 +23,67 @@ export function GeneralTable({
       'Educación Intercultural',
       'Educación Unidocente'
     ];
-    const encontradas = new Set(planes.map((p) => p.ofertaNombre));
-    return orden.filter((o) => encontradas.has(o));
+    const map = new Map();
+    orden.forEach((o) => map.set(o, 0));
+    planes.forEach((p) => {
+      if (map.has(p.ofertaNombre)) {
+        map.set(p.ofertaNombre, map.get(p.ofertaNombre) + 1);
+      }
+    });
+    return orden
+      .filter((o) => map.get(o) > 0)
+      .map((o) => ({ value: o, count: map.get(o) }));
   }, [planes]);
 
-  // 2. Asignaturas o Áreas dinámicas según la oferta seleccionada
+  // 2. Asignaturas o Áreas dinámicas según las ofertas seleccionadas
   const asignaturasDisponibles = useMemo(() => {
     let subset = planes;
-    if (filtros.oferta) {
-      subset = subset.filter((p) => p.ofertaNombre === filtros.oferta);
+    if (filtros.ofertas && filtros.ofertas.length > 0) {
+      subset = subset.filter((p) => filtros.ofertas.includes(p.ofertaNombre));
     }
-    const setAsig = new Set(subset.map((p) => p.asignatura));
-    return Array.from(setAsig).sort((a, b) => a.localeCompare(b, 'es'));
-  }, [planes, filtros.oferta]);
+    const countMap = new Map();
+    subset.forEach((p) => {
+      countMap.set(p.asignatura, (countMap.get(p.asignatura) || 0) + 1);
+    });
+    return Array.from(countMap.keys())
+      .sort((a, b) => a.localeCompare(b, 'es'))
+      .map((asig) => ({ value: asig, count: countMap.get(asig) }));
+  }, [planes, filtros.ofertas]);
 
-  // 3. Grados, Años o Subáreas dinámicas según oferta y asignatura seleccionadas
+  // 3. Grados, Años o Subáreas dinámicas según ofertas y asignaturas seleccionadas
   const gradosDisponibles = useMemo(() => {
     let subset = planes;
-    if (filtros.oferta) {
-      subset = subset.filter((p) => p.ofertaNombre === filtros.oferta);
+    if (filtros.ofertas && filtros.ofertas.length > 0) {
+      subset = subset.filter((p) => filtros.ofertas.includes(p.ofertaNombre));
     }
-    if (filtros.asignatura) {
-      subset = subset.filter((p) => p.asignatura === filtros.asignatura);
+    if (filtros.asignaturas && filtros.asignaturas.length > 0) {
+      subset = subset.filter((p) => filtros.asignaturas.includes(p.asignatura));
     }
-    const setGrados = new Set(subset.map((p) => p.grado));
-    return Array.from(setGrados).sort((a, b) => a.localeCompare(b, 'es'));
-  }, [planes, filtros.oferta, filtros.asignatura]);
+    const countMap = new Map();
+    subset.forEach((p) => {
+      countMap.set(p.grado, (countMap.get(p.grado) || 0) + 1);
+    });
+    return Array.from(countMap.keys())
+      .sort((a, b) => a.localeCompare(b, 'es'))
+      .map((g) => ({ value: g, count: countMap.get(g) }));
+  }, [planes, filtros.ofertas, filtros.asignaturas]);
 
   // 4. Filtrado reactivo en tiempo real
   const planesFiltrados = useMemo(() => {
-    const textoNormalizado = filtros.texto.trim().toLowerCase();
+    const textoNormalizado = (filtros.texto || '').trim().toLowerCase();
 
     return planes.filter((doc) => {
-      if (filtros.oferta && doc.ofertaNombre !== filtros.oferta) return false;
-      if (filtros.asignatura && doc.asignatura !== filtros.asignatura) return false;
-      if (filtros.grado && doc.grado !== filtros.grado) return false;
+      if (filtros.ofertas?.length > 0 && !filtros.ofertas.includes(doc.ofertaNombre)) {
+        return false;
+      }
+      if (filtros.asignaturas?.length > 0 && !filtros.asignaturas.includes(doc.asignatura)) {
+        return false;
+      }
+      if (filtros.grados?.length > 0 && !filtros.grados.includes(doc.grado)) {
+        return false;
+      }
       if (textoNormalizado) {
-        const busquedaFuente = `${doc.id} ${doc.ofertaNombre} ${doc.asignatura} ${doc.grado} ${doc.archivoPrincipal || ''}`.toLowerCase();
+        const busquedaFuente = `${doc.ofertaNombre} ${doc.asignatura} ${doc.grado} ${doc.archivoPrincipal || ''}`.toLowerCase();
         if (!busquedaFuente.includes(textoNormalizado)) return false;
       }
       return true;
@@ -68,7 +93,7 @@ export function GeneralTable({
   // Reiniciar a página 1 cuando cambia el resultado de los filtros o el tamaño de página
   useEffect(() => {
     setPaginaActual(1);
-  }, [filtros.texto, filtros.oferta, filtros.asignatura, filtros.grado, elementosPorPagina]);
+  }, [filtros.texto, filtros.ofertas, filtros.asignaturas, filtros.grados, elementosPorPagina]);
 
   // Paginación reactiva
   const limite = elementosPorPagina === 'todos' ? planesFiltrados.length || 1 : Number(elementosPorPagina);
@@ -111,30 +136,30 @@ export function GeneralTable({
   }, [planesFiltrados, paginaActual, limite, elementosPorPagina]);
 
   const hayFiltrosActivos = Boolean(
-    filtros.texto || filtros.oferta || filtros.asignatura || filtros.grado
+    filtros.texto ||
+    (filtros.ofertas && filtros.ofertas.length > 0) ||
+    (filtros.asignaturas && filtros.asignaturas.length > 0) ||
+    (filtros.grados && filtros.grados.length > 0)
   );
 
-  const handleOfertaChange = (e) => {
+  const handleOfertasChange = (newOfertas) => {
     onFiltrosChange({
       ...filtros,
-      oferta: e.target.value,
-      asignatura: '',
-      grado: ''
+      ofertas: newOfertas
     });
   };
 
-  const handleAsignaturaChange = (e) => {
+  const handleAsignaturasChange = (newAsignaturas) => {
     onFiltrosChange({
       ...filtros,
-      asignatura: e.target.value,
-      grado: ''
+      asignaturas: newAsignaturas
     });
   };
 
-  const handleGradoChange = (e) => {
+  const handleGradosChange = (newGrados) => {
     onFiltrosChange({
       ...filtros,
-      grado: e.target.value
+      grados: newGrados
     });
   };
 
@@ -180,144 +205,85 @@ export function GeneralTable({
             </h2>
           </div>
           <p className="text-slate-300 text-xs sm:text-sm max-w-2xl">
-            Inventario normado de la Dirección de Desarrollo Curricular (DDC). Filtre dinámicamente por oferta, asignatura o grado y descargue los paquetes ZIP oficiales.
+            Inventario normado de la Dirección de Desarrollo Curricular (DDC). Filtre directamente en las cabeceras de columnas y descargue los paquetes ZIP oficiales.
           </p>
-        </div>
-
-        {/* Control de elementos por página en el encabezado */}
-        <div className="flex items-center gap-2 self-start md:self-auto bg-slate-800/80 dark:bg-slate-950/80 border border-slate-700 px-3 py-1.5 rounded-lg text-xs">
-          <span className="text-slate-300 font-medium">Mostrar:</span>
-          <select
-            value={elementosPorPagina}
-            onChange={(e) => {
-              setElementosPorPagina(e.target.value);
-              setPaginaActual(1);
-            }}
-            className="bg-slate-900 text-white font-semibold rounded px-2 py-1 border border-slate-600 focus:outline-none focus:ring-1 focus:ring-amber-500 cursor-pointer"
-          >
-            <option value="15">15 por pág.</option>
-            <option value="20">20 por pág.</option>
-            <option value="50">50 por pág.</option>
-            <option value="todos">Todos ({planesFiltrados.length})</option>
-          </select>
         </div>
       </div>
 
-      {/* 2. ÁREA DE FILTROS EN CASCADA INTEGRADA */}
-      <div className="p-5 sm:p-6 bg-slate-50/70 dark:bg-slate-800/40 border-b border-slate-200 dark:border-slate-800">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* Filtro 1: Buscador de texto */}
-          <div>
-            <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Palabra clave o Materia
-            </label>
-            <div className="relative">
-              <input
-                type="text"
-                value={filtros.texto}
-                onChange={handleTextoChange}
-                placeholder="Ej. Matemática, Salitre, Interactivo..."
-                className="w-full pl-9 pr-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
-              />
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
-                <IconSearch className="w-4 h-4" />
-              </div>
-            </div>
+      {/* 2. BARRA DE HERRAMIENTAS UNIFICADA (OPCIÓN A: 1 SOLA FILA ULTRA COMPACTA) */}
+      <div className="p-3 sm:px-6 sm:py-3 bg-slate-50/80 dark:bg-slate-800/40 border-b border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        {/* Izquierda: Buscador de texto libre global */}
+        <div className="relative w-full md:w-80 lg:w-96">
+          <input
+            type="text"
+            value={filtros.texto}
+            onChange={handleTextoChange}
+            placeholder="Buscar por palabra clave, materia o grado..."
+            className="w-full pl-9 pr-8 py-1.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-xs sm:text-sm text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-xs"
+          />
+          <div className="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-slate-400">
+            <IconSearch className="w-4 h-4" />
           </div>
-
-          {/* Filtro 2: Oferta Educativa (7 ramas) */}
-          <div>
-            <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Oferta Educativa
-            </label>
-            <select
-              value={filtros.oferta}
-              onChange={handleOfertaChange}
-              className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
+          {filtros.texto && (
+            <button
+              type="button"
+              onClick={() => onFiltrosChange({ ...filtros, texto: '' })}
+              className="absolute inset-y-0 right-0 pr-2.5 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 cursor-pointer text-xs"
+              title="Borrar búsqueda"
             >
-              <option value="">Todas las ofertas ({ofertasDisponibles.length})</option>
-              {ofertasDisponibles.map((o) => (
-                <option key={o} value={o}>{o}</option>
-              ))}
-            </select>
-          </div>
-
-          {/* Filtro 3: Asignatura / Área */}
-          <div>
-            <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Asignatura / Área
-            </label>
-            <select
-              value={filtros.asignatura}
-              onChange={handleAsignaturaChange}
-              className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
-            >
-              <option value="">Todas las asignaturas ({asignaturasDisponibles.length})</option>
-              {asignaturasDisponibles.map((asig) => (
-                <option key={asig} value={asig}>{asig}</option>
-              ))}
-            </select>
-          </div>
-
-          {/* Filtro 4: Grado / Subárea */}
-          <div>
-            <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Grado / Subárea
-            </label>
-            <select
-              value={filtros.grado}
-              onChange={handleGradoChange}
-              className="w-full px-3 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition shadow-sm"
-            >
-              <option value="">Todos los grados ({gradosDisponibles.length})</option>
-              {gradosDisponibles.map((g) => (
-                <option key={g} value={g}>{g}</option>
-              ))}
-            </select>
-          </div>
+              ✕
+            </button>
+          )}
         </div>
 
-        {/* Barra inferior de estado, métricas y botón de limpieza */}
-        <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-700/80 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-2.5 text-xs text-slate-600 dark:text-slate-400">
-            <IconFilter className="w-4 h-4 text-slate-400" />
+        {/* Centro / Derecha: Métricas, Indicador de Filtros, Restablecer y Paginado */}
+        <div className="flex flex-wrap items-center justify-between md:justify-end gap-3 flex-1">
+          <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+            <IconFilter className="w-3.5 h-3.5 text-slate-400" />
             <span>
               Mostrando <strong className="text-blue-900 dark:text-blue-400 font-bold">{planesFiltrados.length}</strong> de{' '}
-              <strong>{planes.length}</strong> planeamientos registrados (Vigencia 2027)
+              <strong>{planes.length}</strong> planeamientos
             </span>
             {hayFiltrosActivos && (
-              <span className="bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 text-[11px] font-semibold px-2 py-0.5 rounded-full border border-blue-200 dark:border-blue-800">
+              <span className="bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-blue-200 dark:border-blue-800">
                 Filtros activos
               </span>
             )}
           </div>
 
-          <div>
-            {hayFiltrosActivos ? (
-              <button
-                type="button"
-                onClick={onResetFiltros}
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold text-rose-700 dark:text-rose-300 bg-rose-50 dark:bg-rose-950/50 hover:bg-rose-100 dark:hover:bg-rose-900/60 border border-rose-200 dark:border-rose-800 rounded-lg transition-all shadow-xs cursor-pointer"
-                title="Limpiar todos los filtros y ver los 197 planeamientos"
-              >
-                <IconRefresh className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400" />
-                <span>Restablecer filtros</span>
-              </button>
-            ) : (
-              <button
-                type="button"
-                disabled
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium text-slate-400 dark:text-slate-600 bg-slate-100 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 rounded-lg cursor-not-allowed opacity-60"
-              >
-                <IconRefresh className="w-3.5 h-3.5 text-slate-400 dark:text-slate-600" />
-                <span>Restablecer filtros</span>
-              </button>
-            )}
+          {hayFiltrosActivos && (
+            <button
+              type="button"
+              onClick={onResetFiltros}
+              className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold text-rose-700 dark:text-rose-300 bg-rose-50 dark:bg-rose-950/50 hover:bg-rose-100 dark:hover:bg-rose-900/60 border border-rose-200 dark:border-rose-800 rounded-lg transition-all shadow-xs cursor-pointer"
+              title="Limpiar todos los filtros y ver los 197 planeamientos"
+            >
+              <IconRefresh className="w-3 h-3 text-rose-600 dark:text-rose-400" />
+              <span>Restablecer</span>
+            </button>
+          )}
+
+          {/* Control de elementos por página integrado */}
+          <div className="flex items-center gap-1.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-2.5 py-1 rounded-lg text-xs shadow-xs">
+            <span className="text-slate-500 dark:text-slate-400 font-medium hidden sm:inline">Mostrar:</span>
+            <select
+              value={elementosPorPagina}
+              onChange={(e) => {
+                setElementosPorPagina(e.target.value);
+                setPaginaActual(1);
+              }}
+              className="bg-transparent text-slate-800 dark:text-slate-200 font-semibold focus:outline-none cursor-pointer"
+            >
+              <option value="15" className="bg-white dark:bg-slate-900">15 por pág.</option>
+              <option value="20" className="bg-white dark:bg-slate-900">20 por pág.</option>
+              <option value="50" className="bg-white dark:bg-slate-900">50 por pág.</option>
+              <option value="todos" className="bg-white dark:bg-slate-900">Todos ({planesFiltrados.length})</option>
+            </select>
           </div>
         </div>
       </div>
 
-      {/* 3. TABLA GENERAL SIN SCROLL HORIZONTAL */}
+      {/* 3. TABLA GENERAL SIN SCROLL HORIZONTAL Y CON FILTROS EN COLUMNAS */}
       {planesFiltrados.length === 0 ? (
         <div className="p-12 text-center bg-slate-50/50 dark:bg-slate-950/30">
           <div className="w-14 h-14 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400 mx-auto mb-3">
@@ -327,7 +293,7 @@ export function GeneralTable({
             No hay documentos que coincidan con los filtros seleccionados
           </h3>
           <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto mb-3">
-            Por favor ajuste la oferta educativa, asignatura o grado en los filtros superiores para explorar el repositorio.
+            Por favor ajuste los filtros de las columnas o limpie la búsqueda para explorar el catálogo.
           </p>
           <button
             type="button"
@@ -342,13 +308,53 @@ export function GeneralTable({
           <table className="w-full text-left text-xs sm:text-sm text-slate-600 dark:text-slate-300 border-collapse table-auto">
             <thead className="bg-slate-100/90 dark:bg-slate-800/80 text-[11px] sm:text-xs font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider border-b border-slate-200 dark:border-slate-700">
               <tr>
-                <th scope="col" className="py-2.5 px-3 w-24">Código</th>
-                <th scope="col" className="py-2.5 px-3">Oferta Educativa</th>
-                <th scope="col" className="py-2.5 px-3">Asignatura / Área</th>
-                <th scope="col" className="py-2.5 px-3">Grado / Subárea</th>
-                <th scope="col" className="py-2.5 px-3">Archivos</th>
-                <th scope="col" className="py-2.5 px-2 text-center w-20">Descargas</th>
-                <th scope="col" className="py-2.5 px-2 text-center w-16">Acción</th>
+                {/* 1. Columna Oferta Educativa con Popover Checkbox Filter */}
+                <th scope="col" className="py-2.5 px-3">
+                  <ColumnFilter
+                    label="Oferta Educativa"
+                    options={ofertasDisponibles}
+                    selectedValues={filtros.ofertas || []}
+                    onChange={handleOfertasChange}
+                    align="left"
+                  />
+                </th>
+
+                {/* 2. Columna Asignatura / Área con Popover Checkbox Filter */}
+                <th scope="col" className="py-2.5 px-3">
+                  <ColumnFilter
+                    label="Asignatura / Área"
+                    options={asignaturasDisponibles}
+                    selectedValues={filtros.asignaturas || []}
+                    onChange={handleAsignaturasChange}
+                    align="left"
+                  />
+                </th>
+
+                {/* 3. Columna Grado / Subárea con Popover Checkbox Filter */}
+                <th scope="col" className="py-2.5 px-3">
+                  <ColumnFilter
+                    label="Grado / Subárea"
+                    options={gradosDisponibles}
+                    selectedValues={filtros.grados || []}
+                    onChange={handleGradosChange}
+                    align="left"
+                  />
+                </th>
+
+                {/* 4. Columna Archivos */}
+                <th scope="col" className="py-2.5 px-3 text-[11px] font-bold tracking-wider uppercase text-slate-700 dark:text-slate-200">
+                  Archivos
+                </th>
+
+                {/* 5. Columna Descargas */}
+                <th scope="col" className="py-2.5 px-2 text-center w-24 text-[11px] font-bold tracking-wider uppercase text-slate-700 dark:text-slate-200">
+                  Descargas
+                </th>
+
+                {/* 6. Columna Acción */}
+                <th scope="col" className="py-2.5 px-2 text-center w-20 text-[11px] font-bold tracking-wider uppercase text-slate-700 dark:text-slate-200">
+                  Acción
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-200 dark:divide-slate-800/80">
@@ -362,11 +368,6 @@ export function GeneralTable({
                       idx % 2 === 0 ? 'bg-white dark:bg-slate-900' : 'bg-slate-50/40 dark:bg-slate-900/40'
                     }`}
                   >
-                    {/* Código único */}
-                    <td className="py-2.5 px-3 font-mono text-[11px] font-semibold text-slate-500 dark:text-slate-400 whitespace-nowrap">
-                      {doc.id}
-                    </td>
-
                     {/* Oferta Educativa */}
                     <td className="py-2.5 px-3">
                       <span className={`inline-block px-2 py-0.5 rounded text-[11px] font-semibold border leading-tight ${badgeClass}`}>

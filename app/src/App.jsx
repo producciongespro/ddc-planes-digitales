@@ -12,12 +12,12 @@ export default function App() {
   // Estado principal de los 197 planeamientos 2027 persistidos en localStorage
   const [planes, setPlanes] = useState(() => loadPlanesFromStorage());
 
-  // Estado unificado de filtros en cascada
+  // Estado unificado de filtros
   const [filtros, setFiltros] = useState({
     texto: '',
-    oferta: '',
-    asignatura: '',
-    grado: ''
+    ofertas: [],
+    asignaturas: [],
+    grados: []
   });
 
   // Modales institucionales
@@ -104,9 +104,9 @@ export default function App() {
   const handleResetFiltros = () => {
     setFiltros({
       texto: '',
-      oferta: '',
-      asignatura: '',
-      grado: ''
+      ofertas: [],
+      asignaturas: [],
+      grados: []
     });
   };
 

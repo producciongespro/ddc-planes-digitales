@@ -50,14 +50,10 @@ La interfaz está optimizada para eliminar redundancias y scrolls horizontales, 
 2. **Banner Institucional Compacto (`WelcomeHero.jsx`):**
    - Franja de bienvenida y acreditación curricular aprobada por el CSE.
 3. **Sección 1 (Hero Maestro) - Catálogo Oficial 2027 (`GeneralTable.jsx`):**
-   - **Encabezado:** Título institucional, subtítulo normativo y selector de paginación integrado (`15`, `20`, `50`, `Todos`).
-   - **Barra de filtros dinámicos en cascada:**
-     - Buscador por texto/palabra clave.
-     - Selector de Oferta Educativa (7 ramas).
-     - Selector dependiente de Asignatura / Área.
-     - Selector dependiente de Grado / Subárea.
-   - **Barra de estado:** Contador de planeamientos filtrados, indicador de filtros activos y botón "Restablecer filtros".
-   - **Tabla interactiva de alta densidad:** Sin scroll horizontal, código DDC, insignia de oferta por color, asignatura con icono, grado, archivos con badge de tamaño, contador de descargas y **botón azul compacto con icono de descarga directa**.
+   - **Encabezado Institucional:** Título oficial y subtítulo normativo de la DDC.
+   - **Barra de Herramientas Unificada (Opción A):** Franja de una sola fila compacta con buscador libre de texto, métricas de visualización, indicador de filtros activos, botón "Restablecer" y selector de paginado (`15`, `20`, `50`, `Todos`).
+   - **Filtros por Columna con Checkboxes (`ColumnFilter.jsx`):** Popovers flotantes multiselección con buscador interno y botones de acción rápida (*Todos* / *Ninguno*) integrados en los encabezados `<th>` de *Oferta Educativa*, *Asignatura / Área* y *Grado / Subárea*.
+   - **Tabla interactiva de 6 columnas (sin columna Código):** Máxima amplitud visual para *Oferta Educativa*, *Asignatura* (con icono vectorial temático), *Grado*, *Archivos* (etiquetas ZIP con tamaño), *Descargas* y **botón azul zafiro compacto de descarga directa**.
    - **Paginador matemático seguro:** Ventana deslizante (`paginasVisibles`) sin duplicación de índices ni clonación de nodos DOM (`key={`pag-btn-${pNum}`}`).
 4. **Sección 2 - Top de Descargas Docentes (`TopDownloads.jsx`):**
    - Ranking nacional en tiempo real con soporte de estado vacío (*Zero State* cuando las descargas están en 0).
