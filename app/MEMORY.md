@@ -12,6 +12,9 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - Control centralizado de versión y releases en `app/src/data/version.json` (concatenación DRY de versión + compilado).
 
 ## Decisiones tomadas (y por qué)
+- **Estructura aplicativo-planeamientos-2027 (SharePoint DDC):** Réplica 100% fiel de las 7 ramas principales de la asesora nacional Tatiana Navarro Mata (Preescolar, I y II Ciclos, III Ciclo y Diversificada, EPJA, Educación Especial, Intercultural y Unidocentes) almacenada en `app/public/aplicativo-planeamientos-2027/`.
+- **Nomenclatura sin tildes en sistema de archivos:** Carpetas nombradas sin tildes ni diacríticos para compatibilidad total con servidores Apache/Linux, URLs web y Git.
+- **Archivos ZIP y PDF en carpetas finales (197 hojas):** Cada carpeta terminal contiene un archivo `.zip` con el PDF del plan educativo oficial institucional 2027 generado en memoria vía Node.js + zlib (deflate/crc32), asegurando el rastreo completo en Git sin carpetas vacías.
 - **144 planes generados en PDF institucional:** El MEP distingue materias Básicas y Complementarias en I, II, III Ciclo y Educación Diversificada (Académica y Técnica CTP).
 - **Ciencias unificada vs desglosada:** Ciencias unificada en III Ciclo (7°-9°); desglosada en Biología, Física y Química en Educación Diversificada (10°-12°).
 - **Modalidad en Educación Diversificada:** Separada en Académica (10°-11°) y Técnica CTP (10°-12°).
