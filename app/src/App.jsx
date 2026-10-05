@@ -100,7 +100,18 @@ export default function App() {
     return planes.reduce((acc, curr) => acc + (curr.descargas || 0), 0);
   }, [planes]);
 
-  // Manejador central de descarga de planeamientos en formato ZIP
+  // Disparador unitario de descarga segura en el navegador
+  const triggerBrowserDownload = (ruta, nombre) => {
+    if (!ruta) return;
+    const link = document.createElement('a');
+    link.href = ruta;
+    link.download = nombre || 'planeamiento.zip';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  // Manejador central de descarga de planeamientos en formato ZIP (individual o paquete completo)
   const handleDownload = (doc, fileObj = null) => {
     // 1. Actualizar estado y persistencia de descargas
     setPlanes((prevPlanes) => {
@@ -114,19 +125,26 @@ export default function App() {
       return updated;
     });
 
-    // 2. Identificar el archivo a descargar (archivo específico o el principal)
-    const archivoDestino = fileObj || (doc.archivos && doc.archivos[0]) || {
-      ruta: doc.rutaDescarga,
-      nombre: doc.archivoPrincipal || `${doc.id}.zip`
-    };
+    // 2. Si se solicitó un archivo individual específico (clic directo en un chip)
+    if (fileObj) {
+      triggerBrowserDownload(fileObj.ruta, fileObj.nombre);
+      return;
+    }
 
-    // 3. Disparar descarga local en el navegador
-    const link = document.createElement('a');
-    link.href = archivoDestino.ruta;
-    link.download = archivoDestino.nombre;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // 3. Descarga de todos los archivos asociados a la fila
+    const listaArchivos = (doc.archivos && doc.archivos.length > 0)
+      ? doc.archivos
+      : [{
+          ruta: doc.rutaDescarga,
+          nombre: doc.archivoPrincipal || `${doc.id}.zip`
+        }];
+
+    // Descarga secuencial con micro-intervalo (350ms) para garantizar que el navegador no bloquee descargas múltiples
+    listaArchivos.forEach((archivo, index) => {
+      setTimeout(() => {
+        triggerBrowserDownload(archivo.ruta, archivo.nombre);
+      }, index * 350);
+    });
   };
 
   // Limpiar todos los filtros activos

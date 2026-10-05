@@ -186,10 +186,18 @@ export function TopDownloads({ planes, onDownload }) {
                     type="button"
                     onClick={() => onDownload(doc)}
                     className="w-full flex items-center justify-center gap-2 py-2 px-3 text-xs font-bold rounded-lg bg-blue-700 hover:bg-blue-600 active:bg-blue-800 text-white shadow-xs transition-colors cursor-pointer"
-                    title={`Descargar ${doc.archivoPrincipal || 'ZIP oficial'}`}
+                    title={
+                      doc.archivos && doc.archivos.length > 1
+                        ? `Descargar los ${doc.archivos.length} archivos de ${doc.asignatura}`
+                        : `Descargar ${doc.archivoPrincipal || 'ZIP oficial'}`
+                    }
                   >
                     <IconDownload className="w-4 h-4" />
-                    <span>Descargar ZIP</span>
+                    <span>
+                      {doc.archivos && doc.archivos.length > 1
+                        ? `Descargar (${doc.archivos.length} archivos)`
+                        : 'Descargar ZIP'}
+                    </span>
                   </button>
                 </div>
               </div>

@@ -392,19 +392,24 @@ export function GeneralTable({
                       {doc.grado}
                     </td>
 
-                    {/* Archivos Disponibles (soporte multi-archivo) */}
+                    {/* Archivos Disponibles (soporte multi-archivo y descarga individual) */}
                     <td className="py-2.5 px-3">
                       <div className="flex flex-wrap items-center gap-1.5">
                         {doc.archivos && doc.archivos.length > 0 ? (
                           doc.archivos.map((arch, aIdx) => (
-                            <span
+                            <button
                               key={aIdx}
-                              className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-300 border border-amber-300 dark:border-amber-800"
-                              title={`${arch.nombre} (${arch.tamanoLegible})`}
+                              type="button"
+                              onClick={() => onDownload(doc, arch)}
+                              className="group inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-amber-50 dark:bg-amber-950/60 text-amber-900 dark:text-amber-300 border border-amber-300 dark:border-amber-800 hover:bg-amber-100 dark:hover:bg-amber-900/90 hover:border-amber-400 dark:hover:border-amber-600 transition-all cursor-pointer text-left"
+                              title={`Descargar archivo individual: ${arch.nombre} (${arch.tamanoLegible})`}
                             >
                               <span className="font-bold">{arch.tipo}</span>
-                              <span className="text-slate-500 dark:text-slate-400">({arch.tamanoLegible})</span>
-                            </span>
+                              <span className="text-slate-500 dark:text-slate-400 group-hover:text-amber-950 dark:group-hover:text-amber-200">
+                                ({arch.tamanoLegible})
+                              </span>
+                              <IconDownload className="w-2.5 h-2.5 opacity-60 group-hover:opacity-100 text-amber-800 dark:text-amber-300" />
+                            </button>
                           ))
                         ) : (
                           <span className="text-xs text-slate-400 italic">Sin archivos</span>
@@ -420,16 +425,30 @@ export function GeneralTable({
                       </span>
                     </td>
 
-                    {/* Botón de Acción: Icono azul fuerte compacto */}
+                    {/* Botón de Acción: Descarga completa (1 archivo o lote de todos los archivos) */}
                     <td className="py-2.5 px-2 text-center whitespace-nowrap">
                       <button
                         type="button"
                         onClick={() => onDownload(doc)}
-                        className="p-2 inline-flex items-center justify-center rounded-lg text-white bg-blue-700 hover:bg-blue-600 active:bg-blue-800 shadow-xs hover:shadow transition-all cursor-pointer"
-                        title={`Descargar paquete ZIP oficial: ${doc.archivoPrincipal || doc.asignatura}`}
-                        aria-label={`Descargar paquete ZIP oficial: ${doc.archivoPrincipal || doc.asignatura}`}
+                        className={`relative p-2 inline-flex items-center justify-center rounded-lg text-white bg-blue-700 hover:bg-blue-600 active:bg-blue-800 shadow-xs hover:shadow transition-all cursor-pointer ${
+                          doc.archivos && doc.archivos.length > 1 ? 'ring-2 ring-amber-400/60' : ''
+                        }`}
+                        title={
+                          doc.archivos && doc.archivos.length > 1
+                            ? `Descargar los ${doc.archivos.length} archivos de ${doc.asignatura}`
+                            : `Descargar archivo: ${doc.archivoPrincipal || doc.asignatura}`
+                        }
+                        aria-label={`Descargar paquete oficial: ${doc.asignatura}`}
                       >
                         <IconDownload className="w-4 h-4" />
+                        {doc.archivos && doc.archivos.length > 1 && (
+                          <span
+                            className="absolute -top-1.5 -right-1.5 bg-amber-500 text-slate-950 text-[9px] font-extrabold w-4 h-4 rounded-full flex items-center justify-center shadow-xs"
+                            title={`Esta fila contiene ${doc.archivos.length} archivos`}
+                          >
+                            {doc.archivos.length}
+                          </span>
+                        )}
                       </button>
                     </td>
                   </tr>
