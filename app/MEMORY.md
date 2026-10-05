@@ -18,6 +18,7 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - **Eliminación del Scroll Horizontal:** Ajuste milimétrico de columnas, anchos responsivos y botón de acción compacto solo con icono (`IconDownload`) en azul zafiro institucional.
 - **Paginación Matemática Segura:** Controles completos con botones *« Primero*, *‹ Anterior*, ventana deslizante numérica estricta, *Siguiente ›* y *Último »*, con `key` única que previene duplicación de índices o clonación de nodos DOM.
 - **Pie de Página (Footer) Transparente:** Removido color de respaldo oscuro y borde superior; `footer.jpg` escala al 100% de la altura (`bg-cover`) con texto en blanco de alto contraste.
+- **Depuración de Archivos Obsoletos:** Eliminado `planesData.js` (83 KB del prototipo inicial), consolidando el código en `planes2027Data.js` y el catálogo taxonómico maestro `planes2027.json`.
 - **Ortografía RAE estricta en UI vs Sistema de Archivos:** Nombres visuales con tildes y numerales romanos normados (`II Ciclos`, `III Ciclo y Educación Diversificada`), manteniendo carpetas en disco limpias y compatibles con Apache/Linux.
 
 ## Aprendizajes y errores a evitar
