@@ -59,7 +59,7 @@ export function Footer() {
             title={`${appVersion.estado} · Versión ${versionCompleta} (${appVersion.liberacion}) · Compilación: ${appVersion.compilacion}`}
           >
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            {appVersion.estado} v{appVersion.version}
+            {appVersion.estado} v{versionCompleta}
           </span>
         </div>
       </div>

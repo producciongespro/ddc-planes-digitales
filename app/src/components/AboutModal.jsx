@@ -120,7 +120,7 @@ export function AboutModal({ isOpen, onClose }) {
 
           {/* Ficha técnica del sistema */}
           <div className="pt-2 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-500 dark:text-slate-400">
-            <span>Versión del Software: <strong className="text-slate-700 dark:text-slate-200">{versionCompleta}</strong> ({appVersion.liberacion})</span>
+            <span>Versión del Software: <strong className="text-slate-700 dark:text-slate-200">{versionCompleta}</strong> ({appVersion.ambiente || appVersion.liberacion})</span>
             <span>Compilación: <strong className="text-slate-700 dark:text-slate-200">{appVersion.compilacion}</strong></span>
           </div>
         </div>

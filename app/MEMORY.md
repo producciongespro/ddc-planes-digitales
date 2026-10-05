@@ -2,7 +2,7 @@
 Memoria técnica del proyecto. Máximo ~50 líneas.
 
 ## Estado actual
-- Versión 2.0.0 (Catálogo Oficial Completo del MEP Costa Rica: 197 planeamientos normados ciclo 2027 en formato ZIP).
+- Versión 1.0.1 (Nomenclatura [versión].[liberación].[compilado]. Catálogo Oficial Completo del MEP Costa Rica: 197 planeamientos normados ciclo 2027 en formato ZIP).
 - Repositorio oficial en `app/public/aplicativo-planeamientos-2027/` organizado en las 7 Ofertas Educativas de la DDC.
 - Frontend React 19 + Vite + Tailwind CSS con arquitectura App Shell (Header y Footer fijos, scroll en contenedor central).
 - Modo Claro / Oscuro persistente en `localStorage` (`mep-theme`).
