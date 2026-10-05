@@ -179,15 +179,8 @@ export function ColumnFilter({
             </button>
           </div>
 
-          {/* Mensaje de guía para el docente */}
-          <div className="mb-1 text-[10px] text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-800/60 px-2 py-1 rounded">
-            {draftSelected.length === 0
-              ? '💡 Ninguna marcada: se muestran todas las opciones.'
-              : `💡 Se mostrarán únicamente las ${draftSelected.length} opciones marcadas.`}
-          </div>
-
           {/* Lista de Checkboxes con Scroll */}
-          <div className="max-h-52 overflow-y-auto space-y-1 pr-1 custom-scrollbar">
+          <div className="max-h-60 overflow-y-auto space-y-1 pr-1 custom-scrollbar">
             {filteredOptions.length === 0 ? (
               <p className="text-xs text-slate-400 italic py-2 text-center">
                 No hay coincidencias para "{searchTerm}"
