@@ -86,22 +86,22 @@ export function AboutModal({ isOpen, onClose }) {
             </p>
           </div>
 
-          {/* Cobertura de los 144 Planes Normados */}
+          {/* Cobertura de los 197 Planeamientos Normados 2027 */}
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-blue-900 dark:text-blue-400 mb-2 flex items-center gap-1.5">
-              <span>📚</span> Estructura y Cobertura Normada (144 Planes)
+              <span>📚</span> Estructura y Cobertura Normada (197 Planes · 2027)
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
               <div className="p-3 rounded-lg bg-blue-50/60 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/40">
-                <p className="font-semibold text-blue-950 dark:text-blue-300 mb-0.5">Educación Primaria</p>
+                <p className="font-semibold text-blue-950 dark:text-blue-300 mb-0.5">7 Ofertas Educativas DDC</p>
                 <p className="text-slate-600 dark:text-slate-400">
-                  I y II Ciclo (1° a 6° año) divididos en Asignaturas Básicas y Complementarias.
+                  Preescolar, I y II Ciclos, III Ciclo y Diversificada, EPJA, Educación Especial, Intercultural y Unidocentes.
                 </p>
               </div>
               <div className="p-3 rounded-lg bg-blue-50/60 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/40">
-                <p className="font-semibold text-blue-950 dark:text-blue-300 mb-0.5">Educación Secundaria</p>
+                <p className="font-semibold text-blue-950 dark:text-blue-300 mb-0.5">Paquetes Oficiales ZIP</p>
                 <p className="text-slate-600 dark:text-slate-400">
-                  III Ciclo (7° a 9°), Diversificada Académica (10° y 11°) y Diversificada Técnica - CTP (10° a 12°).
+                  Cada planeamiento se distribuye en paquetes comprimidos descargables con su respectivo PDF curricular oficial.
                 </p>
               </div>
             </div>

@@ -39,12 +39,12 @@ export function Footer() {
   const textoActual = textos[indexTexto] || appVersion.institucion;
 
   return (
-    <footer className="w-full bg-[#0F1C2D] bg-[url('/assets/images/footer.jpg')] bg-repeat-x bg-center border-t border-slate-800 mt-auto select-none">
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 py-2 px-4 sm:px-6 lg:px-8 min-h-[34px]">
+    <footer className="w-full bg-transparent bg-[url('/assets/images/footer.jpg')] bg-repeat-x bg-center bg-cover border-none mt-auto select-none">
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 py-1.5 px-4 sm:px-6 lg:px-8 min-h-[34px]">
         {/* Leyenda oficial dinámica que alterna suavemente entre Institución y Dirección */}
         <div className="flex items-center min-w-0 py-0.5">
           <p
-            className={`text-xs sm:text-[12.5px] text-[#92A1CA] font-normal tracking-wide transition-all duration-300 ease-in-out truncate ${
+            className={`text-xs sm:text-[12.5px] text-white/90 font-medium tracking-wide transition-all duration-300 ease-in-out truncate ${
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-1'
             }`}
           >

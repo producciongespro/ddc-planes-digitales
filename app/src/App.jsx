@@ -1,30 +1,28 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { loadPlanesFromStorage, savePlanesToStorage, INITIAL_PLANES } from './data/planesData';
+import { loadPlanesFromStorage, savePlanesToStorage } from './data/planes2027Data';
 import { Header } from './components/Header';
-import { SearchArea } from './components/SearchArea';
-import { TopDownloads } from './components/TopDownloads';
-import { GeneralTable } from './components/GeneralTable';
-import { Footer } from './components/Footer';
-import { PdfPreviewModal } from './components/PdfPreviewModal';
-import { ResetConfirmModal } from './components/ResetConfirmModal';
 import { WelcomeHero } from './components/WelcomeHero';
+import { GeneralTable } from './components/GeneralTable';
+import { TopDownloads } from './components/TopDownloads';
+import { Footer } from './components/Footer';
+import { ResetConfirmModal } from './components/ResetConfirmModal';
 import { AboutModal } from './components/AboutModal';
 
 export default function App() {
-  // Estado principal de los planes cargados desde localStorage con la clave 'mep-ddc-planes'
+  // Estado principal de los 197 planeamientos 2027 persistidos en localStorage
   const [planes, setPlanes] = useState(() => loadPlanesFromStorage());
 
-  // Restricción: El docente solo podrá previsualizar un PDF a la vez
-  const [previewDoc, setPreviewDoc] = useState(null);
+  // Estado unificado de filtros en cascada
+  const [filtros, setFiltros] = useState({
+    texto: '',
+    oferta: '',
+    asignatura: '',
+    grado: ''
+  });
 
-  // Estado para el modal profesional de confirmación de reseteo
+  // Modales institucionales
   const [isResetModalOpen, setIsResetModalOpen] = useState(false);
-
-  // Estado para el modal institucional "Acerca de la DDC"
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
-
-  // Clave para disparar la limpieza de filtros en SearchArea
-  const [searchResetKey, setSearchResetKey] = useState(0);
 
   // Estado del tema Claro / Oscuro con persistencia en localStorage
   const [darkMode, setDarkMode] = useState(() => {
@@ -73,18 +71,9 @@ export default function App() {
     return planes.reduce((acc, curr) => acc + (curr.descargas || 0), 0);
   }, [planes]);
 
-  // Manejador para previsualizar: asegura que solo 1 documento esté activo
-  const handlePreview = (doc) => {
-    setPreviewDoc(doc);
-  };
-
-  const handleClosePreview = () => {
-    setPreviewDoc(null);
-  };
-
-  // Manejador para descargar documento y actualizar contador en localStorage
-  const handleDownload = (doc) => {
-    // 1. Actualizar estado y localStorage incrementando descargas
+  // Manejador central de descarga de planeamientos en formato ZIP
+  const handleDownload = (doc, fileObj = null) => {
+    // 1. Actualizar estado y persistencia de descargas
     setPlanes((prevPlanes) => {
       const updated = prevPlanes.map((item) => {
         if (item.id === doc.id) {
@@ -96,90 +85,80 @@ export default function App() {
       return updated;
     });
 
-    // 2. Si el documento actual está en previsualización, actualizar su contador
-    if (previewDoc && previewDoc.id === doc.id) {
-      setPreviewDoc((prev) => (prev ? { ...prev, descargas: prev.descargas + 1 } : null));
-    }
+    // 2. Identificar el archivo a descargar (archivo específico o el principal)
+    const archivoDestino = fileObj || (doc.archivos && doc.archivos[0]) || {
+      ruta: doc.rutaDescarga,
+      nombre: doc.archivoPrincipal || `${doc.id}.zip`
+    };
 
-    // 3. Disparar descarga directa del archivo PDF oficial
+    // 3. Disparar descarga local en el navegador
     const link = document.createElement('a');
-    link.href = doc.ruta;
-    link.download = doc.archivo || `${doc.nombre}.pdf`;
+    link.href = archivoDestino.ruta;
+    link.download = archivoDestino.nombre;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  // Abrir modal profesional de restablecimiento de datos
-  const handleOpenResetModal = () => {
-    setIsResetModalOpen(true);
+  // Limpiar todos los filtros activos
+  const handleResetFiltros = () => {
+    setFiltros({
+      texto: '',
+      oferta: '',
+      asignatura: '',
+      grado: ''
+    });
   };
 
-  // Confirmar y ejecutar restablecimiento de fábrica (a 0 descargas y limpieza de filtros)
+  // Restablecer contadores a cero absoluto (función de mantenimiento institucional)
   const handleConfirmReset = () => {
     const planesCero = planes.map((p) => ({ ...p, descargas: 0 }));
     savePlanesToStorage(planesCero);
     setPlanes(planesCero);
-    setPreviewDoc(null);
-    setSearchResetKey((prev) => prev + 1);
+    handleResetFiltros();
   };
 
   return (
     <div className="h-screen flex flex-col bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-200 overflow-hidden">
-      {/* 1. SECCIÓN: ENCABEZADO (Siempre visible arriba) */}
+      {/* 1. SECCIÓN: ENCABEZADO (Siempre fijo arriba) */}
       <div className="flex-shrink-0 z-20 shadow-md">
         <Header
           totalDocs={planes.length}
           totalDescargas={totalDescargas}
-          onResetData={handleOpenResetModal}
+          onResetData={() => setIsResetModalOpen(true)}
           darkMode={darkMode}
           onToggleTheme={toggleTheme}
           onOpenAbout={() => setIsAboutModalOpen(true)}
         />
       </div>
 
-      {/* 2. SECCIÓN: CONTENIDO PRINCIPAL (Única área con scroll vertical) */}
+      {/* 2. SECCIÓN: CONTENIDO PRINCIPAL (Única área con scroll vertical fluido) */}
       <div className="flex-1 overflow-y-auto min-h-0 focus:outline-none">
         <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {/* BANNER INSTITUCIONAL COMPACTO DE BIENVENIDA (DDC · MEP) */}
           <WelcomeHero onOpenAbout={() => setIsAboutModalOpen(true)} />
 
-          {/* 2.1 PRIMER ÁREA: BÚSQUEDA DE DOCUMENTOS POR FILTROS */}
-          <SearchArea
-            planes={planes}
-            onPreview={handlePreview}
-            onDownload={handleDownload}
-            resetKey={searchResetKey}
-          />
-
-          {/* 2.2 SEGUNDA ÁREA: TOP DE DESCARGAS (4 a 16 DOCUMENTOS) */}
-          <TopDownloads
-            planes={planes}
-            onPreview={handlePreview}
-            onDownload={handleDownload}
-          />
-
-          {/* 2.3 TERCERA ÁREA: TABLA GENERAL POR CICLO, ASIGNATURA Y NIVEL */}
+          {/* 2.1 PRIMERA SECCIÓN MAESTRA (HERO): CATÁLOGO OFICIAL 2027 (FILTROS + TABLA INTEGRADOS) */}
           <GeneralTable
             planes={planes}
-            onPreview={handlePreview}
             onDownload={handleDownload}
-            resetKey={searchResetKey}
+            filtros={filtros}
+            onFiltrosChange={setFiltros}
+            onResetFiltros={handleResetFiltros}
+          />
+
+          {/* 2.2 SEGUNDA SECCIÓN: TOP DE DESCARGAS DOCENTES */}
+          <TopDownloads
+            planes={planes}
+            onDownload={handleDownload}
           />
         </main>
       </div>
 
-      {/* 3. SECCIÓN: PIE DE PÁGINA (Siempre visible abajo) */}
+      {/* 3. SECCIÓN: PIE DE PÁGINA (Siempre fijo abajo con animación DDC) */}
       <div className="flex-shrink-0 z-20 shadow-lg">
         <Footer />
       </div>
-
-      {/* VISOR MODAL DE PREVISUALIZACIÓN (Regla: Solo 1 PDF a la vez y descargarlo) */}
-      <PdfPreviewModal
-        documento={previewDoc}
-        onClose={handleClosePreview}
-        onDownload={handleDownload}
-      />
 
       {/* MODAL PROFESIONAL DE CONFIRMACIÓN PARA RESTABLECER DATOS */}
       <ResetConfirmModal

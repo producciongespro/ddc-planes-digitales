@@ -1,11 +1,11 @@
 {
-  "version": "1.1",
-  "compilado": ".8",
-  "estado": "Planes Curriculares",
-  "compilacion": "2026.10.02",
-  "liberacion": "Desarrollo",
+  "version": "1.0",
+  "compilado": ".5",
+  "estado": "Planeamientos 2027",
+  "compilacion": "2026.10.05",
+  "liberacion": "Producción ·DDC·",
   "institucion": "© 2026 · Ministerio de Educación Pública de Costa Rica.",
   "direccion": "© 2026 · Dirección de Desarrollo Curricular (DDC).",
-  "heroTitulo": "Repositorio de Planes Curriculares",
-  "heroSubtitulo": "Catálogo nacional normado de planes de estudio aprobados por el Consejo Superior de Educación para la Educación Pública Costarricense."
+  "heroTitulo": "Repositorio Curricular Oficial 2027",
+  "heroSubtitulo": "Catálogo nacional normado de planeamientos educativos aprobados por el Consejo Superior de Educación para la Educación Pública Costarricense."
 }

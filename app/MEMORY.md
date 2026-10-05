@@ -2,38 +2,24 @@
 Memoria técnica del proyecto. Máximo ~50 líneas.
 
 ## Estado actual
-- Versión 1.0.0 (Catálogo Oficial Completo del MEP Costa Rica: 144 planes de estudio normados).
-- Repositorio PDF físico en `app/public/mep-ddc-planes-digitales/` con taxonomía de 5 niveles:
-  `[Nivel]/[Ciclo]/[Modalidad]/[Tipo]/[Asignatura]/[Grado]/[Archivo.pdf]`.
-- Frontend con React 19 + Vite + Tailwind CSS.
+- Versión 2.0.0 (Catálogo Oficial Completo del MEP Costa Rica: 197 planeamientos normados ciclo 2027 en formato ZIP).
+- Repositorio oficial en `app/public/aplicativo-planeamientos-2027/` organizado en las 7 Ofertas Educativas de la DDC.
+- Frontend React 19 + Vite + Tailwind CSS con arquitectura App Shell (Header y Footer fijos, scroll en contenedor central).
 - Modo Claro / Oscuro persistente en `localStorage` (`mep-theme`).
-- Persistencia de descargas en `localStorage` (`mep-ddc-planes`) con migración automática a 144 planes.
-- 15 iconos temáticos oficiales en SVG nativo sin librerías externas.
-- Control centralizado de versión y releases en `app/src/data/version.json` (concatenación DRY de versión + compilado).
+- Persistencia de descargas en `localStorage` (`mep-ddc-planes-2027`) con migración automática.
+- 15 iconos temáticos en SVG nativo sin dependencias externas.
 
 ## Decisiones tomadas (y por qué)
-- **Estructura aplicativo-planeamientos-2027 (SharePoint DDC):** Réplica 100% fiel de las 7 ramas principales de la asesora nacional Tatiana Navarro Mata (Preescolar, I y II Ciclos, III Ciclo y Diversificada, EPJA, Educación Especial, Intercultural y Unidocentes) almacenada en `app/public/aplicativo-planeamientos-2027/`.
-- **Nomenclatura sin tildes en sistema de archivos:** Carpetas nombradas sin tildes ni diacríticos para compatibilidad total con servidores Apache/Linux, URLs web y Git.
-- **Archivos ZIP y PDF en carpetas finales (197 hojas):** Cada carpeta terminal contiene un archivo `.zip` con el PDF del plan educativo oficial institucional 2027 generado en memoria vía Node.js + zlib (deflate/crc32), asegurando el rastreo completo en Git sin carpetas vacías.
-- **144 planes generados en PDF institucional:** El MEP distingue materias Básicas y Complementarias en I, II, III Ciclo y Educación Diversificada (Académica y Técnica CTP).
-- **Ciencias unificada vs desglosada:** Ciencias unificada en III Ciclo (7°-9°); desglosada en Biología, Física y Química en Educación Diversificada (10°-12°).
-- **Modalidad en Educación Diversificada:** Separada en Académica (10°-11°) y Técnica CTP (10°-12°).
-- **Nombres de carpetas:** Nombres completos sin acentos en el sistema de archivos (`Setimo`, `Decimo`, `Matematicas`, `Educacion Diversificada`) para máxima compatibilidad cross-platform, y nombres con tilde en la interfaz visual.
-- **Filtros en cuadrícula balanceada (7 filtros en 3 filas):** Fila 1 (Palabra Clave, Nivel, Ciclo, Modalidad en 4 cols), Fila 2 (Tipo de Materia, Asignatura, Grado/Año en 4 cols), Fila 3 (Barra inferior con estadísticas a la izquierda y botón Restablecer filtros a la derecha).
-- **Paginación en tabla general:** Para renderizar fluidamente los 144 documentos sin degradar el rendimiento del navegador.
-- **Botón y modal de reinicio (ResetConfirmModal):** Reemplazo de window.confirm por un modal profesional institucional con degradado azul zafiro, aviso informativo de localStorage y confirmación ámbar. Al confirmar, establece en cero (0) absoluto las descargas de los 144 planes y limpia todos los filtros activos en la interfaz.
-- **Top de Descargas reactivo con estado vacío (Zero State):** Cuando no existen descargas registradas en el sistema (descargas = 0), despliega un estado informativo limpio ("Sin datos registrados en el Top de Descargas"). Al realizarse la primera descarga de cualquier plan, el ranking se activa y se clasifica dinámicamente en tiempo real.
-- **Calibración visual y contraste UI (Modo Oscuro/Claro):** Encabezados con degradado azul zafiro institucional ('dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091]') y borde ámbar; tarjetas con gradiente continuo de alto contraste ('from-slate-100 to-slate-300' en claro / 'from-[#3d5377] to-[#182537]' en oscuro) para máxima presencia visual y legibilidad.
-- **Optimización de columnas en tabla general:** Se sustituyó 'Disponibilidad' por 'Descargas' y se retiró 'Código Oficial' para suprimir el scroll horizontal indeseado y ajustar la vista fluidamente al 100% de la pantalla.
-- **Arquitectura App Shell (Viewport Layout):** Header fijo arriba (`flex-shrink-0 z-20`) y Footer fijo abajo (`flex-shrink-0 z-20`), confinando el scroll vertical exclusivamente al contenedor principal central (`flex-1 overflow-y-auto`).
-- **Pie de página dinámico institucional (Footer):** Alternancia suave (fade-in/fade-out de 300ms) entre Institución y Dirección cada 4.5s sobre fondo `footer.jpg`, con tipografía vectorizada nativa (#92A1CA) y badge reactivo de estado y versión.
-- **Encabezado Hero compacto y modal Acerca de (WelcomeHero & AboutModal):** Franja de bienvenida institucional previa a los filtros controlada desde `version.json` (`heroTitulo`, `heroSubtitulo`) y botón "Acerca de" en el Header con modal institucional que expone la misión de la DDC, el alcance de los 144 planes normados y el marco legal del CSE.
+- **Componente Hero Maestro Unificado (GeneralTable):** Se integraron los filtros en cascada, la barra de estado/métricas, el botón restablecer y el selector de paginado directamente dentro del contenedor del Catálogo Oficial. Se eliminó el componente redundante `SearchArea.jsx`, dejando una experiencia de usuario fluida con solo dos secciones maestras (Catálogo Oficial y Top de Descargas).
+- **Eliminación del Scroll Horizontal:** Ajuste milimétrico de columnas, anchos responsivos y botón de acción compacto solo con icono (`IconDownload`) en azul zafiro institucional.
+- **Paginación Matemática Segura:** Generador de ventana deslizante (`paginasVisibles`) estricto con `key` única que previene duplicación de índices o clonación de nodos DOM al navegar por páginas altas (ej. 9 y 10).
+- **Pie de Página (Footer) Transparente:** Removido color de respaldo oscuro y borde superior; `footer.jpg` escala al 100% de la altura (`bg-cover`) con texto en blanco de alto contraste.
+- **Ortografía RAE estricta en UI vs Sistema de Archivos:** Nombres visuales con tildes y numerales romanos normados (`II Ciclos`, `III Ciclo y Educación Diversificada`), manteniendo carpetas en disco limpias y compatibles con Apache/Linux.
 
 ## Aprendizajes y errores a evitar
-- Nunca usar `localStorage` sin validación de versión o esquema; los datos cacheados obsoletos generaban 404 con rutas previas de 2 niveles.
-- Nunca crear archivos fuera de `app/` (excepto la documentación institucional y Git desde la raíz).
-- Mantener siempre codificación estricta UTF-8 sin mojibake.
+- Nunca usar `localStorage` sin validación de esquema para evitar estados antiguos obsoletos.
+- Nunca calcular rangos de paginación que generen números repetidos; las `key` duplicadas corrompen la reconciliación DOM de React.
+- Responder al modismo costarricense "dale viaje" con "¡Mae listo, pura vida, todo quedó excelente!".
 
 ## Próximos pasos
-- Pruebas exhaustivas de navegación responsive en 20+ resoluciones.
-- Preparación para despliegue o sincronización según instrucción del usuario.
+- Monitoreo continuo y adición de futuros anexos en las subcarpetas del ciclo 2027 según requerimientos de la DDC.
