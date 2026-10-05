@@ -15,7 +15,7 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - **Altura Mínima de Tabla (`min-h-[480px]`):** Evita el colapso vertical cuando hay pocos registros (1 a 8 líneas) y previene el recorte o solapamiento del menú flotante de filtros.
 - **Eliminación de la Columna Código:** Removida por carecer de valor pedagógico directo para el docente, liberando más de 120px de ancho para máxima legibilidad de las materias y grados.
 - **Eliminación del Scroll Horizontal:** Ajuste milimétrico de columnas, anchos responsivos y botón de acción compacto solo con icono (`IconDownload`) en azul zafiro institucional.
-- **Paginación Matemática Segura:** Generador de ventana deslizante (`paginasVisibles`) estricto con `key` única que previene duplicación de índices o clonación de nodos DOM al navegar por páginas altas (ej. 9 y 10).
+- **Paginación Matemática Segura:** Controles completos con botones *« Primero*, *‹ Anterior*, ventana deslizante numérica estricta, *Siguiente ›* y *Último »*, con `key` única que previene duplicación de índices o clonación de nodos DOM.
 - **Pie de Página (Footer) Transparente:** Removido color de respaldo oscuro y borde superior; `footer.jpg` escala al 100% de la altura (`bg-cover`) con texto en blanco de alto contraste.
 - **Ortografía RAE estricta en UI vs Sistema de Archivos:** Nombres visuales con tildes y numerales romanos normados (`II Ciclos`, `III Ciclo y Educación Diversificada`), manteniendo carpetas en disco limpias y compatibles con Apache/Linux.
 

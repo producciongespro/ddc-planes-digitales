@@ -448,14 +448,27 @@ export function GeneralTable({
             <strong className="text-slate-900 dark:text-white">{totalPaginas}</strong> ({planesFiltrados.length} planeamientos)
           </div>
 
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1.5 flex-wrap justify-center">
+            {/* Botón Primero */}
+            <button
+              type="button"
+              disabled={paginaActual === 1}
+              onClick={() => setPaginaActual(1)}
+              className="px-2.5 py-1 rounded-md border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-medium hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-40 disabled:cursor-not-allowed transition cursor-pointer"
+              title="Ir a la primera página"
+            >
+              « Primero
+            </button>
+
+            {/* Botón Anterior */}
             <button
               type="button"
               disabled={paginaActual === 1}
               onClick={() => setPaginaActual((prev) => Math.max(prev - 1, 1))}
-              className="px-2.5 py-1 rounded-md border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-medium hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-40 disabled:cursor-not-allowed transition"
+              className="px-2.5 py-1 rounded-md border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-medium hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-40 disabled:cursor-not-allowed transition cursor-pointer"
+              title="Página anterior"
             >
-              Anterior
+              ‹ Anterior
             </button>
 
             <div className="flex items-center gap-1">
@@ -475,13 +488,26 @@ export function GeneralTable({
               ))}
             </div>
 
+            {/* Botón Siguiente */}
             <button
               type="button"
               disabled={paginaActual === totalPaginas}
               onClick={() => setPaginaActual((prev) => Math.min(prev + 1, totalPaginas))}
-              className="px-2.5 py-1 rounded-md border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-medium hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-40 disabled:cursor-not-allowed transition"
+              className="px-2.5 py-1 rounded-md border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-medium hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-40 disabled:cursor-not-allowed transition cursor-pointer"
+              title="Página siguiente"
             >
-              Siguiente
+              Siguiente ›
+            </button>
+
+            {/* Botón Último */}
+            <button
+              type="button"
+              disabled={paginaActual === totalPaginas}
+              onClick={() => setPaginaActual(totalPaginas)}
+              className="px-2.5 py-1 rounded-md border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-medium hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-40 disabled:cursor-not-allowed transition cursor-pointer"
+              title="Ir a la última página"
+            >
+              Último »
             </button>
           </div>
         </div>
