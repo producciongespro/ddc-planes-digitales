@@ -26,6 +26,7 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - Nunca usar `localStorage` sin validación de esquema para evitar estados antiguos obsoletos.
 - Nunca calcular rangos de paginación que generen números repetidos; las `key` duplicadas corrompen la reconciliación DOM de React.
 - Responder al modismo costarricense "dale viaje" con "¡Mae listo, pura vida, todo quedó excelente!".
+- **Regla Estricta de Control de Versiones:** NUNCA ejecutar `git commit` ni sincronizar (`git push`) de forma automática. Siempre implementar y verificar en local, y consultar/esperar la instrucción expresa de Chris antes de commitear y sincronizar.
 
 ## Próximos pasos
 - Monitoreo continuo y adición de futuros anexos en las subcarpetas del ciclo 2027 según requerimientos de la DDC.
