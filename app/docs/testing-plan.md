@@ -115,6 +115,24 @@ Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Cu
 - **TEST-23 (App Shell Fixed Anchors):** En las 20 resoluciones, el Header y Footer mantienen sus anclajes fijos (`flex-shrink-0 z-20`) y el área central es el único contenedor de scroll (`flex-1 overflow-y-auto`).
 - **TEST-24 (Modal & Popover Viewport Bounds):** Los modales institucionales y menús flotantes `ColumnFilter` se recalculan para no desbordar los límites del viewport en pantallas pequeñas (320px a 430px).
 
+### Suite 6: `chaos.test.jsx` (Arnés de Caos y Resiliencia Extrema)
+- **CHAOS-01 (Corte Abrupto de Red / Offline):** Simula caída total de red (`TypeError: Failed to fetch`). Certifica ausencia de pantalla blanca y renderizado de tarjeta de contingencia en `SplashScreen`.
+- **CHAOS-02 (Recuperación Resiliente):** Certifica que presionar "Reintentar conexión" tras restablecerse la red monte exitosamente el catálogo completo.
+- **CHAOS-03 (JSON Corrupto en Servidor):** Simula sintaxis malformada en `planes2027.json` (`SyntaxError`). Captura el fallo sin romper el ciclo de vida de React.
+- **CHAOS-04 (Códigos HTTP 500 / 502 Bad Gateway):** Verifica la presentación clara del código de error al usuario.
+- **CHAOS-05 (Payload No Tabular):** Rechazo defensivo y mensaje explícito cuando el servidor entrega un objeto o valor nulo en vez de un arreglo.
+- **CHAOS-06 (Saturación de Almacenamiento):** Simula `QuotaExceededError` en `localStorage.setItem`. Certifica que la aplicación continúe operando en memoria y permitiendo descargas.
+- **CHAOS-07 (Tolerancia a Registros Nulos/Corruptos):** Inyección de datos incompletos (`archivos: null`, grados nulos). Certifica renderizado defensivo sin excepciones de `Cannot read properties of undefined/null`.
+- **CHAOS-08 (Ráfaga Frenética de Clics):** Ráfaga masiva de clics en menos de 50ms al botón de descarga. Certifica consistencia y ausencia de duplicaciones anómalas.
+
+### Suite 7: `sensory.test.jsx` (Arnés Sensorial, Accesibilidad Ley 7600 y WCAG AA)
+- **SENS-01 (Etiquetas Accesibles Universales):** Certifica que el 100% de los botones interactivos cuente con texto visible, `aria-label` o `title` descriptivo para lectores de pantalla.
+- **SENS-02 (Jerarquía Semántica y Landmarks):** Certifica la presencia de `<header role="banner">`, `<main>`, `<footer role="contentinfo">` y título maestro institucional `<h1>`.
+- **SENS-03 (Navegabilidad por Teclado):** Certifica ausencia de `tabIndex` negativo en los controles primarios de la aplicación.
+- **SENS-04 (Orientación de Campos de Entrada):** Certifica que el buscador predictivo posea `placeholder` orientativo para tecnologías de asistencia.
+- **SENS-05 (Asistencia en Pantalla de Carga):** Certifica que el `SplashScreen` posea texto narrativo claro sobre el estado del proceso.
+- **SENS-06 (Retroalimentación Cuantitativa):** Certifica que los contadores de planeamientos ofrezcan formato textual semántico en tiempo real.
+
 ---
 
 ## 5. Fases de Ejecución

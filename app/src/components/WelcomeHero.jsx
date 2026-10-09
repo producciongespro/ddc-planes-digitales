@@ -18,9 +18,9 @@ export function WelcomeHero({ onOpenAbout }) {
         </div>
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2 mb-1">
-            <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 tracking-tight">
+            <h1 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 tracking-tight">
               {titulo}
-            </h2>
+            </h1>
             <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
               DDC · MEP
             </span>

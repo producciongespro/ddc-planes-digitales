@@ -41,8 +41,10 @@ Cada solicitud de commit y sincronización debe superar obligatoriamente una bat
                                ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  PUERTA 2: SUITE DE PRUEBAS AUTOMATIZADAS (Subagente Tester)│
-  │  - 39 pruebas unitarias y de integración (Vitest + jsdom)   │
+  │  - 53 pruebas en 7 suites completas (Vitest + jsdom)        │
   │  - Matriz de 20 Dimensiones Comerciales (320px a 4K UHD)    │
+  │  - Arnés de Caos (Red offline, JSON corrupto, clics, cuota) │
+  │  - Arnés Sensorial (Accesibilidad Ley 7600 y WCAG AA)       │
   │  - Resiliencia de red y Splash Screen con reintento         │
   │  - Persistencia de descargas y paginador matemático         │
   │  Comando: `npm test`                                        │
@@ -76,7 +78,7 @@ Si cualquiera de las siguientes condiciones se presenta durante la ejecución, e
 1. **Detección de Mojibake:** Detección de secuencias corruptas (`Ã¡`, `Ã©`, `Ã±`, `Â°`, etc.) en cualquier archivo `.js`, `.jsx`, `.json`, `.html`, `.css` o `.md`.
 2. **Presencia de Rutas Locales:** Existencia de cadenas como `C:\` o nombres de disco duro en `public/data/planes2027.json`.
 3. **Acoplamiento del Catálogo:** Detección de cualquier sentencia `import` que cargue estáticamente el archivo `planes2027.json` en lugar de utilizar `fetch()`.
-4. **Fallo en Pruebas Unitarias o de Layout:** Cualquier aserción no cumplida en las 39 pruebas de Vitest o desbordamiento en los 20 viewports comerciales.
+4. **Fallo en Pruebas Unitarias, Caos, Sensorial o Layout:** Cualquier aserción no cumplida en las 53 pruebas de Vitest o desbordamiento en los 20 viewports comerciales.
 5. **Exceso de Peso en Bundle:** Archivo JavaScript compilado superior a 300 KB.
 
 ---
