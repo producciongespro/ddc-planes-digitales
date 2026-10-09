@@ -1,7 +1,0 @@
-
-
-DDC: Dirección de Desarrollo Curricular:
-
-el objetivo del aplicativo, es un repositorio donde los docentes van a consultas los planes de asignaturas
-
-
