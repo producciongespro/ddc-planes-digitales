@@ -1,17 +1,20 @@
 # MEMORY.md — ddc-planes-digitales (Memoria persistente)
-Memoria técnica del proyecto. Máximo ~50 líneas.
+Memoria técnica del proyecto en `app/docs/` (Única Fuente de Verdad - SSOT).
 
 ## Estado actual
 - Versión 1.0.1 (Nomenclatura [versión].[liberación].[compilado]. Catálogo Oficial Completo del MEP Costa Rica: 197 planeamientos normados ciclo 2027 en formato ZIP).
+- Arquitectura 100% Estática Desacoplada: Catálogo remoto en `/data/planes2027.json` consultado vía `fetch()` con cabeceras anti-caché.
 - Repositorio oficial en `app/public/aplicativo-planeamientos-2027/` organizado en las 7 Ofertas Educativas de la DDC.
 - Frontend React 19 + Vite + Tailwind CSS con arquitectura App Shell (Header y Footer fijos, scroll en contenedor central).
+- Splash Screen institucional con isotipo curricular provisional, spinner doble anillo y reintento ante errores de red.
 - Modo Claro / Oscuro persistente en `localStorage` (`mep-theme`).
-- Persistencia de descargas en `localStorage` (`mep-ddc-planes-2027`) con migración automática.
+- Persistencia ligera de descargas en `localStorage` (`mep-ddc-planes-2027-downloads`).
 - 15 iconos temáticos en SVG nativo sin dependencias externas.
 
 ## Decisiones tomadas (y por qué)
 - **Arquitectura 100% Estática Basada en JSON (Desacoplada de PHP y del Bundle):** Eliminada dependencia de scripts PHP y middlewares en Vite. El catálogo oficial se consulta asíncronamente mediante `fetch('/data/planes2027.json', { cache: 'no-cache' })`. Permite actualizaciones en caliente en el servidor sin necesidad de recompilar (`npm run build`), y redujo el bundle JavaScript en casi 180 KB.
 - **Saneamiento Universal del Catálogo:** Removida la propiedad `carpetaFisica` (rutas locales de Windows) de los 197 registros, garantizando portabilidad absoluta en cualquier servidor web (Apache, Nginx, Azure, AWS, IIS).
+- **Única Fuente de Verdad (SSOT) en `app/docs/`:** Centralización de especificaciones (`spec.md`), directrices y memoria persistente (`MEMORY.md`) dentro de `app/docs/`.
 - **Splash Screen Institucional y Resiliencia de Red:** Pantalla de carga con isotipo curricular provisional (MEP · DDC 2027), spinner de doble anillo institucional y tarjeta de contingencia con botón de reintento ante caídas de red.
 - **Persistencia Ligera en localStorage:** Se eliminó el almacenamiento del catálogo completo en el navegador; ahora únicamente se persiste un mapa de descargas del usuario `{ [id]: conteo }` fusionado al vuelo con los datos remotos.
 - **Descarga Multi-Archivo Híbrida y Chips Interactivos:** Botón de acción principal descarga automáticamente todos los archivos asociados a la fila de forma secuencial (micro-intervalo 350ms para evitar bloqueos del navegador), con badge numérico indicador. Cada chip de archivo individual en la columna Archivos es interactivo para descarga unitaria bajo demanda.
@@ -22,14 +25,18 @@ Memoria técnica del proyecto. Máximo ~50 líneas.
 - **Eliminación del Scroll Horizontal:** Ajuste milimétrico de columnas, anchos responsivos y botón de acción compacto solo con icono (`IconDownload`) en azul zafiro institucional.
 - **Paginación Matemática Segura:** Controles completos con botones *« Primero*, *‹ Anterior*, ventana deslizante numérica estricta, *Siguiente ›* y *Último »*, con `key` única que previene duplicación de índices o clonación de nodos DOM.
 - **Pie de Página (Footer) Transparente:** Removido color de respaldo oscuro y borde superior; `footer.jpg` escala al 100% de la altura (`bg-cover`) con texto en blanco de alto contraste.
-- **Depuración de Archivos Obsoletos:** Eliminado `planesData.js` (83 KB del prototipo inicial), consolidando el código en `planes2027Data.js` y el catálogo taxonómico maestro `planes2027.json`.
+- **Depuración de Archivos Obsoletos:** Eliminado `planesData.js` (83 KB del prototipo inicial), consolidando el código en `planes2027Data.js` y el catálogo taxonómico único `public/data/planes2027.json`.
 - **Ortografía RAE estricta en UI vs Sistema de Archivos:** Nombres visuales con tildes y numerales romanos normados (`II Ciclos`, `III Ciclo y Educación Diversificada`), manteniendo carpetas en disco limpias y compatibles con Apache/Linux.
 
 ## Aprendizajes y errores a evitar
 - Nunca usar `localStorage` sin validación de esquema para evitar estados antiguos obsoletos.
 - Nunca calcular rangos de paginación que generen números repetidos; las `key` duplicadas corrompen la reconciliación DOM de React.
 - Responder al modismo costarricense "dale viaje" con "¡Mae listo, pura vida, todo quedó excelente!".
+- **Regla Estricta Anti-Mojibake:** Forzar siempre UTF-8 sin BOM en scripts, lecturas, escrituras de archivos y metadatos; verificar que caracteres diacríticos (`á, é, í, ó, ú, ñ, Ñ, ¿, ¡, °`) no se corrompan por defaults de Windows/PowerShell.
 - **Regla Estricta de Control de Versiones:** NUNCA ejecutar `git commit` ni sincronizar (`git push`) de forma automática. Siempre implementar y verificar en local, y consultar/esperar la instrucción expresa de Chris antes de commitear y sincronizar.
+
+- **Certificación Multi-Pantalla (20 Viewports):** Todo cambio visual debe auditarse en la suite `responsive.test.jsx` contra 20 resoluciones comerciales (320px a 3840px) para blindar el App Shell.
+- **Puertas de Calidad Pre-Commit (Quality Gate Enterprise):** Implementado protocolo de 3 capas en cascada (Guardrails -> 39 Tests + 20 Viewports -> Build < 300 KB), Git hook local `.git/hooks/pre-commit` y workflow de GitHub Actions `.github/workflows/ci.yml`.
 
 ## Próximos pasos
 - Monitoreo continuo y adición de futuros anexos en las subcarpetas del ciclo 2027 según requerimientos de la DDC.
