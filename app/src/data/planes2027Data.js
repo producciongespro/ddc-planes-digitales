@@ -1,78 +1,99 @@
-import planesRaw from './planes2027.json';
+/**
+ * Capa de datos desacoplada para el repositorio de planes curriculares 2027.
+ * El catálogo oficial se consulta dinámicamente mediante fetch() a /data/planes2027.json
+ * para permitir actualizaciones en caliente sin recompilar el bundle de React.
+ */
 
-export const INITIAL_PLANES_2027 = planesRaw;
-export const STORAGE_KEY = 'mep-ddc-planes-2027';
+export const DOWNLOADS_STORAGE_KEY = 'mep-ddc-planes-2027-downloads';
+export const LEGACY_STORAGE_KEY = 'mep-ddc-planes-2027';
 
 /**
- * Carga el catálogo de planes 2027 desde localStorage con migración automática
+ * Obtiene el mapa de descargas del usuario guardado en localStorage.
+ * Incluye migración retrocompatible si existían datos en el formato previo.
+ * @returns {Record<string, number>} Mapa de { [id]: descargas }
  */
-export function loadPlanesFromStorage() {
+export function loadSavedDownloadsMap() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) {
-      return INITIAL_PLANES_2027;
+    // 1. Intentar leer mapa moderno de descargas
+    const rawMap = localStorage.getItem(DOWNLOADS_STORAGE_KEY);
+    if (rawMap) {
+      const parsed = JSON.parse(rawMap);
+      if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+        return parsed;
+      }
     }
-    const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed) || parsed.length !== INITIAL_PLANES_2027.length) {
-      // Re-sincronizar conservando descargas previas si existen
-      const downloadsMap = new Map();
-      if (Array.isArray(parsed)) {
-        parsed.forEach((p) => {
-          if (p && p.id && typeof p.descargas === 'number') {
-            downloadsMap.set(p.id, p.descargas);
+
+    // 2. Migración: Si no existe, revisar si había datos en la clave legacy
+    const rawLegacy = localStorage.getItem(LEGACY_STORAGE_KEY);
+    if (rawLegacy) {
+      const legacyParsed = JSON.parse(rawLegacy);
+      const migrationMap = {};
+      if (Array.isArray(legacyParsed)) {
+        legacyParsed.forEach((item) => {
+          if (item && item.id && typeof item.descargas === 'number') {
+            migrationMap[item.id] = item.descargas;
           }
         });
       }
-      return INITIAL_PLANES_2027.map((base) => ({
-        ...base,
-        descargas: downloadsMap.get(base.id) || 0
-      }));
+      // Guardar mapa migrado y limpiar el almacenamiento anterior pesado
+      localStorage.setItem(DOWNLOADS_STORAGE_KEY, JSON.stringify(migrationMap));
+      localStorage.removeItem(LEGACY_STORAGE_KEY);
+      return migrationMap;
     }
-    return parsed;
   } catch (err) {
-    console.error('Error cargando planes desde localStorage:', err);
-    return INITIAL_PLANES_2027;
+    console.error('Error al leer descargas desde localStorage:', err);
+  }
+  return {};
+}
+
+/**
+ * Guarda el mapa de descargas en localStorage
+ * @param {Array<{id: string, descargas: number}>} planes 
+ */
+export function saveDownloadsToStorage(planes) {
+  try {
+    const downloadsMap = {};
+    if (Array.isArray(planes)) {
+      planes.forEach((item) => {
+        if (item && item.id && typeof item.descargas === 'number') {
+          downloadsMap[item.id] = item.descargas;
+        }
+      });
+    }
+    localStorage.setItem(DOWNLOADS_STORAGE_KEY, JSON.stringify(downloadsMap));
+  } catch (err) {
+    console.error('Error guardando descargas en localStorage:', err);
   }
 }
 
 /**
- * Guarda los planes en localStorage
+ * Consulta el catálogo oficial de planes curriculares mediante fetch() como API estática.
+ * Aplica cabeceras anti-caché para garantizar siempre la lectura del archivo más reciente.
+ * @returns {Promise<Array<any>>}
  */
-export function savePlanesToStorage(planes) {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(planes));
-  } catch (err) {
-    console.error('Error guardando planes en localStorage:', err);
-  }
-}
-
-/**
- * Consulta la API dinámica (PHP en XAMPP o Middleware en Vite)
- * para detectar archivos reales en el disco en tiempo real.
- */
-export async function fetchPlanesDynamic() {
-  try {
-    // 1. Intentar llamar al endpoint PHP oficial
-    const res = await fetch('/api/listar_planes.php');
-    if (res.ok) {
-      const data = await res.json();
-      if (Array.isArray(data) && data.length > 0) {
-        return data;
-      }
+export async function fetchPlanesCatalog() {
+  const url = `/data/planes2027.json?_t=${Date.now()}`;
+  const response = await fetch(url, {
+    cache: 'no-cache',
+    headers: {
+      'Pragma': 'no-cache',
+      'Cache-Control': 'no-cache'
     }
+  });
 
-    // 2. Intentar llamar al endpoint sin extensión .php
-    const resClean = await fetch('/api/listar_planes');
-    if (resClean.ok) {
-      const dataClean = await resClean.json();
-      if (Array.isArray(dataClean) && dataClean.length > 0) {
-        return dataClean;
-      }
-    }
-    return null;
-  } catch (err) {
-    // En caso de hosting estático o sin backend activo, se usa el catálogo local como fallback
-    console.info('Modo híbrido: ejecutando con catálogo local (API dinámica no requerida).');
-    return null;
+  if (!response.ok) {
+    throw new Error(`No se pudo cargar el catálogo curricular (Código HTTP: ${response.status})`);
   }
+
+  const catalog = await response.json();
+  if (!Array.isArray(catalog)) {
+    throw new Error('El formato del archivo planes2027.json no es una lista válida.');
+  }
+
+  // Fusionar catálogo con las descargas locales del usuario
+  const downloadsMap = loadSavedDownloadsMap();
+  return catalog.map((plane) => ({
+    ...plane,
+    descargas: typeof downloadsMap[plane.id] === 'number' ? downloadsMap[plane.id] : (plane.descargas || 0)
+  }));
 }

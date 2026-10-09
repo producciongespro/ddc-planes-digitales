@@ -7,7 +7,6 @@
     "asignatura": "Educación Preescolar",
     "grado": "Materno Infantil (Interactivo I)",
     "rutaRelativa": "1.PREESCOLAR/1.INTERACTIVO I",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\1.PREESCOLAR\\1.INTERACTIVO I",
     "archivos": [
       {
         "nombre": "Plan_1.INTERACTIVO_I.zip",
@@ -30,7 +29,6 @@
     "asignatura": "Educación Preescolar",
     "grado": "Interactivo II",
     "rutaRelativa": "1.PREESCOLAR/2.INTERACTIVO II",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\1.PREESCOLAR\\2.INTERACTIVO II",
     "archivos": [
       {
         "nombre": "Plan_2.INTERACTIVO_II.zip",
@@ -53,7 +51,6 @@
     "asignatura": "Educación Preescolar",
     "grado": "Transición",
     "rutaRelativa": "1.PREESCOLAR/3.TRANSICION",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\1.PREESCOLAR\\3.TRANSICION",
     "archivos": [
       {
         "nombre": "Plan_3.TRANSICION.zip",
@@ -76,7 +73,6 @@
     "asignatura": "Educación Preescolar",
     "grado": "Grupo Heterogéneo",
     "rutaRelativa": "1.PREESCOLAR/4.HETEROGENEO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\1.PREESCOLAR\\4.HETEROGENEO",
     "archivos": [
       {
         "nombre": "Plan_4.HETEROGENEO.zip",
@@ -99,7 +95,6 @@
     "asignatura": "Artes Industriales",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES INDUSTRIALES/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES INDUSTRIALES\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_INDUSTRIALES_1.PRIMERO.zip",
@@ -122,7 +117,6 @@
     "asignatura": "Artes Industriales",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES INDUSTRIALES/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES INDUSTRIALES\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_INDUSTRIALES_2.SEGUNDO.zip",
@@ -145,7 +139,6 @@
     "asignatura": "Artes Industriales",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES INDUSTRIALES/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES INDUSTRIALES\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_INDUSTRIALES_3.TERCERO.zip",
@@ -168,7 +161,6 @@
     "asignatura": "Artes Industriales",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES INDUSTRIALES/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES INDUSTRIALES\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_INDUSTRIALES_4.CUARTO.zip",
@@ -191,7 +183,6 @@
     "asignatura": "Artes Industriales",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES INDUSTRIALES/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES INDUSTRIALES\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_INDUSTRIALES_5.QUINTO.zip",
@@ -214,7 +205,6 @@
     "asignatura": "Artes Industriales",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES INDUSTRIALES/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES INDUSTRIALES\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_INDUSTRIALES_6.SEXTO.zip",
@@ -237,7 +227,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES PLASTICAS/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES PLASTICAS\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_1.PRIMERO.zip",
@@ -260,7 +249,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES PLASTICAS/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES PLASTICAS\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_2.SEGUNDO.zip",
@@ -283,7 +271,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES PLASTICAS/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES PLASTICAS\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_3.TERCERO.zip",
@@ -306,7 +293,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES PLASTICAS/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES PLASTICAS\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_4.CUARTO.zip",
@@ -329,7 +315,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES PLASTICAS/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES PLASTICAS\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_5.QUINTO.zip",
@@ -352,7 +337,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ARTES PLASTICAS/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ARTES PLASTICAS\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_6.SEXTO.zip",
@@ -375,7 +359,6 @@
     "asignatura": "Ciencias",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/CIENCIAS/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\CIENCIAS\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS_1.PRIMERO.zip",
@@ -398,7 +381,6 @@
     "asignatura": "Ciencias",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/CIENCIAS/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\CIENCIAS\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS_2.SEGUNDO.zip",
@@ -421,7 +403,6 @@
     "asignatura": "Ciencias",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/CIENCIAS/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\CIENCIAS\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS_3.TERCERO.zip",
@@ -444,7 +425,6 @@
     "asignatura": "Ciencias",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/CIENCIAS/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\CIENCIAS\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS_4.CUARTO.zip",
@@ -467,7 +447,6 @@
     "asignatura": "Ciencias",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/CIENCIAS/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\CIENCIAS\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS_5.QUINTO.zip",
@@ -490,7 +469,6 @@
     "asignatura": "Ciencias",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/CIENCIAS/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\CIENCIAS\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS_6.SEXTO.zip",
@@ -513,7 +491,6 @@
     "asignatura": "Educación Física",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION FISICA/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION FISICA\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_1.PRIMERO.zip",
@@ -536,7 +513,6 @@
     "asignatura": "Educación Física",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION FISICA/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION FISICA\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_2.SEGUNDO.zip",
@@ -559,7 +535,6 @@
     "asignatura": "Educación Física",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION FISICA/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION FISICA\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_3.TERCERO.zip",
@@ -582,7 +557,6 @@
     "asignatura": "Educación Física",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION FISICA/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION FISICA\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_4.CUARTO.zip",
@@ -605,7 +579,6 @@
     "asignatura": "Educación Física",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION FISICA/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION FISICA\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_5.QUINTO.zip",
@@ -628,7 +601,6 @@
     "asignatura": "Educación Física",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION FISICA/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION FISICA\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_6.SEXTO.zip",
@@ -651,7 +623,6 @@
     "asignatura": "Educación Musical",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION MUSICAL/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION MUSICAL\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_1.PRIMERO.zip",
@@ -674,7 +645,6 @@
     "asignatura": "Educación Musical",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION MUSICAL/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION MUSICAL\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_2.SEGUNDO.zip",
@@ -697,7 +667,6 @@
     "asignatura": "Educación Musical",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION MUSICAL/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION MUSICAL\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_3.TERCERO.zip",
@@ -720,7 +689,6 @@
     "asignatura": "Educación Musical",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION MUSICAL/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION MUSICAL\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_4.CUARTO.zip",
@@ -743,7 +711,6 @@
     "asignatura": "Educación Musical",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION MUSICAL/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION MUSICAL\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_5.QUINTO.zip",
@@ -766,7 +733,6 @@
     "asignatura": "Educación Musical",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION MUSICAL/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION MUSICAL\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_6.SEXTO.zip",
@@ -789,7 +755,6 @@
     "asignatura": "Educación para el Hogar",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION PARA EL HOGAR/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION PARA EL HOGAR\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_EL_HOGAR_1.PRIMERO.zip",
@@ -812,7 +777,6 @@
     "asignatura": "Educación para el Hogar",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION PARA EL HOGAR/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION PARA EL HOGAR\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_EL_HOGAR_2.SEGUNDO.zip",
@@ -835,7 +799,6 @@
     "asignatura": "Educación para el Hogar",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION PARA EL HOGAR/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION PARA EL HOGAR\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_EL_HOGAR_3.TERCERO.zip",
@@ -858,7 +821,6 @@
     "asignatura": "Educación para el Hogar",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION PARA EL HOGAR/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION PARA EL HOGAR\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_EL_HOGAR_4.CUARTO.zip",
@@ -881,7 +843,6 @@
     "asignatura": "Educación para el Hogar",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION PARA EL HOGAR/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION PARA EL HOGAR\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_EL_HOGAR_5.QUINTO.zip",
@@ -904,7 +865,6 @@
     "asignatura": "Educación para el Hogar",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION PARA EL HOGAR/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION PARA EL HOGAR\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_EL_HOGAR_6.SEXTO.zip",
@@ -927,7 +887,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION RELIGIOSA/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION RELIGIOSA\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_1.PRIMERO.zip",
@@ -950,7 +909,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION RELIGIOSA/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION RELIGIOSA\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_2.SEGUNDO.zip",
@@ -973,7 +931,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION RELIGIOSA/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION RELIGIOSA\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_3.TERCERO.zip",
@@ -996,7 +953,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION RELIGIOSA/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION RELIGIOSA\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_4.CUARTO.zip",
@@ -1019,7 +975,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION RELIGIOSA/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION RELIGIOSA\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_5.QUINTO.zip",
@@ -1042,7 +997,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/EDUCACION RELIGIOSA/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\EDUCACION RELIGIOSA\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_6.SEXTO.zip",
@@ -1065,7 +1019,6 @@
     "asignatura": "Español",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESPANOL/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESPANOL\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_1.PRIMERO.zip",
@@ -1088,7 +1041,6 @@
     "asignatura": "Español",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESPANOL/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESPANOL\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_2.SEGUNDO.zip",
@@ -1111,7 +1063,6 @@
     "asignatura": "Español",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESPANOL/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESPANOL\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_3.TERCERO.zip",
@@ -1134,7 +1085,6 @@
     "asignatura": "Español",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESPANOL/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESPANOL\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_4.CUARTO.zip",
@@ -1157,7 +1107,6 @@
     "asignatura": "Español",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESPANOL/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESPANOL\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_5.QUINTO.zip",
@@ -1180,7 +1129,6 @@
     "asignatura": "Español",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESPANOL/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESPANOL\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_6.SEXTO.zip",
@@ -1203,7 +1151,6 @@
     "asignatura": "Estudios Sociales y Educación Cívica",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESTUDIOS SOCIALES Y EDUCACION CIVICA/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESTUDIOS SOCIALES Y EDUCACION CIVICA\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_Y_EDUCACION_CIVICA_1.PRIMERO.zip",
@@ -1226,7 +1173,6 @@
     "asignatura": "Estudios Sociales y Educación Cívica",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESTUDIOS SOCIALES Y EDUCACION CIVICA/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESTUDIOS SOCIALES Y EDUCACION CIVICA\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_Y_EDUCACION_CIVICA_2.SEGUNDO.zip",
@@ -1249,7 +1195,6 @@
     "asignatura": "Estudios Sociales y Educación Cívica",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESTUDIOS SOCIALES Y EDUCACION CIVICA/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESTUDIOS SOCIALES Y EDUCACION CIVICA\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_Y_EDUCACION_CIVICA_3.TERCERO.zip",
@@ -1272,7 +1217,6 @@
     "asignatura": "Estudios Sociales y Educación Cívica",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESTUDIOS SOCIALES Y EDUCACION CIVICA/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESTUDIOS SOCIALES Y EDUCACION CIVICA\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_Y_EDUCACION_CIVICA_4.CUARTO.zip",
@@ -1295,7 +1239,6 @@
     "asignatura": "Estudios Sociales y Educación Cívica",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESTUDIOS SOCIALES Y EDUCACION CIVICA/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESTUDIOS SOCIALES Y EDUCACION CIVICA\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_Y_EDUCACION_CIVICA_5.QUINTO.zip",
@@ -1318,7 +1261,6 @@
     "asignatura": "Estudios Sociales y Educación Cívica",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ESTUDIOS SOCIALES Y EDUCACION CIVICA/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ESTUDIOS SOCIALES Y EDUCACION CIVICA\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_Y_EDUCACION_CIVICA_6.SEXTO.zip",
@@ -1341,7 +1283,6 @@
     "asignatura": "Francés",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/FRANCES/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\FRANCES\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_1.PRIMERO.zip",
@@ -1364,7 +1305,6 @@
     "asignatura": "Francés",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/FRANCES/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\FRANCES\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_2.SEGUNDO.zip",
@@ -1387,7 +1327,6 @@
     "asignatura": "Francés",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/FRANCES/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\FRANCES\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_3.TERCERO.zip",
@@ -1410,7 +1349,6 @@
     "asignatura": "Francés",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/FRANCES/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\FRANCES\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_4.CUARTO.zip",
@@ -1433,7 +1371,6 @@
     "asignatura": "Francés",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/FRANCES/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\FRANCES\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_5.QUINTO.zip",
@@ -1456,7 +1393,6 @@
     "asignatura": "Francés",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/FRANCES/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\FRANCES\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_6.SEXTO.zip",
@@ -1479,7 +1415,6 @@
     "asignatura": "Inglés",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/INGLES/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\INGLES\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_1.PRIMERO.zip",
@@ -1502,7 +1437,6 @@
     "asignatura": "Inglés",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/INGLES/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\INGLES\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_2.SEGUNDO.zip",
@@ -1525,7 +1459,6 @@
     "asignatura": "Inglés",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/INGLES/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\INGLES\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_3.TERCERO.zip",
@@ -1548,7 +1481,6 @@
     "asignatura": "Inglés",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/INGLES/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\INGLES\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_4.CUARTO.zip",
@@ -1571,7 +1503,6 @@
     "asignatura": "Inglés",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/INGLES/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\INGLES\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_5.QUINTO.zip",
@@ -1594,7 +1525,6 @@
     "asignatura": "Inglés",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/INGLES/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\INGLES\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_6.SEXTO.zip",
@@ -1617,7 +1547,6 @@
     "asignatura": "Italiano",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ITALIANO/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ITALIANO\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_1.PRIMERO.zip",
@@ -1640,7 +1569,6 @@
     "asignatura": "Italiano",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ITALIANO/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ITALIANO\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_2.SEGUNDO.zip",
@@ -1663,7 +1591,6 @@
     "asignatura": "Italiano",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ITALIANO/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ITALIANO\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_3.TERCERO.zip",
@@ -1686,7 +1613,6 @@
     "asignatura": "Italiano",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ITALIANO/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ITALIANO\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_4.CUARTO.zip",
@@ -1709,7 +1635,6 @@
     "asignatura": "Italiano",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ITALIANO/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ITALIANO\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_5.QUINTO.zip",
@@ -1732,7 +1657,6 @@
     "asignatura": "Italiano",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/ITALIANO/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\ITALIANO\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_6.SEXTO.zip",
@@ -1755,7 +1679,6 @@
     "asignatura": "Matemática",
     "grado": "Primer Año (1°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/MATEMATICA/1.PRIMERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\MATEMATICA\\1.PRIMERO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_1.PRIMERO.zip",
@@ -1778,7 +1701,6 @@
     "asignatura": "Matemática",
     "grado": "Segundo Año (2°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/MATEMATICA/2.SEGUNDO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\MATEMATICA\\2.SEGUNDO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_2.SEGUNDO.zip",
@@ -1801,7 +1723,6 @@
     "asignatura": "Matemática",
     "grado": "Tercer Año (3°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/MATEMATICA/3.TERCERO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\MATEMATICA\\3.TERCERO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_3.TERCERO.zip",
@@ -1824,7 +1745,6 @@
     "asignatura": "Matemática",
     "grado": "Cuarto Año (4°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/MATEMATICA/4.CUARTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\MATEMATICA\\4.CUARTO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_4.CUARTO.zip",
@@ -1847,7 +1767,6 @@
     "asignatura": "Matemática",
     "grado": "Quinto Año (5°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/MATEMATICA/5.QUINTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\MATEMATICA\\5.QUINTO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_5.QUINTO.zip",
@@ -1870,7 +1789,6 @@
     "asignatura": "Matemática",
     "grado": "Sexto Año (6°)",
     "rutaRelativa": "2.PRIMERO Y SEGUNDO CICLOS/MATEMATICA/6.SEXTO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\2.PRIMERO Y SEGUNDO CICLOS\\MATEMATICA\\6.SEXTO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_6.SEXTO.zip",
@@ -1893,7 +1811,6 @@
     "asignatura": "Artes Industriales",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ARTES INDUSTRIALES/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ARTES INDUSTRIALES\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_INDUSTRIALES_1.SEPTIMO.zip",
@@ -1916,7 +1833,6 @@
     "asignatura": "Artes Industriales",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ARTES INDUSTRIALES/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ARTES INDUSTRIALES\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_INDUSTRIALES_2.OCTAVO.zip",
@@ -1939,7 +1855,6 @@
     "asignatura": "Artes Industriales",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ARTES INDUSTRIALES/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ARTES INDUSTRIALES\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_INDUSTRIALES_3.NOVENO.zip",
@@ -1962,7 +1877,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ARTES PLASTICAS/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ARTES PLASTICAS\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_1.SEPTIMO.zip",
@@ -1985,7 +1899,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ARTES PLASTICAS/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ARTES PLASTICAS\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_2.OCTAVO.zip",
@@ -2008,7 +1921,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ARTES PLASTICAS/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ARTES PLASTICAS\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_3.NOVENO.zip",
@@ -2031,7 +1943,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ARTES PLASTICAS/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ARTES PLASTICAS\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_4.DECIMO.zip",
@@ -2054,7 +1965,6 @@
     "asignatura": "Artes Plásticas",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ARTES PLASTICAS/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ARTES PLASTICAS\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_ARTES_PLASTICAS_5.UNDECIMO.zip",
@@ -2077,7 +1987,6 @@
     "asignatura": "Biología",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/BIOLOGIA/1.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\BIOLOGIA\\1.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_BIOLOGIA_1.DECIMO.zip",
@@ -2100,7 +2009,6 @@
     "asignatura": "Biología",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/BIOLOGIA/2.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\BIOLOGIA\\2.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_BIOLOGIA_2.UNDECIMO.zip",
@@ -2123,7 +2031,6 @@
     "asignatura": "Ciencias",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/CIENCIAS/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\CIENCIAS\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS_1.SEPTIMO.zip",
@@ -2146,7 +2053,6 @@
     "asignatura": "Ciencias",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/CIENCIAS/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\CIENCIAS\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS_2.OCTAVO.zip",
@@ -2169,7 +2075,6 @@
     "asignatura": "Ciencias",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/CIENCIAS/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\CIENCIAS\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS_3.NOVENO.zip",
@@ -2192,7 +2097,6 @@
     "asignatura": "Educación Cívica",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION CIVICA/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION CIVICA\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_CIVICA_1.SEPTIMO.zip",
@@ -2215,7 +2119,6 @@
     "asignatura": "Educación Cívica",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION CIVICA/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION CIVICA\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_CIVICA_2.OCTAVO.zip",
@@ -2238,7 +2141,6 @@
     "asignatura": "Educación Cívica",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION CIVICA/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION CIVICA\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_CIVICA_3.NOVENO.zip",
@@ -2261,7 +2163,6 @@
     "asignatura": "Educación Cívica",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION CIVICA/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION CIVICA\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_CIVICA_4.DECIMO.zip",
@@ -2284,7 +2185,6 @@
     "asignatura": "Educación Cívica",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION CIVICA/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION CIVICA\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_CIVICA_5.UNDECIMO.zip",
@@ -2307,7 +2207,6 @@
     "asignatura": "Educación Física",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION FISICA/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION FISICA\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_1.SEPTIMO.zip",
@@ -2330,7 +2229,6 @@
     "asignatura": "Educación Física",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION FISICA/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION FISICA\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_2.OCTAVO.zip",
@@ -2353,7 +2251,6 @@
     "asignatura": "Educación Física",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION FISICA/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION FISICA\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_3.NOVENO.zip",
@@ -2376,7 +2273,6 @@
     "asignatura": "Educación Física",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION FISICA/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION FISICA\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_4.DECIMO.zip",
@@ -2399,7 +2295,6 @@
     "asignatura": "Educación Física",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION FISICA/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION FISICA\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_FISICA_5.UNDECIMO.zip",
@@ -2422,7 +2317,6 @@
     "asignatura": "Educación Musical",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION MUSICAL/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION MUSICAL\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_1.SEPTIMO.zip",
@@ -2445,7 +2339,6 @@
     "asignatura": "Educación Musical",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION MUSICAL/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION MUSICAL\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_2.OCTAVO.zip",
@@ -2468,7 +2361,6 @@
     "asignatura": "Educación Musical",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION MUSICAL/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION MUSICAL\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_3.NOVENO.zip",
@@ -2491,7 +2383,6 @@
     "asignatura": "Educación Musical",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION MUSICAL/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION MUSICAL\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_4.DECIMO.zip",
@@ -2514,7 +2405,6 @@
     "asignatura": "Educación Musical",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION MUSICAL/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION MUSICAL\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_MUSICAL_5.UNDECIMO.zip",
@@ -2537,7 +2427,6 @@
     "asignatura": "Educación para el Hogar",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION PARA EL HOGAR/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION PARA EL HOGAR\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_EL_HOGAR_1.SEPTIMO.zip",
@@ -2560,7 +2449,6 @@
     "asignatura": "Educación para el Hogar",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION PARA EL HOGAR/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION PARA EL HOGAR\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_EL_HOGAR_2.OCTAVO.zip",
@@ -2583,7 +2471,6 @@
     "asignatura": "Educación para el Hogar",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION PARA EL HOGAR/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION PARA EL HOGAR\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_EL_HOGAR_3.NOVENO.zip",
@@ -2606,7 +2493,6 @@
     "asignatura": "Educación para la Paz y la Convivencia",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION PARA LA PAZ Y LA CONVIVENCIA/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION PARA LA PAZ Y LA CONVIVENCIA\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_LA_PAZ_Y_LA_CONVIVENCIA_1.SEPTIMO.zip",
@@ -2629,7 +2515,6 @@
     "asignatura": "Educación para la Paz y la Convivencia",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION PARA LA PAZ Y LA CONVIVENCIA/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION PARA LA PAZ Y LA CONVIVENCIA\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_LA_PAZ_Y_LA_CONVIVENCIA_2.OCTAVO.zip",
@@ -2652,7 +2537,6 @@
     "asignatura": "Educación para la Paz y la Convivencia",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION PARA LA PAZ Y LA CONVIVENCIA/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION PARA LA PAZ Y LA CONVIVENCIA\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_LA_PAZ_Y_LA_CONVIVENCIA_3.NOVENO.zip",
@@ -2675,7 +2559,6 @@
     "asignatura": "Educación para la Paz y la Convivencia",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION PARA LA PAZ Y LA CONVIVENCIA/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION PARA LA PAZ Y LA CONVIVENCIA\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_PARA_LA_PAZ_Y_LA_CONVIVENCIA_4.DECIMO.zip",
@@ -2698,7 +2581,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION RELIGIOSA/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION RELIGIOSA\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_1.SEPTIMO.zip",
@@ -2721,7 +2603,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION RELIGIOSA/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION RELIGIOSA\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_2.OCTAVO.zip",
@@ -2744,7 +2625,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION RELIGIOSA/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION RELIGIOSA\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_3.NOVENO.zip",
@@ -2767,7 +2647,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION RELIGIOSA/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION RELIGIOSA\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_4.DECIMO.zip",
@@ -2790,7 +2669,6 @@
     "asignatura": "Educación Religiosa",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/EDUCACION RELIGIOSA/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\EDUCACION RELIGIOSA\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_EDUCACION_RELIGIOSA_5.UNDECIMO.zip",
@@ -2813,7 +2691,6 @@
     "asignatura": "Español",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESPANOL/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESPANOL\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_1.SEPTIMO.zip",
@@ -2836,7 +2713,6 @@
     "asignatura": "Español",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESPANOL/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESPANOL\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_2.OCTAVO.zip",
@@ -2859,7 +2735,6 @@
     "asignatura": "Español",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESPANOL/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESPANOL\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_3.NOVENO.zip",
@@ -2882,7 +2757,6 @@
     "asignatura": "Español",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESPANOL/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESPANOL\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_4.DECIMO.zip",
@@ -2905,7 +2779,6 @@
     "asignatura": "Español",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESPANOL/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESPANOL\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL_5.UNDECIMO.zip",
@@ -2928,7 +2801,6 @@
     "asignatura": "Estudios Sociales",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESTUDIOS SOCIALES/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESTUDIOS SOCIALES\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_1.SEPTIMO.zip",
@@ -2951,7 +2823,6 @@
     "asignatura": "Estudios Sociales",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESTUDIOS SOCIALES/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESTUDIOS SOCIALES\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_2.OCTAVO.zip",
@@ -2974,7 +2845,6 @@
     "asignatura": "Estudios Sociales",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESTUDIOS SOCIALES/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESTUDIOS SOCIALES\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_3.NOVENO.zip",
@@ -2997,7 +2867,6 @@
     "asignatura": "Estudios Sociales",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESTUDIOS SOCIALES/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESTUDIOS SOCIALES\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_4.DECIMO.zip",
@@ -3020,7 +2889,6 @@
     "asignatura": "Estudios Sociales",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ESTUDIOS SOCIALES/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ESTUDIOS SOCIALES\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES_5.UNDECIMO.zip",
@@ -3043,7 +2911,6 @@
     "asignatura": "Filosofía",
     "grado": "1.UNDECIMO",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/FILOSOFIA/1.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\FILOSOFIA\\1.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_FILOSOFIA_1.UNDECIMO.zip",
@@ -3066,7 +2933,6 @@
     "asignatura": "Física",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/FISICA/1.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\FISICA\\1.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_FISICA_1.DECIMO.zip",
@@ -3089,7 +2955,6 @@
     "asignatura": "Física",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/FISICA/2.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\FISICA\\2.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_FISICA_2.UNDECIMO.zip",
@@ -3112,7 +2977,6 @@
     "asignatura": "Francés",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/FRANCES/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\FRANCES\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_1.SEPTIMO.zip",
@@ -3135,7 +2999,6 @@
     "asignatura": "Francés",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/FRANCES/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\FRANCES\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_2.OCTAVO.zip",
@@ -3158,7 +3021,6 @@
     "asignatura": "Francés",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/FRANCES/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\FRANCES\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_3.NOVENO.zip",
@@ -3181,7 +3043,6 @@
     "asignatura": "Francés",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/FRANCES/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\FRANCES\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_4.DECIMO.zip",
@@ -3204,7 +3065,6 @@
     "asignatura": "Francés",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/FRANCES/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\FRANCES\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_FRANCES_5.UNDECIMO.zip",
@@ -3227,7 +3087,6 @@
     "asignatura": "Inglés",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/INGLES/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\INGLES\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_1.SEPTIMO.zip",
@@ -3250,7 +3109,6 @@
     "asignatura": "Inglés",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/INGLES/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\INGLES\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_2.OCTAVO.zip",
@@ -3273,7 +3131,6 @@
     "asignatura": "Inglés",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/INGLES/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\INGLES\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_3.NOVENO.zip",
@@ -3296,7 +3153,6 @@
     "asignatura": "Inglés",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/INGLES/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\INGLES\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_4.DECIMO.zip",
@@ -3319,7 +3175,6 @@
     "asignatura": "Inglés",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/INGLES/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\INGLES\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_INGLES_5.UNDECIMO.zip",
@@ -3342,7 +3197,6 @@
     "asignatura": "Italiano",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ITALIANO/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ITALIANO\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_1.SEPTIMO.zip",
@@ -3365,7 +3219,6 @@
     "asignatura": "Italiano",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ITALIANO/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ITALIANO\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_2.OCTAVO.zip",
@@ -3388,7 +3241,6 @@
     "asignatura": "Italiano",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ITALIANO/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ITALIANO\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_3.NOVENO.zip",
@@ -3411,7 +3263,6 @@
     "asignatura": "Italiano",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ITALIANO/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ITALIANO\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_4.DECIMO.zip",
@@ -3434,7 +3285,6 @@
     "asignatura": "Italiano",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ITALIANO/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ITALIANO\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_ITALIANO_5.UNDECIMO.zip",
@@ -3457,7 +3307,6 @@
     "asignatura": "Matemática",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/MATEMATICA/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\MATEMATICA\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_1.SEPTIMO.zip",
@@ -3480,7 +3329,6 @@
     "asignatura": "Matemática",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/MATEMATICA/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\MATEMATICA\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_2.OCTAVO.zip",
@@ -3503,7 +3351,6 @@
     "asignatura": "Matemática",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/MATEMATICA/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\MATEMATICA\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_3.NOVENO.zip",
@@ -3526,7 +3373,6 @@
     "asignatura": "Matemática",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/MATEMATICA/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\MATEMATICA\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_4.DECIMO.zip",
@@ -3549,7 +3395,6 @@
     "asignatura": "Matemática",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/MATEMATICA/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\MATEMATICA\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA_5.UNDECIMO.zip",
@@ -3572,7 +3417,6 @@
     "asignatura": "Orientación",
     "grado": "Sétimo Año (7°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ORIENTACION/1.SEPTIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ORIENTACION\\1.SEPTIMO",
     "archivos": [
       {
         "nombre": "Plan_ORIENTACION_1.SEPTIMO.zip",
@@ -3595,7 +3439,6 @@
     "asignatura": "Orientación",
     "grado": "Octavo Año (8°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ORIENTACION/2.OCTAVO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ORIENTACION\\2.OCTAVO",
     "archivos": [
       {
         "nombre": "Plan_ORIENTACION_2.OCTAVO.zip",
@@ -3618,7 +3461,6 @@
     "asignatura": "Orientación",
     "grado": "Noveno Año (9°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ORIENTACION/3.NOVENO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ORIENTACION\\3.NOVENO",
     "archivos": [
       {
         "nombre": "Plan_ORIENTACION_3.NOVENO.zip",
@@ -3641,7 +3483,6 @@
     "asignatura": "Orientación",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ORIENTACION/4.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ORIENTACION\\4.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_ORIENTACION_4.DECIMO.zip",
@@ -3664,7 +3505,6 @@
     "asignatura": "Orientación",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/ORIENTACION/5.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\ORIENTACION\\5.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_ORIENTACION_5.UNDECIMO.zip",
@@ -3687,7 +3527,6 @@
     "asignatura": "Psicología",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/PSICOLOGIA/1.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\PSICOLOGIA\\1.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_PSICOLOGIA_1.DECIMO.zip",
@@ -3710,7 +3549,6 @@
     "asignatura": "Química",
     "grado": "Décimo Año (10°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/QUIMICA/1.DECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\QUIMICA\\1.DECIMO",
     "archivos": [
       {
         "nombre": "Plan_QUIMICA_1.DECIMO.zip",
@@ -3733,7 +3571,6 @@
     "asignatura": "Química",
     "grado": "Undécimo Año (11°)",
     "rutaRelativa": "3.TERCER CICLO Y EDUCACION DIVERSIFICADA/QUIMICA/2.UNDECIMO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\3.TERCER CICLO Y EDUCACION DIVERSIFICADA\\QUIMICA\\2.UNDECIMO",
     "archivos": [
       {
         "nombre": "Plan_QUIMICA_2.UNDECIMO.zip",
@@ -3756,7 +3593,6 @@
     "asignatura": "Orientaciones Generales",
     "grado": "Documento Rector",
     "rutaRelativa": "4.EDUCACION PERSONAS JOVENES Y ADULTAS/1.ORIENTACIONES GENERALES",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\4.EDUCACION PERSONAS JOVENES Y ADULTAS\\1.ORIENTACIONES GENERALES",
     "archivos": [
       {
         "nombre": "Plan_1.ORIENTACIONES_GENERALES.zip",
@@ -3779,7 +3615,6 @@
     "asignatura": "Ciencias",
     "grado": "Guía Específica de Aprendizaje",
     "rutaRelativa": "4.EDUCACION PERSONAS JOVENES Y ADULTAS/2.GUIAS ESPECIFICAS/CIENCIAS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\4.EDUCACION PERSONAS JOVENES Y ADULTAS\\2.GUIAS ESPECIFICAS\\CIENCIAS",
     "archivos": [
       {
         "nombre": "Plan_CIENCIAS.zip",
@@ -3802,7 +3637,6 @@
     "asignatura": "Español",
     "grado": "Guía Específica de Aprendizaje",
     "rutaRelativa": "4.EDUCACION PERSONAS JOVENES Y ADULTAS/2.GUIAS ESPECIFICAS/ESPANOL",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\4.EDUCACION PERSONAS JOVENES Y ADULTAS\\2.GUIAS ESPECIFICAS\\ESPANOL",
     "archivos": [
       {
         "nombre": "Plan_ESPANOL.zip",
@@ -3825,7 +3659,6 @@
     "asignatura": "Estudios Sociales",
     "grado": "Guía Específica de Aprendizaje",
     "rutaRelativa": "4.EDUCACION PERSONAS JOVENES Y ADULTAS/2.GUIAS ESPECIFICAS/ESTUDIOS SOCIALES",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\4.EDUCACION PERSONAS JOVENES Y ADULTAS\\2.GUIAS ESPECIFICAS\\ESTUDIOS SOCIALES",
     "archivos": [
       {
         "nombre": "Plan_ESTUDIOS_SOCIALES.zip",
@@ -3848,7 +3681,6 @@
     "asignatura": "Lenguas Extranjeras",
     "grado": "Guía Específica de Aprendizaje",
     "rutaRelativa": "4.EDUCACION PERSONAS JOVENES Y ADULTAS/2.GUIAS ESPECIFICAS/LENGUAS EXTRANJERAS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\4.EDUCACION PERSONAS JOVENES Y ADULTAS\\2.GUIAS ESPECIFICAS\\LENGUAS EXTRANJERAS",
     "archivos": [
       {
         "nombre": "Plan_LENGUAS_EXTRANJERAS.zip",
@@ -3871,7 +3703,6 @@
     "asignatura": "Matemática",
     "grado": "Guía Específica de Aprendizaje",
     "rutaRelativa": "4.EDUCACION PERSONAS JOVENES Y ADULTAS/2.GUIAS ESPECIFICAS/MATEMATICA",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\4.EDUCACION PERSONAS JOVENES Y ADULTAS\\2.GUIAS ESPECIFICAS\\MATEMATICA",
     "archivos": [
       {
         "nombre": "Plan_MATEMATICA.zip",
@@ -3894,7 +3725,6 @@
     "asignatura": "Tecnologías",
     "grado": "Guía Específica de Aprendizaje",
     "rutaRelativa": "4.EDUCACION PERSONAS JOVENES Y ADULTAS/2.GUIAS ESPECIFICAS/TECNOLOGIAS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\4.EDUCACION PERSONAS JOVENES Y ADULTAS\\2.GUIAS ESPECIFICAS\\TECNOLOGIAS",
     "archivos": [
       {
         "nombre": "Plan_TECNOLOGIAS.zip",
@@ -3917,7 +3747,6 @@
     "asignatura": "Centros de Educación Especial",
     "grado": "Plan Integral",
     "rutaRelativa": "5.EDUCACION ESPECIAL/1.CENTROS DE EDUCACION ESPECIAL",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\5.EDUCACION ESPECIAL\\1.CENTROS DE EDUCACION ESPECIAL",
     "archivos": [
       {
         "nombre": "Plan_1.CENTROS_DE_EDUCACION_ESPECIAL.zip",
@@ -3940,7 +3769,6 @@
     "asignatura": "Aula Integrada",
     "grado": "Discapacidad Intelectual y Múltiple",
     "rutaRelativa": "5.EDUCACION ESPECIAL/2.AULA INTEGRADA (RETRASO MENTAL-DISCAPACIDAD INTELECTUAL-DISCAPACIDAD MULTIPLE)",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\5.EDUCACION ESPECIAL\\2.AULA INTEGRADA (RETRASO MENTAL-DISCAPACIDAD INTELECTUAL-DISCAPACIDAD MULTIPLE)",
     "archivos": [
       {
         "nombre": "Plan_2.AULA_INTEGRADA_(RETRASO_MENTAL-DISCAPACIDAD_INTELECTUAL-DISCAPACIDAD_MULTIPLE).zip",
@@ -3963,7 +3791,6 @@
     "asignatura": "Servicios de Audición y Lenguaje",
     "grado": "I y II Ciclos",
     "rutaRelativa": "5.EDUCACION ESPECIAL/3.SERVICIOS I Y II CICLOS AUDICION Y LENGUAJE",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\5.EDUCACION ESPECIAL\\3.SERVICIOS I Y II CICLOS AUDICION Y LENGUAJE",
     "archivos": [
       {
         "nombre": "Plan_3.SERVICIOS_I_Y_II_CICLOS_AUDICION_Y_LENGUAJE.zip",
@@ -3986,7 +3813,6 @@
     "asignatura": "Servicios Educativos de Primera Infancia",
     "grado": "Discapacidad o Riesgo en el Desarrollo",
     "rutaRelativa": "5.EDUCACION ESPECIAL/4.SERVICIOS EDUCATIVOS NINOS-NINAS CON DISCAPACIDAD O RIESGO EN EL DESARROLLO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\5.EDUCACION ESPECIAL\\4.SERVICIOS EDUCATIVOS NINOS-NINAS CON DISCAPACIDAD O RIESGO EN EL DESARROLLO",
     "archivos": [
       {
         "nombre": "Plan_4.SERVICIOS_EDUCATIVOS_NINOS-NINAS_CON_DISCAPACIDAD_O_RIESGO_EN_EL_DESARROLLO.zip",
@@ -4009,7 +3835,6 @@
     "asignatura": "Educación Vocacional (Plan Nacional)",
     "grado": "III Ciclo y Diversificado Vocacional",
     "rutaRelativa": "5.EDUCACION ESPECIAL/5.TERCER CICLO Y CICLO DIVERSIFICADO VOCACIONAL (PLAN NACIONAL)",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\5.EDUCACION ESPECIAL\\5.TERCER CICLO Y CICLO DIVERSIFICADO VOCACIONAL (PLAN NACIONAL)",
     "archivos": [
       {
         "nombre": "Plan_5.TERCER_CICLO_Y_CICLO_DIVERSIFICADO_VOCACIONAL_(PLAN_NACIONAL).zip",
@@ -4032,7 +3857,6 @@
     "asignatura": "Cultura Indígena",
     "grado": "Cosmovision Cabecar Talamanca Tercer Ciclo",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/CULTURA/COSMOVISION CABECAR TALAMANCA TERCER CICLO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\CULTURA\\COSMOVISION CABECAR TALAMANCA TERCER CICLO",
     "archivos": [
       {
         "nombre": "Plan_CULTURA_COSMOVISION_CABECAR_TALAMANCA_TERCER_CICLO.zip",
@@ -4055,7 +3879,6 @@
     "asignatura": "Cultura Indígena",
     "grado": "Boruca I y II Ciclos",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/CULTURA/CULTURA BORUCA I Y II CICLOS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\CULTURA\\CULTURA BORUCA I Y II CICLOS",
     "archivos": [
       {
         "nombre": "Plan_CULTURA_CULTURA_BORUCA_I_Y_II_CICLOS.zip",
@@ -4078,7 +3901,6 @@
     "asignatura": "Cultura Indígena",
     "grado": "Bribri Territorio Salitre III Ciclo y Educación Diversificada",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/CULTURA/CULTURA BRIBRI TERRITORIO SALITRE III CICLO Y EDUCACION DIVERSIFICADA",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\CULTURA\\CULTURA BRIBRI TERRITORIO SALITRE III CICLO Y EDUCACION DIVERSIFICADA",
     "archivos": [
       {
         "nombre": "Plan_CULTURA_CULTURA_BRIBRI_TERRITORIO_SALITRE_III_CICLO_Y_EDUCACION_DIVERSIFICADA.zip",
@@ -4101,7 +3923,6 @@
     "asignatura": "Cultura Indígena",
     "grado": "Cabecar Chirripo I Ciclo",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/CULTURA/CULTURA CABECAR CHIRRIPO I CICLO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\CULTURA\\CULTURA CABECAR CHIRRIPO I CICLO",
     "archivos": [
       {
         "nombre": "Plan_CULTURA_CULTURA_CABECAR_CHIRRIPO_I_CICLO.zip",
@@ -4124,7 +3945,6 @@
     "asignatura": "Cultura Indígena",
     "grado": "Ngabe-bugle I y II Ciclos",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/CULTURA/CULTURA NGABE-BUGLE I Y II CICLOS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\CULTURA\\CULTURA NGABE-BUGLE I Y II CICLOS",
     "archivos": [
       {
         "nombre": "Plan_CULTURA_CULTURA_NGABE-BUGLE_I_Y_II_CICLOS.zip",
@@ -4147,7 +3967,6 @@
     "asignatura": "Cultura Indígena",
     "grado": "Ngabe-bugle Tercer Ciclo",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/CULTURA/CULTURA NGABE-BUGLE TERCER CICLO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\CULTURA\\CULTURA NGABE-BUGLE TERCER CICLO",
     "archivos": [
       {
         "nombre": "Plan_CULTURA_CULTURA_NGABE-BUGLE_TERCER_CICLO.zip",
@@ -4170,7 +3989,6 @@
     "asignatura": "Lengua Indígena",
     "grado": "Bribri Territorio Salitre III Ciclo y Educación Diversificada",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/LENGUA/IDIOMA BRIBRI TERRITORIO SALITRE III CICLO Y EDUCACION DIVERSIFICADA",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\LENGUA\\IDIOMA BRIBRI TERRITORIO SALITRE III CICLO Y EDUCACION DIVERSIFICADA",
     "archivos": [
       {
         "nombre": "Plan_LENGUA_IDIOMA_BRIBRI_TERRITORIO_SALITRE_III_CICLO_Y_EDUCACION_DIVERSIFICADA.zip",
@@ -4193,7 +4011,6 @@
     "asignatura": "Lengua Indígena",
     "grado": "Ngabere I y II Ciclos",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/LENGUA/IDIOMA NGABERE I Y II CICLOS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\LENGUA\\IDIOMA NGABERE I Y II CICLOS",
     "archivos": [
       {
         "nombre": "Plan_LENGUA_IDIOMA_NGABERE_I_Y_II_CICLOS.zip",
@@ -4216,7 +4033,6 @@
     "asignatura": "Lengua Indígena",
     "grado": "Boruca I y II Ciclos",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/LENGUA/LENGUA BORUCA I Y II CICLOS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\LENGUA\\LENGUA BORUCA I Y II CICLOS",
     "archivos": [
       {
         "nombre": "Plan_LENGUA_LENGUA_BORUCA_I_Y_II_CICLOS.zip",
@@ -4239,7 +4055,6 @@
     "asignatura": "Lengua Indígena",
     "grado": "Bribri Territorio Talamanca I y II Ciclos",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/LENGUA/LENGUA BRIBRI TERRITORIO TALAMANCA I Y II CICLOS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\LENGUA\\LENGUA BRIBRI TERRITORIO TALAMANCA I Y II CICLOS",
     "archivos": [
       {
         "nombre": "Plan_LENGUA_LENGUA_BRIBRI_TERRITORIO_TALAMANCA_I_Y_II_CICLOS.zip",
@@ -4262,7 +4077,6 @@
     "asignatura": "Lengua Indígena",
     "grado": "Ngabe-bugle Tercer Ciclo",
     "rutaRelativa": "6.EDUCACION INTERCULTURAL/LENGUA/LENGUA NGABE-BUGLE TERCER CICLO",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\6.EDUCACION INTERCULTURAL\\LENGUA\\LENGUA NGABE-BUGLE TERCER CICLO",
     "archivos": [
       {
         "nombre": "Plan_LENGUA_LENGUA_NGABE-BUGLE_TERCER_CICLO.zip",
@@ -4285,7 +4099,6 @@
     "asignatura": "1.ARTES INDUSTRIALES",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/1.ARTES INDUSTRIALES",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\1.ARTES INDUSTRIALES",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_1.ARTES_INDUSTRIALES.zip",
@@ -4308,7 +4121,6 @@
     "asignatura": "10.MATEMATICA",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/10.MATEMATICA",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\10.MATEMATICA",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_10.MATEMATICA.zip",
@@ -4331,7 +4143,6 @@
     "asignatura": "11.INGLES",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/11.INGLES",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\11.INGLES",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_11.INGLES.zip",
@@ -4354,7 +4165,6 @@
     "asignatura": "2.ARTES PLASTICAS",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/2.ARTES PLASTICAS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\2.ARTES PLASTICAS",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_2.ARTES_PLASTICAS.zip",
@@ -4377,7 +4187,6 @@
     "asignatura": "3.CIENCIAS",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/3.CIENCIAS",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\3.CIENCIAS",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_3.CIENCIAS.zip",
@@ -4400,7 +4209,6 @@
     "asignatura": "4.ESPANOL",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/4.ESPANOL",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\4.ESPANOL",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_4.ESPANOL.zip",
@@ -4423,7 +4231,6 @@
     "asignatura": "5.ESTUDIOS SOCIALES Y EDUCACION CIVICA",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/5.ESTUDIOS SOCIALES Y EDUCACION CIVICA",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\5.ESTUDIOS SOCIALES Y EDUCACION CIVICA",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_5.ESTUDIOS_SOCIALES_Y_EDUCACION_CIVICA.zip",
@@ -4446,7 +4253,6 @@
     "asignatura": "6.EDUCACION FISICA",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/6.EDUCACION FISICA",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\6.EDUCACION FISICA",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_6.EDUCACION_FISICA.zip",
@@ -4469,7 +4275,6 @@
     "asignatura": "7.EDUCACION PARA EL HOGAR",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/7.EDUCACION PARA EL HOGAR",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\7.EDUCACION PARA EL HOGAR",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_7.EDUCACION_PARA_EL_HOGAR.zip",
@@ -4492,7 +4297,6 @@
     "asignatura": "8.EDUCACION MUSICAL",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/8.EDUCACION MUSICAL",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\8.EDUCACION MUSICAL",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_8.EDUCACION_MUSICAL.zip",
@@ -4515,7 +4319,6 @@
     "asignatura": "9.EDUCACION RELIGIOSA",
     "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
     "rutaRelativa": "7.UNIDOCENTES/9.EDUCACION RELIGIOSA",
-    "carpetaFisica": "C:\\xampp\\htdocs\\ddc-planes-digitales\\app\\public\\aplicativo-planeamientos-2027\\7.UNIDOCENTES\\9.EDUCACION RELIGIOSA",
     "archivos": [
       {
         "nombre": "Plan_UNIDOCENTES_9.EDUCACION_RELIGIOSA.zip",

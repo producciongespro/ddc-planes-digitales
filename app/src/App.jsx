@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { loadPlanesFromStorage, savePlanesToStorage, fetchPlanesDynamic } from './data/planes2027Data';
+import { fetchPlanesCatalog, saveDownloadsToStorage } from './data/planes2027Data';
 import { Header } from './components/Header';
 import { WelcomeHero } from './components/WelcomeHero';
 import { GeneralTable } from './components/GeneralTable';
@@ -7,38 +7,31 @@ import { TopDownloads } from './components/TopDownloads';
 import { Footer } from './components/Footer';
 import { ResetConfirmModal } from './components/ResetConfirmModal';
 import { AboutModal } from './components/AboutModal';
+import { SplashScreen } from './components/SplashScreen';
 
 export default function App() {
-  // Estado principal de los 197 planeamientos 2027 persistidos en localStorage
-  const [planes, setPlanes] = useState(() => loadPlanesFromStorage());
+  // Estado principal del catálogo de 197 planeamientos cargado asíncronamente
+  const [planes, setPlanes] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState(null);
 
-  // Sincronización híbrida en tiempo real con el sistema de archivos (XAMPP PHP / Vite)
+  // Carga asíncrona desacoplada del catálogo curricular oficial desde /data/planes2027.json
+  const cargarCatalogo = async () => {
+    setIsLoading(true);
+    setLoadError(null);
+    try {
+      const data = await fetchPlanesCatalog();
+      setPlanes(data);
+    } catch (err) {
+      console.error('Error al cargar catálogo curricular:', err);
+      setLoadError(err.message || 'No fue posible conectar con el servidor.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   useEffect(() => {
-    let isMounted = true;
-    fetchPlanesDynamic().then((planesDinamicos) => {
-      if (!isMounted || !planesDinamicos || !Array.isArray(planesDinamicos)) return;
-
-      setPlanes((prevPlanes) => {
-        const downloadsMap = new Map();
-        prevPlanes.forEach((p) => {
-          if (p && p.id && typeof p.descargas === 'number') {
-            downloadsMap.set(p.id, p.descargas);
-          }
-        });
-
-        const actualizados = planesDinamicos.map((p) => ({
-          ...p,
-          descargas: downloadsMap.get(p.id) || p.descargas || 0
-        }));
-
-        savePlanesToStorage(actualizados);
-        return actualizados;
-      });
-    });
-
-    return () => {
-      isMounted = false;
-    };
+    cargarCatalogo();
   }, []);
 
   // Estado unificado de filtros
@@ -90,11 +83,6 @@ export default function App() {
     setDarkMode((prev) => !prev);
   };
 
-  // Sincronizar cambios de planes en localStorage
-  useEffect(() => {
-    savePlanesToStorage(planes);
-  }, [planes]);
-
   // Cálculos de métricas globales
   const totalDescargas = useMemo(() => {
     return planes.reduce((acc, curr) => acc + (curr.descargas || 0), 0);
@@ -117,11 +105,11 @@ export default function App() {
     setPlanes((prevPlanes) => {
       const updated = prevPlanes.map((item) => {
         if (item.id === doc.id) {
-          return { ...item, descargas: item.descargas + 1 };
+          return { ...item, descargas: (item.descargas || 0) + 1 };
         }
         return item;
       });
-      savePlanesToStorage(updated);
+      saveDownloadsToStorage(updated);
       return updated;
     });
 
@@ -160,10 +148,20 @@ export default function App() {
   // Restablecer contadores a cero absoluto (función de mantenimiento institucional)
   const handleConfirmReset = () => {
     const planesCero = planes.map((p) => ({ ...p, descargas: 0 }));
-    savePlanesToStorage(planesCero);
+    saveDownloadsToStorage(planesCero);
     setPlanes(planesCero);
     handleResetFiltros();
   };
+
+  // 0. PANTALLA DE CARGA (SPLASH SCREEN) O ERROR DE RED
+  if (isLoading || loadError) {
+    return (
+      <SplashScreen
+        error={loadError}
+        onRetry={cargarCatalogo}
+      />
+    );
+  }
 
   return (
     <div className="h-screen flex flex-col bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-200 overflow-hidden">
