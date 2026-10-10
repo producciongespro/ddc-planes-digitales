@@ -89,7 +89,7 @@ export function AboutModal({ isOpen, onClose }) {
           {/* Cobertura de los 197 Planeamientos Normados 2027 */}
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-blue-900 dark:text-blue-400 mb-2 flex items-center gap-1.5">
-              <span>📚</span> Estructura y Cobertura Normada (197 Planes · 2027)
+              <span>📚</span> Estructura y Cobertura Normada (197 Planes Curriculares)
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
               <div className="p-3 rounded-lg bg-blue-50/60 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/40">

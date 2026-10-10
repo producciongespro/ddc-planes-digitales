@@ -43,7 +43,7 @@ describe('Suite 1: planes2027Data (Capa de Datos y Persistencia Ligera)', () => 
     await fetchPlanesCatalog();
 
     const [calledUrl, options] = global.fetch.mock.calls[0];
-    expect(calledUrl).toContain('/data/planes2027.json?_t=');
+    expect(calledUrl).toContain('/data/ddc-planeamientos.json?_t=');
     expect(options.cache).toBe('no-cache');
     expect(options.headers['Pragma']).toBe('no-cache');
     expect(options.headers['Cache-Control']).toBe('no-cache');
@@ -67,7 +67,7 @@ describe('Suite 1: planes2027Data (Capa de Datos y Persistencia Ligera)', () => 
     });
 
     await expect(fetchPlanesCatalog()).rejects.toThrow(
-      'El formato del archivo planes2027.json no es una lista válida.'
+      'El formato del archivo ddc-planeamientos.json no es una lista válida.'
     );
   });
 

@@ -35,16 +35,24 @@ Cada solicitud de commit y sincronización debe superar obligatoriamente una bat
   │  - Cero rutas físicas de Windows (C:\) en catálogo          │
   │  - Cero imports directos del catálogo al bundle de React     │
   │  - Tratamiento formal institucional («usted»)               │
-  │  Comando: `npm run audit:guardrails`                        │
+  │  - Cero puntos en nombres de carpetas y cero espacios web   │
+  │  - Cero prefijos numéricos ("1. ") en UI y asignaturas      │
+  │  - Verificación 100% de existencia física de los 197 ZIPs   │
+  │  - Guardrail Físico de Directorios Kebab-case en disco      │
+  │  - Guardrail Físico de Archivos ZIP Kebab-case en disco     │
+  │  - Guardrail de Paridad Bidireccional (0 huérfanos/rotos)   │
+  │  Comando: `npm run audit:guardrails` (10 guardrails)        │
   └────────────────────────────┬────────────────────────────────┘
                                │ (Superado al 100% ✅)
                                ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  PUERTA 2: SUITE DE PRUEBAS AUTOMATIZADAS (Subagente Tester)│
-  │  - 53 pruebas en 7 suites completas (Vitest + jsdom)        │
+  │  - 63 pruebas en 8 suites completas (Vitest + jsdom)        │
   │  - Matriz de 20 Dimensiones Comerciales (320px a 4K UHD)    │
   │  - Arnés de Caos (Red offline, JSON corrupto, clics, cuota) │
   │  - Arnés Sensorial (Accesibilidad Ley 7600 y WCAG AA)       │
+  │  - React 19 Enterprise Error Boundary (Tolerancia a UI)     │
+  │  - WCAG 2.4.1 Skip Link accesible a catálogo principal      │
   │  - Resiliencia de red y Splash Screen con reintento         │
   │  - Persistencia de descargas y paginador matemático         │
   │  Comando: `npm test`                                        │
@@ -76,10 +84,11 @@ Cada solicitud de commit y sincronización debe superar obligatoriamente una bat
 Si cualquiera de las siguientes condiciones se presenta durante la ejecución, el proceso de commit se **aborta de inmediato**, se revierte cualquier cambio en el área de preparación y se le notifica a Chris el archivo y línea exactos del fallo:
 
 1. **Detección de Mojibake:** Detección de secuencias corruptas (`Ã¡`, `Ã©`, `Ã±`, `Â°`, etc.) en cualquier archivo `.js`, `.jsx`, `.json`, `.html`, `.css` o `.md`.
-2. **Presencia de Rutas Locales:** Existencia de cadenas como `C:\` o nombres de disco duro en `public/data/planes2027.json`.
-3. **Acoplamiento del Catálogo:** Detección de cualquier sentencia `import` que cargue estáticamente el archivo `planes2027.json` en lugar de utilizar `fetch()`.
-4. **Fallo en Pruebas Unitarias, Caos, Sensorial o Layout:** Cualquier aserción no cumplida en las 53 pruebas de Vitest o desbordamiento en los 20 viewports comerciales.
-5. **Exceso de Peso en Bundle:** Archivo JavaScript compilado superior a 300 KB.
+2. **Presencia de Rutas Locales:** Existencia de cadenas como `C:\` o nombres de disco duro en `public/data/ddc-planeamientos.json`.
+3. **Acoplamiento del Catálogo:** Detección de cualquier sentencia `import` que cargue estáticamente el archivo `ddc-planeamientos.json` o `planes2027.json` en lugar de utilizar `fetch()`.
+4. **Fallo en Pruebas Unitarias, Caos, Sensorial o Layout:** Cualquier aserción no cumplida en las 59 pruebas de Vitest o desbordamiento en los 20 viewports comerciales.
+5. **Violación de Nomenclatura en Disco:** Carpetas o archivos en `public/ddc-planeamientos/` con mayúsculas, espacios, puntos o prefijos numéricos.
+6. **Exceso de Peso en Bundle:** Archivo JavaScript compilado superior a 300 KB.
 
 ---
 

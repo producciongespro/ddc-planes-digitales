@@ -25,10 +25,6 @@ export function SplashScreen({ error, onRetry }) {
               <span className="text-[10px] font-black tracking-widest text-blue-300">MEP · DDC</span>
             </div>
           </div>
-          {/* Badge de vigencia 2027 */}
-          <span className="absolute -bottom-2 -right-2 px-2 py-0.5 text-[10px] font-extrabold bg-amber-500 text-slate-950 rounded-full shadow-md border border-amber-300">
-            2027
-          </span>
         </div>
 
         {/* Título institucional */}
@@ -77,7 +73,7 @@ export function SplashScreen({ error, onRetry }) {
             </div>
 
             <p className="text-sm font-medium text-slate-200 tracking-wide">
-              Cargando catálogo curricular 2027...
+              Cargando catálogo curricular...
             </p>
             <p className="text-[11px] text-slate-400 mt-1">
               Sincronizando 197 programas oficiales

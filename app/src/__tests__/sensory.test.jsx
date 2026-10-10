@@ -1,11 +1,12 @@
 import React from 'react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from '../App';
 import { GeneralTable } from '../components/GeneralTable';
 import { SplashScreen } from '../components/SplashScreen';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { AboutModal } from '../components/AboutModal';
 
 const mockSamplePlanes = [
   {
@@ -15,12 +16,12 @@ const mockSamplePlanes = [
     ofertaBadgeColor: 'amber',
     asignatura: 'Educación Musical',
     grado: 'Materno Infantil',
-    rutaRelativa: '1.PREESCOLAR',
+    rutaRelativa: 'preescolar',
     archivos: [
-      { nombre: 'Plan.zip', tipo: 'ZIP', ruta: '/plan.zip', tamanoBytes: 1024, tamanoLegible: '1 KB' }
+      { nombre: 'plan-interactivo-i.zip', tipo: 'ZIP', ruta: '/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip', tamanoBytes: 1024, tamanoLegible: '1 KB' }
     ],
-    archivoPrincipal: 'Plan.zip',
-    rutaDescarga: '/plan.zip',
+    archivoPrincipal: 'plan-interactivo-i.zip',
+    rutaDescarga: '/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip',
     descargas: 14,
     vigencia: '2027'
   }
@@ -127,7 +128,7 @@ describe('Suite 7: sensory (Arnés Sensorial, Accesibilidad Ley 7600 y WCAG AA)'
     // Persona con discapacidad visual debe escuchar el título y la vigencia institucional
     expect(screen.getByText(/Planes de Estudio Digitales/i)).toBeInTheDocument();
     expect(screen.getByText(/Ministerio de Educación Pública de Costa Rica/i)).toBeInTheDocument();
-    expect(screen.getByText(/Cargando catálogo curricular 2027/i)).toBeInTheDocument();
+    expect(screen.getByText(/Cargando catálogo curricular/i)).toBeInTheDocument();
   });
 
   it('SENS-06: Retroalimentación textual cuantitativa en tiempo real para usuarios con baja visión', () => {
@@ -144,5 +145,31 @@ describe('Suite 7: sensory (Arnés Sensorial, Accesibilidad Ley 7600 y WCAG AA)'
     // Los contadores deben ser semánticos para lectores de pantalla
     expect(screen.getByText(/Mostrando/i)).toBeInTheDocument();
     expect(screen.getAllByText(/planeamientos/i).length).toBeGreaterThan(0);
+  });
+
+  it('SENS-07: Cumplimiento WCAG 2.4.1 (Bypass Blocks) con Skip Link accesible al catálogo principal', async () => {
+    // Mockeamos fetch para retornar planes inmediatamente
+    global.fetch = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => mockSamplePlanes
+    });
+
+    render(<App />);
+
+    const skipLink = await screen.findByRole('link', { name: /Saltar al catálogo de planeamientos/i });
+    expect(skipLink).toBeInTheDocument();
+    expect(skipLink).toHaveAttribute('href', '#main-content');
+    expect(skipLink.className).toContain('sr-only');
+  });
+
+  it('SENS-08: Cumplimiento WAI-ARIA Dialog - Cerrar AboutModal al presionar la tecla Escape', () => {
+    const handleClose = vi.fn();
+    render(<AboutModal isOpen={true} onClose={handleClose} />);
+
+    expect(screen.getByRole('dialog')).toBeInTheDocument();
+
+    // Disparar evento de teclado Escape
+    fireEvent.keyDown(window, { key: 'Escape', code: 'Escape' });
+    expect(handleClose).toHaveBeenCalledTimes(1);
   });
 });

@@ -9,8 +9,7 @@ describe('Suite 3: SplashScreen (Resiliencia y Ciclo de Vida)', () => {
 
     expect(screen.getByText(/Planes de Estudio Digitales/i)).toBeInTheDocument();
     expect(screen.getByText(/Ministerio de Educación Pública de Costa Rica/i)).toBeInTheDocument();
-    expect(screen.getByText(/Cargando catálogo curricular 2027/i)).toBeInTheDocument();
-    expect(screen.getByText('2027')).toBeInTheDocument();
+    expect(screen.getByText(/Cargando catálogo curricular\.\.\./i)).toBeInTheDocument();
   });
 
   it('TEST-15: SplashScreen muestra tarjeta de error ante fallo de red', () => {

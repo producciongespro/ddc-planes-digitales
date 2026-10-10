@@ -194,14 +194,14 @@ export function GeneralTable({
   return (
     <section className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden mb-8 transition-colors duration-200">
       {/* 1. ENCABEZADO INSTITUCIONAL MAESTRO */}
-      <div className="bg-gradient-to-r from-[#0f2942] to-[#1e293b] dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091] p-5 sm:p-6 text-white border-b-2 border-amber-500 shadow-xs flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div className="bg-gradient-to-r from-[#003B71] via-[#017EC1] to-[#0267a0] dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091] p-5 sm:p-6 text-white border-b-2 border-amber-500 shadow-xs flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
           <div className="flex items-center gap-3 mb-1.5">
-            <div className="p-2 rounded-lg bg-blue-600/60 text-white shadow">
+            <div className="p-2 rounded-lg bg-white/20 text-white shadow backdrop-blur-xs border border-white/20">
               <IconTable className="w-5 h-5" />
             </div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight">
-              1. Catálogo Oficial de Planeamientos 2027
+              1. Catálogo Oficial de Planeamientos
             </h2>
           </div>
           <p className="text-slate-300 text-xs sm:text-sm max-w-2xl">

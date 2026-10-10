@@ -1,0 +1,4336 @@
+[
+  {
+    "id": "DDC-2027-001",
+    "ofertaCodigo": "PREESCOLAR",
+    "ofertaNombre": "Educación Preescolar",
+    "ofertaBadgeColor": "amber",
+    "asignatura": "Educación Preescolar",
+    "grado": "Materno Infantil (Interactivo I)",
+    "rutaRelativa": "preescolar/interactivo-i",
+    "archivos": [
+      {
+        "nombre": "plan-interactivo-i.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip",
+        "tamanoBytes": 1057,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-interactivo-i.zip",
+    "rutaDescarga": "/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-002",
+    "ofertaCodigo": "PREESCOLAR",
+    "ofertaNombre": "Educación Preescolar",
+    "ofertaBadgeColor": "amber",
+    "asignatura": "Educación Preescolar",
+    "grado": "Interactivo II",
+    "rutaRelativa": "preescolar/interactivo-ii",
+    "archivos": [
+      {
+        "nombre": "plan-interactivo-ii.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/preescolar/interactivo-ii/plan-interactivo-ii.zip",
+        "tamanoBytes": 1063,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-interactivo-ii.zip",
+    "rutaDescarga": "/ddc-planeamientos/preescolar/interactivo-ii/plan-interactivo-ii.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-003",
+    "ofertaCodigo": "PREESCOLAR",
+    "ofertaNombre": "Educación Preescolar",
+    "ofertaBadgeColor": "amber",
+    "asignatura": "Educación Preescolar",
+    "grado": "Transición",
+    "rutaRelativa": "preescolar/transicion",
+    "archivos": [
+      {
+        "nombre": "plan-transicion.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/preescolar/transicion/plan-transicion.zip",
+        "tamanoBytes": 1050,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-transicion.zip",
+    "rutaDescarga": "/ddc-planeamientos/preescolar/transicion/plan-transicion.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-004",
+    "ofertaCodigo": "PREESCOLAR",
+    "ofertaNombre": "Educación Preescolar",
+    "ofertaBadgeColor": "amber",
+    "asignatura": "Educación Preescolar",
+    "grado": "Grupo Heterogéneo",
+    "rutaRelativa": "preescolar/heterogeneo",
+    "archivos": [
+      {
+        "nombre": "plan-heterogeneo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/preescolar/heterogeneo/plan-heterogeneo.zip",
+        "tamanoBytes": 1055,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-heterogeneo.zip",
+    "rutaDescarga": "/ddc-planeamientos/preescolar/heterogeneo/plan-heterogeneo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-005",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Industriales",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-industriales/primero",
+    "archivos": [
+      {
+        "nombre": "plan-artes-industriales-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/primero/plan-artes-industriales-primero.zip",
+        "tamanoBytes": 1105,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-industriales-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/primero/plan-artes-industriales-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-006",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Industriales",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-industriales/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-artes-industriales-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/segundo/plan-artes-industriales-segundo.zip",
+        "tamanoBytes": 1106,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-industriales-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/segundo/plan-artes-industriales-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-007",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Industriales",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-industriales/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-artes-industriales-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/tercero/plan-artes-industriales-tercero.zip",
+        "tamanoBytes": 1109,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-industriales-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/tercero/plan-artes-industriales-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-008",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Industriales",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-industriales/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-artes-industriales-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/cuarto/plan-artes-industriales-cuarto.zip",
+        "tamanoBytes": 1107,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-industriales-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/cuarto/plan-artes-industriales-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-009",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Industriales",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-industriales/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-artes-industriales-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/quinto/plan-artes-industriales-quinto.zip",
+        "tamanoBytes": 1108,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-industriales-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/quinto/plan-artes-industriales-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-010",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Industriales",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-industriales/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-artes-industriales-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/sexto/plan-artes-industriales-sexto.zip",
+        "tamanoBytes": 1105,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-industriales-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/sexto/plan-artes-industriales-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-011",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Plásticas",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-plasticas/primero",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/primero/plan-artes-plasticas-primero.zip",
+        "tamanoBytes": 1097,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/primero/plan-artes-plasticas-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-012",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Plásticas",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-plasticas/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/segundo/plan-artes-plasticas-segundo.zip",
+        "tamanoBytes": 1098,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/segundo/plan-artes-plasticas-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-013",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Plásticas",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-plasticas/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/tercero/plan-artes-plasticas-tercero.zip",
+        "tamanoBytes": 1102,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/tercero/plan-artes-plasticas-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-014",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Plásticas",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-plasticas/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/cuarto/plan-artes-plasticas-cuarto.zip",
+        "tamanoBytes": 1098,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/cuarto/plan-artes-plasticas-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-015",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Plásticas",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-plasticas/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/quinto/plan-artes-plasticas-quinto.zip",
+        "tamanoBytes": 1099,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/quinto/plan-artes-plasticas-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-016",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Artes Plásticas",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/artes-plasticas/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/sexto/plan-artes-plasticas-sexto.zip",
+        "tamanoBytes": 1095,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/sexto/plan-artes-plasticas-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-017",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Ciencias",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ciencias/primero",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/primero/plan-ciencias-primero.zip",
+        "tamanoBytes": 1076,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/primero/plan-ciencias-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-018",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Ciencias",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ciencias/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/segundo/plan-ciencias-segundo.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/segundo/plan-ciencias-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-019",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Ciencias",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ciencias/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/tercero/plan-ciencias-tercero.zip",
+        "tamanoBytes": 1081,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/tercero/plan-ciencias-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-020",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Ciencias",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ciencias/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/cuarto/plan-ciencias-cuarto.zip",
+        "tamanoBytes": 1079,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/cuarto/plan-ciencias-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-021",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Ciencias",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ciencias/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/quinto/plan-ciencias-quinto.zip",
+        "tamanoBytes": 1080,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/quinto/plan-ciencias-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-022",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Ciencias",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ciencias/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/sexto/plan-ciencias-sexto.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/sexto/plan-ciencias-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-023",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Física",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-fisica/primero",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/primero/plan-educacion-fisica-primero.zip",
+        "tamanoBytes": 1094,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/primero/plan-educacion-fisica-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-024",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Física",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-fisica/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/segundo/plan-educacion-fisica-segundo.zip",
+        "tamanoBytes": 1095,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/segundo/plan-educacion-fisica-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-025",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Física",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-fisica/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/tercero/plan-educacion-fisica-tercero.zip",
+        "tamanoBytes": 1098,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/tercero/plan-educacion-fisica-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-026",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Física",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-fisica/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/cuarto/plan-educacion-fisica-cuarto.zip",
+        "tamanoBytes": 1095,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/cuarto/plan-educacion-fisica-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-027",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Física",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-fisica/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/quinto/plan-educacion-fisica-quinto.zip",
+        "tamanoBytes": 1096,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/quinto/plan-educacion-fisica-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-028",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Física",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-fisica/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/sexto/plan-educacion-fisica-sexto.zip",
+        "tamanoBytes": 1093,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/sexto/plan-educacion-fisica-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-029",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Musical",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-musical/primero",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/primero/plan-educacion-musical-primero.zip",
+        "tamanoBytes": 1098,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/primero/plan-educacion-musical-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-030",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Musical",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-musical/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/segundo/plan-educacion-musical-segundo.zip",
+        "tamanoBytes": 1098,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/segundo/plan-educacion-musical-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-031",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Musical",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-musical/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/tercero/plan-educacion-musical-tercero.zip",
+        "tamanoBytes": 1102,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/tercero/plan-educacion-musical-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-032",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Musical",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-musical/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/cuarto/plan-educacion-musical-cuarto.zip",
+        "tamanoBytes": 1099,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/cuarto/plan-educacion-musical-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-033",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Musical",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-musical/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/quinto/plan-educacion-musical-quinto.zip",
+        "tamanoBytes": 1100,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/quinto/plan-educacion-musical-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-034",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Musical",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-musical/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/sexto/plan-educacion-musical-sexto.zip",
+        "tamanoBytes": 1096,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/sexto/plan-educacion-musical-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-035",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-para-el-hogar/primero",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-el-hogar-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/primero/plan-educacion-para-el-hogar-primero.zip",
+        "tamanoBytes": 1112,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-el-hogar-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/primero/plan-educacion-para-el-hogar-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-036",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-para-el-hogar/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-el-hogar-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/segundo/plan-educacion-para-el-hogar-segundo.zip",
+        "tamanoBytes": 1113,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-el-hogar-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/segundo/plan-educacion-para-el-hogar-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-037",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-para-el-hogar/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-el-hogar-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/tercero/plan-educacion-para-el-hogar-tercero.zip",
+        "tamanoBytes": 1117,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-el-hogar-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/tercero/plan-educacion-para-el-hogar-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-038",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-para-el-hogar/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-el-hogar-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/cuarto/plan-educacion-para-el-hogar-cuarto.zip",
+        "tamanoBytes": 1114,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-el-hogar-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/cuarto/plan-educacion-para-el-hogar-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-039",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-para-el-hogar/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-el-hogar-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/quinto/plan-educacion-para-el-hogar-quinto.zip",
+        "tamanoBytes": 1115,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-el-hogar-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/quinto/plan-educacion-para-el-hogar-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-040",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-para-el-hogar/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-el-hogar-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/sexto/plan-educacion-para-el-hogar-sexto.zip",
+        "tamanoBytes": 1113,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-el-hogar-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/sexto/plan-educacion-para-el-hogar-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-041",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Religiosa",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-religiosa/primero",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/primero/plan-educacion-religiosa-primero.zip",
+        "tamanoBytes": 1103,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/primero/plan-educacion-religiosa-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-042",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Religiosa",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-religiosa/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/segundo/plan-educacion-religiosa-segundo.zip",
+        "tamanoBytes": 1103,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/segundo/plan-educacion-religiosa-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-043",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Religiosa",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-religiosa/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/tercero/plan-educacion-religiosa-tercero.zip",
+        "tamanoBytes": 1107,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/tercero/plan-educacion-religiosa-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-044",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Religiosa",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-religiosa/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/cuarto/plan-educacion-religiosa-cuarto.zip",
+        "tamanoBytes": 1103,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/cuarto/plan-educacion-religiosa-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-045",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Religiosa",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-religiosa/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/quinto/plan-educacion-religiosa-quinto.zip",
+        "tamanoBytes": 1103,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/quinto/plan-educacion-religiosa-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-046",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Educación Religiosa",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/educacion-religiosa/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/sexto/plan-educacion-religiosa-sexto.zip",
+        "tamanoBytes": 1102,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/sexto/plan-educacion-religiosa-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-047",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Español",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/espanol/primero",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/primero/plan-espanol-primero.zip",
+        "tamanoBytes": 1076,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/primero/plan-espanol-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-048",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Español",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/espanol/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/segundo/plan-espanol-segundo.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/segundo/plan-espanol-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-049",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Español",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/espanol/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/tercero/plan-espanol-tercero.zip",
+        "tamanoBytes": 1080,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/tercero/plan-espanol-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-050",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Español",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/espanol/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/cuarto/plan-espanol-cuarto.zip",
+        "tamanoBytes": 1076,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/cuarto/plan-espanol-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-051",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Español",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/espanol/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/quinto/plan-espanol-quinto.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/quinto/plan-espanol-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-052",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Español",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/espanol/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/sexto/plan-espanol-sexto.zip",
+        "tamanoBytes": 1074,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/sexto/plan-espanol-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-053",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Estudios Sociales y Educación Cívica",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/primero",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-y-educacion-civica-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/primero/plan-estudios-sociales-y-educacion-civica-primero.zip",
+        "tamanoBytes": 1143,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/primero/plan-estudios-sociales-y-educacion-civica-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-054",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Estudios Sociales y Educación Cívica",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-y-educacion-civica-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/segundo/plan-estudios-sociales-y-educacion-civica-segundo.zip",
+        "tamanoBytes": 1144,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/segundo/plan-estudios-sociales-y-educacion-civica-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-055",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Estudios Sociales y Educación Cívica",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-y-educacion-civica-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/tercero/plan-estudios-sociales-y-educacion-civica-tercero.zip",
+        "tamanoBytes": 1148,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/tercero/plan-estudios-sociales-y-educacion-civica-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-056",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Estudios Sociales y Educación Cívica",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-y-educacion-civica-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/cuarto/plan-estudios-sociales-y-educacion-civica-cuarto.zip",
+        "tamanoBytes": 1144,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/cuarto/plan-estudios-sociales-y-educacion-civica-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-057",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Estudios Sociales y Educación Cívica",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-y-educacion-civica-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/quinto/plan-estudios-sociales-y-educacion-civica-quinto.zip",
+        "tamanoBytes": 1145,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/quinto/plan-estudios-sociales-y-educacion-civica-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-058",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Estudios Sociales y Educación Cívica",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-y-educacion-civica-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/sexto/plan-estudios-sociales-y-educacion-civica-sexto.zip",
+        "tamanoBytes": 1142,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/sexto/plan-estudios-sociales-y-educacion-civica-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-059",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Francés",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/frances/primero",
+    "archivos": [
+      {
+        "nombre": "plan-frances-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/primero/plan-frances-primero.zip",
+        "tamanoBytes": 1076,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/primero/plan-frances-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-060",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Francés",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/frances/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-frances-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/segundo/plan-frances-segundo.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/segundo/plan-frances-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-061",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Francés",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/frances/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-frances-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/tercero/plan-frances-tercero.zip",
+        "tamanoBytes": 1080,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/tercero/plan-frances-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-062",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Francés",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/frances/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-frances-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/cuarto/plan-frances-cuarto.zip",
+        "tamanoBytes": 1076,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/cuarto/plan-frances-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-063",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Francés",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/frances/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-frances-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/quinto/plan-frances-quinto.zip",
+        "tamanoBytes": 1078,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/quinto/plan-frances-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-064",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Francés",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/frances/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-frances-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/sexto/plan-frances-sexto.zip",
+        "tamanoBytes": 1074,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/sexto/plan-frances-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-065",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Inglés",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ingles/primero",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/primero/plan-ingles-primero.zip",
+        "tamanoBytes": 1072,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/primero/plan-ingles-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-066",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Inglés",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ingles/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/segundo/plan-ingles-segundo.zip",
+        "tamanoBytes": 1073,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/segundo/plan-ingles-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-067",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Inglés",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ingles/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/tercero/plan-ingles-tercero.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/tercero/plan-ingles-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-068",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Inglés",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ingles/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/cuarto/plan-ingles-cuarto.zip",
+        "tamanoBytes": 1073,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/cuarto/plan-ingles-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-069",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Inglés",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ingles/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/quinto/plan-ingles-quinto.zip",
+        "tamanoBytes": 1074,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/quinto/plan-ingles-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-070",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Inglés",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/ingles/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/sexto/plan-ingles-sexto.zip",
+        "tamanoBytes": 1071,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/sexto/plan-ingles-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-071",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Italiano",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/italiano/primero",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/primero/plan-italiano-primero.zip",
+        "tamanoBytes": 1076,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/primero/plan-italiano-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-072",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Italiano",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/italiano/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/segundo/plan-italiano-segundo.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/segundo/plan-italiano-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-073",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Italiano",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/italiano/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/tercero/plan-italiano-tercero.zip",
+        "tamanoBytes": 1081,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/tercero/plan-italiano-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-074",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Italiano",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/italiano/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/cuarto/plan-italiano-cuarto.zip",
+        "tamanoBytes": 1079,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/cuarto/plan-italiano-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-075",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Italiano",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/italiano/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/quinto/plan-italiano-quinto.zip",
+        "tamanoBytes": 1080,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/quinto/plan-italiano-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-076",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Italiano",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/italiano/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/sexto/plan-italiano-sexto.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/sexto/plan-italiano-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-077",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Matemática",
+    "grado": "Primer Año (1°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/matematica/primero",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-primero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/primero/plan-matematica-primero.zip",
+        "tamanoBytes": 1083,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-primero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/primero/plan-matematica-primero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-078",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Matemática",
+    "grado": "Segundo Año (2°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/matematica/segundo",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-segundo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/segundo/plan-matematica-segundo.zip",
+        "tamanoBytes": 1083,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-segundo.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/segundo/plan-matematica-segundo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-079",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Matemática",
+    "grado": "Tercer Año (3°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/matematica/tercero",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-tercero.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/tercero/plan-matematica-tercero.zip",
+        "tamanoBytes": 1087,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-tercero.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/tercero/plan-matematica-tercero.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-080",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Matemática",
+    "grado": "Cuarto Año (4°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/matematica/cuarto",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-cuarto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/cuarto/plan-matematica-cuarto.zip",
+        "tamanoBytes": 1084,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-cuarto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/cuarto/plan-matematica-cuarto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-081",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Matemática",
+    "grado": "Quinto Año (5°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/matematica/quinto",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-quinto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/quinto/plan-matematica-quinto.zip",
+        "tamanoBytes": 1085,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-quinto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/quinto/plan-matematica-quinto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-082",
+    "ofertaCodigo": "I-II-CICLOS",
+    "ofertaNombre": "I y II Ciclos (Primaria)",
+    "ofertaBadgeColor": "blue",
+    "asignatura": "Matemática",
+    "grado": "Sexto Año (6°)",
+    "rutaRelativa": "primero-y-segundo-ciclos/matematica/sexto",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-sexto.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/sexto/plan-matematica-sexto.zip",
+        "tamanoBytes": 1080,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-sexto.zip",
+    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/sexto/plan-matematica-sexto.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-083",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Artes Industriales",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/artes-industriales/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-artes-industriales-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/septimo/plan-artes-industriales-septimo.zip",
+        "tamanoBytes": 1114,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-industriales-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/septimo/plan-artes-industriales-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-084",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Artes Industriales",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/artes-industriales/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-artes-industriales-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/octavo/plan-artes-industriales-octavo.zip",
+        "tamanoBytes": 1110,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-industriales-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/octavo/plan-artes-industriales-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-085",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Artes Industriales",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/artes-industriales/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-artes-industriales-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/noveno/plan-artes-industriales-noveno.zip",
+        "tamanoBytes": 1111,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-industriales-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/noveno/plan-artes-industriales-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-086",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Artes Plásticas",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/artes-plasticas/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/septimo/plan-artes-plasticas-septimo.zip",
+        "tamanoBytes": 1105,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/septimo/plan-artes-plasticas-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-087",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Artes Plásticas",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/artes-plasticas/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/octavo/plan-artes-plasticas-octavo.zip",
+        "tamanoBytes": 1103,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/octavo/plan-artes-plasticas-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-088",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Artes Plásticas",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/artes-plasticas/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/noveno/plan-artes-plasticas-noveno.zip",
+        "tamanoBytes": 1103,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/noveno/plan-artes-plasticas-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-089",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Artes Plásticas",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/artes-plasticas/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/decimo/plan-artes-plasticas-decimo.zip",
+        "tamanoBytes": 1102,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/decimo/plan-artes-plasticas-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-090",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Artes Plásticas",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/artes-plasticas/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-artes-plasticas-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/undecimo/plan-artes-plasticas-undecimo.zip",
+        "tamanoBytes": 1107,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-artes-plasticas-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/undecimo/plan-artes-plasticas-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-091",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Biología",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/biologia/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-biologia-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/decimo/plan-biologia-decimo.zip",
+        "tamanoBytes": 1080,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-biologia-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/decimo/plan-biologia-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-092",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Biología",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/biologia/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-biologia-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/undecimo/plan-biologia-undecimo.zip",
+        "tamanoBytes": 1087,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-biologia-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/undecimo/plan-biologia-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-093",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Ciencias",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/ciencias/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/septimo/plan-ciencias-septimo.zip",
+        "tamanoBytes": 1085,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/septimo/plan-ciencias-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-094",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Ciencias",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/ciencias/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/octavo/plan-ciencias-octavo.zip",
+        "tamanoBytes": 1082,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/octavo/plan-ciencias-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-095",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Ciencias",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/ciencias/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/noveno/plan-ciencias-noveno.zip",
+        "tamanoBytes": 1082,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/noveno/plan-ciencias-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-096",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Cívica",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-civica/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-civica-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/septimo/plan-educacion-civica-septimo.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-civica-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/septimo/plan-educacion-civica-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-097",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Cívica",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-civica/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-civica-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/octavo/plan-educacion-civica-octavo.zip",
+        "tamanoBytes": 1099,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-civica-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/octavo/plan-educacion-civica-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-098",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Cívica",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-civica/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-civica-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/noveno/plan-educacion-civica-noveno.zip",
+        "tamanoBytes": 1099,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-civica-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/noveno/plan-educacion-civica-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-099",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Cívica",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-civica/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-civica-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/decimo/plan-educacion-civica-decimo.zip",
+        "tamanoBytes": 1099,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-civica-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/decimo/plan-educacion-civica-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-100",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Cívica",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-civica/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-civica-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/undecimo/plan-educacion-civica-undecimo.zip",
+        "tamanoBytes": 1105,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-civica-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/undecimo/plan-educacion-civica-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-101",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Física",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-fisica/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/septimo/plan-educacion-fisica-septimo.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/septimo/plan-educacion-fisica-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-102",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Física",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-fisica/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/octavo/plan-educacion-fisica-octavo.zip",
+        "tamanoBytes": 1099,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/octavo/plan-educacion-fisica-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-103",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Física",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-fisica/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/noveno/plan-educacion-fisica-noveno.zip",
+        "tamanoBytes": 1099,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/noveno/plan-educacion-fisica-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-104",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Física",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-fisica/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/decimo/plan-educacion-fisica-decimo.zip",
+        "tamanoBytes": 1099,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/decimo/plan-educacion-fisica-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-105",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Física",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-fisica/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-fisica-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/undecimo/plan-educacion-fisica-undecimo.zip",
+        "tamanoBytes": 1105,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-fisica-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/undecimo/plan-educacion-fisica-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-106",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Musical",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-musical/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/septimo/plan-educacion-musical-septimo.zip",
+        "tamanoBytes": 1105,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/septimo/plan-educacion-musical-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-107",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Musical",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-musical/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/octavo/plan-educacion-musical-octavo.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/octavo/plan-educacion-musical-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-108",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Musical",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-musical/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/noveno/plan-educacion-musical-noveno.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/noveno/plan-educacion-musical-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-109",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Musical",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-musical/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/decimo/plan-educacion-musical-decimo.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/decimo/plan-educacion-musical-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-110",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Musical",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-musical/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-musical-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/undecimo/plan-educacion-musical-undecimo.zip",
+        "tamanoBytes": 1108,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-musical-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/undecimo/plan-educacion-musical-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-111",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-el-hogar-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/septimo/plan-educacion-para-el-hogar-septimo.zip",
+        "tamanoBytes": 1122,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-el-hogar-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/septimo/plan-educacion-para-el-hogar-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-112",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-el-hogar-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/octavo/plan-educacion-para-el-hogar-octavo.zip",
+        "tamanoBytes": 1119,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-el-hogar-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/octavo/plan-educacion-para-el-hogar-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-113",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-el-hogar-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/noveno/plan-educacion-para-el-hogar-noveno.zip",
+        "tamanoBytes": 1119,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-el-hogar-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/noveno/plan-educacion-para-el-hogar-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-114",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación para la Paz y la Convivencia",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/septimo/plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
+        "tamanoBytes": 1164,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/septimo/plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-115",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación para la Paz y la Convivencia",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/octavo/plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
+        "tamanoBytes": 1160,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/octavo/plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-116",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación para la Paz y la Convivencia",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/noveno/plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
+        "tamanoBytes": 1161,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/noveno/plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-117",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación para la Paz y la Convivencia",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/decimo/plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
+        "tamanoBytes": 1160,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/decimo/plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-118",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Religiosa",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-religiosa/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/septimo/plan-educacion-religiosa-septimo.zip",
+        "tamanoBytes": 1111,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/septimo/plan-educacion-religiosa-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-119",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Religiosa",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-religiosa/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/octavo/plan-educacion-religiosa-octavo.zip",
+        "tamanoBytes": 1108,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/octavo/plan-educacion-religiosa-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-120",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Religiosa",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-religiosa/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/noveno/plan-educacion-religiosa-noveno.zip",
+        "tamanoBytes": 1108,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/noveno/plan-educacion-religiosa-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-121",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Religiosa",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-religiosa/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/decimo/plan-educacion-religiosa-decimo.zip",
+        "tamanoBytes": 1108,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/decimo/plan-educacion-religiosa-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-122",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Educación Religiosa",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/educacion-religiosa/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-educacion-religiosa-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/undecimo/plan-educacion-religiosa-undecimo.zip",
+        "tamanoBytes": 1114,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-educacion-religiosa-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/undecimo/plan-educacion-religiosa-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-123",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Español",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/espanol/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/septimo/plan-espanol-septimo.zip",
+        "tamanoBytes": 1083,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/septimo/plan-espanol-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-124",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Español",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/espanol/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo.zip",
+        "tamanoBytes": 1078,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-125",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Español",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/espanol/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/noveno/plan-espanol-noveno.zip",
+        "tamanoBytes": 1079,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/noveno/plan-espanol-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-126",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Español",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/espanol/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/decimo/plan-espanol-decimo.zip",
+        "tamanoBytes": 1078,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/decimo/plan-espanol-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-127",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Español",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/espanol/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-espanol-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/undecimo/plan-espanol-undecimo.zip",
+        "tamanoBytes": 1086,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/undecimo/plan-espanol-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-128",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Estudios Sociales",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/estudios-sociales/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/septimo/plan-estudios-sociales-septimo.zip",
+        "tamanoBytes": 1105,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/septimo/plan-estudios-sociales-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-129",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Estudios Sociales",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/estudios-sociales/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/octavo/plan-estudios-sociales-octavo.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/octavo/plan-estudios-sociales-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-130",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Estudios Sociales",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/estudios-sociales/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/noveno/plan-estudios-sociales-noveno.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/noveno/plan-estudios-sociales-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-131",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Estudios Sociales",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/estudios-sociales/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/decimo/plan-estudios-sociales-decimo.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/decimo/plan-estudios-sociales-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-132",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Estudios Sociales",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/estudios-sociales/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/undecimo/plan-estudios-sociales-undecimo.zip",
+        "tamanoBytes": 1108,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/undecimo/plan-estudios-sociales-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-133",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Filosofía",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/filosofia/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-filosofia-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/filosofia/undecimo/plan-filosofia-undecimo.zip",
+        "tamanoBytes": 1092,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-filosofia-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/filosofia/undecimo/plan-filosofia-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-134",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Física",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/fisica/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-fisica-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/decimo/plan-fisica-decimo.zip",
+        "tamanoBytes": 1075,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-fisica-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/decimo/plan-fisica-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-135",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Física",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/fisica/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-fisica-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/undecimo/plan-fisica-undecimo.zip",
+        "tamanoBytes": 1082,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-fisica-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/undecimo/plan-fisica-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-136",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Francés",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/frances/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-frances-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/septimo/plan-frances-septimo.zip",
+        "tamanoBytes": 1083,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/septimo/plan-frances-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-137",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Francés",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/frances/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-frances-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/octavo/plan-frances-octavo.zip",
+        "tamanoBytes": 1078,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/octavo/plan-frances-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-138",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Francés",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/frances/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-frances-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/noveno/plan-frances-noveno.zip",
+        "tamanoBytes": 1079,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/noveno/plan-frances-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-139",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Francés",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/frances/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-frances-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/decimo/plan-frances-decimo.zip",
+        "tamanoBytes": 1078,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/decimo/plan-frances-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-140",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Francés",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/frances/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-frances-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/undecimo/plan-frances-undecimo.zip",
+        "tamanoBytes": 1086,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-frances-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/undecimo/plan-frances-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-141",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Inglés",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/ingles/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/septimo/plan-ingles-septimo.zip",
+        "tamanoBytes": 1079,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/septimo/plan-ingles-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-142",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Inglés",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/ingles/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/octavo/plan-ingles-octavo.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/octavo/plan-ingles-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-143",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Inglés",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/ingles/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/noveno/plan-ingles-noveno.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/noveno/plan-ingles-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-144",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Inglés",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/ingles/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/decimo/plan-ingles-decimo.zip",
+        "tamanoBytes": 1077,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/decimo/plan-ingles-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-145",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Inglés",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/ingles/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-ingles-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/undecimo/plan-ingles-undecimo.zip",
+        "tamanoBytes": 1083,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ingles-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/undecimo/plan-ingles-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-146",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Italiano",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/italiano/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/septimo/plan-italiano-septimo.zip",
+        "tamanoBytes": 1085,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/septimo/plan-italiano-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-147",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Italiano",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/italiano/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/octavo/plan-italiano-octavo.zip",
+        "tamanoBytes": 1082,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/octavo/plan-italiano-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-148",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Italiano",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/italiano/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/noveno/plan-italiano-noveno.zip",
+        "tamanoBytes": 1082,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/noveno/plan-italiano-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-149",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Italiano",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/italiano/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/decimo/plan-italiano-decimo.zip",
+        "tamanoBytes": 1082,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/decimo/plan-italiano-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-150",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Italiano",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/italiano/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-italiano-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/undecimo/plan-italiano-undecimo.zip",
+        "tamanoBytes": 1089,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-italiano-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/undecimo/plan-italiano-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-151",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Matemática",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/matematica/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/septimo/plan-matematica-septimo.zip",
+        "tamanoBytes": 1091,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/septimo/plan-matematica-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-152",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Matemática",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/matematica/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/octavo/plan-matematica-octavo.zip",
+        "tamanoBytes": 1088,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/octavo/plan-matematica-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-153",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Matemática",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/matematica/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/noveno/plan-matematica-noveno.zip",
+        "tamanoBytes": 1088,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/noveno/plan-matematica-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-154",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Matemática",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/matematica/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/decimo/plan-matematica-decimo.zip",
+        "tamanoBytes": 1088,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/decimo/plan-matematica-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-155",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Matemática",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/matematica/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-matematica-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/undecimo/plan-matematica-undecimo.zip",
+        "tamanoBytes": 1093,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/undecimo/plan-matematica-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-156",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Orientación",
+    "grado": "Sétimo Año (7°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/orientacion/septimo",
+    "archivos": [
+      {
+        "nombre": "plan-orientacion-septimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/septimo/plan-orientacion-septimo.zip",
+        "tamanoBytes": 1090,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-orientacion-septimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/septimo/plan-orientacion-septimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-157",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Orientación",
+    "grado": "Octavo Año (8°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/orientacion/octavo",
+    "archivos": [
+      {
+        "nombre": "plan-orientacion-octavo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/octavo/plan-orientacion-octavo.zip",
+        "tamanoBytes": 1089,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-orientacion-octavo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/octavo/plan-orientacion-octavo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-158",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Orientación",
+    "grado": "Noveno Año (9°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/orientacion/noveno",
+    "archivos": [
+      {
+        "nombre": "plan-orientacion-noveno.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/noveno/plan-orientacion-noveno.zip",
+        "tamanoBytes": 1088,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-orientacion-noveno.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/noveno/plan-orientacion-noveno.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-159",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Orientación",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/orientacion/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-orientacion-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/decimo/plan-orientacion-decimo.zip",
+        "tamanoBytes": 1088,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-orientacion-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/decimo/plan-orientacion-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-160",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Orientación",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/orientacion/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-orientacion-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/undecimo/plan-orientacion-undecimo.zip",
+        "tamanoBytes": 1094,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-orientacion-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/undecimo/plan-orientacion-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-161",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Psicología",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/psicologia/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-psicologia-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/psicologia/decimo/plan-psicologia-decimo.zip",
+        "tamanoBytes": 1086,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-psicologia-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/psicologia/decimo/plan-psicologia-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-162",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Química",
+    "grado": "Décimo Año (10°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/quimica/decimo",
+    "archivos": [
+      {
+        "nombre": "plan-quimica-decimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/decimo/plan-quimica-decimo.zip",
+        "tamanoBytes": 1078,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-quimica-decimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/decimo/plan-quimica-decimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-163",
+    "ofertaCodigo": "III-DIVERSIFICADA",
+    "ofertaNombre": "III Ciclo y Diversificada (Secundaria)",
+    "ofertaBadgeColor": "indigo",
+    "asignatura": "Química",
+    "grado": "Undécimo Año (11°)",
+    "rutaRelativa": "tercer-ciclo-y-educacion-diversificada/quimica/undecimo",
+    "archivos": [
+      {
+        "nombre": "plan-quimica-undecimo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/undecimo/plan-quimica-undecimo.zip",
+        "tamanoBytes": 1086,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-quimica-undecimo.zip",
+    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/undecimo/plan-quimica-undecimo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-164",
+    "ofertaCodigo": "EPJA",
+    "ofertaNombre": "Educación de Personas Jóvenes y Adultas (EPJA)",
+    "ofertaBadgeColor": "teal",
+    "asignatura": "Orientaciones Generales",
+    "grado": "Documento Rector",
+    "rutaRelativa": "educacion-personas-jovenes-y-adultas/orientaciones-generales",
+    "archivos": [
+      {
+        "nombre": "plan-orientaciones-generales.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/orientaciones-generales/plan-orientaciones-generales.zip",
+        "tamanoBytes": 1097,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-orientaciones-generales.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/orientaciones-generales/plan-orientaciones-generales.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-165",
+    "ofertaCodigo": "EPJA",
+    "ofertaNombre": "Educación de Personas Jóvenes y Adultas (EPJA)",
+    "ofertaBadgeColor": "teal",
+    "asignatura": "Ciencias",
+    "grado": "Guía Específica de Aprendizaje",
+    "rutaRelativa": "educacion-personas-jovenes-y-adultas/guias-especificas/ciencias",
+    "archivos": [
+      {
+        "nombre": "plan-ciencias.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/ciencias/plan-ciencias.zip",
+        "tamanoBytes": 1069,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-ciencias.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/ciencias/plan-ciencias.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-166",
+    "ofertaCodigo": "EPJA",
+    "ofertaNombre": "Educación de Personas Jóvenes y Adultas (EPJA)",
+    "ofertaBadgeColor": "teal",
+    "asignatura": "Español",
+    "grado": "Guía Específica de Aprendizaje",
+    "rutaRelativa": "educacion-personas-jovenes-y-adultas/guias-especificas/espanol",
+    "archivos": [
+      {
+        "nombre": "plan-espanol.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/espanol/plan-espanol.zip",
+        "tamanoBytes": 1065,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-espanol.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/espanol/plan-espanol.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-167",
+    "ofertaCodigo": "EPJA",
+    "ofertaNombre": "Educación de Personas Jóvenes y Adultas (EPJA)",
+    "ofertaBadgeColor": "teal",
+    "asignatura": "Estudios Sociales",
+    "grado": "Guía Específica de Aprendizaje",
+    "rutaRelativa": "educacion-personas-jovenes-y-adultas/guias-especificas/estudios-sociales",
+    "archivos": [
+      {
+        "nombre": "plan-estudios-sociales.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/estudios-sociales/plan-estudios-sociales.zip",
+        "tamanoBytes": 1088,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-estudios-sociales.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/estudios-sociales/plan-estudios-sociales.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-168",
+    "ofertaCodigo": "EPJA",
+    "ofertaNombre": "Educación de Personas Jóvenes y Adultas (EPJA)",
+    "ofertaBadgeColor": "teal",
+    "asignatura": "Lenguas Extranjeras",
+    "grado": "Guía Específica de Aprendizaje",
+    "rutaRelativa": "educacion-personas-jovenes-y-adultas/guias-especificas/lenguas-extranjeras",
+    "archivos": [
+      {
+        "nombre": "plan-lenguas-extranjeras.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/lenguas-extranjeras/plan-lenguas-extranjeras.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-lenguas-extranjeras.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/lenguas-extranjeras/plan-lenguas-extranjeras.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-169",
+    "ofertaCodigo": "EPJA",
+    "ofertaNombre": "Educación de Personas Jóvenes y Adultas (EPJA)",
+    "ofertaBadgeColor": "teal",
+    "asignatura": "Matemática",
+    "grado": "Guía Específica de Aprendizaje",
+    "rutaRelativa": "educacion-personas-jovenes-y-adultas/guias-especificas/matematica",
+    "archivos": [
+      {
+        "nombre": "plan-matematica.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/matematica/plan-matematica.zip",
+        "tamanoBytes": 1076,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-matematica.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/matematica/plan-matematica.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-170",
+    "ofertaCodigo": "EPJA",
+    "ofertaNombre": "Educación de Personas Jóvenes y Adultas (EPJA)",
+    "ofertaBadgeColor": "teal",
+    "asignatura": "Tecnologías",
+    "grado": "Guía Específica de Aprendizaje",
+    "rutaRelativa": "educacion-personas-jovenes-y-adultas/guias-especificas/tecnologias",
+    "archivos": [
+      {
+        "nombre": "plan-tecnologias.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/tecnologias/plan-tecnologias.zip",
+        "tamanoBytes": 1076,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-tecnologias.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/tecnologias/plan-tecnologias.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-171",
+    "ofertaCodigo": "ESPECIAL",
+    "ofertaNombre": "Educación Especial",
+    "ofertaBadgeColor": "purple",
+    "asignatura": "Centros de Educación Especial",
+    "grado": "Plan Integral",
+    "rutaRelativa": "educacion-especial/centros-de-educacion-especial",
+    "archivos": [
+      {
+        "nombre": "plan-centros-de-educacion-especial.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-especial/centros-de-educacion-especial/plan-centros-de-educacion-especial.zip",
+        "tamanoBytes": 1089,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-centros-de-educacion-especial.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-especial/centros-de-educacion-especial/plan-centros-de-educacion-especial.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-172",
+    "ofertaCodigo": "ESPECIAL",
+    "ofertaNombre": "Educación Especial",
+    "ofertaBadgeColor": "purple",
+    "asignatura": "Aula Integrada",
+    "grado": "Discapacidad Intelectual y Múltiple",
+    "rutaRelativa": "educacion-especial/aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple",
+    "archivos": [
+      {
+        "nombre": "plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-especial/aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple/plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
+        "tamanoBytes": 1229,
+        "tamanoLegible": "1.2 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-especial/aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple/plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-173",
+    "ofertaCodigo": "ESPECIAL",
+    "ofertaNombre": "Educación Especial",
+    "ofertaBadgeColor": "purple",
+    "asignatura": "Servicios de Audición y Lenguaje",
+    "grado": "I y II Ciclos",
+    "rutaRelativa": "educacion-especial/servicios-i-y-ii-ciclos-audicion-y-lenguaje",
+    "archivos": [
+      {
+        "nombre": "plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-especial/servicios-i-y-ii-ciclos-audicion-y-lenguaje/plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
+        "tamanoBytes": 1142,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-especial/servicios-i-y-ii-ciclos-audicion-y-lenguaje/plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-174",
+    "ofertaCodigo": "ESPECIAL",
+    "ofertaNombre": "Educación Especial",
+    "ofertaBadgeColor": "purple",
+    "asignatura": "Servicios Educativos de Primera Infancia",
+    "grado": "Discapacidad o Riesgo en el Desarrollo",
+    "rutaRelativa": "educacion-especial/servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo",
+    "archivos": [
+      {
+        "nombre": "plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-especial/servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo/plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
+        "tamanoBytes": 1222,
+        "tamanoLegible": "1.2 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-especial/servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo/plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-175",
+    "ofertaCodigo": "ESPECIAL",
+    "ofertaNombre": "Educación Especial",
+    "ofertaBadgeColor": "purple",
+    "asignatura": "Educación Vocacional (Plan Nacional)",
+    "grado": "III Ciclo y Diversificado Vocacional",
+    "rutaRelativa": "educacion-especial/tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional",
+    "archivos": [
+      {
+        "nombre": "plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-especial/tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional/plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
+        "tamanoBytes": 1178,
+        "tamanoLegible": "1.2 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-especial/tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional/plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-176",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Cultura Indígena",
+    "grado": "Cosmovision Cabecar Talamanca Tercer Ciclo",
+    "rutaRelativa": "educacion-intercultural/cultura/cosmovision-cabecar-talamanca-tercer-ciclo",
+    "archivos": [
+      {
+        "nombre": "plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cosmovision-cabecar-talamanca-tercer-ciclo/plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
+        "tamanoBytes": 1158,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cosmovision-cabecar-talamanca-tercer-ciclo/plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-177",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Cultura Indígena",
+    "grado": "Boruca I y II Ciclos",
+    "rutaRelativa": "educacion-intercultural/cultura/cultura-boruca-i-y-ii-ciclos",
+    "archivos": [
+      {
+        "nombre": "plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-boruca-i-y-ii-ciclos/plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
+        "tamanoBytes": 1116,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-boruca-i-y-ii-ciclos/plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-178",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Cultura Indígena",
+    "grado": "Bribri Territorio Salitre III Ciclo y Educación Diversificada",
+    "rutaRelativa": "educacion-intercultural/cultura/cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada",
+    "archivos": [
+      {
+        "nombre": "plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+        "tamanoBytes": 1223,
+        "tamanoLegible": "1.2 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-179",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Cultura Indígena",
+    "grado": "Cabecar Chirripo I Ciclo",
+    "rutaRelativa": "educacion-intercultural/cultura/cultura-cabecar-chirripo-i-ciclo",
+    "archivos": [
+      {
+        "nombre": "plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-cabecar-chirripo-i-ciclo/plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
+        "tamanoBytes": 1128,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-cabecar-chirripo-i-ciclo/plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-180",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Cultura Indígena",
+    "grado": "Ngabe-bugle I y II Ciclos",
+    "rutaRelativa": "educacion-intercultural/cultura/cultura-ngabe-bugle-i-y-ii-ciclos",
+    "archivos": [
+      {
+        "nombre": "plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-i-y-ii-ciclos/plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
+        "tamanoBytes": 1132,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-i-y-ii-ciclos/plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-181",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Cultura Indígena",
+    "grado": "Ngabe-bugle Tercer Ciclo",
+    "rutaRelativa": "educacion-intercultural/cultura/cultura-ngabe-bugle-tercer-ciclo",
+    "archivos": [
+      {
+        "nombre": "plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-tercer-ciclo/plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
+        "tamanoBytes": 1129,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-tercer-ciclo/plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-182",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Lengua Indígena",
+    "grado": "Bribri Territorio Salitre III Ciclo y Educación Diversificada",
+    "rutaRelativa": "educacion-intercultural/lengua/idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada",
+    "archivos": [
+      {
+        "nombre": "plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+        "tamanoBytes": 1225,
+        "tamanoLegible": "1.2 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-183",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Lengua Indígena",
+    "grado": "Ngabere I y II Ciclos",
+    "rutaRelativa": "educacion-intercultural/lengua/idioma-ngabere-i-y-ii-ciclos",
+    "archivos": [
+      {
+        "nombre": "plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/idioma-ngabere-i-y-ii-ciclos/plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
+        "tamanoBytes": 1121,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/idioma-ngabere-i-y-ii-ciclos/plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-184",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Lengua Indígena",
+    "grado": "Boruca I y II Ciclos",
+    "rutaRelativa": "educacion-intercultural/lengua/lengua-boruca-i-y-ii-ciclos",
+    "archivos": [
+      {
+        "nombre": "plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-boruca-i-y-ii-ciclos/plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
+        "tamanoBytes": 1115,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-boruca-i-y-ii-ciclos/plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-185",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Lengua Indígena",
+    "grado": "Bribri Territorio Talamanca I y II Ciclos",
+    "rutaRelativa": "educacion-intercultural/lengua/lengua-bribri-territorio-talamanca-i-y-ii-ciclos",
+    "archivos": [
+      {
+        "nombre": "plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-bribri-territorio-talamanca-i-y-ii-ciclos/plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
+        "tamanoBytes": 1173,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-bribri-territorio-talamanca-i-y-ii-ciclos/plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-186",
+    "ofertaCodigo": "INTERCULTURAL",
+    "ofertaNombre": "Educación Intercultural",
+    "ofertaBadgeColor": "rose",
+    "asignatura": "Lengua Indígena",
+    "grado": "Ngabe-bugle Tercer Ciclo",
+    "rutaRelativa": "educacion-intercultural/lengua/lengua-ngabe-bugle-tercer-ciclo",
+    "archivos": [
+      {
+        "nombre": "plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-ngabe-bugle-tercer-ciclo/plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
+        "tamanoBytes": 1128,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
+    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-ngabe-bugle-tercer-ciclo/plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-187",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Artes Industriales",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/artes-industriales",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-artes-industriales.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/artes-industriales/plan-unidocentes-artes-industriales.zip",
+        "tamanoBytes": 1101,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-artes-industriales.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/artes-industriales/plan-unidocentes-artes-industriales.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-188",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Matemática",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/matematica",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-matematica.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/matematica/plan-unidocentes-matematica.zip",
+        "tamanoBytes": 1082,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-matematica.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/matematica/plan-unidocentes-matematica.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-189",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Inglés",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/ingles",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-ingles.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/ingles/plan-unidocentes-ingles.zip",
+        "tamanoBytes": 1072,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-ingles.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/ingles/plan-unidocentes-ingles.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-190",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Artes Plásticas",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/artes-plasticas",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-artes-plasticas.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/artes-plasticas/plan-unidocentes-artes-plasticas.zip",
+        "tamanoBytes": 1093,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-artes-plasticas.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/artes-plasticas/plan-unidocentes-artes-plasticas.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-191",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Ciencias",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/ciencias",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-ciencias.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/ciencias/plan-unidocentes-ciencias.zip",
+        "tamanoBytes": 1075,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-ciencias.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/ciencias/plan-unidocentes-ciencias.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-192",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Español",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/espanol",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-espanol.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/espanol/plan-unidocentes-espanol.zip",
+        "tamanoBytes": 1072,
+        "tamanoLegible": "1.0 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-espanol.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/espanol/plan-unidocentes-espanol.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-193",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Estudios Sociales y Educación Cívica",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/estudios-sociales-y-educacion-civica",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/estudios-sociales-y-educacion-civica/plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
+        "tamanoBytes": 1140,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/estudios-sociales-y-educacion-civica/plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-194",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Educación Física",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/educacion-fisica",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-educacion-fisica.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/educacion-fisica/plan-unidocentes-educacion-fisica.zip",
+        "tamanoBytes": 1091,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-educacion-fisica.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/educacion-fisica/plan-unidocentes-educacion-fisica.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-195",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Educación para el Hogar",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/educacion-para-el-hogar",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-educacion-para-el-hogar.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/educacion-para-el-hogar/plan-unidocentes-educacion-para-el-hogar.zip",
+        "tamanoBytes": 1109,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-educacion-para-el-hogar.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/educacion-para-el-hogar/plan-unidocentes-educacion-para-el-hogar.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-196",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Educación Musical",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/educacion-musical",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-educacion-musical.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/educacion-musical/plan-unidocentes-educacion-musical.zip",
+        "tamanoBytes": 1094,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-educacion-musical.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/educacion-musical/plan-unidocentes-educacion-musical.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  },
+  {
+    "id": "DDC-2027-197",
+    "ofertaCodigo": "UNIDOCENTES",
+    "ofertaNombre": "Educación Unidocente",
+    "ofertaBadgeColor": "emerald",
+    "asignatura": "Educación Religiosa",
+    "grado": "Escuelas Unidocentes (Multigrado 1° a 6°)",
+    "rutaRelativa": "unidocentes/educacion-religiosa",
+    "archivos": [
+      {
+        "nombre": "plan-unidocentes-educacion-religiosa.zip",
+        "tipo": "ZIP",
+        "ruta": "/ddc-planeamientos/unidocentes/educacion-religiosa/plan-unidocentes-educacion-religiosa.zip",
+        "tamanoBytes": 1100,
+        "tamanoLegible": "1.1 KB"
+      }
+    ],
+    "archivoPrincipal": "plan-unidocentes-educacion-religiosa.zip",
+    "rutaDescarga": "/ddc-planeamientos/unidocentes/educacion-religiosa/plan-unidocentes-educacion-religiosa.zip",
+    "descargas": 0,
+    "vigencia": "2027"
+  }
+]

@@ -3,8 +3,8 @@ Memoria técnica del proyecto en `app/docs/` (Única Fuente de Verdad - SSOT).
 
 ## Estado actual
 - Versión 1.0.1 (Nomenclatura [versión].[liberación].[compilado]. Catálogo Oficial Completo del MEP Costa Rica: 197 planeamientos normados ciclo 2027 en formato ZIP).
-- Arquitectura 100% Estática Desacoplada: Catálogo remoto en `/data/planes2027.json` consultado vía `fetch()` con cabeceras anti-caché.
-- Repositorio oficial en `app/public/aplicativo-planeamientos-2027/` organizado en las 7 Ofertas Educativas de la DDC.
+- Arquitectura 100% Estática Desacoplada: Catálogo remoto en `/data/ddc-planeamientos.json` consultado vía `fetch()` con cabeceras anti-caché.
+- Repositorio oficial en `app/public/ddc-planeamientos/` organizado en las 7 Ofertas Educativas de la DDC bajo estándar POSIX kebab-case.
 - Frontend React 19 + Vite + Tailwind CSS con arquitectura App Shell (Header y Footer fijos, scroll en contenedor central).
 - Splash Screen institucional con isotipo curricular provisional, spinner doble anillo y reintento ante errores de red.
 - Modo Claro / Oscuro persistente en `localStorage` (`mep-theme`).
@@ -12,7 +12,10 @@ Memoria técnica del proyecto en `app/docs/` (Única Fuente de Verdad - SSOT).
 - 15 iconos temáticos en SVG nativo sin dependencias externas.
 
 ## Decisiones tomadas (y por qué)
-- **Arquitectura 100% Estática Basada en JSON (Desacoplada de PHP y del Bundle):** Eliminada dependencia de scripts PHP y middlewares en Vite. El catálogo oficial se consulta asíncronamente mediante `fetch('/data/planes2027.json', { cache: 'no-cache' })`. Permite actualizaciones en caliente en el servidor sin necesidad de recompilar (`npm run build`), y redujo el bundle JavaScript en casi 180 KB.
+- **Estandarización y Atemporalidad de Rutas (`ddc-planeamientos`):** Renombrada la carpeta pública raíz a `app/public/ddc-planeamientos/` y el archivo JSON maestro a `app/public/data/ddc-planeamientos.json`. Esto desvincula la estructura de URLs y almacenamiento de un solo año calendario (2027), permitiendo que la aplicación opere de forma genérica y soporte múltiples años o vigencias curriculares a futuro.
+- **Implementación de Estándares Internacionales de Nivel Corporativo:** Incorporadas 4 mejores prácticas de clase mundial: (1) Skip Link accesible (`WCAG 2.4.1 - Bypass Blocks`) para navegación con teclado y lectores de pantalla; (2) React 19 Enterprise Error Boundary (`ErrorBoundary.jsx`) para protección ante excepciones de UI imprevistas; (3) Metadatos W3C, SEO y Open Graph en `index.html` para previsualización institucional en Teams/WhatsApp; (4) Cierre accesible de modales con tecla `Escape` (WAI-ARIA Dialog). Evaluadas 63 pruebas en 8 suites automatizadas.
+- **Depuración Plurianual de la Interfaz Visual:** Eliminadas referencias rígidas a "2027" de las secciones principales de usuario (título Hero H1 renombrado a *"Repositorio de Planeamientos Curriculares"*, removidos badges "DDC · MEP" y "Vigencia 2027" del banner, secciones renombradas a *"1. Catálogo Oficial de Planeamientos"* y *"2. Top de Descargas Docentes"*, y textos de carga neutros). Se mantiene la vigencia curricular viva y configurable exclusivamente en el badge verde del Footer (`appVersion.estado = "Planeamientos 2027"`), permitiendo alternar años lectivos de forma centralizada.
+- **Arquitectura 100% Estática Basada en JSON (Desacoplada de PHP y del Bundle):** Eliminada dependencia de scripts PHP y middlewares en Vite. El catálogo oficial se consulta asíncronamente mediante `fetch('/data/ddc-planeamientos.json', { cache: 'no-cache' })`. Permite actualizaciones en caliente en el servidor sin necesidad de recompilar (`npm run build`), y redujo el bundle JavaScript en casi 180 KB.
 - **Saneamiento Universal del Catálogo:** Removida la propiedad `carpetaFisica` (rutas locales de Windows) de los 197 registros, garantizando portabilidad absoluta en cualquier servidor web (Apache, Nginx, Azure, AWS, IIS).
 - **Única Fuente de Verdad (SSOT) en `app/docs/`:** Centralización de especificaciones (`spec.md`), directrices y memoria persistente (`MEMORY.md`) dentro de `app/docs/`.
 - **Splash Screen Institucional y Resiliencia de Red:** Pantalla de carga con isotipo curricular provisional (MEP · DDC 2027), spinner de doble anillo institucional y tarjeta de contingencia con botón de reintento ante caídas de red.
@@ -25,7 +28,7 @@ Memoria técnica del proyecto en `app/docs/` (Única Fuente de Verdad - SSOT).
 - **Eliminación del Scroll Horizontal:** Ajuste milimétrico de columnas, anchos responsivos y botón de acción compacto solo con icono (`IconDownload`) en azul zafiro institucional.
 - **Paginación Matemática Segura:** Controles completos con botones *« Primero*, *‹ Anterior*, ventana deslizante numérica estricta, *Siguiente ›* y *Último »*, con `key` única que previene duplicación de índices o clonación de nodos DOM.
 - **Pie de Página (Footer) Transparente:** Removido color de respaldo oscuro y borde superior; `footer.jpg` escala al 100% de la altura (`bg-cover`) con texto en blanco de alto contraste.
-- **Depuración de Archivos Obsoletos:** Eliminado `planesData.js` (83 KB del prototipo inicial), consolidando el código en `planes2027Data.js` y el catálogo taxonómico único `public/data/planes2027.json`.
+- **Depuración de Archivos Obsoletos:** Eliminado `planesData.js` (83 KB del prototipo inicial), consolidando el código en `planes2027Data.js` y el catálogo taxonómico único `public/data/ddc-planeamientos.json`.
 - **Ortografía RAE estricta en UI vs Sistema de Archivos:** Nombres visuales con tildes y numerales romanos normados (`II Ciclos`, `III Ciclo y Educación Diversificada`), manteniendo carpetas en disco limpias y compatibles con Apache/Linux.
 
 ## Aprendizajes y errores a evitar

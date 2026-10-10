@@ -15,7 +15,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
 
-  // Carga asíncrona desacoplada del catálogo curricular oficial desde /data/planes2027.json
+  // Carga asíncrona desacoplada del catálogo curricular oficial desde /data/ddc-planeamientos.json
   const cargarCatalogo = async () => {
     setIsLoading(true);
     setLoadError(null);
@@ -165,6 +165,14 @@ export default function App() {
 
   return (
     <div className="h-screen flex flex-col bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-200 overflow-hidden">
+      {/* 0. WCAG 2.4.1: Enlace accesible de salto al contenido principal (Skip Link) */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-blue-700 focus:text-white focus:font-bold focus:text-xs focus:rounded-xl focus:shadow-2xl focus:ring-4 focus:ring-amber-400 focus:outline-none transition-all"
+      >
+        Saltar al catálogo de planeamientos
+      </a>
+
       {/* 1. SECCIÓN: ENCABEZADO (Siempre fijo arriba) */}
       <div className="flex-shrink-0 z-20 shadow-md">
         <Header
@@ -179,9 +187,9 @@ export default function App() {
 
       {/* 2. SECCIÓN: CONTENIDO PRINCIPAL (Única área con scroll vertical fluido) */}
       <div className="flex-1 overflow-y-auto min-h-0 focus:outline-none">
-        <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {/* BANNER INSTITUCIONAL COMPACTO DE BIENVENIDA (DDC · MEP) */}
-          <WelcomeHero onOpenAbout={() => setIsAboutModalOpen(true)} />
+        <main id="main-content" tabIndex="-1" className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 focus:outline-none">
+          {/* BANNER INSTITUCIONAL DE BIENVENIDA (DDC · MEP) */}
+          <WelcomeHero />
 
           {/* 2.1 PRIMERA SECCIÓN MAESTRA (HERO): CATÁLOGO OFICIAL 2027 (FILTROS + TABLA INTEGRADOS) */}
           <GeneralTable

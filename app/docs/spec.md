@@ -35,9 +35,9 @@ Proveer a todo el cuerpo docente de Costa Rica un canal institucional centraliza
 ## 2. Requisitos Funcionales (RF)
 
 ### RF-01: Carga Asíncrona Desacoplada del Catálogo Curricular
-- **Descripción:** La aplicación no empaqueta los datos dentro del bundle JavaScript de React. Consulta el archivo `/data/planes2027.json` como una API estática externa al iniciar.
+- **Descripción:** La aplicación no empaqueta los datos dentro del bundle JavaScript de React. Consulta el archivo `/data/ddc-planeamientos.json` como una API estática externa al iniciar.
 - **Comportamiento:**
-  - Ejecuta un `fetch('/data/planes2027.json?_t=[timestamp]', { cache: 'no-cache' })`.
+  - Ejecuta un `fetch('/data/ddc-planeamientos.json?_t=[timestamp]', { cache: 'no-cache' })`.
   - Permite la actualización en caliente ("hot-update") de materias, rutas o anexos directamente en el servidor sin necesidad de recompilar la aplicación (`npm run build`).
   - Si la petición es exitosa, inicializa el catálogo en memoria y fusiona los contadores de descargas persistidos en el cliente.
 
@@ -116,15 +116,15 @@ Proveer a todo el cuerpo docente de Costa Rica un canal institucional centraliza
 
 ## 4. Contrato de Datos (Data Schema)
 
-El archivo [`app/public/data/planes2027.json`](file:///c:/xampp/htdocs/ddc-planes-digitales/app/public/data/planes2027.json) es la única fuente de verdad taxonómica.
+El archivo [`app/public/data/ddc-planeamientos.json`](file:///c:/xampp/htdocs/ddc-planes-digitales/app/public/data/ddc-planeamientos.json) es la única fuente de verdad taxonómica.
 
 ### 4.1 Definición TypeScript / Schema de Cada Registro Curricular
 
 ```typescript
 interface ArchivoCurricular {
-  nombre: string;          // Ej: "Plan_1.INTERACTIVO_I.zip"
+  nombre: string;          // Ej: "plan-interactivo-i.zip"
   tipo: string;            // Ej: "ZIP", "PDF", "DOCX"
-  ruta: string;            // Ruta web relativa accesible: "/aplicativo-planeamientos-2027/1.PREESCOLAR/1.INTERACTIVO I/Plan_1.INTERACTIVO_I.zip"
+  ruta: string;            // Ruta web relativa accesible: "/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip"
   tamanoBytes: number;     // Tamaño exacto en bytes (ej: 1057)
   tamanoLegible: string;   // Tamaño formateado para el docente (ej: "1.0 KB", "2.4 MB")
 }
@@ -136,7 +136,7 @@ interface PlaneamientoCurricular2027 {
   ofertaBadgeColor: string;    // Color temático Tailwind (Ej: "amber", "emerald", "blue", "indigo", "rose", "cyan", "violet")
   asignatura: string;          // Nombre de la asignatura o área curricular (Ej: "Educación Cívica", "Matemática")
   grado: string;               // Nivel o grado académico (Ej: "Primer Año (1°)", "Sétimo Año")
-  rutaRelativa: string;        // Subruta física dentro de aplicativo-planeamientos-2027 (Ej: "1.PREESCOLAR/1.INTERACTIVO I")
+  rutaRelativa: string;        // Subruta física dentro de ddc-planeamientos (Ej: "preescolar/interactivo-i")
   archivos: ArchivoCurricular[]; // Lista de todos los archivos disponibles para esta materia
   archivoPrincipal: string;    // Nombre del archivo representativo primario
   rutaDescarga: string;        // Ruta web de descarga del archivo principal
@@ -179,7 +179,7 @@ Estas reglas son obligatorias y no pueden ser alteradas por ningún desarrollado
 1. **PROHIBIDO EL USO DE BACKEND DINÁMICO (PHP / NODE RUNTIME):**
    - El aplicativo debe permanecer 100% estático. No se permite reincorporar endpoints PHP ni dependencias que requieran un servidor de aplicaciones en tiempo de ejecución.
 2. **PROHIBIDO ACOPLAR EL CATÁLOGO AL BUNDLE:**
-   - No se permite importar `planes2027.json` directamente en archivos `.js`/`.jsx` de React. El catálogo siempre debe obtenerse mediante `fetch('/data/planes2027.json')`.
+   - No se permite importar `ddc-planeamientos.json` directamente en archivos `.js`/`.jsx` de React. El catálogo siempre debe obtenerse mediante `fetch('/data/ddc-planeamientos.json')`.
 3. **REGLA ESTRICTA DE CONTROL DE VERSIONES (GIT):**
    - **NUNCA** ejecutar `git commit` ni `git push` de manera automática. Todas las tareas deben validarse primero en local y esperar la autorización explícita de Chris antes de sincronizar con el repositorio remoto.
 4. **BLINDAJE DE CODIFICACIÓN UTF-8 SIN BOM:**

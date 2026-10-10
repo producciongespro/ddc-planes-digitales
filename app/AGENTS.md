@@ -20,14 +20,14 @@ Aplicación web profesional oficial tipo Repositorio Curricular Digital para que
 
 ## Stack y Estructura
 - **Tecnologías:** React 19 + JavaScript (ES Modules) + Vite + Tailwind CSS (dentro de `app/`).
-- **Arquitectura de Datos:** **100% Estática y Desacoplada**. No utiliza PHP ni escaneo de backend. El frontend consulta asíncronamente `/data/planes2027.json` como una API externa con cabeceras anti-caché.
+- **Arquitectura de Datos:** **100% Estática y Desacoplada**. No utiliza PHP ni escaneo de backend. El frontend consulta asíncronamente `/data/ddc-planeamientos.json` como una API externa con cabeceras anti-caché.
 - **Iconografía:** Iconos en SVG nativo sin dependencias pesadas (`src/components/Icons.jsx`).
 - **Arquitectura de Maquetación:** **App Shell** (Header fijo superior `flex-shrink-0 z-20`, Footer fijo inferior `flex-shrink-0 z-20`, y contenedor principal `flex-1 overflow-y-auto` como único elemento con scroll).
-- **Repositorio Físico de Documentos:** Reside **ÚNICAMENTE** en `app/public/aplicativo-planeamientos-2027/`.
-  - Organizado en las **7 Ofertas Educativas Oficiales de la DDC**:
-    1. `1.PREESCOLAR` (Materno Infantil y Transición).
-    2. `2.PRIMERO Y SEGUNDO CICLOS` (Primaria: 1° a 6° año).
-    3. `3.TERCER CICLO Y EDUCACION DIVERSIFICADA` (Secundaria: 7° a 11°/12° año en modalidades Académica y Técnica).
+- **Repositorio Físico de Documentos:** Reside **ÚNICAMENTE** en `app/public/ddc-planeamientos/`.
+  - Organizado en las **7 Ofertas Educativas Oficiales de la DDC** en kebab-case limpio:
+    1. `preescolar` (Materno Infantil y Transición).
+    2. `primero-y-segundo-ciclos` (Primaria: 1° a 6° año).
+    3. `tercer-ciclo-y-educacion-diversificada` (Secundaria: 7° a 11°/12° año en modalidades Académica y Técnica).
     4. `4.EDUCACION PERSONAS JOVENES Y ADULTAS` (EPJA: Orientaciones Generales y Guías Específicas IPEC/CINDEA).
     5. `5.EDUCACION ESPECIAL` (Centros Especiales, Aula Integrada, Audición y Lenguaje, Primera Infancia, Plan Nacional Vocacional).
     6. `6.EDUCACION INTERCULTURAL` (Culturas y Lenguas Indígenas: Bribri, Cabécar, Boruca, Ngäbe-Buglé, Maleku).
@@ -75,7 +75,7 @@ Aplicación web profesional oficial tipo Repositorio Curricular Digital para que
    - Fondo transparente con imagen institucional `footer.jpg` escalada al 100% (`bg-cover`) y badge oficial con versión `1.0.1`.
 
 ## Datos y Persistencia
-- **Catálogo Maestro:** Reside exclusivamente en `app/public/data/planes2027.json` (rutas relativas universales, sin rutas físicas de Windows).
+- **Catálogo Maestro:** Reside exclusivamente en `app/public/data/ddc-planeamientos.json` (rutas relativas universales, sin rutas físicas de Windows).
 - **Persistencia Ligera en `localStorage`:** Clave `mep-ddc-planes-2027-downloads` que almacena únicamente el mapa `{ [id]: conteoDescargas }`.
 - **Clave interna oculta:** La clave técnica de almacenamiento es exclusivamente de uso interno; nunca debe exponerse en textos visibles.
 
@@ -86,7 +86,7 @@ Aplicación web profesional oficial tipo Repositorio Curricular Digital para que
   El **mojibake** (corrupción de caracteres diacríticos como tildes, eñes o signos: `Ã¡`, `Ã©`, `Ã­`, `Ã³`, `Ãº`, `Ã±`, `Â°`, `â€“`) está terminantemente prohibido en cualquier archivo del proyecto. Para prevenirlo de forma infalible, se establecen las siguientes directrices obligatorias:
   1. **Codificación Universal UTF-8 sin BOM:** Todo archivo creado o modificado (`.json`, `.jsx`, `.js`, `.html`, `.md`, `.css`, `.txt`) DEBE guardarse estrictamente en formato **UTF-8 sin BOM** (Byte Order Mark).
   2. **Operaciones en Terminal y Scripts (PowerShell / Node.js):** Nunca asumir la codificación por defecto del sistema operativo (evitar Windows-1252 o ANSI). En Node.js, siempre declarar explícitamente `encoding: 'utf8'` en lecturas y escrituras (`fs.readFileSync(path, 'utf8')`, `fs.writeFileSync(path, data, 'utf8')`). En PowerShell, forzar `[Console]::OutputEncoding = [System.Text.Encoding]::UTF8` y parámetros `-Encoding utf8` en `Set-Content` / `Out-File`.
-  3. **Catálogo `public/data/planes2027.json`:** Los valores con tildes (*Educación*, *Orientación*, *Ciencias*, *Español*, *Francés*, *Guía*, *Música*, *Filosofía*, etc.) deben conservarse como caracteres UTF-8 nativos directos y legibles, nunca con dobles codificaciones ni caracteres rotos.
+  3. **Catálogo `public/data/ddc-planeamientos.json`:** Los valores con tildes (*Educación*, *Orientación*, *Ciencias*, *Español*, *Francés*, *Guía*, *Música*, *Filosofía*, etc.) deben conservarse como caracteres UTF-8 nativos directos y legibles, nunca con dobles codificaciones ni caracteres rotos.
   4. **Metadatos Web y HTTP:** `index.html` debe mantener `<meta charset="UTF-8" />` como primer hijo del `<head>`.
   5. **Auditoría Preventiva Obligatoria:** Antes de dar por concluida cualquier edición, se debe verificar que los textos con caracteres especiales en español (`á, é, í, ó, ú, ñ, Ñ, ¿, ¡, °`) se lean limpios e impecables en la interfaz y en disco.
 - **Certificación Multi-Pantalla Obligatoria (20 Viewports):** Todo cambio en componentes de UI debe someterse a la batería de pruebas en 20 resoluciones comerciales estándar (de 320px a 3840px) para certificar cero desbordamientos horizontales (`overflow-x`) y preservación del App Shell.

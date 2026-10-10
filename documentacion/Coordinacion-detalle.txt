@@ -5,3 +5,11 @@ DDC: Dirección de Desarrollo Curricular:
 el objetivo del aplicativo, es un repositorio donde los docentes van a consultas los planes de asignaturas
 
 
+Vamos a manejar una arquitectura 100% estática basada en JSON, sin utilizar scripts de PHP. El objetivo es que el catálogo de planes no esté empaquetado en el código de React, sino que el cliente lo consulte mediante fetch() al archivo planes2027.json como si fuera una API. Así, cuando se agreguen o modifiquen archivos en el servidor, solo editamos el JSON sin tener que volver a compilar el proyecto (npm run build).
+
+- Eliminar PHP: Borrar el archivo public/api/listar_planes.php y la carpeta /api/. No usaremos escaneo por PHP en el servidor.
+Limpiar el JSON público (public/data/planes2027.json): El archivo ya está en esa carpeta, pero hay que quitarle la propiedad "carpetaFisica" que tiene rutas locales de Windows (C:\xampp...). Deben quedar solo las rutas web relativas.
+
+- Desacoplar el catálogo en el Frontend (src/data/planes2027Data.js): Quitar el "import planesRaw from './planes2027.json'" del bundle. En su lugar, crear una función fetchPlanesCatalog() que haga fetch('/data/planes2027.json', { cache: 'no-cache' }). El localStorage se mantendrá solo para guardar los contadores de descargas del usuario.
+
+- Carga y Splash Screen en App.jsx: En App.jsx cargar los datos mediante useEffect usando fetchPlanesCatalog(). Como ahora la carga es asíncrona por red, agregar un Splash Screen institucional (con el logo del MEP, un spinner y el texto "Cargando catálogo curricular 2027...") mientras se descargan los datos, además de manejar un mensaje de error con botón de reintentar por si falla la conexión.

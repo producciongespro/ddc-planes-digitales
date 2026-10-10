@@ -72,7 +72,7 @@ export function saveDownloadsToStorage(planes) {
  * @returns {Promise<Array<any>>}
  */
 export async function fetchPlanesCatalog() {
-  const url = `/data/planes2027.json?_t=${Date.now()}`;
+  const url = `/data/ddc-planeamientos.json?_t=${Date.now()}`;
   const response = await fetch(url, {
     cache: 'no-cache',
     headers: {
@@ -87,7 +87,7 @@ export async function fetchPlanesCatalog() {
 
   const catalog = await response.json();
   if (!Array.isArray(catalog)) {
-    throw new Error('El formato del archivo planes2027.json no es una lista válida.');
+    throw new Error('El formato del archivo ddc-planeamientos.json no es una lista válida.');
   }
 
   // Fusionar catálogo con las descargas locales del usuario

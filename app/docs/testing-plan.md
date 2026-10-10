@@ -57,7 +57,7 @@ Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Cu
 ## 4. Matriz Exhaustiva de Pruebas Unitarias y de Integración
 
 ### Suite 1: `planes2027Data.test.js` (Capa de Datos y Persistencia Ligera)
-- **TEST-01:** `fetchPlanesCatalog()` consulta exitosamente `/data/planes2027.json` y devuelve los 197 registros curriculares.
+- **TEST-01:** `fetchPlanesCatalog()` consulta exitosamente `/data/ddc-planeamientos.json` y devuelve los 197 registros curriculares.
 - **TEST-02:** `fetchPlanesCatalog()` adjunta cabeceras anti-caché (`cache: 'no-cache'`, `Pragma: no-cache`) y parámetro temporal `_t`.
 - **TEST-03:** Manejo de contingencia: si el servidor retorna un error HTTP (ej. 404 o 500) o un JSON no válido, la función lanza una excepción descriptiva en español sin romper la ejecución.
 - **TEST-04:** `loadSavedDownloadsMap()` recupera correctamente el diccionario `{ [id]: conteo }` desde `localStorage`.
@@ -81,9 +81,15 @@ Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Cu
 
 ### Suite 4: `guardrails.test.js` (Auditoría Automatizada de Seguridad y Arnés)
 - **TEST-18 (Anti-Mojibake):** Escaneo recursivo de todo el proyecto certificando que ningún archivo contenga secuencias de caracteres UTF-8 corruptos (`Ã¡`, `Ã©`, `Ã­`, `Ã³`, `Ãº`, `Ã±`, `Â°`, `â€“`).
-- **TEST-19 (Zero-Windows-Paths):** Certifica que ninguna entrada en `app/public/data/planes2027.json` contenga rutas locales de Windows (`C:\` ni `C:\\`).
-- **TEST-20 (Desacople del Bundle):** Certifica que ningún archivo en `app/src/` importe `planes2027.json` de forma estática.
+- **TEST-19 (Zero-Windows-Paths):** Certifica que ninguna entrada en `app/public/data/ddc-planeamientos.json` contenga rutas locales de Windows (`C:\` ni `C:\\`).
+- **TEST-20 (Desacople del Bundle):** Certifica que ningún archivo en `app/src/` importe `ddc-planeamientos.json` de forma estática.
 - **TEST-21 (Regla de Tratamiento Formal):** Verifica que los textos visibles dirigidos al usuario docente en los componentes principales mantengan tratamiento de respeto de «usted».
+- **TEST-25 (Rutas Web Limpias Kebab-Case):** Certifica que ninguna carpeta en `ddc-planeamientos.json` contenga puntos ni espacios en blanco, y que las URLs de descarga sean 100% minúsculas bajo estándar POSIX RFC 3986.
+- **TEST-26 (Visualización Limpia Docente):** Certifica que ninguna asignatura, grado u oferta presente prefijos numéricos ("1. ", "2. ") de cara al usuario.
+- **TEST-27 (Verificación Física 100%):** Certifica que los 197 archivos ZIP existan físicamente en el disco en sus nuevas rutas relativas públicas.
+- **TEST-28 (Guardrail Físico de Directorios):** Escaneo recursivo de todo el árbol en disco de `app/public/ddc-planeamientos/`. Certifica que cada carpeta cumpla con `^[a-z0-9]+(-[a-z0-9]+)*$` (cero puntos, cero espacios, cero mayúsculas, cero números con punto).
+- **TEST-29 (Guardrail Físico de Archivos ZIP):** Escaneo recursivo de todos los archivos ZIP en disco. Certifica que cada archivo cumpla con `^[a-z0-9]+(-[a-z0-9]+)*\.zip$` (cero espacios, cero mayúsculas, cero puntos intermedios).
+- **TEST-30 (Guardrail de Paridad Bidireccional):** Valida paridad matemática 1:1 entre los archivos del disco y los registros de `ddc-planeamientos.json` (0 archivos huérfanos y 0 enlaces rotos).
 
 ### Suite 5: `responsive.test.jsx` (Matriz de 20 Dimensiones Comerciales de Pantalla)
 - **Objetivo:** Simular y certificar la fidelidad del layout App Shell, ausencia de desbordamiento horizontal (`overflow-x: hidden`) y persistencia visual de Header y Footer a lo largo de **20 resoluciones comerciales estándar**:
@@ -118,7 +124,7 @@ Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Cu
 ### Suite 6: `chaos.test.jsx` (Arnés de Caos y Resiliencia Extrema)
 - **CHAOS-01 (Corte Abrupto de Red / Offline):** Simula caída total de red (`TypeError: Failed to fetch`). Certifica ausencia de pantalla blanca y renderizado de tarjeta de contingencia en `SplashScreen`.
 - **CHAOS-02 (Recuperación Resiliente):** Certifica que presionar "Reintentar conexión" tras restablecerse la red monte exitosamente el catálogo completo.
-- **CHAOS-03 (JSON Corrupto en Servidor):** Simula sintaxis malformada en `planes2027.json` (`SyntaxError`). Captura el fallo sin romper el ciclo de vida de React.
+- **CHAOS-03 (JSON Corrupto en Servidor):** Simula sintaxis malformada en `ddc-planeamientos.json` (`SyntaxError`). Captura el fallo sin romper el ciclo de vida de React.
 - **CHAOS-04 (Códigos HTTP 500 / 502 Bad Gateway):** Verifica la presentación clara del código de error al usuario.
 - **CHAOS-05 (Payload No Tabular):** Rechazo defensivo y mensaje explícito cuando el servidor entrega un objeto o valor nulo en vez de un arreglo.
 - **CHAOS-06 (Saturación de Almacenamiento):** Simula `QuotaExceededError` en `localStorage.setItem`. Certifica que la aplicación continúe operando en memoria y permitiendo descargas.

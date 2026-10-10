@@ -68,14 +68,14 @@ export function TopDownloads({ planes, onDownload }) {
   return (
     <section className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden mb-8 transition-colors duration-200">
       {/* Encabezado del área */}
-      <div className="bg-gradient-to-r from-[#172554] to-[#1e3a8a] dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091] p-6 text-white border-b-2 border-amber-500 shadow-xs flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div className="bg-gradient-to-r from-[#003B71] via-[#017EC1] to-[#0267a0] dark:from-[#1a3863] dark:via-[#1e447b] dark:to-[#235091] p-6 text-white border-b-2 border-amber-500 shadow-xs flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <div className="flex items-center gap-3 mb-1.5">
-            <div className="p-2 rounded-lg bg-amber-500 text-white shadow-md">
+            <div className="p-2 rounded-lg bg-amber-500 text-slate-950 shadow-md">
               <IconTrophy className="w-5 h-5" />
             </div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight">
-              2. Top de Descargas Docentes (Planes 2027)
+              2. Top de Descargas Docentes
             </h2>
           </div>
           <p className="text-blue-100 text-sm max-w-2xl">
@@ -121,7 +121,7 @@ export function TopDownloads({ planes, onDownload }) {
             Sin datos registrados en el Top de Descargas
           </h3>
           <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto">
-            El ranking se activará dinámicamente en tiempo real una vez que los docentes descarguen los planeamientos del ciclo 2027.
+            El ranking se activará dinámicamente en tiempo real una vez que se descarguen los planeamientos curriculares.
           </p>
         </div>
       ) : (
