@@ -2,79 +2,50 @@
 
 ## Contrato operativo
 
-El agente principal de Codex coordina el trabajo de esta conversación. La
-configuración de proyecto `.codex/config.toml` registra perfiles TOML en
-`app/agents/`. No se agregan agentes ni dependencias a la aplicación publicada.
-Esta configuración de herramientas y el `AGENTS.md` raíz son la excepción de
-metadatos a la ubicación exclusiva del código de aplicación en `app/`.
+El agente principal coordina el trabajo de esta conversación. La configuración
+de proyecto `.codex/config.toml` registra perfiles TOML en `app/agents/`. No se
+agregan agentes ni dependencias a la aplicación publicada. Esta configuración
+de herramientas y el `AGENTS.md` son metadatos de desarrollo; el código del sitio
+y la SSOT permanecen en `app/`.
 
 | Rol | Perfil | Responsabilidad | Escritura |
 | --- | --- | --- | --- |
-| Orquestador | AGENTS.md raíz y app/AGENTS.md | Acotar, asignar, integrar, esperar resultados y reportar | Dentro del alcance autorizado |
-| implementador | app/agents/implementador.toml | Implementar cambios acotados | Solo archivos asignados |
-| qa_tester | app/agents/qa-tester.toml | Revisar comportamiento y ejecutar verificaciones | Sin editar; salidas temporales de herramientas permitidas |
-| guardrail_auditor | app/agents/guardrail-auditor.toml | Auditar restricciones e integridad | Sin editar |
+| Orquestador | app/AGENTS.md | Acotar, asignar, integrar, esperar resultados y reportar | Dentro del alcance autorizado |
+| analista | app/agents/analista.toml | Analizar nuevos requerimientos, detectar vacíos o ambigüedades, formular preguntas de clarificación y definir criterios de aceptación | Sin editar código de producción |
+| disenador | app/agents/disenador.toml | Diseñar y validar cada ventana, componente e interacción visual de la interfaz (UI/UX, temas, responsividad y accesibilidad) | Sin editar código de producción |
+| implementador | app/agents/implementador.toml | Implementar cambios acotados según análisis y diseño | Solo archivos asignados |
+| qa_tester | app/agents/qa-tester.toml | Ejecutar pruebas unitarias focalizadas en cambios pequeños y la suite completa al preparar commit/sincronización | Sin editar; salidas temporales de herramientas permitidas |
+| auditor | app/agents/auditor.toml | Ejecutar todas las auditorías de arneses y guardrails al momento del commit y sincronización | Sin editar |
 
 Los roles heredan modelo, permisos y servicios de la sesión. Las restricciones de
 escritura indicadas son instrucciones de trabajo, no un sandbox independiente.
-Máximo tres subagentes concurrentes además del principal; sin delegación recursiva.
+Máximo cinco subagentes concurrentes además del principal; sin delegación recursiva.
+
+## Cadencia de Pruebas y Auditorías (Regla de Agilidad vs. Pre-Commit)
+
+1. **Durante cambios pequeños o iterativos de desarrollo:**
+   - Para evitar retrasos innecesarios, **únicamente se ejecutan pruebas unitarias focalizadas** (`npm run test:unit` o `npx vitest run <archivo-unitario>` pertinente al cambio).
+   - No se corre toda la batería pesada de arneses (caos, sensorial, 20 viewports) ni guardrails en cada ajuste menor.
+2. **Al momento de ejecutar Commit y Sincronización (`git commit` / `git push`):**
+   - Solo cuando Chris ordena hacer commit y sincronizar, se ejecutan **todas las pruebas configuradas en el proyecto** (`npm test`), y el subagente **`auditor`** valida todos los **arneses** y los **guardrails** (`npm run audit:guardrails`), además de verificar `npm run build`.
 
 ## Flujo obligatorio
 
 1. El principal lee documentación y estado Git; registra los cambios previos.
-2. Para trabajo independiente, delega con objetivo, entradas, archivos asignados,
-   límites, comprobaciones y resultado esperado. No se delega por mera formalidad.
-3. Asigna un único escritor por archivo. QA y auditor pueden investigar en paralelo;
-   sus verificaciones finales se ejecutan sobre los cambios terminados. No se corren
-   pruebas sobre archivos que otro agente todavía está modificando.
-4. El principal espera los informes, resuelve discrepancias y devuelve correcciones
-   al implementador o las realiza directamente. Repite solo controles afectados.
-5. Informa archivos, evidencia, pruebas, códigos de salida y limitaciones. Actualiza
-   MEMORY.md. Un fallo previo sigue siendo fallo; no se declara calidad aprobada.
-6. Commit y push requieren orden expresa y las puertas de calidad vigentes.
+2. Ante un nuevo requerimiento o cambio de interfaz:
+   - Se apoya en **`analista`** para clarificar requerimientos escuetos o ambiguos y formular preguntas al usuario si hace falta.
+   - Se apoya en **`disenador`** para definir y validar las ventanas e interacciones visuales del rediseño o ajuste UI/UX.
+3. Para la implementación, delega en **`implementador`** con objetivo, entradas, archivos asignados (un único escritor por archivo), límites, comprobaciones unitarias y resultado esperado.
+4. Durante ajustes pequeños, **`qa_tester`** o **`implementador`** verifican mediante pruebas unitarias rápidas sobre los archivos terminados.
+5. Cuando el usuario solicita **commit y sincronización**, el principal convoca a **`qa_tester`** y **`auditor`** para ejecutar todas las pruebas, validar los arneses y auditar los guardrails.
+6. El principal espera los informes, resuelve discrepancias, informa evidencia y actualiza `app/docs/MEMORY.md`. Commit y push requieren orden expresa de Chris y las puertas de calidad superadas.
 
 Formato de devolución: estado; alcance; archivos; hallazgos con ubicación;
 comandos y códigos de salida; pruebas aprobadas/fallidas; pendientes y limitaciones.
 
 ## Activación y uso
 
-Abra este repositorio como proyecto confiable en una sesión compatible de Codex.
-La configuración se carga al iniciar la sesión; una sesión ya abierta puede requerir
-recarga para descubrir los nuevos roles. El principal puede ejecutar desde ahora
-los perfiles mediante las herramientas disponibles leyendo sus instrucciones.
-El nombre mostrado por el host puede diferir del nombre de la tarea delegada.
+Abra este repositorio como proyecto confiable en una sesión compatible.
+Los perfiles están definidos tanto en `.codex/config.toml` (`app/agents/*.toml`) como registrados en la sesión activa de subagentes (`analista`, `disenador`, `implementador`, `qa_tester`, `auditor`).
 
-Ejemplo: «Implemente este cambio con implementador y pida a qa_tester y
-guardrail_auditor que revisen el resultado». AGENTS.md también instruye al principal
-a delegar automáticamente cuando la tarea tenga partes independientes.
-
-Los perfiles persistentes no son procesos permanentes, un servicio de producción
-ni un scheduler. Si faltan herramientas multiagente, el principal informa la
-limitación y realiza el trabajo secuencialmente. No inventa una ejecución delegada.
-
-## Validación y estado inicial
-
-- En esta implementación se usaron subagentes reales QA y auditor, coordinados
-  mediante las herramientas de creación, mensajes y espera de la sesión.
-- La configuración persistente debe ser aceptada por el lector de configuración
-  de Codex; esto no acredita por sí solo una invocación futura de cada perfil.
-- Validación del 20 de octubre de 2026: TOML, referencias y UTF-8 sin BOM
-  comprobados con Python tomllib (salida 0); revisión independiente QA y auditor
-  sin hallazgos bloqueantes. `git diff --check` terminó con salida 0.
-- Prueba funcional: `codex exec --strict-config --sandbox read-only --json`
-  desde la raíz terminó con salida 0. Sesión
-  `01a15a17-db30-7ee3-84f3-bb0fe1d53f52`: el coordinador solicitó los tres tipos
-  exactos sin contexto heredado y recogió sus respuestas. Cada rol devolvió la
-  restricción de edición de su perfil. No se ejecutaron comandos de la aplicación.
-- Limitación observada: el primer intento con `--ephemeral` aceptó el registro,
-  pero falló al crear subagentes por `no rollout found for thread id`. Para esta
-  versión del host use una sesión normal con historial para delegar. El código de
-  salida 0 del coordinador no basta para certificar éxito: hay que leer resultados.
-- Línea base de la revisión anterior: 63 pruebas, 60 aprobadas y tres fallos de
-  integridad/nomenclatura/paridad de ZIP. No se corrigen con esta configuración.
-- Las pruebas jsdom existentes no acreditan layout real ni accesibilidad integral.
-
-Referencia oficial de configuración:
-https://learn.chatgpt.com/docs/config-file/config-reference
-Referencia oficial de subagentes:
-https://learn.chatgpt.com/docs/agent-configuration/subagents
+Ejemplo: «Analice este requerimiento con `analista`, valide la propuesta visual con `disenador`, implemente con `implementador` verificando pruebas unitarias con `qa_tester`, y al hacer commit ejecute la auditoría total con `auditor`».

@@ -24,18 +24,20 @@ documento debe leerse junto con el resultado actual de `npm test`.
 
 Garantizar que **ningún error humano, degradación visual, corrupción de caracteres o falla arquitectónica pueda llegar jamás al repositorio en GitHub ni a producción**. 
 
-Cada solicitud de commit y sincronización debe superar obligatoriamente una batería de **3 Puertas de Calidad en Cascada** ejecutada por los subagentes y herramientas del arnés antes de realizar cualquier cambio en el control de versiones.
+### Regla de Agilidad en Cambios Pequeños vs. Auditoría Pre-Commit
+- **Durante cambios pequeños o iterativos:** Para evitar retrasos durante el desarrollo, se ejecutan **únicamente pruebas unitarias focalizadas** (`npm run test:unit` o la suite unitaria específica del componente modificado). No se corren todas las pruebas pesadas, arneses ni guardrails en cada cambio pequeño.
+- **Al momento de ejecutar Commit y Sincronización:** Únicamente cuando Chris solicita ejecutar el commit y la sincronización, se corren **todas las pruebas configuradas** y el subagente **`auditor`** se encarga de ejecutar todas las auditorías de los **arneses** y los **guardrails** a través de las **3 Puertas de Calidad en Cascada**.
 
 ---
 
 ## 2. Las 3 Puertas de Calidad en Cascada (Quality Gates)
 
 ```
-        [Instrucción de Chris: "Ejecuta commit y sincroniza"]
-                               │
-                               ▼
+         [Instrucción de Chris: "Ejecuta commit y sincroniza"]
+                                │
+                                ▼
   ┌─────────────────────────────────────────────────────────────┐
-  │  PUERTA 1: AUDITORÍA DE GUARDRAILS (Subagente Auditor)      │
+  │  PUERTA 1: AUDITORÍA DE GUARDRAILS (Subagente: auditor)     │
   │  - Cero Mojibake en todo el código y JSON                   │
   │  - Cero rutas físicas de Windows (C:\) en catálogo          │
   │  - Cero imports directos del catálogo al bundle de React     │
@@ -48,22 +50,22 @@ Cada solicitud de commit y sincronización debe superar obligatoriamente una bat
   │  - Guardrail de Paridad Bidireccional (0 huérfanos/rotos)   │
   │  Comando: `npm run audit:guardrails` (10 guardrails)        │
   └────────────────────────────┬────────────────────────────────┘
-                               │ (Superado al 100% ✅)
-                               ▼
+                                │ (Superado al 100% ✅)
+                                ▼
   ┌─────────────────────────────────────────────────────────────┐
-  │  PUERTA 2: SUITE DE PRUEBAS AUTOMATIZADAS (Subagente Tester)│
-  │  - 63 pruebas en 8 suites completas (Vitest + jsdom)        │
+  │  PUERTA 2: SUITE COMPLETA Y ARNESES (qa_tester y auditor)   │
+  │  - Todas las pruebas en las 8 suites (Vitest + jsdom)       │
   │  - Matriz de 20 Dimensiones Comerciales (320px a 4K UHD)    │
   │  - Arnés de Caos (Red offline, JSON corrupto, clics, cuota) │
   │  - Arnés Sensorial (Accesibilidad Ley 7600 y WCAG AA)       │
   │  - React 19 Enterprise Error Boundary (Tolerancia a UI)     │
   │  - WCAG 2.4.1 Skip Link accesible a catálogo principal      │
   │  - Resiliencia de red y Splash Screen con reintento         │
-  │  - Descarga individual y paginador matemático               │
+  │  - Descarga individual/múltiple y paginador matemático      │
   │  Comando: `npm test`                                        │
   └────────────────────────────┬────────────────────────────────┘
-                               │ (Superado al 100% ✅)
-                               ▼
+                                │ (Superado al 100% ✅)
+                                ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  PUERTA 3: COMPILACIÓN DE PRODUCCIÓN Y TAMAÑO DE BUNDLE     │
   │  - Compilación limpia con Vite (`npm run build`)            │
@@ -71,8 +73,8 @@ Cada solicitud de commit y sincronización debe superar obligatoriamente una bat
   │  - Cero errores de sintaxis o empaquetado                   │
   │  Comando: `npm run build`                                   │
   └────────────────────────────┬────────────────────────────────┘
-                               │ (Superado al 100% ✅)
-                               ▼
+                                │ (Superado al 100% ✅)
+                                ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  AUTORIZACIÓN DE CONTROL DE VERSIONES (GIT)                 │
   │  - Staging completo de archivos (`git add -A`)              │
@@ -91,7 +93,7 @@ Si cualquiera de las siguientes condiciones se presenta durante la ejecución, e
 1. **Detección de Mojibake:** Detección de secuencias corruptas (`Ã¡`, `Ã©`, `Ã±`, `Â°`, etc.) en cualquier archivo `.js`, `.jsx`, `.json`, `.html`, `.css` o `.md`.
 2. **Presencia de Rutas Locales:** Existencia de cadenas como `C:\` o nombres de disco duro en `public/data/ddc-planeamientos.json`.
 3. **Acoplamiento del Catálogo:** Detección de cualquier sentencia `import` que cargue estáticamente el archivo `ddc-planeamientos.json` o `planes2027.json` en lugar de utilizar `fetch()`.
-4. **Fallo en Pruebas Unitarias, Caos, Sensorial o Layout:** Cualquier aserción no cumplida en las 59 pruebas de Vitest o desbordamiento en los 20 viewports comerciales.
+4. **Fallo en Pruebas Unitarias, Caos, Sensorial o Layout:** Cualquier aserción no cumplida en las pruebas de Vitest o desbordamiento en los 20 viewports comerciales.
 5. **Violación de Nomenclatura en Disco:** Carpetas o archivos en `public/ddc-planeamientos/` con mayúsculas, espacios, puntos o prefijos numéricos.
 6. **Exceso de Peso en Bundle:** Archivo JavaScript compilado superior a 300 KB.
 
@@ -104,7 +106,7 @@ Si cualquiera de las siguientes condiciones se presenta durante la ejecución, e
 - Corre `npm test` en el directorio `app/`. Si hay fallas, Git rechaza el commit con código de salida `1`.
 
 ### 4.2 Pipeline de GitHub Actions (`.github/workflows/ci.yml`)
-- Cada push a la rama `ddc-planes-digitales-1.0.0` o `main` activa un contenedor Ubuntu con Node.js 20.
+- Cada push a la rama activa un contenedor Ubuntu con Node.js 20.
 - Ejecuta:
   1. `npm install`
   2. `npm test`

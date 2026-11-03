@@ -12,8 +12,13 @@ Aplicación web profesional oficial tipo Repositorio Curricular Digital para que
 - **Regla Estricta de Control de Versiones:** NUNCA ejecutar `git commit` ni sincronizar (`git push`) de forma automática. Siempre implementar y verificar en local, y consultar/esperar la instrucción expresa de Chris antes de commitear y sincronizar.
 
 ## Coordinación de agentes de desarrollo
-- **Agentes de desarrollo:** El agente principal coordina `implementador`, `qa_tester` y `guardrail_auditor`, registrados en `.codex/config.toml` de la raíz con perfiles en `app/agents/`.
-- **Protocolo obligatorio:** Lea `app/docs/agents.md`; delegue trabajo independiente con un único escritor por archivo, espere informes y consolide evidencia. QA y auditor no editan; los subagentes no delegan recursivamente.
+- **Agentes de desarrollo:** El agente principal coordina 5 perfiles especializados registrados en `.codex/config.toml` de la raíz con perfiles en `app/agents/`:
+  1. `analista` (`app/agents/analista.toml`): Analiza todos los nuevos requerimientos que se vayan planteando, detecta información escueta o vacíos, formula preguntas de clarificación y define criterios de aceptación.
+  2. `disenador` (`app/agents/disenador.toml`): Diseña y valida cada una de las ventanas, componentes e interacciones visuales de la interfaz ante rediseños y mejoras UI/UX.
+  3. `implementador` (`app/agents/implementador.toml`): Implementa cambios en los archivos asignados por el orquestador.
+  4. `qa_tester` (`app/agents/qa-tester.toml`): Ejecuta pruebas unitarias focalizadas durante cambios pequeños y la suite completa al preparar commit/sincronización, sin editar fuentes.
+  5. `auditor` (`app/agents/auditor.toml`): Ejecuta todas las auditorías de arneses y guardrails exclusivamente una vez que se ejecute el commit y la sincronización, sin editar archivos.
+- **Protocolo obligatorio:** Lea `app/docs/agents.md`; delegue trabajo independiente con un único escritor por archivo, espere informes y consolide evidencia. `analista`, `disenador`, `qa_tester` y `auditor` no editan código de producción; los subagentes no delegan recursivamente.
 - **Excepción de metadatos:** `AGENTS.md` y `.codex/config.toml` en la raíz son configuración de desarrollo; el código del sitio y la SSOT permanecen en `app/`.
 
 ## Nomenclatura de Versión Institucional
@@ -43,17 +48,18 @@ Aplicación web profesional oficial tipo Repositorio Curricular Digital para que
 ## Comandos Oficiales y Arnés de Pruebas
 - **Servidor local de desarrollo:** `npm run dev` (ejecutado dentro de `app/`, accesible en `http://localhost:5173`).
 - **Verificación de compilación:** `npm run build` (ejecutado dentro de `app/`).
-- **Ejecución de Pruebas Unitarias y 20 Viewports:** `npm test` (ejecutado dentro de `app/`, Vitest + jsdom).
-- **Auditoría Automatizada de Guardrails:** `npm run audit:guardrails` (anti-mojibake, cero rutas Windows, desacople).
+- **Pruebas Unitarias Rápidas (para cambios pequeños / iterativos):** `npm run test:unit` o `npx vitest run <suite-unitaria>` (ejecutado dentro de `app/`). **Regla de Agilidad:** Mientras se hagan cambios pequeños, la idea es ejecutar únicamente pruebas unitarias focalizadas (y no todas las pruebas configuradas en el proyecto) para evitar retrasos.
+- **Ejecución Completa de Pruebas y 20 Viewports (Pre-Commit):** `npm test` (ejecutado dentro de `app/`, Vitest + jsdom).
+- **Auditoría Automatizada de Guardrails (Pre-Commit):** `npm run audit:guardrails` (anti-mojibake, cero rutas Windows, desacople).
 - **Protocolo de Puerta de Calidad Pre-Commit (Quality Gate Enterprise):**
-  Cada vez que Chris ordene un commit, es **obligatorio** certificar las 3 puertas en cascada antes de commitear:
+  Solo cuando se ejecuta commit y sincronización (bajo orden expresa de Chris), se hacen todas las pruebas y el subagente `auditor` valida todos los arneses y los guardrails en las 3 puertas en cascada:
   1. `npm run audit:guardrails`
   2. `npm test`
   3. `npm run build`
 - **Comandos Git (desde raíz `ddc-planes-digitales`, SOLO bajo autorización expresa de Chris tras superar el Quality Gate):**
   - `git add -A`
   - `git commit -m "DD-MM-YYYY: [descripción de cambios]"`
-  - `git push origin ddc-planes-digitales-1.0.0`
+  - `git push origin ddc-planes-digitales-2.0.0`
 
 ## Arquitectura de Componentes y Flujo UI
 1. **Pantalla de Carga y Contingencia de Red (`SplashScreen.jsx`):**
@@ -88,5 +94,5 @@ Aplicación web profesional oficial tipo Repositorio Curricular Digital para que
   3. **Catálogo `public/data/ddc-planeamientos.json`:** Los valores con tildes (*Educación*, *Orientación*, *Ciencias*, *Español*, *Francés*, *Guía*, *Música*, *Filosofía*, etc.) deben conservarse como caracteres UTF-8 nativos directos y legibles, nunca con dobles codificaciones ni caracteres rotos.
   4. **Metadatos Web y HTTP:** `index.html` debe mantener `<meta charset="UTF-8" />` como primer hijo del `<head>`.
   5. **Auditoría Preventiva Obligatoria:** Antes de dar por concluida cualquier edición, se debe verificar que los textos con caracteres especiales en español (`á, é, í, ó, ú, ñ, Ñ, ¿, ¡, °`) se lean limpios e impecables en la interfaz y en disco.
-- **Certificación Multi-Pantalla Obligatoria (20 Viewports):** Todo cambio en componentes de UI debe someterse a la batería de pruebas en 20 resoluciones comerciales estándar (de 320px a 3840px) para certificar cero desbordamientos horizontales (`overflow-x`) y preservación del App Shell.
-- **Memoria técnica:** Mantener actualizado [`app/docs/MEMORY.md`](file:///c:/xampp/htdocs/ddc-planes-digitales/app/docs/MEMORY.md) al concluir cada tarea relevante.
+- **Certificación Multi-Pantalla Obligatoria (20 Viewports):** Al momento de ejecutar commit y sincronización, todo cambio en componentes de UI se somete a la batería de pruebas en 20 resoluciones comerciales estándar (de 320px a 3840px) para certificar cero desbordamientos horizontales (`overflow-x`) y preservación del App Shell.
+- **Memoria técnica:** Mantener actualizado `app/docs/MEMORY.md` al concluir cada tarea relevante.

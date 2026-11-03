@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
+    "test:unit": "vitest run src/__tests__/planes2027Data.test.js src/__tests__/GeneralTable.test.jsx src/__tests__/SplashScreen.test.jsx src/__tests__/ErrorBoundary.test.jsx",
     "test:watch": "vitest",
     "audit:guardrails": "vitest run src/__tests__/guardrails.test.js"
   },

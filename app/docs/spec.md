@@ -27,11 +27,14 @@ principal comienza directamente con el catálogo filtrable.
 
 ### Coordinación de desarrollo
 El contrato operativo de agentes está en `app/docs/agents.md`. El agente principal
-coordina tres perfiles persistentes (`implementador`, `qa_tester`,
-`guardrail_auditor`) registrados en `.codex/config.toml` y definidos en `app/agents/`.
+coordina cinco perfiles persistentes (`analista`, `disenador`, `implementador`,
+`qa_tester`, `auditor`) registrados en `.codex/config.toml` y definidos en `app/agents/`.
 Esta configuración es metadato de desarrollo fuera del código de producción.
 La delegación usa las herramientas del host, hereda permisos y modelo y exige
 asignación de archivos, espera de resultados y consolidación de evidencia.
+Mientras se realizan cambios pequeños o iterativos se ejecutan únicamente pruebas
+unitarias focalizadas para evitar retrasos; cuando se ejecuta commit y sincronización,
+se corren todas las pruebas y el subagente `auditor` valida todos los arneses y guardrails.
 No introduce backend ni procesos permanentes en el sitio.
 
 ### Integridad de archivos del catálogo
@@ -128,7 +131,7 @@ Proveer a todo el cuerpo docente de Costa Rica un canal institucional centraliza
 
 ## 4. Contrato de Datos (Data Schema)
 
-El archivo [`app/public/data/ddc-planeamientos.json`](file:///c:/xampp/htdocs/ddc-planes-digitales/app/public/data/ddc-planeamientos.json) es la única fuente de verdad taxonómica.
+El archivo `app/public/data/ddc-planeamientos.json` es la única fuente de verdad taxonómica.
 
 ### 4.1 Definición TypeScript / Schema de Cada Registro Curricular
 
