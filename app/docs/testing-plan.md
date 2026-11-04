@@ -17,7 +17,7 @@
 
 ## 1. Objetivo del Plan de Pruebas
 
-Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Curricular Oficial 2027 mediante la implementación de un arnés de pruebas automatizadas y la asignación de tareas a subagentes autónomos especializados.
+Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Curricular Oficial 2027 mediante la implementación de un arnés de pruebas automatizadas y la asignación de tareas a los 12 subagentes autónomos especializados del Equipo de Desarrollo de Software de Élite.
 
 ---
 
@@ -32,37 +32,38 @@ Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Cu
 
 ---
 
-## 3. Arquitectura y Roles de los Subagentes
+## 3. Arquitectura y Roles del Equipo de Desarrollo de Software de Élite
 
 ```
-                        ┌────────────────────────────────────────┐
-                        │    AGENTE PRINCIPAL (Orquestador)      │
-                        │   - Coordina ejecución con Chris       │
-                        │   - Respeta estrictamente los Guardrails│
-                        └───────────────────┬────────────────────┘
-                                            │
-     ┌───────────────────┬──────────────────┼──────────────────┬───────────────────┐
-     ▼                   ▼                  ▼                  ▼                   ▼
-┌──────────┐      ┌─────────────┐    ┌──────────────┐   ┌─────────────┐     ┌─────────────┐
-│ analista │      │  disenador  │    │implementador │   │  qa_tester  │     │   auditor   │
-│-Analiza  │      │-Diseña UI/UX│    │-Edita código │   │-Tests unit. │     │-Audita todos│
-│ reqs y   │      │-Valida      │    │ asignado     │   │ en cambios  │     │ los arneses │
-│ formula  │      │ ventanas e  │    │-Mantiene     │   │ pequeños    │     │ y guardrails│
-│ preguntas│      │ interacción │    │ UTF-8 s/BOM  │   │-Suite total │     │ al hacer    │
-│          │      │ visual      │    │              │   │ pre-commit  │     │ commit/sync │
-└──────────┘      └─────────────┘    └──────────────┘   └─────────────┘     └─────────────┘
+                         ┌────────────────────────────────────────────┐
+                         │      SPONSOR / PRODUCT OWNER (Chris)       │
+                         │        AGENTE PRINCIPAL (Orquestador)      │
+                         └─────────────────────┬──────────────────────┘
+                                               │
+     ┌────────────────────┬────────────────────┼────────────────────┬────────────────────┐
+     ▼                    ▼                    ▼                    ▼                    ▼
+┌──────────┐        ┌──────────┐         ┌──────────┐         ┌──────────┐        ┌──────────┐
+│ESTRATEGIA│        │  DISEÑO  │         │INGENIERÍA│         │ CALIDAD  │        │INFRA/SEC │
+├──────────┤        ├──────────┤         ├──────────┤         ├──────────┤        ├──────────┤
+│-product_ │        │-ux_      │         │-software_│         │-qa_      │        │-devops_  │
+│ manager  │        │ designer │         │ architect│         │ engineer │        │ sre      │
+│-scrum_   │        │-ui_      │         │-frontend_│         │-software_│        │-auditor_ │
+│ master   │        │ designer │         │ developer│         │ tester   │        │ seguridad│
+│          │        │-brand_   │         │-backend_ │         │          │        │          │
+│          │        │ marketing│         │ developer│         │          │        │          │
+└──────────┘        └──────────┘         └──────────┘         └──────────┘        └──────────┘
 ```
 
-### Cadencia Operativa: Cambios Pequeños vs. Commit y Sincronización
-1. **Con cambios pequeños:** Se ejecutan **solo pruebas unitarias** (`npm run test:unit` o `npx vitest run <suite-unitaria>`) y no todas las pruebas configuradas en el proyecto, para evitar retrasos durante el desarrollo iterativo.
-2. **Al ejecutar Commit y Sincronización:** Solo en ese momento se corren **todas las pruebas**, y el subagente **`auditor`** valida todos los **arneses** y los **guardrails**.
+### Cadencia Operativa: Trabajo Local vs. Commit y Sincronización en la Nube
+1. **Durante el trabajo y pruebas en local (cambios pequeños, medianos o inclusive grandes):** Se ejecutan **única y exclusivamente las pruebas unitarias** (`npm run test:unit` o `npx vitest run <suite-unitaria>`) con los subagentes correspondientes (`qa_engineer`, `frontend_developer`, `backend_developer`). **No** se ejecutan los arneses (`responsive`, `chaos`, `sensory`) ni los guardrails (`guardrails.test.js` / `npm run audit:guardrails`) durante las pruebas locales.
+2. **Única y exclusivamente al solicitar Commit y Sincronización en la nube («ejecuta commit y sincroniza»):** Solo cuando Chris solicita hacer commit y sincronizar con el repositorio en la nube, entran en juego todos los subagentes de cierre (`qa_engineer`, `software_tester`, `devops_sre` y `auditor_seguridad`) y se ejecutan **todas las pruebas, validaciones, arneses y guardrails** antes de realizar el commit.
 
 ---
 
 ## 4. Matriz Exhaustiva de Pruebas Unitarias y de Integración
 
 ### Suite 1: `planes2027Data.test.js` (Capa de Datos y Persistencia Ligera — Unitaria)
-- **TEST-01:** `fetchPlanesCatalog()` consulta exitosamente `/data/ddc-planeamientos.json` y devuelve los 197 registros curriculares.
+- **TEST-01:** `fetchPlanesCatalog()` consulta exitosamente `/data/ddc-datos.json` y devuelve los 197 registros curriculares.
 - **TEST-02:** `fetchPlanesCatalog()` adjunta cabeceras anti-caché (`cache: 'no-cache'`, `Pragma: no-cache`) y parámetro temporal `_t`.
 - **TEST-03:** Manejo de contingencia: si el servidor retorna un error HTTP (ej. 404 o 500) o un JSON no válido, la función lanza una excepción descriptiva en español sin romper la ejecución.
 - **TEST-04:** La consulta devuelve el catálogo sin leer ni escribir estadísticas locales.
@@ -82,19 +83,19 @@ Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Cu
 - **TEST-16:** Presionar el botón de reintento dispara una nueva invocación a la función de carga.
 - **TEST-17:** El chip de archivo descarga únicamente el documento seleccionado, sin registrar estadísticas.
 
-### Suite 4: `guardrails.test.js` (Auditoría Automatizada de Seguridad y Arnés — Pre-Commit por `auditor`)
+### Suite 4: `guardrails.test.js` (Auditoría Automatizada de Seguridad y Arnés — Pre-Commit por `auditor_seguridad`)
 - **TEST-18 (Anti-Mojibake):** Escaneo recursivo de todo el proyecto certificando que ningún archivo contenga secuencias de caracteres UTF-8 corruptos (`Ã¡`, `Ã©`, `Ã­`, `Ã³`, `Ãº`, `Ã±`, `Â°`, `â€“`).
-- **TEST-19 (Zero-Windows-Paths):** Certifica que ninguna entrada en `app/public/data/ddc-planeamientos.json` contenga rutas locales de Windows (`C:\` ni `C:\\`).
-- **TEST-20 (Desacople del Bundle):** Certifica que ningún archivo en `app/src/` importe `ddc-planeamientos.json` de forma estática.
+- **TEST-19 (Zero-Windows-Paths):** Certifica que ninguna entrada en `app/public/data/ddc-datos.json` contenga rutas locales de Windows (`C:\` ni `C:\\`).
+- **TEST-20 (Desacople del Bundle):** Certifica que ningún archivo en `app/src/` importe `ddc-datos.json` de forma estática.
 - **TEST-21 (Regla de Tratamiento Formal):** Verifica que los textos visibles dirigidos al usuario docente en los componentes principales mantengan tratamiento de respeto de «usted».
-- **TEST-25 (Rutas Web Limpias Kebab-Case):** Certifica que ninguna carpeta en `ddc-planeamientos.json` contenga puntos ni espacios en blanco, y que las URLs de descarga sean 100% minúsculas bajo estándar POSIX RFC 3986.
+- **TEST-25 (Rutas Web Limpias Kebab-Case):** Certifica que ninguna carpeta en `ddc-datos.json` contenga puntos ni espacios en blanco, y que las URLs de descarga sean 100% minúsculas bajo estándar POSIX RFC 3986.
 - **TEST-26 (Visualización Limpia Docente):** Certifica que ninguna asignatura, grado u oferta presente prefijos numéricos ("1. ", "2. ") de cara al usuario.
-- **TEST-27 (Verificación Física 100%):** Certifica que los 197 archivos ZIP existan físicamente en el disco en sus nuevas rutas relativas públicas.
-- **TEST-28 (Guardrail Físico de Directorios):** Escaneo recursivo de todo el árbol en disco de `app/public/ddc-planeamientos/`. Certifica que cada carpeta cumpla con `^[a-z0-9]+(-[a-z0-9]+)*$` (cero puntos, cero espacios, cero mayúsculas, cero números con punto).
+- **TEST-27 (Verificación Física 100%):** Certifica que los 197 archivos ZIP principales y sus anexos existan físicamente en el disco en sus rutas relativas dentro de `app/public/data/ddc-planeamientos/`.
+- **TEST-28 (Guardrail Físico de Directorios):** Escaneo recursivo de todo el árbol en disco de `app/public/data/ddc-planeamientos/`. Certifica que cada carpeta cumpla con `^[a-z0-9]+(-[a-z0-9]+)*$` (cero puntos, cero espacios, cero mayúsculas, cero números con punto).
 - **TEST-29 (Guardrail Físico de Archivos ZIP):** Escaneo recursivo de todos los archivos ZIP en disco. Certifica que cada archivo cumpla con `^[a-z0-9]+(-[a-z0-9]+)*\.zip$` (cero espacios, cero mayúsculas, cero puntos intermedios).
-- **TEST-30 (Guardrail de Paridad Bidireccional):** Valida paridad matemática 1:1 entre los archivos del disco y los registros de `ddc-planeamientos.json` (0 archivos huérfanos y 0 enlaces rotos).
+- **TEST-30 (Guardrail de Paridad Bidireccional):** Valida paridad matemática 1:1 entre los archivos del disco (`app/public/data/ddc-planeamientos/`) y los registros de `ddc-datos.json` (0 archivos huérfanos y 0 enlaces rotos).
 
-### Suite 5: `responsive.test.jsx` (Matriz de 20 Dimensiones Comerciales de Pantalla — Pre-Commit por `auditor`)
+### Suite 5: `responsive.test.jsx` (Matriz de 20 Dimensiones Comerciales de Pantalla — Pre-Commit por `auditor_seguridad`)
 - **Objetivo:** Simular y certificar la fidelidad del layout App Shell, ausencia de desbordamiento horizontal (`overflow-x: hidden`) y persistencia visual de Header y Footer a lo largo de **20 resoluciones comerciales estándar**:
 
 | # | Dispositivo / Perfil Comercial | Ancho (px) | Alto (px) | Categoría |
@@ -124,17 +125,17 @@ Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Cu
 - **TEST-23 (App Shell Fixed Anchors):** En las 20 resoluciones, el Header y Footer mantienen sus anclajes fijos (`flex-shrink-0 z-20`) y el área central es el único contenedor de scroll (`flex-1 overflow-y-auto`).
 - **TEST-24 (Modal & Popover Viewport Bounds):** Los modales institucionales y menús flotantes `ColumnFilter` se recalculan para no desbordar los límites del viewport en pantallas pequeñas (320px a 430px).
 
-### Suite 6: `chaos.test.jsx` (Arnés de Caos y Resiliencia Extrema — Pre-Commit por `auditor`)
+### Suite 6: `chaos.test.jsx` (Arnés de Caos y Resiliencia Extrema — Pre-Commit por `auditor_seguridad`)
 - **CHAOS-01 (Corte Abrupto de Red / Offline):** Simula caída total de red (`TypeError: Failed to fetch`). Certifica ausencia de pantalla blanca y renderizado de tarjeta de contingencia en `SplashScreen`.
 - **CHAOS-02 (Recuperación Resiliente):** Certifica que presionar "Reintentar conexión" tras restablecerse la red monte exitosamente el catálogo completo.
-- **CHAOS-03 (JSON Corrupto en Servidor):** Simula sintaxis malformada en `ddc-planeamientos.json` (`SyntaxError`). Captura el fallo sin romper el ciclo de vida de React.
+- **CHAOS-03 (JSON Corrupto en Servidor):** Simula sintaxis malformada en `ddc-datos.json` (`SyntaxError`). Captura el fallo sin romper el ciclo de vida de React.
 - **CHAOS-04 (Códigos HTTP 500 / 502 Bad Gateway):** Verifica la presentación clara del código de error al usuario.
 - **CHAOS-05 (Payload No Tabular):** Rechazo defensivo y mensaje explícito cuando el servidor entrega un objeto o valor nulo en vez de un arreglo.
 - **CHAOS-06:** Retirado al eliminar el almacenamiento de estadísticas; la preferencia de tema conserva su manejo defensivo independiente.
 - **CHAOS-07 (Tolerancia a Registros Nulos/Corruptos):** Inyección de datos incompletos (`archivos: null`, grados nulos). Certifica renderizado defensivo sin excepciones de `Cannot read properties of undefined/null`.
 - **CHAOS-08 (Ráfaga Frenética de Clics):** Ráfaga masiva de clics en menos de 50ms al botón de descarga. Certifica consistencia y ausencia de duplicaciones anómalas.
 
-### Suite 7: `sensory.test.jsx` (Arnés Sensorial, Accesibilidad Ley 7600 y WCAG AA — Pre-Commit por `auditor`)
+### Suite 7: `sensory.test.jsx` (Arnés Sensorial, Accesibilidad Ley 7600 y WCAG AA — Pre-Commit por `auditor_seguridad`)
 - **SENS-01 (Etiquetas Accesibles Universales):** Certifica que el 100% de los botones interactivos cuente con texto visible, `aria-label` o `title` descriptivo para lectores de pantalla.
 - **SENS-02 (Jerarquía Semántica y Landmarks):** Certifica la presencia de `<header role="banner">`, `<main>`, `<footer role="contentinfo">` y título maestro institucional `<h1>`.
 - **SENS-03 (Navegabilidad por Teclado):** Certifica ausencia de `tabIndex` negativo en los controles primarios de la aplicación.
@@ -146,12 +147,12 @@ Garantizar la **estabilidad, resiliencia y cero regresiones** del Repositorio Cu
 
 ## 5. Fases de Ejecución
 
-1. **Fase 1: Análisis y Diseño (`analista` y `disenador`)**
-   - El `analista` revisa los requerimientos planteados y formula preguntas si algo está escueto.
-   - El `disenador` valida cada ventana e interacción visual para el rediseño de interfaz.
+1. **Fase 1: Estrategia, Diseño y Arquitectura (`product_manager`, `scrum_master`, `ux_designer`, `ui_designer`, `brand_marketing_designer`, `software_architect`)**
+   - El `product_manager` revisa los requerimientos planteados y formula preguntas si algo está escueto; el `scrum_master` organiza el plan de trabajo.
+   - Los diseñadores (`ux_designer`, `ui_designer`, `brand_marketing_designer`) validan cada ventana, flujo e identidad visual; el `software_architect` define el impacto técnico.
 
-2. **Fase 2: Implementación y Pruebas Unitarias Rápidas (`implementador` y `qa_tester`)**
-   - Modificación acotada en `app/` y ejecución rápida de pruebas unitarias (`npm run test:unit` o suite específica) para no retrasar el flujo con cambios pequeños.
+2. **Fase 2: Implementación y Pruebas Unitarias en Local (`frontend_developer`, `backend_developer`, `devops_sre`, `qa_engineer`)**
+   - Modificación en `app/` con un único escritor por archivo y ejecución **única y exclusivamente de pruebas unitarias** (`npm run test:unit` o suite unitaria específica) durante las pruebas locales (sean cambios pequeños, medianos o inclusive grandes), sin correr arneses ni guardrails.
 
-3. **Fase 3: Certificación Pre-Commit (`qa_tester` y `auditor`)**
-   - Solo al ejecutar commit y sincronización bajo autorización expresa de Chris, se corren todas las pruebas (`npm test`), se validan los arneses y los guardrails (`npm run audit:guardrails`) y se verifica `npm run build`.
+3. **Fase 3: Certificación Pre-Commit y Sincronización en la Nube (`qa_engineer`, `software_tester`, `devops_sre` y `auditor_seguridad`)**
+   - **Única y exclusivamente** cuando Chris solicita ejecutar commit y sincronización en la nube, entran en juego todos los subagentes necesarios para correr todas las pruebas (`npm test`), validar todos los arneses y los guardrails (`npm run audit:guardrails`) y verificar el build (`npm run build`) antes del commit.

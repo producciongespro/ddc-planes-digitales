@@ -10,7 +10,7 @@ describe('Catálogo curricular sin estadísticas de descargas', () => {
 
     expect(await fetchPlanesCatalog()).toEqual(catalog);
     const [url, options] = global.fetch.mock.calls[0];
-    expect(url).toContain('/data/ddc-planeamientos.json?_t=');
+    expect(url).toContain('/data/ddc-datos.json?_t=');
     expect(options.cache).toBe('no-cache');
     expect(options.headers['Pragma']).toBe('no-cache');
     expect(getItem).not.toHaveBeenCalled();

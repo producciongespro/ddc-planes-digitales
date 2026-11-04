@@ -1,24 +1,57 @@
-# Perfiles del proyecto; heredan modelo y permisos de la sesión.
+# Perfiles del proyecto (Equipo de Desarrollo de Software de Élite); heredan modelo y permisos de la sesión.
 [agents]
 enabled = true
-max_concurrent_threads_per_session = 5
+max_concurrent_threads_per_session = 6
 
-[agents.analista]
-description = "Analiza nuevos requerimientos, detecta vacíos o ambigüedades, formula preguntas de clarificación y define criterios de aceptación."
-config_file = "../app/agents/analista.toml"
+# 1. ESTRATEGIA Y PRODUCTO
+[agents.product_manager]
+description = "Product Manager (PM) — Analista de Producto y Visión. Define visión y roadmap, levanta y analiza requerimientos, prioriza funciones y traduce necesidades en historias de usuario claras."
+config_file = "../app/agents/product-manager.toml"
 
-[agents.disenador]
-description = "Diseña y valida cada ventana, componente e interacción visual de la interfaz (UI/UX, temas, responsividad y accesibilidad)."
-config_file = "../app/agents/disenador.toml"
+[agents.scrum_master]
+description = "Scrum Master / Delivery Manager — Planificador Operativo. Planifica ciclos de trabajo (sprints), coordina al equipo a diario, elimina obstáculos y controla el avance y cumplimiento de metas."
+config_file = "../app/agents/scrum-master.toml"
 
-[agents.implementador]
-description = "Implementa cambios en archivos asignados por el orquestador."
-config_file = "../app/agents/implementador.toml"
+# 2. DISEÑO UI/UX DE ÉLITE
+[agents.ux_designer]
+description = "UX Designer & Researcher — Experiencia de Usuario y Usabilidad. Investiga el comportamiento del usuario final, diseña la arquitectura de información y valida flujos intuitivos sin fricciones."
+config_file = "../app/agents/ux-designer.toml"
 
-[agents.qa_tester]
-description = "Ejecuta pruebas unitarias rápidas en cambios pequeños y la suite completa al preparar commit/sincronización, sin editar fuentes."
-config_file = "../app/agents/qa-tester.toml"
+[agents.ui_designer]
+description = "UI Designer — Diseño de Interfaz Gráfica de Élite. Diseña el aspecto visual funcional, construye el Design System con componentes reutilizables, define micro-interacciones y entrega pantallas al píxel."
+config_file = "../app/agents/ui-designer.toml"
 
-[agents.auditor]
-description = "Ejecuta todas las auditorías de arneses y guardrails al momento del commit y sincronización, sin editar archivos."
-config_file = "../app/agents/auditor.toml"
+[agents.brand_marketing_designer]
+description = "Brand & Visual Marketing Designer — Director de Arte, Branding y Estética Visual. Custodia la identidad visual y personalidad de marca, diseña activos visuales de alto impacto, fuentes llamativas, colocación de imágenes y piezas de marketing."
+config_file = "../app/agents/brand-marketing-designer.toml"
+
+# 3. ARQUITECTURA E INGENIERÍA
+[agents.software_architect]
+description = "Software Architect / Tech Lead — El Gurú y Líder Técnico. Diseña la arquitectura interna escalable y robusta, elige el stack, define estándares de código limpio y realiza Code Reviews."
+config_file = "../app/agents/software-architect.toml"
+
+[agents.frontend_developer]
+description = "Frontend Senior Developer — Especialista en Ingeniería de Interfaz. Programa toda la parte visual e interactiva, convierte diseños UI/UX en código al píxel, optimiza a 60fps y asegura responsividad 100%."
+config_file = "../app/agents/frontend-developer.toml"
+
+[agents.backend_developer]
+description = "Backend Senior Developer — Motor de Negocio y Bases de Datos. Programa la lógica central del negocio, algoritmos, estructuras de datos, scripts y contratos de API/integraciones."
+config_file = "../app/agents/backend-developer.toml"
+
+# 4. CALIDAD Y PRUEBAS
+[agents.qa_engineer]
+description = "QA Engineer / Automation — Aseguramiento de Calidad Preventivo. Define planes de prueba, programa suites automatizadas y ejecuta pruebas unitarias rápidas en cambios pequeños y regresión completa en pre-commit."
+config_file = "../app/agents/qa-engineer.toml"
+
+[agents.software_tester]
+description = "Software Tester — Control de Calidad y Pruebas Manuales. Ejecuta pruebas exploratorias y casos extremos poniéndose en los zapatos del usuario final, verifica al 100% la interfaz contra el diseño y documenta bugs."
+config_file = "../app/agents/software-tester.toml"
+
+# 5. INFRAESTRUCTURA Y AUDITORÍA
+[agents.devops_sre]
+description = "DevOps / SRE Engineer — Infraestructura Cloud y Despliegue. Configura empaquetado e infraestructura, automatiza tuberías CI/CD, supervisa disponibilidad y gestiona respaldos."
+config_file = "../app/agents/devops-sre.toml"
+
+[agents.auditor_seguridad]
+description = "Auditor de Seguridad y Calidad — DevSecOps / Auditoría TI. Audita código, dependencias e infraestructura, verifica normativas legales y certifica los 10 Guardrails y arneses al momento del commit y sincronización."
+config_file = "../app/agents/auditor-seguridad.toml"

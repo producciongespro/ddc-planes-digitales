@@ -18,10 +18,10 @@ const mockSamplePlanes = [
     grado: 'Materno Infantil',
     rutaRelativa: 'preescolar',
     archivos: [
-      { nombre: 'plan-interactivo-i.zip', tipo: 'ZIP', ruta: '/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip', tamanoBytes: 1024, tamanoLegible: '1 KB' }
+      { nombre: 'plan-interactivo-i.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip', tamanoBytes: 1024, tamanoLegible: '1 KB' }
     ],
     archivoPrincipal: 'plan-interactivo-i.zip',
-    rutaDescarga: '/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip',
+    rutaDescarga: '/data/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip',
     vigencia: '2027'
   }
 ];

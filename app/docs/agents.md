@@ -1,51 +1,48 @@
-# Agentes de desarrollo y coordinación
+# Agentes de Desarrollo y Coordinación — Equipo de Desarrollo de Software de Élite
 
-## Contrato operativo
+## Jerarquía y Contrato Operativo
 
-El agente principal coordina el trabajo de esta conversación. La configuración
-de proyecto `.codex/config.toml` registra perfiles TOML en `app/agents/`. No se
-agregan agentes ni dependencias a la aplicación publicada. Esta configuración
-de herramientas y el `AGENTS.md` son metadatos de desarrollo; el código del sitio
-y la SSOT permanecen en `app/`.
+El equipo opera bajo la matriz estándar **«Roles Clave — Equipo de Desarrollo de Software de Élite»**:
 
-| Rol | Perfil | Responsabilidad | Escritura |
-| --- | --- | --- | --- |
-| Orquestador | app/AGENTS.md | Acotar, asignar, integrar, esperar resultados y reportar | Dentro del alcance autorizado |
-| analista | app/agents/analista.toml | Analizar nuevos requerimientos, detectar vacíos o ambigüedades, formular preguntas de clarificación y definir criterios de aceptación | Sin editar código de producción |
-| disenador | app/agents/disenador.toml | Diseñar y validar cada ventana, componente e interacción visual de la interfaz (UI/UX, temas, responsividad y accesibilidad) | Sin editar código de producción |
-| implementador | app/agents/implementador.toml | Implementar cambios acotados según análisis y diseño | Solo archivos asignados |
-| qa_tester | app/agents/qa-tester.toml | Ejecutar pruebas unitarias focalizadas en cambios pequeños y la suite completa al preparar commit/sincronización | Sin editar; salidas temporales de herramientas permitidas |
-| auditor | app/agents/auditor.toml | Ejecutar todas las auditorías de arneses y guardrails al momento del commit y sincronización | Sin editar |
+- **Sponsor / Product Owner Ejecutivo (Chris):** Toma las decisiones estratégicas del producto, aprueba alcances/diseños y autoriza de forma exclusiva los commits y despliegues (`git commit` / `git push`).
+- **Agente Principal (Orquestador General):** Coordina el trabajo de la sesión, acota tareas, convoca a los subagentes especializados ("los muchachos del equipo") según la fase del requerimiento, garantiza un único escritor por archivo, consolida resultados y mantiene actualizada la Única Fuente de Verdad (`app/docs/spec.md` y `app/docs/MEMORY.md`).
+- **12 Subagentes Especializados:** Registrados en `.codex/config.toml` con perfiles en `app/agents/*.toml` y activos en la sesión. No se agregan agentes ni dependencias al bundle publicado de la aplicación.
 
-Los roles heredan modelo, permisos y servicios de la sesión. Las restricciones de
-escritura indicadas son instrucciones de trabajo, no un sandbox independiente.
-Máximo cinco subagentes concurrentes además del principal; sin delegación recursiva.
+---
 
-## Cadencia de Pruebas y Auditorías (Regla de Agilidad vs. Pre-Commit)
+## Matriz Oficial de los 12 Roles del Equipo
 
-1. **Durante cambios pequeños o iterativos de desarrollo:**
-   - Para evitar retrasos innecesarios, **únicamente se ejecutan pruebas unitarias focalizadas** (`npm run test:unit` o `npx vitest run <archivo-unitario>` pertinente al cambio).
-   - No se corre toda la batería pesada de arneses (caos, sensorial, 20 viewports) ni guardrails en cada ajuste menor.
-2. **Al momento de ejecutar Commit y Sincronización (`git commit` / `git push`):**
-   - Solo cuando Chris ordena hacer commit y sincronizar, se ejecutan **todas las pruebas configuradas en el proyecto** (`npm test`), y el subagente **`auditor`** valida todos los **arneses** y los **guardrails** (`npm run audit:guardrails`), además de verificar `npm run build`.
+| Bloque | Identificador (`slug`) | Nombre del Rol | Perfil TOML | Descripción de Funciones | Permisos de Escritura |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **1. Estrategia y Producto** | `product_manager` | **Product Manager (PM)**<br>*(Analista de Producto y Visión)* | `app/agents/product-manager.toml` | • Define la visión, estrategia y hoja de ruta (roadmap) del software.<br>• Levanta y analiza los requerimientos del negocio y de los usuarios finales.<br>• Prioriza qué funciones se construyen primero para generar el mayor retorno de valor.<br>• Traduce las ideas y necesidades en historias de usuario claras para el equipo técnico. | Sin editar código de producción |
+| **1. Estrategia y Producto** | `scrum_master` | **Scrum Master / Delivery Manager**<br>*(Planificador Operativo)* | `app/agents/scrum-master.toml` | • Planifica los ciclos de trabajo (sprints), cronogramas y fechas de entrega.<br>• Coordina al equipo a diario y elimina obstáculos o cuellos de botella.<br>• Controla el avance del proyecto, tiempos, presupuesto y cumplimiento de metas.<br>• Asegura que la comunicación y metodología ágil fluyan entre todos los roles. | Sin editar código de producción |
+| **2. Diseño UI/UX de Élite** | `ux_designer` | **UX Designer & Researcher**<br>*(Experiencia de Usuario y Usabilidad)* | `app/agents/ux-designer.toml` | • Investiga cómo piensa, siente y se comporta el usuario final dentro de la aplicación.<br>• Diseña la arquitectura de la información y los mapas de navegación.<br>• Crea bocetos interactivos (wireframes y prototipos) para validar que el sistema sea intuitivo antes de programarlo.<br>• Realiza pruebas de usabilidad con usuarios reales para eliminar fricciones. | Sin editar código de producción |
+| **2. Diseño UI/UX de Élite** | `ui_designer` | **UI Designer**<br>*(Diseño de Interfaz Gráfica de Élite)* | `app/agents/ui-designer.toml` | • Diseña el aspecto visual de la aplicación (paletas de color funcionales, tipografías, iconografía y estilo).<br>• Construye el Sistema de Diseño (Design System) con componentes reutilizables y estandarizados.<br>• Define animaciones fluidas, transiciones y micro-interacciones.<br>• Entrega las pantallas finales al píxel (ej. en Figma) listas para su implementación en código. | Sin editar código de producción |
+| **2. Diseño UI/UX de Élite** | `brand_marketing_designer` | **Brand & Visual Marketing Designer**<br>*(Director de Arte, Branding y Estética Visual)* | `app/agents/brand-marketing-designer.toml` | • Crea y custodia la identidad visual, personalidad de marca (Branding) y dirección de arte del producto.<br>• Diseña activos visuales de alto impacto (ilustraciones a medida, gráficos 3D, motion graphics y fotografía).<br>• Diseña las páginas de aterrizaje (Landing Pages comerciales), presentaciones y piezas de marketing.<br>• Asegura la coherencia estética entre la interfaz del software y todos los canales externos de comunicación. | Sin editar código de producción |
+| **3. Arquitectura e Ingeniería** | `software_architect` | **Software Architect / Tech Lead**<br>*(El Gurú y Líder Técnico)* | `app/agents/software-architect.toml` | • Diseña la arquitectura interna para garantizar que el software sea escalable, rápido y robusto.<br>• Elige el stack tecnológico, lenguajes de programación y motores de bases de datos ideales.<br>• Define los estándares de código limpio y lidera la resolución de retos técnicos complejos.<br>• Revisa y aprueba el código de los demás desarrolladores (Code Reviews). | Sin editar código de producción directamente |
+| **3. Arquitectura e Ingeniería** | `frontend_developer` | **Frontend Senior Developer**<br>*(Especialista en Ingeniería de Interfaz)* | `app/agents/frontend-developer.toml` | • Programa toda la parte visual e interactiva con la que el usuario tiene contacto directo.<br>• Convierte los diseños de UI/UX en código real con precisión milimétrica.<br>• Optimiza la fluidez gráfica (60fps), las animaciones y los tiempos de carga instantáneos.<br>• Asegura que la interfaz sea 100% responsiva en computadoras, tablets y dispositivos móviles. | Solo archivos UI asignados |
+| **3. Arquitectura e Ingeniería** | `backend_developer` | **Backend Senior Developer**<br>*(Motor de Negocio y Bases de Datos)* | `app/agents/backend-developer.toml` | • Programa la lógica central del negocio, algoritmos, cálculos y procesos internos.<br>• Diseña, administra y optimiza el rendimiento y seguridad de las bases/estructuras de datos.<br>• Construye las APIs/contratos de datos y microservicios que alimentan al Frontend.<br>• Implementa integraciones y scripts de procesamiento (respetando en este repositorio el Guardrail #1 de 100% estático en runtime web). | Solo archivos de datos/lógica/scripts asignados |
+| **4. Calidad y Pruebas** | `qa_engineer` | **QA Engineer / Automation**<br>*(Aseguramiento de Calidad Preventivo)* | `app/agents/qa-engineer.toml` | • Define los estándares, planes de prueba y criterios de aceptación antes de escribir el código.<br>• Programa scripts y robots de pruebas automatizadas (unitarias, End-to-End, integración y rendimiento).<br>• Ejecuta únicamente pruebas unitarias en el trabajo local (cambios pequeños, medianos o grandes); ejecuta la suite completa exclusivamente antes del commit y sincronización. | Solo archivos en `src/__tests__/` asignados |
+| **4. Calidad y Pruebas** | `software_tester` | **Software Tester**<br>*(Control de Calidad y Pruebas Manuales)* | `app/agents/software-tester.toml` | • Ejecuta pruebas manuales exhaustivas poniéndose en los zapatos del usuario final.<br>• Realiza pruebas exploratorias y de casos extremos (edge cases) para intentar "romper" el sistema.<br>• Verifica visualmente que la interfaz gráfica cumpla al 100% con el diseño original.<br>• Documenta errores (bugs) detalladamente y valida que hayan sido corregidos por desarrollo. | Sin editar |
+| **5. Infraestructura y Auditoría** | `devops_sre` | **DevOps / SRE Engineer**<br>*(Infraestructura Cloud y Despliegue)* | `app/agents/devops-sre.toml` | • Configura y administra la infraestructura en la nube y empaquetado estático.<br>• Automatiza las tuberías de despliegue continuo (CI/CD) para lanzar versiones sin caídas del sistema.<br>• Monitorea la disponibilidad 24/7, caché y el rendimiento de entrega.<br>• Gestiona copias de seguridad (backups) automáticas y planes de recuperación ante desastres. | Solo configs de build/CI asignadas |
+| **5. Infraestructura y Auditoría** | `auditor_seguridad` | **Auditor de Seguridad y Calidad**<br>*(DevSecOps / Auditoría TI)* | `app/agents/auditor-seguridad.toml` | • Audita el código fuente, las dependencias y la infraestructura en busca de vulnerabilidades.<br>• Ejecuta pruebas de penetración / simulaciones de fallos y caos.<br>• Verifica el cumplimiento de normativas legales (Ley 7600 / WCAG AA, RAE), integridad y privacidad de datos.<br>• Audita la trazabilidad del sistema, rendimiento y certifica los **10 Guardrails y arneses** única y exclusivamente en Pre-Commit y sincronización. | Sin editar |
 
-## Flujo obligatorio
+---
 
-1. El principal lee documentación y estado Git; registra los cambios previos.
-2. Ante un nuevo requerimiento o cambio de interfaz:
-   - Se apoya en **`analista`** para clarificar requerimientos escuetos o ambiguos y formular preguntas al usuario si hace falta.
-   - Se apoya en **`disenador`** para definir y validar las ventanas e interacciones visuales del rediseño o ajuste UI/UX.
-3. Para la implementación, delega en **`implementador`** con objetivo, entradas, archivos asignados (un único escritor por archivo), límites, comprobaciones unitarias y resultado esperado.
-4. Durante ajustes pequeños, **`qa_tester`** o **`implementador`** verifican mediante pruebas unitarias rápidas sobre los archivos terminados.
-5. Cuando el usuario solicita **commit y sincronización**, el principal convoca a **`qa_tester`** y **`auditor`** para ejecutar todas las pruebas, validar los arneses y auditar los guardrails.
-6. El principal espera los informes, resuelve discrepancias, informa evidencia y actualiza `app/docs/MEMORY.md`. Commit y push requieren orden expresa de Chris y las puertas de calidad superadas.
+## Cadencia de Pruebas y Auditorías (Trabajo Local vs. Commit y Sincronización en la Nube)
 
-Formato de devolución: estado; alcance; archivos; hallazgos con ubicación;
-comandos y códigos de salida; pruebas aprobadas/fallidas; pendientes y limitaciones.
+1. **Durante el trabajo y pruebas en local (cambios pequeños, medianos e inclusive grandes):**
+   - **`qa_engineer`**, **`frontend_developer`** o **`backend_developer`** ejecutan **única y exclusivamente las pruebas unitarias** (`npm run test:unit` o `npx vitest run <suite-unitaria>` correspondiente).
+   - **Prohibido ejecutar los arneses pesados** (`responsive.test.jsx`, `chaos.test.jsx`, `sensory.test.jsx`) **ni los guardrails** (`guardrails.test.js` / `npm run audit:guardrails`) mientras se trabaja o prueba en local, sin importar el tamaño del cambio.
+2. **Única y exclusivamente cuando se solicita Commit y Sincronización en la nube (`git commit` / `git push`):**
+   - Solo cuando Chris solicita expresamente ejecutar commit y sincronizar («ejecuta commit y sincroniza»), entran en juego todos los subagentes de cierre (**`qa_engineer`**, **`software_tester`**, **`devops_sre`** y **`auditor_seguridad`**) para ejecutar **todas las pruebas configuradas**, validar todos los **arneses** y los **10 guardrails** (`npm run audit:guardrails`, `npm test`, `npm run build`) antes del commit, garantizando que lo que sube al repositorio en la nube sea una versión completamente revisada y auditada.
 
-## Activación y uso
+---
 
-Abra este repositorio como proyecto confiable en una sesión compatible.
-Los perfiles están definidos tanto en `.codex/config.toml` (`app/agents/*.toml`) como registrados en la sesión activa de subagentes (`analista`, `disenador`, `implementador`, `qa_tester`, `auditor`).
+## Flujo Operativo del Equipo
 
-Ejemplo: «Analice este requerimiento con `analista`, valide la propuesta visual con `disenador`, implemente con `implementador` verificando pruebas unitarias con `qa_tester`, y al hacer commit ejecute la auditoría total con `auditor`».
+1. **Estrategia y Planificación:** El Orquestador se apoya en **`product_manager`** para analizar requerimientos nuevos o escuetos y formular preguntas al Sponsor si hace falta, y en **`scrum_master`** para organizar las tareas y asignaciones sin colisiones de archivos.
+2. **Diseño 360° (UX + UI + Branding):** Ante rediseños o nuevas pantallas, **`ux_designer`** define flujos y usabilidad, **`brand_marketing_designer`** define la dirección de arte, fuentes llamativas, imágenes y estética de marca ("la cara linda"), y **`ui_designer`** aterriza el Design System y los componentes al píxel.
+3. **Arquitectura e Implementación:** **`software_architect`** define el diseño técnico y hace *Code Review*; **`frontend_developer`** programa la interfaz React/Tailwind y **`backend_developer`** programa la lógica de datos, algoritmos y scripts.
+4. **Calidad y Verificación en Local:** **`qa_engineer`** mantiene y corre únicamente las pruebas unitarias durante el trabajo local (en cambios pequeños, medianos o grandes).
+5. **Infraestructura y Certificación Pre-Commit (Rumbo a la Nube):** Única y exclusivamente cuando el Sponsor solicita commit y sincronización, entran en juego **`qa_engineer`**, **`software_tester`**, **`devops_sre`** y **`auditor_seguridad`** para ejecutar todas las pruebas, arneses, los 10 Guardrails y el build antes de subir los cambios al repositorio en la nube.

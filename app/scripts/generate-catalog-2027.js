@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const rootDir = path.resolve('app/public/ddc-planeamientos');
+const rootDir = path.resolve('app/public/data/ddc-planeamientos');
 
 const OFERTAS_MAP = {
   'preescolar': {
@@ -185,7 +185,7 @@ for (let i = 0; i < leafDirs.length; i++) {
   const archivos = filesInDir.map(f => {
     const stat = fs.statSync(path.join(leaf, f));
     const ext = path.extname(f).toUpperCase().replace('.', '') || 'ZIP';
-    const webPath = `/ddc-planeamientos/${rel}/${f}`;
+    const webPath = `/data/ddc-planeamientos/${rel}/${f}`;
     return {
       nombre: f,
       tipo: ext,
@@ -213,6 +213,6 @@ for (let i = 0; i < leafDirs.length; i++) {
   });
 }
 
-const outputPath = path.resolve('app/public/data/ddc-planeamientos.json');
+const outputPath = path.resolve('app/public/data/ddc-datos.json');
 fs.writeFileSync(outputPath, JSON.stringify(planesCatalog, null, 2), 'utf-8');
 console.log(`Guardados ${planesCatalog.length} planes en ${outputPath}.`);

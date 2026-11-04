@@ -11,13 +11,13 @@
       {
         "nombre": "plan-interactivo-i.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip",
+        "ruta": "/data/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip",
         "tamanoBytes": 1057,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-interactivo-i.zip",
-    "rutaDescarga": "/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip",
     "vigencia": "2027"
   },
   {
@@ -32,13 +32,13 @@
       {
         "nombre": "plan-interactivo-ii.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/preescolar/interactivo-ii/plan-interactivo-ii.zip",
+        "ruta": "/data/ddc-planeamientos/preescolar/interactivo-ii/plan-interactivo-ii.zip",
         "tamanoBytes": 1063,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-interactivo-ii.zip",
-    "rutaDescarga": "/ddc-planeamientos/preescolar/interactivo-ii/plan-interactivo-ii.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/preescolar/interactivo-ii/plan-interactivo-ii.zip",
     "vigencia": "2027"
   },
   {
@@ -53,13 +53,13 @@
       {
         "nombre": "plan-transicion.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/preescolar/transicion/plan-transicion.zip",
+        "ruta": "/data/ddc-planeamientos/preescolar/transicion/plan-transicion.zip",
         "tamanoBytes": 1050,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-transicion.zip",
-    "rutaDescarga": "/ddc-planeamientos/preescolar/transicion/plan-transicion.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/preescolar/transicion/plan-transicion.zip",
     "vigencia": "2027"
   },
   {
@@ -74,13 +74,13 @@
       {
         "nombre": "plan-heterogeneo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/preescolar/heterogeneo/plan-heterogeneo.zip",
+        "ruta": "/data/ddc-planeamientos/preescolar/heterogeneo/plan-heterogeneo.zip",
         "tamanoBytes": 1055,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-heterogeneo.zip",
-    "rutaDescarga": "/ddc-planeamientos/preescolar/heterogeneo/plan-heterogeneo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/preescolar/heterogeneo/plan-heterogeneo.zip",
     "vigencia": "2027"
   },
   {
@@ -95,13 +95,13 @@
       {
         "nombre": "plan-artes-industriales-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/primero/plan-artes-industriales-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/primero/plan-artes-industriales-primero.zip",
         "tamanoBytes": 1105,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-industriales-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/primero/plan-artes-industriales-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/primero/plan-artes-industriales-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -116,13 +116,13 @@
       {
         "nombre": "plan-artes-industriales-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/segundo/plan-artes-industriales-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/segundo/plan-artes-industriales-segundo.zip",
         "tamanoBytes": 1106,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-industriales-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/segundo/plan-artes-industriales-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/segundo/plan-artes-industriales-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -137,13 +137,13 @@
       {
         "nombre": "plan-artes-industriales-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/tercero/plan-artes-industriales-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/tercero/plan-artes-industriales-tercero.zip",
         "tamanoBytes": 1109,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-industriales-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/tercero/plan-artes-industriales-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/tercero/plan-artes-industriales-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -158,13 +158,13 @@
       {
         "nombre": "plan-artes-industriales-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/cuarto/plan-artes-industriales-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/cuarto/plan-artes-industriales-cuarto.zip",
         "tamanoBytes": 1107,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-industriales-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/cuarto/plan-artes-industriales-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/cuarto/plan-artes-industriales-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -179,13 +179,13 @@
       {
         "nombre": "plan-artes-industriales-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/quinto/plan-artes-industriales-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/quinto/plan-artes-industriales-quinto.zip",
         "tamanoBytes": 1108,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-industriales-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/quinto/plan-artes-industriales-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/quinto/plan-artes-industriales-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -200,13 +200,13 @@
       {
         "nombre": "plan-artes-industriales-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/sexto/plan-artes-industriales-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/sexto/plan-artes-industriales-sexto.zip",
         "tamanoBytes": 1105,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-industriales-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/sexto/plan-artes-industriales-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-industriales/sexto/plan-artes-industriales-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -221,13 +221,13 @@
       {
         "nombre": "plan-artes-plasticas-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/primero/plan-artes-plasticas-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/primero/plan-artes-plasticas-primero.zip",
         "tamanoBytes": 1097,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/primero/plan-artes-plasticas-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/primero/plan-artes-plasticas-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -242,13 +242,13 @@
       {
         "nombre": "plan-artes-plasticas-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/segundo/plan-artes-plasticas-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/segundo/plan-artes-plasticas-segundo.zip",
         "tamanoBytes": 1098,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/segundo/plan-artes-plasticas-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/segundo/plan-artes-plasticas-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -263,13 +263,13 @@
       {
         "nombre": "plan-artes-plasticas-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/tercero/plan-artes-plasticas-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/tercero/plan-artes-plasticas-tercero.zip",
         "tamanoBytes": 1102,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/tercero/plan-artes-plasticas-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/tercero/plan-artes-plasticas-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -284,13 +284,13 @@
       {
         "nombre": "plan-artes-plasticas-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/cuarto/plan-artes-plasticas-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/cuarto/plan-artes-plasticas-cuarto.zip",
         "tamanoBytes": 1098,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/cuarto/plan-artes-plasticas-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/cuarto/plan-artes-plasticas-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -305,13 +305,13 @@
       {
         "nombre": "plan-artes-plasticas-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/quinto/plan-artes-plasticas-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/quinto/plan-artes-plasticas-quinto.zip",
         "tamanoBytes": 1099,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/quinto/plan-artes-plasticas-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/quinto/plan-artes-plasticas-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -326,13 +326,13 @@
       {
         "nombre": "plan-artes-plasticas-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/sexto/plan-artes-plasticas-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/sexto/plan-artes-plasticas-sexto.zip",
         "tamanoBytes": 1095,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/sexto/plan-artes-plasticas-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/artes-plasticas/sexto/plan-artes-plasticas-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -347,13 +347,13 @@
       {
         "nombre": "plan-ciencias-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/primero/plan-ciencias-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/primero/plan-ciencias-primero.zip",
         "tamanoBytes": 1076,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/primero/plan-ciencias-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/primero/plan-ciencias-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -368,13 +368,13 @@
       {
         "nombre": "plan-ciencias-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/segundo/plan-ciencias-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/segundo/plan-ciencias-segundo.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/segundo/plan-ciencias-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/segundo/plan-ciencias-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -389,13 +389,13 @@
       {
         "nombre": "plan-ciencias-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/tercero/plan-ciencias-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/tercero/plan-ciencias-tercero.zip",
         "tamanoBytes": 1081,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/tercero/plan-ciencias-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/tercero/plan-ciencias-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -410,13 +410,13 @@
       {
         "nombre": "plan-ciencias-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/cuarto/plan-ciencias-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/cuarto/plan-ciencias-cuarto.zip",
         "tamanoBytes": 1079,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/cuarto/plan-ciencias-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/cuarto/plan-ciencias-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -431,13 +431,13 @@
       {
         "nombre": "plan-ciencias-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/quinto/plan-ciencias-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/quinto/plan-ciencias-quinto.zip",
         "tamanoBytes": 1080,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/quinto/plan-ciencias-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/quinto/plan-ciencias-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -452,13 +452,13 @@
       {
         "nombre": "plan-ciencias-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/sexto/plan-ciencias-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/sexto/plan-ciencias-sexto.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/sexto/plan-ciencias-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ciencias/sexto/plan-ciencias-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -473,13 +473,13 @@
       {
         "nombre": "plan-educacion-fisica-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/primero/plan-educacion-fisica-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/primero/plan-educacion-fisica-primero.zip",
         "tamanoBytes": 1094,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/primero/plan-educacion-fisica-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/primero/plan-educacion-fisica-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -494,13 +494,13 @@
       {
         "nombre": "plan-educacion-fisica-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/segundo/plan-educacion-fisica-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/segundo/plan-educacion-fisica-segundo.zip",
         "tamanoBytes": 1095,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/segundo/plan-educacion-fisica-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/segundo/plan-educacion-fisica-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -515,13 +515,13 @@
       {
         "nombre": "plan-educacion-fisica-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/tercero/plan-educacion-fisica-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/tercero/plan-educacion-fisica-tercero.zip",
         "tamanoBytes": 1098,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/tercero/plan-educacion-fisica-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/tercero/plan-educacion-fisica-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -536,13 +536,13 @@
       {
         "nombre": "plan-educacion-fisica-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/cuarto/plan-educacion-fisica-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/cuarto/plan-educacion-fisica-cuarto.zip",
         "tamanoBytes": 1095,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/cuarto/plan-educacion-fisica-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/cuarto/plan-educacion-fisica-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -557,13 +557,13 @@
       {
         "nombre": "plan-educacion-fisica-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/quinto/plan-educacion-fisica-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/quinto/plan-educacion-fisica-quinto.zip",
         "tamanoBytes": 1096,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/quinto/plan-educacion-fisica-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/quinto/plan-educacion-fisica-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -578,13 +578,13 @@
       {
         "nombre": "plan-educacion-fisica-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/sexto/plan-educacion-fisica-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/sexto/plan-educacion-fisica-sexto.zip",
         "tamanoBytes": 1093,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/sexto/plan-educacion-fisica-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-fisica/sexto/plan-educacion-fisica-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -599,13 +599,13 @@
       {
         "nombre": "plan-educacion-musical-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/primero/plan-educacion-musical-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/primero/plan-educacion-musical-primero.zip",
         "tamanoBytes": 1098,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/primero/plan-educacion-musical-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/primero/plan-educacion-musical-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -620,13 +620,13 @@
       {
         "nombre": "plan-educacion-musical-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/segundo/plan-educacion-musical-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/segundo/plan-educacion-musical-segundo.zip",
         "tamanoBytes": 1098,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/segundo/plan-educacion-musical-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/segundo/plan-educacion-musical-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -641,13 +641,13 @@
       {
         "nombre": "plan-educacion-musical-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/tercero/plan-educacion-musical-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/tercero/plan-educacion-musical-tercero.zip",
         "tamanoBytes": 1102,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/tercero/plan-educacion-musical-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/tercero/plan-educacion-musical-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -662,13 +662,13 @@
       {
         "nombre": "plan-educacion-musical-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/cuarto/plan-educacion-musical-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/cuarto/plan-educacion-musical-cuarto.zip",
         "tamanoBytes": 1099,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/cuarto/plan-educacion-musical-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/cuarto/plan-educacion-musical-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -683,13 +683,13 @@
       {
         "nombre": "plan-educacion-musical-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/quinto/plan-educacion-musical-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/quinto/plan-educacion-musical-quinto.zip",
         "tamanoBytes": 1100,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/quinto/plan-educacion-musical-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/quinto/plan-educacion-musical-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -704,13 +704,13 @@
       {
         "nombre": "plan-educacion-musical-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/sexto/plan-educacion-musical-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/sexto/plan-educacion-musical-sexto.zip",
         "tamanoBytes": 1096,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/sexto/plan-educacion-musical-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-musical/sexto/plan-educacion-musical-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -725,13 +725,13 @@
       {
         "nombre": "plan-educacion-para-el-hogar-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/primero/plan-educacion-para-el-hogar-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/primero/plan-educacion-para-el-hogar-primero.zip",
         "tamanoBytes": 1112,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-el-hogar-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/primero/plan-educacion-para-el-hogar-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/primero/plan-educacion-para-el-hogar-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -746,13 +746,13 @@
       {
         "nombre": "plan-educacion-para-el-hogar-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/segundo/plan-educacion-para-el-hogar-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/segundo/plan-educacion-para-el-hogar-segundo.zip",
         "tamanoBytes": 1113,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-el-hogar-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/segundo/plan-educacion-para-el-hogar-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/segundo/plan-educacion-para-el-hogar-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -767,13 +767,13 @@
       {
         "nombre": "plan-educacion-para-el-hogar-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/tercero/plan-educacion-para-el-hogar-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/tercero/plan-educacion-para-el-hogar-tercero.zip",
         "tamanoBytes": 1117,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-el-hogar-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/tercero/plan-educacion-para-el-hogar-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/tercero/plan-educacion-para-el-hogar-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -788,13 +788,13 @@
       {
         "nombre": "plan-educacion-para-el-hogar-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/cuarto/plan-educacion-para-el-hogar-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/cuarto/plan-educacion-para-el-hogar-cuarto.zip",
         "tamanoBytes": 1114,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-el-hogar-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/cuarto/plan-educacion-para-el-hogar-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/cuarto/plan-educacion-para-el-hogar-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -809,13 +809,13 @@
       {
         "nombre": "plan-educacion-para-el-hogar-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/quinto/plan-educacion-para-el-hogar-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/quinto/plan-educacion-para-el-hogar-quinto.zip",
         "tamanoBytes": 1115,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-el-hogar-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/quinto/plan-educacion-para-el-hogar-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/quinto/plan-educacion-para-el-hogar-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -830,13 +830,13 @@
       {
         "nombre": "plan-educacion-para-el-hogar-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/sexto/plan-educacion-para-el-hogar-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/sexto/plan-educacion-para-el-hogar-sexto.zip",
         "tamanoBytes": 1113,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-el-hogar-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/sexto/plan-educacion-para-el-hogar-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-para-el-hogar/sexto/plan-educacion-para-el-hogar-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -851,13 +851,13 @@
       {
         "nombre": "plan-educacion-religiosa-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/primero/plan-educacion-religiosa-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/primero/plan-educacion-religiosa-primero.zip",
         "tamanoBytes": 1103,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/primero/plan-educacion-religiosa-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/primero/plan-educacion-religiosa-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -872,13 +872,13 @@
       {
         "nombre": "plan-educacion-religiosa-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/segundo/plan-educacion-religiosa-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/segundo/plan-educacion-religiosa-segundo.zip",
         "tamanoBytes": 1103,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/segundo/plan-educacion-religiosa-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/segundo/plan-educacion-religiosa-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -893,13 +893,13 @@
       {
         "nombre": "plan-educacion-religiosa-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/tercero/plan-educacion-religiosa-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/tercero/plan-educacion-religiosa-tercero.zip",
         "tamanoBytes": 1107,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/tercero/plan-educacion-religiosa-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/tercero/plan-educacion-religiosa-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -914,13 +914,13 @@
       {
         "nombre": "plan-educacion-religiosa-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/cuarto/plan-educacion-religiosa-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/cuarto/plan-educacion-religiosa-cuarto.zip",
         "tamanoBytes": 1103,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/cuarto/plan-educacion-religiosa-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/cuarto/plan-educacion-religiosa-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -935,13 +935,13 @@
       {
         "nombre": "plan-educacion-religiosa-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/quinto/plan-educacion-religiosa-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/quinto/plan-educacion-religiosa-quinto.zip",
         "tamanoBytes": 1103,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/quinto/plan-educacion-religiosa-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/quinto/plan-educacion-religiosa-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -956,13 +956,13 @@
       {
         "nombre": "plan-educacion-religiosa-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/sexto/plan-educacion-religiosa-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/sexto/plan-educacion-religiosa-sexto.zip",
         "tamanoBytes": 1102,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/sexto/plan-educacion-religiosa-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/educacion-religiosa/sexto/plan-educacion-religiosa-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -977,13 +977,13 @@
       {
         "nombre": "plan-espanol-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/primero/plan-espanol-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/primero/plan-espanol-primero.zip",
         "tamanoBytes": 1076,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/primero/plan-espanol-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/primero/plan-espanol-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -998,13 +998,13 @@
       {
         "nombre": "plan-espanol-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/segundo/plan-espanol-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/segundo/plan-espanol-segundo.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/segundo/plan-espanol-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/segundo/plan-espanol-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -1019,13 +1019,13 @@
       {
         "nombre": "plan-espanol-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/tercero/plan-espanol-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/tercero/plan-espanol-tercero.zip",
         "tamanoBytes": 1080,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/tercero/plan-espanol-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/tercero/plan-espanol-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -1040,13 +1040,13 @@
       {
         "nombre": "plan-espanol-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/cuarto/plan-espanol-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/cuarto/plan-espanol-cuarto.zip",
         "tamanoBytes": 1076,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/cuarto/plan-espanol-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/cuarto/plan-espanol-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -1061,13 +1061,13 @@
       {
         "nombre": "plan-espanol-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/quinto/plan-espanol-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/quinto/plan-espanol-quinto.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/quinto/plan-espanol-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/quinto/plan-espanol-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -1082,13 +1082,13 @@
       {
         "nombre": "plan-espanol-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/sexto/plan-espanol-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/sexto/plan-espanol-sexto.zip",
         "tamanoBytes": 1074,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/espanol/sexto/plan-espanol-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/espanol/sexto/plan-espanol-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -1103,13 +1103,13 @@
       {
         "nombre": "plan-estudios-sociales-y-educacion-civica-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/primero/plan-estudios-sociales-y-educacion-civica-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/primero/plan-estudios-sociales-y-educacion-civica-primero.zip",
         "tamanoBytes": 1143,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/primero/plan-estudios-sociales-y-educacion-civica-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/primero/plan-estudios-sociales-y-educacion-civica-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -1124,13 +1124,13 @@
       {
         "nombre": "plan-estudios-sociales-y-educacion-civica-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/segundo/plan-estudios-sociales-y-educacion-civica-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/segundo/plan-estudios-sociales-y-educacion-civica-segundo.zip",
         "tamanoBytes": 1144,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/segundo/plan-estudios-sociales-y-educacion-civica-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/segundo/plan-estudios-sociales-y-educacion-civica-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -1145,13 +1145,13 @@
       {
         "nombre": "plan-estudios-sociales-y-educacion-civica-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/tercero/plan-estudios-sociales-y-educacion-civica-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/tercero/plan-estudios-sociales-y-educacion-civica-tercero.zip",
         "tamanoBytes": 1148,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/tercero/plan-estudios-sociales-y-educacion-civica-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/tercero/plan-estudios-sociales-y-educacion-civica-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -1166,13 +1166,13 @@
       {
         "nombre": "plan-estudios-sociales-y-educacion-civica-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/cuarto/plan-estudios-sociales-y-educacion-civica-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/cuarto/plan-estudios-sociales-y-educacion-civica-cuarto.zip",
         "tamanoBytes": 1144,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/cuarto/plan-estudios-sociales-y-educacion-civica-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/cuarto/plan-estudios-sociales-y-educacion-civica-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -1187,13 +1187,13 @@
       {
         "nombre": "plan-estudios-sociales-y-educacion-civica-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/quinto/plan-estudios-sociales-y-educacion-civica-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/quinto/plan-estudios-sociales-y-educacion-civica-quinto.zip",
         "tamanoBytes": 1145,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/quinto/plan-estudios-sociales-y-educacion-civica-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/quinto/plan-estudios-sociales-y-educacion-civica-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -1208,13 +1208,13 @@
       {
         "nombre": "plan-estudios-sociales-y-educacion-civica-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/sexto/plan-estudios-sociales-y-educacion-civica-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/sexto/plan-estudios-sociales-y-educacion-civica-sexto.zip",
         "tamanoBytes": 1142,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-y-educacion-civica-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/sexto/plan-estudios-sociales-y-educacion-civica-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/estudios-sociales-y-educacion-civica/sexto/plan-estudios-sociales-y-educacion-civica-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -1229,13 +1229,13 @@
       {
         "nombre": "plan-frances-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/primero/plan-frances-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/primero/plan-frances-primero.zip",
         "tamanoBytes": 1076,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/primero/plan-frances-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/primero/plan-frances-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -1250,13 +1250,13 @@
       {
         "nombre": "plan-frances-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/segundo/plan-frances-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/segundo/plan-frances-segundo.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/segundo/plan-frances-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/segundo/plan-frances-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -1271,13 +1271,13 @@
       {
         "nombre": "plan-frances-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/tercero/plan-frances-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/tercero/plan-frances-tercero.zip",
         "tamanoBytes": 1080,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/tercero/plan-frances-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/tercero/plan-frances-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -1292,13 +1292,13 @@
       {
         "nombre": "plan-frances-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/cuarto/plan-frances-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/cuarto/plan-frances-cuarto.zip",
         "tamanoBytes": 1076,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/cuarto/plan-frances-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/cuarto/plan-frances-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -1313,13 +1313,13 @@
       {
         "nombre": "plan-frances-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/quinto/plan-frances-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/quinto/plan-frances-quinto.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/quinto/plan-frances-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/quinto/plan-frances-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -1334,13 +1334,13 @@
       {
         "nombre": "plan-frances-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/sexto/plan-frances-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/sexto/plan-frances-sexto.zip",
         "tamanoBytes": 1074,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/frances/sexto/plan-frances-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/frances/sexto/plan-frances-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -1355,13 +1355,13 @@
       {
         "nombre": "plan-ingles-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/primero/plan-ingles-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/primero/plan-ingles-primero.zip",
         "tamanoBytes": 1072,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/primero/plan-ingles-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/primero/plan-ingles-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -1376,13 +1376,13 @@
       {
         "nombre": "plan-ingles-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/segundo/plan-ingles-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/segundo/plan-ingles-segundo.zip",
         "tamanoBytes": 1073,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/segundo/plan-ingles-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/segundo/plan-ingles-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -1397,13 +1397,13 @@
       {
         "nombre": "plan-ingles-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/tercero/plan-ingles-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/tercero/plan-ingles-tercero.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/tercero/plan-ingles-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/tercero/plan-ingles-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -1418,13 +1418,13 @@
       {
         "nombre": "plan-ingles-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/cuarto/plan-ingles-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/cuarto/plan-ingles-cuarto.zip",
         "tamanoBytes": 1073,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/cuarto/plan-ingles-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/cuarto/plan-ingles-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -1439,13 +1439,13 @@
       {
         "nombre": "plan-ingles-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/quinto/plan-ingles-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/quinto/plan-ingles-quinto.zip",
         "tamanoBytes": 1074,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/quinto/plan-ingles-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/quinto/plan-ingles-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -1460,13 +1460,13 @@
       {
         "nombre": "plan-ingles-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/sexto/plan-ingles-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/sexto/plan-ingles-sexto.zip",
         "tamanoBytes": 1071,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/ingles/sexto/plan-ingles-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/ingles/sexto/plan-ingles-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -1481,13 +1481,13 @@
       {
         "nombre": "plan-italiano-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/primero/plan-italiano-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/primero/plan-italiano-primero.zip",
         "tamanoBytes": 1076,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/primero/plan-italiano-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/primero/plan-italiano-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -1502,13 +1502,13 @@
       {
         "nombre": "plan-italiano-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/segundo/plan-italiano-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/segundo/plan-italiano-segundo.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/segundo/plan-italiano-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/segundo/plan-italiano-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -1523,13 +1523,13 @@
       {
         "nombre": "plan-italiano-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/tercero/plan-italiano-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/tercero/plan-italiano-tercero.zip",
         "tamanoBytes": 1081,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/tercero/plan-italiano-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/tercero/plan-italiano-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -1544,13 +1544,13 @@
       {
         "nombre": "plan-italiano-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/cuarto/plan-italiano-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/cuarto/plan-italiano-cuarto.zip",
         "tamanoBytes": 1079,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/cuarto/plan-italiano-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/cuarto/plan-italiano-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -1565,13 +1565,13 @@
       {
         "nombre": "plan-italiano-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/quinto/plan-italiano-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/quinto/plan-italiano-quinto.zip",
         "tamanoBytes": 1080,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/quinto/plan-italiano-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/quinto/plan-italiano-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -1586,13 +1586,13 @@
       {
         "nombre": "plan-italiano-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/sexto/plan-italiano-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/sexto/plan-italiano-sexto.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/italiano/sexto/plan-italiano-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/italiano/sexto/plan-italiano-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -1607,13 +1607,13 @@
       {
         "nombre": "plan-matematica-primero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/primero/plan-matematica-primero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/primero/plan-matematica-primero.zip",
         "tamanoBytes": 1083,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-primero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/primero/plan-matematica-primero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/primero/plan-matematica-primero.zip",
     "vigencia": "2027"
   },
   {
@@ -1628,13 +1628,13 @@
       {
         "nombre": "plan-matematica-segundo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/segundo/plan-matematica-segundo.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/segundo/plan-matematica-segundo.zip",
         "tamanoBytes": 1083,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-segundo.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/segundo/plan-matematica-segundo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/segundo/plan-matematica-segundo.zip",
     "vigencia": "2027"
   },
   {
@@ -1649,13 +1649,13 @@
       {
         "nombre": "plan-matematica-tercero.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/tercero/plan-matematica-tercero.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/tercero/plan-matematica-tercero.zip",
         "tamanoBytes": 1087,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-tercero.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/tercero/plan-matematica-tercero.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/tercero/plan-matematica-tercero.zip",
     "vigencia": "2027"
   },
   {
@@ -1670,13 +1670,13 @@
       {
         "nombre": "plan-matematica-cuarto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/cuarto/plan-matematica-cuarto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/cuarto/plan-matematica-cuarto.zip",
         "tamanoBytes": 1084,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-cuarto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/cuarto/plan-matematica-cuarto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/cuarto/plan-matematica-cuarto.zip",
     "vigencia": "2027"
   },
   {
@@ -1691,13 +1691,13 @@
       {
         "nombre": "plan-matematica-quinto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/quinto/plan-matematica-quinto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/quinto/plan-matematica-quinto.zip",
         "tamanoBytes": 1085,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-quinto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/quinto/plan-matematica-quinto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/quinto/plan-matematica-quinto.zip",
     "vigencia": "2027"
   },
   {
@@ -1712,13 +1712,13 @@
       {
         "nombre": "plan-matematica-sexto.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/sexto/plan-matematica-sexto.zip",
+        "ruta": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/sexto/plan-matematica-sexto.zip",
         "tamanoBytes": 1080,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-sexto.zip",
-    "rutaDescarga": "/ddc-planeamientos/primero-y-segundo-ciclos/matematica/sexto/plan-matematica-sexto.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/primero-y-segundo-ciclos/matematica/sexto/plan-matematica-sexto.zip",
     "vigencia": "2027"
   },
   {
@@ -1733,13 +1733,13 @@
       {
         "nombre": "plan-artes-industriales-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/septimo/plan-artes-industriales-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/septimo/plan-artes-industriales-septimo.zip",
         "tamanoBytes": 1114,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-industriales-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/septimo/plan-artes-industriales-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/septimo/plan-artes-industriales-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -1754,13 +1754,13 @@
       {
         "nombre": "plan-artes-industriales-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/octavo/plan-artes-industriales-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/octavo/plan-artes-industriales-octavo.zip",
         "tamanoBytes": 1110,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-industriales-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/octavo/plan-artes-industriales-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/octavo/plan-artes-industriales-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -1775,13 +1775,13 @@
       {
         "nombre": "plan-artes-industriales-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/noveno/plan-artes-industriales-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/noveno/plan-artes-industriales-noveno.zip",
         "tamanoBytes": 1111,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-industriales-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/noveno/plan-artes-industriales-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-industriales/noveno/plan-artes-industriales-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -1796,13 +1796,13 @@
       {
         "nombre": "plan-artes-plasticas-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/septimo/plan-artes-plasticas-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/septimo/plan-artes-plasticas-septimo.zip",
         "tamanoBytes": 1105,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/septimo/plan-artes-plasticas-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/septimo/plan-artes-plasticas-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -1817,13 +1817,13 @@
       {
         "nombre": "plan-artes-plasticas-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/octavo/plan-artes-plasticas-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/octavo/plan-artes-plasticas-octavo.zip",
         "tamanoBytes": 1103,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/octavo/plan-artes-plasticas-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/octavo/plan-artes-plasticas-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -1838,13 +1838,13 @@
       {
         "nombre": "plan-artes-plasticas-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/noveno/plan-artes-plasticas-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/noveno/plan-artes-plasticas-noveno.zip",
         "tamanoBytes": 1103,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/noveno/plan-artes-plasticas-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/noveno/plan-artes-plasticas-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -1859,13 +1859,13 @@
       {
         "nombre": "plan-artes-plasticas-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/decimo/plan-artes-plasticas-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/decimo/plan-artes-plasticas-decimo.zip",
         "tamanoBytes": 1102,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/decimo/plan-artes-plasticas-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/decimo/plan-artes-plasticas-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -1880,13 +1880,13 @@
       {
         "nombre": "plan-artes-plasticas-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/undecimo/plan-artes-plasticas-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/undecimo/plan-artes-plasticas-undecimo.zip",
         "tamanoBytes": 1107,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-artes-plasticas-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/undecimo/plan-artes-plasticas-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/artes-plasticas/undecimo/plan-artes-plasticas-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -1901,13 +1901,13 @@
       {
         "nombre": "plan-biologia-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/decimo/plan-biologia-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/decimo/plan-biologia-decimo.zip",
         "tamanoBytes": 1080,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-biologia-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/decimo/plan-biologia-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/decimo/plan-biologia-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -1922,13 +1922,13 @@
       {
         "nombre": "plan-biologia-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/undecimo/plan-biologia-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/undecimo/plan-biologia-undecimo.zip",
         "tamanoBytes": 1087,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-biologia-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/undecimo/plan-biologia-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/biologia/undecimo/plan-biologia-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -1943,13 +1943,13 @@
       {
         "nombre": "plan-ciencias-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/septimo/plan-ciencias-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/septimo/plan-ciencias-septimo.zip",
         "tamanoBytes": 1085,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/septimo/plan-ciencias-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/septimo/plan-ciencias-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -1964,13 +1964,13 @@
       {
         "nombre": "plan-ciencias-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/octavo/plan-ciencias-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/octavo/plan-ciencias-octavo.zip",
         "tamanoBytes": 1082,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/octavo/plan-ciencias-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/octavo/plan-ciencias-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -1985,13 +1985,13 @@
       {
         "nombre": "plan-ciencias-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/noveno/plan-ciencias-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/noveno/plan-ciencias-noveno.zip",
         "tamanoBytes": 1082,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/noveno/plan-ciencias-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ciencias/noveno/plan-ciencias-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2006,13 +2006,13 @@
       {
         "nombre": "plan-educacion-civica-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/septimo/plan-educacion-civica-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/septimo/plan-educacion-civica-septimo.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-civica-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/septimo/plan-educacion-civica-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/septimo/plan-educacion-civica-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2027,13 +2027,13 @@
       {
         "nombre": "plan-educacion-civica-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/octavo/plan-educacion-civica-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/octavo/plan-educacion-civica-octavo.zip",
         "tamanoBytes": 1099,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-civica-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/octavo/plan-educacion-civica-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/octavo/plan-educacion-civica-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -2048,13 +2048,13 @@
       {
         "nombre": "plan-educacion-civica-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/noveno/plan-educacion-civica-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/noveno/plan-educacion-civica-noveno.zip",
         "tamanoBytes": 1099,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-civica-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/noveno/plan-educacion-civica-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/noveno/plan-educacion-civica-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2069,13 +2069,13 @@
       {
         "nombre": "plan-educacion-civica-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/decimo/plan-educacion-civica-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/decimo/plan-educacion-civica-decimo.zip",
         "tamanoBytes": 1099,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-civica-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/decimo/plan-educacion-civica-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/decimo/plan-educacion-civica-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2090,13 +2090,13 @@
       {
         "nombre": "plan-educacion-civica-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/undecimo/plan-educacion-civica-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/undecimo/plan-educacion-civica-undecimo.zip",
         "tamanoBytes": 1105,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-civica-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/undecimo/plan-educacion-civica-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-civica/undecimo/plan-educacion-civica-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2111,13 +2111,13 @@
       {
         "nombre": "plan-educacion-fisica-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/septimo/plan-educacion-fisica-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/septimo/plan-educacion-fisica-septimo.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/septimo/plan-educacion-fisica-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/septimo/plan-educacion-fisica-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2132,13 +2132,13 @@
       {
         "nombre": "plan-educacion-fisica-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/octavo/plan-educacion-fisica-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/octavo/plan-educacion-fisica-octavo.zip",
         "tamanoBytes": 1099,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/octavo/plan-educacion-fisica-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/octavo/plan-educacion-fisica-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -2153,13 +2153,13 @@
       {
         "nombre": "plan-educacion-fisica-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/noveno/plan-educacion-fisica-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/noveno/plan-educacion-fisica-noveno.zip",
         "tamanoBytes": 1099,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/noveno/plan-educacion-fisica-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/noveno/plan-educacion-fisica-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2174,13 +2174,13 @@
       {
         "nombre": "plan-educacion-fisica-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/decimo/plan-educacion-fisica-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/decimo/plan-educacion-fisica-decimo.zip",
         "tamanoBytes": 1099,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/decimo/plan-educacion-fisica-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/decimo/plan-educacion-fisica-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2195,13 +2195,13 @@
       {
         "nombre": "plan-educacion-fisica-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/undecimo/plan-educacion-fisica-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/undecimo/plan-educacion-fisica-undecimo.zip",
         "tamanoBytes": 1105,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-fisica-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/undecimo/plan-educacion-fisica-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-fisica/undecimo/plan-educacion-fisica-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2216,13 +2216,13 @@
       {
         "nombre": "plan-educacion-musical-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/septimo/plan-educacion-musical-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/septimo/plan-educacion-musical-septimo.zip",
         "tamanoBytes": 1105,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/septimo/plan-educacion-musical-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/septimo/plan-educacion-musical-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2237,13 +2237,13 @@
       {
         "nombre": "plan-educacion-musical-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/octavo/plan-educacion-musical-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/octavo/plan-educacion-musical-octavo.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/octavo/plan-educacion-musical-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/octavo/plan-educacion-musical-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -2258,13 +2258,13 @@
       {
         "nombre": "plan-educacion-musical-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/noveno/plan-educacion-musical-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/noveno/plan-educacion-musical-noveno.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/noveno/plan-educacion-musical-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/noveno/plan-educacion-musical-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2279,13 +2279,13 @@
       {
         "nombre": "plan-educacion-musical-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/decimo/plan-educacion-musical-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/decimo/plan-educacion-musical-decimo.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/decimo/plan-educacion-musical-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/decimo/plan-educacion-musical-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2300,13 +2300,13 @@
       {
         "nombre": "plan-educacion-musical-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/undecimo/plan-educacion-musical-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/undecimo/plan-educacion-musical-undecimo.zip",
         "tamanoBytes": 1108,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-musical-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/undecimo/plan-educacion-musical-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-musical/undecimo/plan-educacion-musical-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2321,13 +2321,13 @@
       {
         "nombre": "plan-educacion-para-el-hogar-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/septimo/plan-educacion-para-el-hogar-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/septimo/plan-educacion-para-el-hogar-septimo.zip",
         "tamanoBytes": 1122,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-el-hogar-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/septimo/plan-educacion-para-el-hogar-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/septimo/plan-educacion-para-el-hogar-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2342,13 +2342,13 @@
       {
         "nombre": "plan-educacion-para-el-hogar-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/octavo/plan-educacion-para-el-hogar-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/octavo/plan-educacion-para-el-hogar-octavo.zip",
         "tamanoBytes": 1119,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-el-hogar-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/octavo/plan-educacion-para-el-hogar-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/octavo/plan-educacion-para-el-hogar-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -2363,13 +2363,13 @@
       {
         "nombre": "plan-educacion-para-el-hogar-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/noveno/plan-educacion-para-el-hogar-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/noveno/plan-educacion-para-el-hogar-noveno.zip",
         "tamanoBytes": 1119,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-el-hogar-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/noveno/plan-educacion-para-el-hogar-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-el-hogar/noveno/plan-educacion-para-el-hogar-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2384,13 +2384,13 @@
       {
         "nombre": "plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/septimo/plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/septimo/plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
         "tamanoBytes": 1164,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/septimo/plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/septimo/plan-educacion-para-la-paz-y-la-convivencia-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2405,13 +2405,13 @@
       {
         "nombre": "plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/octavo/plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/octavo/plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
         "tamanoBytes": 1160,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/octavo/plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/octavo/plan-educacion-para-la-paz-y-la-convivencia-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -2426,13 +2426,13 @@
       {
         "nombre": "plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/noveno/plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/noveno/plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
         "tamanoBytes": 1161,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/noveno/plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/noveno/plan-educacion-para-la-paz-y-la-convivencia-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2447,13 +2447,13 @@
       {
         "nombre": "plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/decimo/plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/decimo/plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
         "tamanoBytes": 1160,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/decimo/plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-para-la-paz-y-la-convivencia/decimo/plan-educacion-para-la-paz-y-la-convivencia-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2468,13 +2468,13 @@
       {
         "nombre": "plan-educacion-religiosa-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/septimo/plan-educacion-religiosa-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/septimo/plan-educacion-religiosa-septimo.zip",
         "tamanoBytes": 1111,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/septimo/plan-educacion-religiosa-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/septimo/plan-educacion-religiosa-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2489,13 +2489,13 @@
       {
         "nombre": "plan-educacion-religiosa-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/octavo/plan-educacion-religiosa-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/octavo/plan-educacion-religiosa-octavo.zip",
         "tamanoBytes": 1108,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/octavo/plan-educacion-religiosa-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/octavo/plan-educacion-religiosa-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -2510,13 +2510,13 @@
       {
         "nombre": "plan-educacion-religiosa-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/noveno/plan-educacion-religiosa-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/noveno/plan-educacion-religiosa-noveno.zip",
         "tamanoBytes": 1108,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/noveno/plan-educacion-religiosa-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/noveno/plan-educacion-religiosa-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2531,13 +2531,13 @@
       {
         "nombre": "plan-educacion-religiosa-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/decimo/plan-educacion-religiosa-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/decimo/plan-educacion-religiosa-decimo.zip",
         "tamanoBytes": 1108,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/decimo/plan-educacion-religiosa-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/decimo/plan-educacion-religiosa-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2552,13 +2552,13 @@
       {
         "nombre": "plan-educacion-religiosa-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/undecimo/plan-educacion-religiosa-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/undecimo/plan-educacion-religiosa-undecimo.zip",
         "tamanoBytes": 1114,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-educacion-religiosa-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/undecimo/plan-educacion-religiosa-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/educacion-religiosa/undecimo/plan-educacion-religiosa-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2573,13 +2573,13 @@
       {
         "nombre": "plan-espanol-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/septimo/plan-espanol-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/septimo/plan-espanol-septimo.zip",
         "tamanoBytes": 1083,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/septimo/plan-espanol-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/septimo/plan-espanol-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2594,83 +2594,83 @@
       {
         "nombre": "plan-espanol-octavo-1.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-1.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-1.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-2.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-2.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-2.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-3.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-3.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-3.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-4.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-4.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-4.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-5.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-5.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-5.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-6.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-6.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-6.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-7.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-7.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-7.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-8.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-8.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-8.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-9.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-9.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-9.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-10.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-10.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-10.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       },
       {
         "nombre": "plan-espanol-octavo-11.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-11.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-11.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-octavo-1.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-1.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/octavo/plan-espanol-octavo-1.zip",
     "vigencia": "2027"
   },
   {
@@ -2685,13 +2685,13 @@
       {
         "nombre": "plan-espanol-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/noveno/plan-espanol-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/noveno/plan-espanol-noveno.zip",
         "tamanoBytes": 1079,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/noveno/plan-espanol-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/noveno/plan-espanol-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2706,13 +2706,13 @@
       {
         "nombre": "plan-espanol-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/decimo/plan-espanol-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/decimo/plan-espanol-decimo.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/decimo/plan-espanol-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/decimo/plan-espanol-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2727,13 +2727,13 @@
       {
         "nombre": "plan-espanol-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/undecimo/plan-espanol-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/undecimo/plan-espanol-undecimo.zip",
         "tamanoBytes": 1086,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/undecimo/plan-espanol-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/espanol/undecimo/plan-espanol-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2748,13 +2748,13 @@
       {
         "nombre": "plan-estudios-sociales-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/septimo/plan-estudios-sociales-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/septimo/plan-estudios-sociales-septimo.zip",
         "tamanoBytes": 1105,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/septimo/plan-estudios-sociales-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/septimo/plan-estudios-sociales-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2769,13 +2769,13 @@
       {
         "nombre": "plan-estudios-sociales-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/octavo/plan-estudios-sociales-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/octavo/plan-estudios-sociales-octavo.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/octavo/plan-estudios-sociales-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/octavo/plan-estudios-sociales-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -2790,13 +2790,13 @@
       {
         "nombre": "plan-estudios-sociales-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/noveno/plan-estudios-sociales-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/noveno/plan-estudios-sociales-noveno.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/noveno/plan-estudios-sociales-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/noveno/plan-estudios-sociales-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2811,13 +2811,13 @@
       {
         "nombre": "plan-estudios-sociales-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/decimo/plan-estudios-sociales-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/decimo/plan-estudios-sociales-decimo.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/decimo/plan-estudios-sociales-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/decimo/plan-estudios-sociales-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2832,13 +2832,13 @@
       {
         "nombre": "plan-estudios-sociales-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/undecimo/plan-estudios-sociales-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/undecimo/plan-estudios-sociales-undecimo.zip",
         "tamanoBytes": 1108,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/undecimo/plan-estudios-sociales-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/estudios-sociales/undecimo/plan-estudios-sociales-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2853,13 +2853,13 @@
       {
         "nombre": "plan-filosofia-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/filosofia/undecimo/plan-filosofia-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/filosofia/undecimo/plan-filosofia-undecimo.zip",
         "tamanoBytes": 1092,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-filosofia-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/filosofia/undecimo/plan-filosofia-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/filosofia/undecimo/plan-filosofia-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2874,13 +2874,13 @@
       {
         "nombre": "plan-fisica-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/decimo/plan-fisica-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/decimo/plan-fisica-decimo.zip",
         "tamanoBytes": 1075,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-fisica-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/decimo/plan-fisica-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/decimo/plan-fisica-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2895,13 +2895,13 @@
       {
         "nombre": "plan-fisica-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/undecimo/plan-fisica-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/undecimo/plan-fisica-undecimo.zip",
         "tamanoBytes": 1082,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-fisica-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/undecimo/plan-fisica-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/fisica/undecimo/plan-fisica-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2916,13 +2916,13 @@
       {
         "nombre": "plan-frances-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/septimo/plan-frances-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/septimo/plan-frances-septimo.zip",
         "tamanoBytes": 1083,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/septimo/plan-frances-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/septimo/plan-frances-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -2937,13 +2937,13 @@
       {
         "nombre": "plan-frances-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/octavo/plan-frances-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/octavo/plan-frances-octavo.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/octavo/plan-frances-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/octavo/plan-frances-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -2958,13 +2958,13 @@
       {
         "nombre": "plan-frances-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/noveno/plan-frances-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/noveno/plan-frances-noveno.zip",
         "tamanoBytes": 1079,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/noveno/plan-frances-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/noveno/plan-frances-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -2979,13 +2979,13 @@
       {
         "nombre": "plan-frances-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/decimo/plan-frances-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/decimo/plan-frances-decimo.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/decimo/plan-frances-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/decimo/plan-frances-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3000,13 +3000,13 @@
       {
         "nombre": "plan-frances-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/undecimo/plan-frances-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/undecimo/plan-frances-undecimo.zip",
         "tamanoBytes": 1086,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-frances-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/undecimo/plan-frances-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/frances/undecimo/plan-frances-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3021,13 +3021,13 @@
       {
         "nombre": "plan-ingles-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/septimo/plan-ingles-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/septimo/plan-ingles-septimo.zip",
         "tamanoBytes": 1079,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/septimo/plan-ingles-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/septimo/plan-ingles-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3042,13 +3042,13 @@
       {
         "nombre": "plan-ingles-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/octavo/plan-ingles-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/octavo/plan-ingles-octavo.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/octavo/plan-ingles-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/octavo/plan-ingles-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -3063,13 +3063,13 @@
       {
         "nombre": "plan-ingles-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/noveno/plan-ingles-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/noveno/plan-ingles-noveno.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/noveno/plan-ingles-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/noveno/plan-ingles-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -3084,13 +3084,13 @@
       {
         "nombre": "plan-ingles-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/decimo/plan-ingles-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/decimo/plan-ingles-decimo.zip",
         "tamanoBytes": 1077,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/decimo/plan-ingles-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/decimo/plan-ingles-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3105,13 +3105,13 @@
       {
         "nombre": "plan-ingles-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/undecimo/plan-ingles-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/undecimo/plan-ingles-undecimo.zip",
         "tamanoBytes": 1083,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-ingles-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/undecimo/plan-ingles-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/ingles/undecimo/plan-ingles-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3126,13 +3126,13 @@
       {
         "nombre": "plan-italiano-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/septimo/plan-italiano-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/septimo/plan-italiano-septimo.zip",
         "tamanoBytes": 1085,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/septimo/plan-italiano-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/septimo/plan-italiano-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3147,13 +3147,13 @@
       {
         "nombre": "plan-italiano-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/octavo/plan-italiano-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/octavo/plan-italiano-octavo.zip",
         "tamanoBytes": 1082,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/octavo/plan-italiano-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/octavo/plan-italiano-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -3168,13 +3168,13 @@
       {
         "nombre": "plan-italiano-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/noveno/plan-italiano-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/noveno/plan-italiano-noveno.zip",
         "tamanoBytes": 1082,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/noveno/plan-italiano-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/noveno/plan-italiano-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -3189,13 +3189,13 @@
       {
         "nombre": "plan-italiano-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/decimo/plan-italiano-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/decimo/plan-italiano-decimo.zip",
         "tamanoBytes": 1082,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/decimo/plan-italiano-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/decimo/plan-italiano-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3210,13 +3210,13 @@
       {
         "nombre": "plan-italiano-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/undecimo/plan-italiano-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/undecimo/plan-italiano-undecimo.zip",
         "tamanoBytes": 1089,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-italiano-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/undecimo/plan-italiano-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/italiano/undecimo/plan-italiano-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3231,13 +3231,13 @@
       {
         "nombre": "plan-matematica-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/septimo/plan-matematica-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/septimo/plan-matematica-septimo.zip",
         "tamanoBytes": 1091,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/septimo/plan-matematica-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/septimo/plan-matematica-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3252,13 +3252,13 @@
       {
         "nombre": "plan-matematica-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/octavo/plan-matematica-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/octavo/plan-matematica-octavo.zip",
         "tamanoBytes": 1088,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/octavo/plan-matematica-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/octavo/plan-matematica-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -3273,13 +3273,13 @@
       {
         "nombre": "plan-matematica-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/noveno/plan-matematica-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/noveno/plan-matematica-noveno.zip",
         "tamanoBytes": 1088,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/noveno/plan-matematica-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/noveno/plan-matematica-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -3294,13 +3294,13 @@
       {
         "nombre": "plan-matematica-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/decimo/plan-matematica-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/decimo/plan-matematica-decimo.zip",
         "tamanoBytes": 1088,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/decimo/plan-matematica-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/decimo/plan-matematica-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3315,13 +3315,13 @@
       {
         "nombre": "plan-matematica-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/undecimo/plan-matematica-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/undecimo/plan-matematica-undecimo.zip",
         "tamanoBytes": 1093,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/undecimo/plan-matematica-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/matematica/undecimo/plan-matematica-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3336,13 +3336,13 @@
       {
         "nombre": "plan-orientacion-septimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/septimo/plan-orientacion-septimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/septimo/plan-orientacion-septimo.zip",
         "tamanoBytes": 1090,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-orientacion-septimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/septimo/plan-orientacion-septimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/septimo/plan-orientacion-septimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3357,13 +3357,13 @@
       {
         "nombre": "plan-orientacion-octavo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/octavo/plan-orientacion-octavo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/octavo/plan-orientacion-octavo.zip",
         "tamanoBytes": 1089,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-orientacion-octavo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/octavo/plan-orientacion-octavo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/octavo/plan-orientacion-octavo.zip",
     "vigencia": "2027"
   },
   {
@@ -3378,13 +3378,13 @@
       {
         "nombre": "plan-orientacion-noveno.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/noveno/plan-orientacion-noveno.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/noveno/plan-orientacion-noveno.zip",
         "tamanoBytes": 1088,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-orientacion-noveno.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/noveno/plan-orientacion-noveno.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/noveno/plan-orientacion-noveno.zip",
     "vigencia": "2027"
   },
   {
@@ -3399,13 +3399,13 @@
       {
         "nombre": "plan-orientacion-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/decimo/plan-orientacion-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/decimo/plan-orientacion-decimo.zip",
         "tamanoBytes": 1088,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-orientacion-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/decimo/plan-orientacion-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/decimo/plan-orientacion-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3420,13 +3420,13 @@
       {
         "nombre": "plan-orientacion-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/undecimo/plan-orientacion-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/undecimo/plan-orientacion-undecimo.zip",
         "tamanoBytes": 1094,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-orientacion-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/undecimo/plan-orientacion-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/orientacion/undecimo/plan-orientacion-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3441,13 +3441,13 @@
       {
         "nombre": "plan-psicologia-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/psicologia/decimo/plan-psicologia-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/psicologia/decimo/plan-psicologia-decimo.zip",
         "tamanoBytes": 1086,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-psicologia-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/psicologia/decimo/plan-psicologia-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/psicologia/decimo/plan-psicologia-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3462,13 +3462,13 @@
       {
         "nombre": "plan-quimica-decimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/decimo/plan-quimica-decimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/decimo/plan-quimica-decimo.zip",
         "tamanoBytes": 1078,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-quimica-decimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/decimo/plan-quimica-decimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/decimo/plan-quimica-decimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3483,13 +3483,13 @@
       {
         "nombre": "plan-quimica-undecimo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/undecimo/plan-quimica-undecimo.zip",
+        "ruta": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/undecimo/plan-quimica-undecimo.zip",
         "tamanoBytes": 1086,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-quimica-undecimo.zip",
-    "rutaDescarga": "/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/undecimo/plan-quimica-undecimo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/tercer-ciclo-y-educacion-diversificada/quimica/undecimo/plan-quimica-undecimo.zip",
     "vigencia": "2027"
   },
   {
@@ -3504,13 +3504,13 @@
       {
         "nombre": "plan-orientaciones-generales.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/orientaciones-generales/plan-orientaciones-generales.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/orientaciones-generales/plan-orientaciones-generales.zip",
         "tamanoBytes": 1097,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-orientaciones-generales.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/orientaciones-generales/plan-orientaciones-generales.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/orientaciones-generales/plan-orientaciones-generales.zip",
     "vigencia": "2027"
   },
   {
@@ -3525,13 +3525,13 @@
       {
         "nombre": "plan-ciencias.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/ciencias/plan-ciencias.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/ciencias/plan-ciencias.zip",
         "tamanoBytes": 1069,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-ciencias.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/ciencias/plan-ciencias.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/ciencias/plan-ciencias.zip",
     "vigencia": "2027"
   },
   {
@@ -3546,13 +3546,13 @@
       {
         "nombre": "plan-espanol.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/espanol/plan-espanol.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/espanol/plan-espanol.zip",
         "tamanoBytes": 1065,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-espanol.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/espanol/plan-espanol.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/espanol/plan-espanol.zip",
     "vigencia": "2027"
   },
   {
@@ -3567,13 +3567,13 @@
       {
         "nombre": "plan-estudios-sociales.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/estudios-sociales/plan-estudios-sociales.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/estudios-sociales/plan-estudios-sociales.zip",
         "tamanoBytes": 1088,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-estudios-sociales.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/estudios-sociales/plan-estudios-sociales.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/estudios-sociales/plan-estudios-sociales.zip",
     "vigencia": "2027"
   },
   {
@@ -3588,13 +3588,13 @@
       {
         "nombre": "plan-lenguas-extranjeras.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/lenguas-extranjeras/plan-lenguas-extranjeras.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/lenguas-extranjeras/plan-lenguas-extranjeras.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-lenguas-extranjeras.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/lenguas-extranjeras/plan-lenguas-extranjeras.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/lenguas-extranjeras/plan-lenguas-extranjeras.zip",
     "vigencia": "2027"
   },
   {
@@ -3609,13 +3609,13 @@
       {
         "nombre": "plan-matematica.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/matematica/plan-matematica.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/matematica/plan-matematica.zip",
         "tamanoBytes": 1076,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-matematica.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/matematica/plan-matematica.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/matematica/plan-matematica.zip",
     "vigencia": "2027"
   },
   {
@@ -3630,13 +3630,13 @@
       {
         "nombre": "plan-tecnologias.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/tecnologias/plan-tecnologias.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/tecnologias/plan-tecnologias.zip",
         "tamanoBytes": 1076,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-tecnologias.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/tecnologias/plan-tecnologias.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-personas-jovenes-y-adultas/guias-especificas/tecnologias/plan-tecnologias.zip",
     "vigencia": "2027"
   },
   {
@@ -3651,13 +3651,13 @@
       {
         "nombre": "plan-centros-de-educacion-especial.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-especial/centros-de-educacion-especial/plan-centros-de-educacion-especial.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-especial/centros-de-educacion-especial/plan-centros-de-educacion-especial.zip",
         "tamanoBytes": 1089,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-centros-de-educacion-especial.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-especial/centros-de-educacion-especial/plan-centros-de-educacion-especial.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-especial/centros-de-educacion-especial/plan-centros-de-educacion-especial.zip",
     "vigencia": "2027"
   },
   {
@@ -3672,13 +3672,13 @@
       {
         "nombre": "plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-especial/aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple/plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-especial/aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple/plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
         "tamanoBytes": 1229,
         "tamanoLegible": "1.2 KB"
       }
     ],
     "archivoPrincipal": "plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-especial/aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple/plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-especial/aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple/plan-aula-integrada-retraso-mental-discapacidad-intelectual-discapacidad-multiple.zip",
     "vigencia": "2027"
   },
   {
@@ -3693,13 +3693,13 @@
       {
         "nombre": "plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-especial/servicios-i-y-ii-ciclos-audicion-y-lenguaje/plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-especial/servicios-i-y-ii-ciclos-audicion-y-lenguaje/plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
         "tamanoBytes": 1142,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-especial/servicios-i-y-ii-ciclos-audicion-y-lenguaje/plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-especial/servicios-i-y-ii-ciclos-audicion-y-lenguaje/plan-servicios-i-y-ii-ciclos-audicion-y-lenguaje.zip",
     "vigencia": "2027"
   },
   {
@@ -3714,13 +3714,13 @@
       {
         "nombre": "plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-especial/servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo/plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-especial/servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo/plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
         "tamanoBytes": 1222,
         "tamanoLegible": "1.2 KB"
       }
     ],
     "archivoPrincipal": "plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-especial/servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo/plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-especial/servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo/plan-servicios-educativos-ninos-ninas-con-discapacidad-o-riesgo-en-el-desarrollo.zip",
     "vigencia": "2027"
   },
   {
@@ -3735,13 +3735,13 @@
       {
         "nombre": "plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-especial/tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional/plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-especial/tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional/plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
         "tamanoBytes": 1178,
         "tamanoLegible": "1.2 KB"
       }
     ],
     "archivoPrincipal": "plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-especial/tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional/plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-especial/tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional/plan-tercer-ciclo-y-ciclo-diversificado-vocacional-plan-nacional.zip",
     "vigencia": "2027"
   },
   {
@@ -3756,13 +3756,13 @@
       {
         "nombre": "plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cosmovision-cabecar-talamanca-tercer-ciclo/plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/cultura/cosmovision-cabecar-talamanca-tercer-ciclo/plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
         "tamanoBytes": 1158,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cosmovision-cabecar-talamanca-tercer-ciclo/plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/cultura/cosmovision-cabecar-talamanca-tercer-ciclo/plan-cultura-cosmovision-cabecar-talamanca-tercer-ciclo.zip",
     "vigencia": "2027"
   },
   {
@@ -3777,13 +3777,13 @@
       {
         "nombre": "plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-boruca-i-y-ii-ciclos/plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-boruca-i-y-ii-ciclos/plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
         "tamanoBytes": 1116,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-boruca-i-y-ii-ciclos/plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-boruca-i-y-ii-ciclos/plan-cultura-cultura-boruca-i-y-ii-ciclos.zip",
     "vigencia": "2027"
   },
   {
@@ -3798,13 +3798,13 @@
       {
         "nombre": "plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
         "tamanoBytes": 1223,
         "tamanoLegible": "1.2 KB"
       }
     ],
     "archivoPrincipal": "plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-cultura-cultura-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
     "vigencia": "2027"
   },
   {
@@ -3819,13 +3819,13 @@
       {
         "nombre": "plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-cabecar-chirripo-i-ciclo/plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-cabecar-chirripo-i-ciclo/plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
         "tamanoBytes": 1128,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-cabecar-chirripo-i-ciclo/plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-cabecar-chirripo-i-ciclo/plan-cultura-cultura-cabecar-chirripo-i-ciclo.zip",
     "vigencia": "2027"
   },
   {
@@ -3840,13 +3840,13 @@
       {
         "nombre": "plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-i-y-ii-ciclos/plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-i-y-ii-ciclos/plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
         "tamanoBytes": 1132,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-i-y-ii-ciclos/plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-i-y-ii-ciclos/plan-cultura-cultura-ngabe-bugle-i-y-ii-ciclos.zip",
     "vigencia": "2027"
   },
   {
@@ -3861,13 +3861,13 @@
       {
         "nombre": "plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-tercer-ciclo/plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-tercer-ciclo/plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
         "tamanoBytes": 1129,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-tercer-ciclo/plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/cultura/cultura-ngabe-bugle-tercer-ciclo/plan-cultura-cultura-ngabe-bugle-tercer-ciclo.zip",
     "vigencia": "2027"
   },
   {
@@ -3882,13 +3882,13 @@
       {
         "nombre": "plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/lengua/idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
         "tamanoBytes": 1225,
         "tamanoLegible": "1.2 KB"
       }
     ],
     "archivoPrincipal": "plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/lengua/idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada/plan-lengua-idioma-bribri-territorio-salitre-iii-ciclo-y-educacion-diversificada.zip",
     "vigencia": "2027"
   },
   {
@@ -3903,13 +3903,13 @@
       {
         "nombre": "plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/idioma-ngabere-i-y-ii-ciclos/plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/lengua/idioma-ngabere-i-y-ii-ciclos/plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
         "tamanoBytes": 1121,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/idioma-ngabere-i-y-ii-ciclos/plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/lengua/idioma-ngabere-i-y-ii-ciclos/plan-lengua-idioma-ngabere-i-y-ii-ciclos.zip",
     "vigencia": "2027"
   },
   {
@@ -3924,13 +3924,13 @@
       {
         "nombre": "plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-boruca-i-y-ii-ciclos/plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/lengua/lengua-boruca-i-y-ii-ciclos/plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
         "tamanoBytes": 1115,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-boruca-i-y-ii-ciclos/plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/lengua/lengua-boruca-i-y-ii-ciclos/plan-lengua-lengua-boruca-i-y-ii-ciclos.zip",
     "vigencia": "2027"
   },
   {
@@ -3945,13 +3945,13 @@
       {
         "nombre": "plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-bribri-territorio-talamanca-i-y-ii-ciclos/plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/lengua/lengua-bribri-territorio-talamanca-i-y-ii-ciclos/plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
         "tamanoBytes": 1173,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-bribri-territorio-talamanca-i-y-ii-ciclos/plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/lengua/lengua-bribri-territorio-talamanca-i-y-ii-ciclos/plan-lengua-lengua-bribri-territorio-talamanca-i-y-ii-ciclos.zip",
     "vigencia": "2027"
   },
   {
@@ -3966,13 +3966,13 @@
       {
         "nombre": "plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-ngabe-bugle-tercer-ciclo/plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
+        "ruta": "/data/ddc-planeamientos/educacion-intercultural/lengua/lengua-ngabe-bugle-tercer-ciclo/plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
         "tamanoBytes": 1128,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
-    "rutaDescarga": "/ddc-planeamientos/educacion-intercultural/lengua/lengua-ngabe-bugle-tercer-ciclo/plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/educacion-intercultural/lengua/lengua-ngabe-bugle-tercer-ciclo/plan-lengua-lengua-ngabe-bugle-tercer-ciclo.zip",
     "vigencia": "2027"
   },
   {
@@ -3987,13 +3987,13 @@
       {
         "nombre": "plan-unidocentes-artes-industriales.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/artes-industriales/plan-unidocentes-artes-industriales.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/artes-industriales/plan-unidocentes-artes-industriales.zip",
         "tamanoBytes": 1101,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-artes-industriales.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/artes-industriales/plan-unidocentes-artes-industriales.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/artes-industriales/plan-unidocentes-artes-industriales.zip",
     "vigencia": "2027"
   },
   {
@@ -4008,13 +4008,13 @@
       {
         "nombre": "plan-unidocentes-matematica.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/matematica/plan-unidocentes-matematica.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/matematica/plan-unidocentes-matematica.zip",
         "tamanoBytes": 1082,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-matematica.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/matematica/plan-unidocentes-matematica.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/matematica/plan-unidocentes-matematica.zip",
     "vigencia": "2027"
   },
   {
@@ -4029,13 +4029,13 @@
       {
         "nombre": "plan-unidocentes-ingles.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/ingles/plan-unidocentes-ingles.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/ingles/plan-unidocentes-ingles.zip",
         "tamanoBytes": 1072,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-ingles.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/ingles/plan-unidocentes-ingles.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/ingles/plan-unidocentes-ingles.zip",
     "vigencia": "2027"
   },
   {
@@ -4050,13 +4050,13 @@
       {
         "nombre": "plan-unidocentes-artes-plasticas.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/artes-plasticas/plan-unidocentes-artes-plasticas.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/artes-plasticas/plan-unidocentes-artes-plasticas.zip",
         "tamanoBytes": 1093,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-artes-plasticas.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/artes-plasticas/plan-unidocentes-artes-plasticas.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/artes-plasticas/plan-unidocentes-artes-plasticas.zip",
     "vigencia": "2027"
   },
   {
@@ -4071,13 +4071,13 @@
       {
         "nombre": "plan-unidocentes-ciencias.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/ciencias/plan-unidocentes-ciencias.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/ciencias/plan-unidocentes-ciencias.zip",
         "tamanoBytes": 1075,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-ciencias.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/ciencias/plan-unidocentes-ciencias.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/ciencias/plan-unidocentes-ciencias.zip",
     "vigencia": "2027"
   },
   {
@@ -4092,13 +4092,13 @@
       {
         "nombre": "plan-unidocentes-espanol.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/espanol/plan-unidocentes-espanol.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/espanol/plan-unidocentes-espanol.zip",
         "tamanoBytes": 1072,
         "tamanoLegible": "1.0 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-espanol.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/espanol/plan-unidocentes-espanol.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/espanol/plan-unidocentes-espanol.zip",
     "vigencia": "2027"
   },
   {
@@ -4113,13 +4113,13 @@
       {
         "nombre": "plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/estudios-sociales-y-educacion-civica/plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/estudios-sociales-y-educacion-civica/plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
         "tamanoBytes": 1140,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/estudios-sociales-y-educacion-civica/plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/estudios-sociales-y-educacion-civica/plan-unidocentes-estudios-sociales-y-educacion-civica.zip",
     "vigencia": "2027"
   },
   {
@@ -4134,13 +4134,13 @@
       {
         "nombre": "plan-unidocentes-educacion-fisica.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/educacion-fisica/plan-unidocentes-educacion-fisica.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/educacion-fisica/plan-unidocentes-educacion-fisica.zip",
         "tamanoBytes": 1091,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-educacion-fisica.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/educacion-fisica/plan-unidocentes-educacion-fisica.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/educacion-fisica/plan-unidocentes-educacion-fisica.zip",
     "vigencia": "2027"
   },
   {
@@ -4155,13 +4155,13 @@
       {
         "nombre": "plan-unidocentes-educacion-para-el-hogar.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/educacion-para-el-hogar/plan-unidocentes-educacion-para-el-hogar.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/educacion-para-el-hogar/plan-unidocentes-educacion-para-el-hogar.zip",
         "tamanoBytes": 1109,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-educacion-para-el-hogar.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/educacion-para-el-hogar/plan-unidocentes-educacion-para-el-hogar.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/educacion-para-el-hogar/plan-unidocentes-educacion-para-el-hogar.zip",
     "vigencia": "2027"
   },
   {
@@ -4176,13 +4176,13 @@
       {
         "nombre": "plan-unidocentes-educacion-musical.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/educacion-musical/plan-unidocentes-educacion-musical.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/educacion-musical/plan-unidocentes-educacion-musical.zip",
         "tamanoBytes": 1094,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-educacion-musical.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/educacion-musical/plan-unidocentes-educacion-musical.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/educacion-musical/plan-unidocentes-educacion-musical.zip",
     "vigencia": "2027"
   },
   {
@@ -4197,13 +4197,13 @@
       {
         "nombre": "plan-unidocentes-educacion-religiosa.zip",
         "tipo": "ZIP",
-        "ruta": "/ddc-planeamientos/unidocentes/educacion-religiosa/plan-unidocentes-educacion-religiosa.zip",
+        "ruta": "/data/ddc-planeamientos/unidocentes/educacion-religiosa/plan-unidocentes-educacion-religiosa.zip",
         "tamanoBytes": 1100,
         "tamanoLegible": "1.1 KB"
       }
     ],
     "archivoPrincipal": "plan-unidocentes-educacion-religiosa.zip",
-    "rutaDescarga": "/ddc-planeamientos/unidocentes/educacion-religiosa/plan-unidocentes-educacion-religiosa.zip",
+    "rutaDescarga": "/data/ddc-planeamientos/unidocentes/educacion-religiosa/plan-unidocentes-educacion-religiosa.zip",
     "vigencia": "2027"
   }
 ]

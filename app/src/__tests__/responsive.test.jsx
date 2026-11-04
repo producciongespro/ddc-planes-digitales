@@ -42,9 +42,9 @@ describe('Suite 5: responsive (Matriz de 20 Dimensiones Comerciales de Pantalla)
           asignatura: 'Interactivo I',
           grado: 'Materno Infantil',
           rutaRelativa: 'preescolar/interactivo-i',
-          archivos: [{ nombre: 'plan-interactivo-i.zip', tipo: 'ZIP', ruta: '/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip', tamanoBytes: 1000, tamanoLegible: '1 KB' }],
+          archivos: [{ nombre: 'plan-interactivo-i.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip', tamanoBytes: 1000, tamanoLegible: '1 KB' }],
           archivoPrincipal: 'plan-interactivo-i.zip',
-          rutaDescarga: '/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip',
+          rutaDescarga: '/data/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip',
           vigencia: '2027'
         }
       ]

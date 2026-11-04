@@ -11,7 +11,7 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
   });
 
   it('El catálogo es la única sección y descargar un chip no registra estadísticas', async () => {
-    const archivo = { nombre: 'plan.zip', tipo: 'ZIP', ruta: '/ddc-planeamientos/plan.zip', tamanoLegible: '1 KB' };
+    const archivo = { nombre: 'plan.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/plan.zip', tamanoLegible: '1 KB' };
     global.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: async () => [{
@@ -34,7 +34,7 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
   });
 
   it('solicita en orden todos los ZIP de una fila sin registrar estadísticas', async () => {
-    const archivos = [1, 2].map((n) => ({ nombre: `plan-${n}.zip`, tipo: 'ZIP', ruta: `/ddc-planeamientos/plan-${n}.zip`, tamanoLegible: '1 KB' }));
+    const archivos = [1, 2].map((n) => ({ nombre: `plan-${n}.zip`, tipo: 'ZIP', ruta: `/data/ddc-planeamientos/plan-${n}.zip`, tamanoLegible: '1 KB' }));
     global.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: async () => [{

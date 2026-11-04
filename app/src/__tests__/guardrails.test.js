@@ -5,10 +5,10 @@ import path from 'path';
 describe('Suite 4: guardrails (Auditoría Automatizada de Seguridad y Arnés)', () => {
   const rootDir = path.resolve(__dirname, '../../');
   const srcDir = path.join(rootDir, 'src');
-  const catalogPath = path.join(rootDir, 'public/data/ddc-planeamientos.json');
+  const catalogPath = path.join(rootDir, 'public/data/ddc-datos.json');
 
   const publicDir = path.join(rootDir, 'public');
-  const baseFilesDir = path.join(publicDir, 'ddc-planeamientos');
+  const baseFilesDir = path.join(publicDir, 'data/ddc-planeamientos');
 
   // Función auxiliar recursiva para listar archivos de código excluyendo pruebas
   function getProductionFilesRecursively(dir, extensions = ['.js', '.jsx', '.json', '.html']) {
@@ -91,7 +91,7 @@ describe('Suite 4: guardrails (Auditoría Automatizada de Seguridad y Arnés)', 
     ).toEqual([]);
   });
 
-  it('TEST-19: Certificación Zero-Windows-Paths en public/data/ddc-planeamientos.json', () => {
+  it('TEST-19: Certificación Zero-Windows-Paths en public/data/ddc-datos.json', () => {
     expect(fs.existsSync(catalogPath)).toBe(true);
     const content = fs.readFileSync(catalogPath, 'utf8');
     const catalog = JSON.parse(content);
@@ -103,7 +103,7 @@ describe('Suite 4: guardrails (Auditoría Automatizada de Seguridad y Arnés)', 
       expect(item).not.toHaveProperty('carpetaFisica');
       expect(item.rutaRelativa).not.toMatch(/^[a-zA-Z]:\\/);
       expect(item.rutaDescarga).not.toMatch(/^[a-zA-Z]:\\/);
-      expect(item.rutaDescarga).toMatch(/^\/ddc-planeamientos\//);
+      expect(item.rutaDescarga).toMatch(/^\/data\/ddc-planeamientos\//);
     });
   });
 
@@ -113,7 +113,7 @@ describe('Suite 4: guardrails (Auditoría Automatizada de Seguridad y Arnés)', 
 
     srcFiles.forEach((filePath) => {
       const content = fs.readFileSync(filePath, 'utf8');
-      if (/import\s+.*from\s+['"].*(planes2027|ddc-planeamientos)\.json['"]/i.test(content)) {
+      if (/import\s+.*from\s+['"].*(planes2027|ddc-planeamientos|ddc-datos)\.json['"]/i.test(content)) {
         offendingImports.push(path.relative(rootDir, filePath));
       }
     });
@@ -253,12 +253,12 @@ describe('Suite 4: guardrails (Auditoría Automatizada de Seguridad y Arnés)', 
 
     expect(
       huerfanos,
-      `[GUARDRAIL ERROR - ARCHIVOS HUÉRFANOS DETECTADOS]\nLos siguientes archivos existen en disco pero no están registrados en ddc-planeamientos.json:\n${huerfanos.join('\n')}`
+      `[GUARDRAIL ERROR - ARCHIVOS HUÉRFANOS DETECTADOS]\nLos siguientes archivos existen en disco pero no están registrados en ddc-datos.json:\n${huerfanos.join('\n')}`
     ).toEqual([]);
 
     expect(
       rotos,
-      `[GUARDRAIL ERROR - ENLACES ROTOS DETECTADOS]\nLos siguientes registros en ddc-planeamientos.json no existen físicamente en disco:\n${rotos.join('\n')}`
+      `[GUARDRAIL ERROR - ENLACES ROTOS DETECTADOS]\nLos siguientes registros en ddc-datos.json no existen físicamente en disco:\n${rotos.join('\n')}`
     ).toEqual([]);
 
     expect(principalesSinAnexo, 'Las rutas principales deben aparecer en archivos[].ruta').toEqual([]);

@@ -26,15 +26,23 @@ ayuda flotante al pasar el puntero o enfocar el título. El contenido
 principal comienza directamente con el catálogo filtrable.
 
 ### Coordinación de desarrollo
-El contrato operativo de agentes está en `app/docs/agents.md`. El agente principal
-coordina cinco perfiles persistentes (`analista`, `disenador`, `implementador`,
-`qa_tester`, `auditor`) registrados en `.codex/config.toml` y definidos en `app/agents/`.
+El contrato operativo de agentes está en `app/docs/agents.md` bajo el estándar
+**«Roles Clave — Equipo de Desarrollo de Software de Élite»**. El Sponsor (Chris)
+toma las decisiones del producto y el agente principal coordina **doce perfiles
+especializados** (`product_manager`, `scrum_master`, `ux_designer`, `ui_designer`,
+`brand_marketing_designer`, `software_architect`, `frontend_developer`,
+`backend_developer`, `qa_engineer`, `software_tester`, `devops_sre`,
+`auditor_seguridad`) registrados en `.codex/config.toml` y definidos en `app/agents/`.
 Esta configuración es metadato de desarrollo fuera del código de producción.
 La delegación usa las herramientas del host, hereda permisos y modelo y exige
 asignación de archivos, espera de resultados y consolidación de evidencia.
-Mientras se realizan cambios pequeños o iterativos se ejecutan únicamente pruebas
-unitarias focalizadas para evitar retrasos; cuando se ejecuta commit y sincronización,
-se corren todas las pruebas y el subagente `auditor` valida todos los arneses y guardrails.
+Mientras se realizan pruebas o cambios locales (sean pequeños, medianos o inclusive
+grandes) se ejecutan única y exclusivamente las pruebas unitarias (`npm run test:unit`
+con los subagentes correspondientes), sin ejecutar arneses ni guardrails; única y
+exclusivamente cuando Chris solicita ejecutar commit y sincronización en la nube,
+entran en juego todos los subagentes necesarios (`qa_engineer`, `software_tester`,
+`devops_sre` y `auditor_seguridad`) para ejecutar todas las pruebas, validaciones,
+arneses y guardrails antes del commit.
 No introduce backend ni procesos permanentes en el sitio.
 
 ### Integridad de archivos del catálogo
@@ -60,9 +68,9 @@ Proveer a todo el cuerpo docente de Costa Rica un canal institucional centraliza
 ## 2. Requisitos Funcionales (RF)
 
 ### RF-01: Carga Asíncrona Desacoplada del Catálogo Curricular
-- **Descripción:** La aplicación no empaqueta los datos dentro del bundle JavaScript de React. Consulta el archivo `/data/ddc-planeamientos.json` como una API estática externa al iniciar.
+- **Descripción:** La aplicación no empaqueta los datos dentro del bundle JavaScript de React. Consulta el archivo `/data/ddc-datos.json` como una API estática externa al iniciar.
 - **Comportamiento:**
-  - Ejecuta un `fetch('/data/ddc-planeamientos.json?_t=[timestamp]', { cache: 'no-cache' })`.
+  - Ejecuta un `fetch('/data/ddc-datos.json?_t=[timestamp]', { cache: 'no-cache' })`.
   - Permite la actualización en caliente ("hot-update") de materias, rutas o anexos directamente en el servidor sin necesidad de recompilar la aplicación (`npm run build`).
   - Si la petición es exitosa, inicializa el catálogo en memoria sin estadísticas de uso.
 
@@ -131,7 +139,7 @@ Proveer a todo el cuerpo docente de Costa Rica un canal institucional centraliza
 
 ## 4. Contrato de Datos (Data Schema)
 
-El archivo `app/public/data/ddc-planeamientos.json` es la única fuente de verdad taxonómica.
+El archivo `app/public/data/ddc-datos.json` es la única fuente de verdad taxonómica.
 
 ### 4.1 Definición TypeScript / Schema de Cada Registro Curricular
 
@@ -139,7 +147,7 @@ El archivo `app/public/data/ddc-planeamientos.json` es la única fuente de verda
 interface ArchivoCurricular {
   nombre: string;          // Ej: "plan-interactivo-i.zip"
   tipo: string;            // Ej: "ZIP", "PDF", "DOCX"
-  ruta: string;            // Ruta web relativa accesible: "/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip"
+  ruta: string;            // Ruta web relativa accesible: "/data/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip"
   tamanoBytes: number;     // Tamaño exacto en bytes (ej: 1057)
   tamanoLegible: string;   // Tamaño formateado para el docente (ej: "1.0 KB", "2.4 MB")
 }
@@ -154,7 +162,7 @@ interface PlaneamientoCurricular2027 {
   rutaRelativa: string;        // Subruta física dentro de ddc-planeamientos (Ej: "preescolar/interactivo-i")
   archivos: ArchivoCurricular[]; // Lista de todos los archivos disponibles para esta materia
   archivoPrincipal: string;    // Nombre del archivo representativo primario
-  rutaDescarga: string;        // Ruta web de descarga del archivo principal
+  rutaDescarga: string;        // Ruta web de descarga del archivo principal (Ej: "/data/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip")
   vigencia: string;            // Ciclo de vigencia oficial ("2027")
 }
 ```
@@ -190,7 +198,7 @@ Estas reglas son obligatorias y no pueden ser alteradas por ningún desarrollado
 1. **PROHIBIDO EL USO DE BACKEND DINÁMICO (PHP / NODE RUNTIME):**
    - El aplicativo debe permanecer 100% estático. No se permite reincorporar endpoints PHP ni dependencias que requieran un servidor de aplicaciones en tiempo de ejecución.
 2. **PROHIBIDO ACOPLAR EL CATÁLOGO AL BUNDLE:**
-   - No se permite importar `ddc-planeamientos.json` directamente en archivos `.js`/`.jsx` de React. El catálogo siempre debe obtenerse mediante `fetch('/data/ddc-planeamientos.json')`.
+   - No se permite importar `ddc-datos.json` directamente en archivos `.js`/`.jsx` de React. El catálogo siempre debe obtenerse mediante `fetch('/data/ddc-datos.json')`.
 3. **REGLA ESTRICTA DE CONTROL DE VERSIONES (GIT):**
    - **NUNCA** ejecutar `git commit` ni `git push` de manera automática. Todas las tareas deben validarse primero en local y esperar la autorización explícita de Chris antes de sincronizar con el repositorio remoto.
 4. **BLINDAJE DE CODIFICACIÓN UTF-8 SIN BOM:**

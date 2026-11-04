@@ -1,6 +1,6 @@
 /**
  * Capa de datos desacoplada para el repositorio de planes curriculares 2027.
- * El catálogo oficial se consulta dinámicamente mediante fetch() a /data/ddc-planeamientos.json
+ * El catálogo oficial se consulta dinámicamente mediante fetch() a /data/ddc-datos.json
  * para permitir actualizaciones en caliente sin recompilar el bundle de React.
  */
 
@@ -10,7 +10,7 @@
  * @returns {Promise<Array<any>>}
  */
 export async function fetchPlanesCatalog() {
-  const url = `/data/ddc-planeamientos.json?_t=${Date.now()}`;
+  const url = `/data/ddc-datos.json?_t=${Date.now()}`;
   const response = await fetch(url, {
     cache: 'no-cache',
     headers: {
@@ -25,7 +25,7 @@ export async function fetchPlanesCatalog() {
 
   const catalog = await response.json();
   if (!Array.isArray(catalog)) {
-    throw new Error('El formato del archivo ddc-planeamientos.json no es una lista válida.');
+    throw new Error('El formato del archivo ddc-datos.json no es una lista válida.');
   }
 
   return catalog;

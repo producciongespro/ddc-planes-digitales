@@ -24,64 +24,64 @@ documento debe leerse junto con el resultado actual de `npm test`.
 
 Garantizar que **ningún error humano, degradación visual, corrupción de caracteres o falla arquitectónica pueda llegar jamás al repositorio en GitHub ni a producción**. 
 
-### Regla de Agilidad en Cambios Pequeños vs. Auditoría Pre-Commit
-- **Durante cambios pequeños o iterativos:** Para evitar retrasos durante el desarrollo, se ejecutan **únicamente pruebas unitarias focalizadas** (`npm run test:unit` o la suite unitaria específica del componente modificado). No se corren todas las pruebas pesadas, arneses ni guardrails en cada cambio pequeño.
-- **Al momento de ejecutar Commit y Sincronización:** Únicamente cuando Chris solicita ejecutar el commit y la sincronización, se corren **todas las pruebas configuradas** y el subagente **`auditor`** se encarga de ejecutar todas las auditorías de los **arneses** y los **guardrails** a través de las **3 Puertas de Calidad en Cascada**.
+### Regla Estricta de Trabajo Local vs. Auditoría Pre-Commit y Sincronización
+- **Durante el trabajo y pruebas en local (cambios pequeños, medianos o inclusive grandes):** Para no ejecutar procesos pesados mientras se desarrolla y prueba en local, se ejecutan **única y exclusivamente las pruebas unitarias** (`npm run test:unit` o la suite unitaria específica) con los subagentes correspondientes (`qa_engineer`, `frontend_developer`, `backend_developer`). **No** se ejecutan los arneses (`responsive`, `chaos`, `sensory`) ni los guardrails (`guardrails.test.js` / `npm run audit:guardrails`) en pruebas locales.
+- **Única y exclusivamente al solicitar Commit y Sincronización en la nube:** Solo cuando Chris solicita expresamente ejecutar commit y sincronizar («ejecuta commit y sincroniza»), entran en juego todos los subagentes necesarios (`qa_engineer`, `software_tester`, `devops_sre` y `auditor_seguridad`) para ejecutar **todas las pruebas**, las validaciones, los **arneses** y los **guardrails** a través de las **3 Puertas de Calidad en Cascada** antes del commit, garantizando que lo que se sube al repositorio en la nube esté 100% revisado y auditado.
 
 ---
 
 ## 2. Las 3 Puertas de Calidad en Cascada (Quality Gates)
 
 ```
-         [Instrucción de Chris: "Ejecuta commit y sincroniza"]
-                                │
-                                ▼
-  ┌─────────────────────────────────────────────────────────────┐
-  │  PUERTA 1: AUDITORÍA DE GUARDRAILS (Subagente: auditor)     │
-  │  - Cero Mojibake en todo el código y JSON                   │
-  │  - Cero rutas físicas de Windows (C:\) en catálogo          │
-  │  - Cero imports directos del catálogo al bundle de React     │
-  │  - Tratamiento formal institucional («usted»)               │
-  │  - Cero puntos en nombres de carpetas y cero espacios web   │
-  │  - Cero prefijos numéricos ("1. ") en UI y asignaturas      │
-  │  - Verificación 100% de existencia física de los 197 ZIPs   │
-  │  - Guardrail Físico de Directorios Kebab-case en disco      │
-  │  - Guardrail Físico de Archivos ZIP Kebab-case en disco     │
-  │  - Guardrail de Paridad Bidireccional (0 huérfanos/rotos)   │
-  │  Comando: `npm run audit:guardrails` (10 guardrails)        │
-  └────────────────────────────┬────────────────────────────────┘
-                                │ (Superado al 100% ✅)
-                                ▼
-  ┌─────────────────────────────────────────────────────────────┐
-  │  PUERTA 2: SUITE COMPLETA Y ARNESES (qa_tester y auditor)   │
-  │  - Todas las pruebas en las 8 suites (Vitest + jsdom)       │
-  │  - Matriz de 20 Dimensiones Comerciales (320px a 4K UHD)    │
-  │  - Arnés de Caos (Red offline, JSON corrupto, clics, cuota) │
-  │  - Arnés Sensorial (Accesibilidad Ley 7600 y WCAG AA)       │
-  │  - React 19 Enterprise Error Boundary (Tolerancia a UI)     │
-  │  - WCAG 2.4.1 Skip Link accesible a catálogo principal      │
-  │  - Resiliencia de red y Splash Screen con reintento         │
-  │  - Descarga individual/múltiple y paginador matemático      │
-  │  Comando: `npm test`                                        │
-  └────────────────────────────┬────────────────────────────────┘
-                                │ (Superado al 100% ✅)
-                                ▼
-  ┌─────────────────────────────────────────────────────────────┐
-  │  PUERTA 3: COMPILACIÓN DE PRODUCCIÓN Y TAMAÑO DE BUNDLE     │
-  │  - Compilación limpia con Vite (`npm run build`)            │
-  │  - Verificación de peso: Bundle JS < 300 KB                 │
-  │  - Cero errores de sintaxis o empaquetado                   │
-  │  Comando: `npm run build`                                   │
-  └────────────────────────────┬────────────────────────────────┘
-                                │ (Superado al 100% ✅)
-                                ▼
-  ┌─────────────────────────────────────────────────────────────┐
-  │  AUTORIZACIÓN DE CONTROL DE VERSIONES (GIT)                 │
-  │  - Staging completo de archivos (`git add -A`)              │
-  │  - Commit con fecha y descripción institucional             │
-  │  - Sincronización con GitHub (`git push origin ...`)        │
-  │  - Reporte consolidado de certificación a Chris             │
-  └─────────────────────────────────────────────────────────────┘
+          [Instrucción de Chris: "Ejecuta commit y sincroniza"]
+                                 │
+                                 ▼
+   ┌─────────────────────────────────────────────────────────────┐
+   │  PUERTA 1: AUDITORÍA DE GUARDRAILS (auditor_seguridad)      │
+   │  - Cero Mojibake en todo el código y JSON                   │
+   │  - Cero rutas físicas de Windows (C:\) en catálogo          │
+   │  - Cero imports directos del catálogo al bundle de React    │
+   │  - Tratamiento formal institucional («usted»)               │
+   │  - Cero puntos en nombres de carpetas y cero espacios web   │
+   │  - Cero prefijos numéricos ("1. ") en UI y asignaturas      │
+   │  - Verificación 100% de existencia física de los 197 ZIPs   │
+   │  - Guardrail Físico de Directorios Kebab-case en disco      │
+   │  - Guardrail Físico de Archivos ZIP Kebab-case en disco     │
+   │  - Guardrail de Paridad Bidireccional (0 huérfanos/rotos)   │
+   │  Comando: `npm run audit:guardrails` (10 guardrails)        │
+   └────────────────────────────┬────────────────────────────────┘
+                                 │ (Superado al 100% ✅)
+                                 ▼
+   ┌─────────────────────────────────────────────────────────────┐
+   │  PUERTA 2: SUITE COMPLETA Y ARNESES (qa_engineer / auditor) │
+   │  - Todas las pruebas en las 8 suites (Vitest + jsdom)       │
+   │  - Matriz de 20 Dimensiones Comerciales (320px a 4K UHD)    │
+   │  - Arnés de Caos (Red offline, JSON corrupto, clics, cuota) │
+   │  - Arnés Sensorial (Accesibilidad Ley 7600 y WCAG AA)       │
+   │  - React 19 Enterprise Error Boundary (Tolerancia a UI)     │
+   │  - WCAG 2.4.1 Skip Link accesible a catálogo principal      │
+   │  - Resiliencia de red y Splash Screen con reintento         │
+   │  - Descarga individual/múltiple y paginador matemático      │
+   │  Comando: `npm test`                                        │
+   └────────────────────────────┬────────────────────────────────┘
+                                 │ (Superado al 100% ✅)
+                                 ▼
+   ┌─────────────────────────────────────────────────────────────┐
+   │  PUERTA 3: COMPILACIÓN DE PRODUCCIÓN (devops_sre)           │
+   │  - Compilación limpia con Vite (`npm run build`)            │
+   │  - Verificación de peso: Bundle JS < 300 KB                 │
+   │  - Cero errores de sintaxis o empaquetado                   │
+   │  Comando: `npm run build`                                   │
+   └────────────────────────────┬────────────────────────────────┘
+                                 │ (Superado al 100% ✅)
+                                 ▼
+   ┌─────────────────────────────────────────────────────────────┐
+   │  AUTORIZACIÓN DE CONTROL DE VERSIONES (GIT)                 │
+   │  - Staging completo de archivos (`git add -A`)              │
+   │  - Commit con fecha y descripción institucional             │
+   │  - Sincronización con GitHub (`git push origin ...`)        │
+   │  - Reporte consolidado de certificación a Chris             │
+   └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -91,10 +91,10 @@ Garantizar que **ningún error humano, degradación visual, corrupción de carac
 Si cualquiera de las siguientes condiciones se presenta durante la ejecución, el proceso de commit se **aborta de inmediato**, se revierte cualquier cambio en el área de preparación y se le notifica a Chris el archivo y línea exactos del fallo:
 
 1. **Detección de Mojibake:** Detección de secuencias corruptas (`Ã¡`, `Ã©`, `Ã±`, `Â°`, etc.) en cualquier archivo `.js`, `.jsx`, `.json`, `.html`, `.css` o `.md`.
-2. **Presencia de Rutas Locales:** Existencia de cadenas como `C:\` o nombres de disco duro en `public/data/ddc-planeamientos.json`.
-3. **Acoplamiento del Catálogo:** Detección de cualquier sentencia `import` que cargue estáticamente el archivo `ddc-planeamientos.json` o `planes2027.json` en lugar de utilizar `fetch()`.
+2. **Presencia de Rutas Locales:** Existencia de cadenas como `C:\` o nombres de disco duro en `public/data/ddc-datos.json`.
+3. **Acoplamiento del Catálogo:** Detección de cualquier sentencia `import` que cargue estáticamente el archivo `ddc-datos.json`, `ddc-planeamientos.json` o `planes2027.json` en lugar de utilizar `fetch()`.
 4. **Fallo en Pruebas Unitarias, Caos, Sensorial o Layout:** Cualquier aserción no cumplida en las pruebas de Vitest o desbordamiento en los 20 viewports comerciales.
-5. **Violación de Nomenclatura en Disco:** Carpetas o archivos en `public/ddc-planeamientos/` con mayúsculas, espacios, puntos o prefijos numéricos.
+5. **Violación de Nomenclatura en Disco:** Carpetas o archivos en `public/data/ddc-planeamientos/` con mayúsculas, espacios, puntos o prefijos numéricos.
 6. **Exceso de Peso en Bundle:** Archivo JavaScript compilado superior a 300 KB.
 
 ---

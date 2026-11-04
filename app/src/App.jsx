@@ -15,7 +15,7 @@ export default function App() {
   const [downloadNotice, setDownloadNotice] = useState(null);
   const bulkInProgress = useRef(false);
 
-  // Carga asíncrona desacoplada del catálogo curricular oficial desde /data/ddc-planeamientos.json
+  // Carga asíncrona desacoplada del catálogo curricular oficial desde /data/ddc-datos.json
   const cargarCatalogo = async () => {
     setIsLoading(true);
     setLoadError(null);
