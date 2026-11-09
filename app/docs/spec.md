@@ -19,11 +19,7 @@
 
 ## 1. Contexto Institucional y Propósito
 
-El encabezado presenta tres secciones: logo MEP a la izquierda, título principal
-«Repositorio de Planeamientos Curriculares» centrado, y los controles de tema,
-Acerca de y Califícame a la derecha. La descripción curricular se muestra como
-ayuda flotante al pasar el puntero o enfocar el título. El contenido
-principal comienza directamente con el catálogo filtrable.
+El encabezado presenta tres secciones dentro del **App Shell** institucional: logo MEP a la izquierda, título principal «Repositorio de Planeamientos Curriculares» centrado (con su descripción curricular como ayuda flotante al pasar el puntero o enfocar con teclado), y los controles institucionales **Inicio**, **Acerca de** y **¡Califícame!** a la derecha. La aplicación opera en un único **Modo Claro Institucional Luminoso (`#FFFFFF`)** y guía a la persona docente a través de un **recorrido visual progresivo de 4 pantallas**: *1. Ofertas Educativas $\rightarrow$ 2. Asignaturas $\rightarrow$ 3. Grado $\rightarrow$ 4. Contenido Descargable*.
 
 ### Coordinación de desarrollo
 El contrato operativo de agentes está en `app/docs/agents.md` bajo el estándar
@@ -55,11 +51,11 @@ tener varios ZIP sin aumentar el número de planeamientos.
 El **Repositorio Curricular Digital 2027** es una plataforma web oficial desarrollada para el Ministerio de Educación Pública de Costa Rica (MEP), concebida bajo la supervisión directa de la Dirección de Desarrollo Curricular (DDC).
 
 ### 1.1 Objetivo General
-Proveer a todo el cuerpo docente de Costa Rica un canal institucional centralizado, veloz, accesible y autónomo para la consulta, filtrado dinámico y descarga segura de los **197 planeamientos de estudio normados** para el ciclo lectivo 2027, aprobados por el Consejo Superior de Educación (CSE).
+Proveer a todo el cuerpo docente de Costa Rica un canal institucional centralizado, veloz, accesible y autónomo para la consulta visual guiada y descarga segura de los **197 planeamientos de estudio normados** para el ciclo lectivo 2027, aprobados por el Consejo Superior de Educación (CSE).
 
 ### 1.2 Alcance del Repositorio
-- **Total de Planeamientos Oficiales:** Exactamente 197 paquetes curriculares normados.
-- **Formato de Entrega:** Archivos empaquetados en `.zip` con documentos oficiales en Word (`.docx`) y/o PDF.
+- **Total de Planeamientos Oficiales:** Exactamente 197 paquetes curriculares normados (207 archivos ZIP).
+- **Formato de Entrega:** Archivos empaquetados en `.zip` (y soporte futuro para `.pdf`, `.docx`, `.xlsx`).
 - **Soporte Multi-archivo:** Cada registro curricular puede contener uno o múltiples archivos complementarios (planes principales, anexos, guías de mediación pedagógica, plantillas).
 - **Cobertura Territorial:** Diseñado para funcionar de manera fluida en cualquier centro educativo del país, incluso bajo redes con ancho de banda limitado o intermitente.
 
@@ -81,45 +77,38 @@ Proveer a todo el cuerpo docente de Costa Rica un canal institucional centraliza
   - Despliega el isotipo curricular provisional (escudo y libro académico en SVG MEP · DDC 2027), spinner de doble anillo giratorio y leyendas oficiales.
   - En caso de falla en la conexión (error 404, 500 o caída de red), conmuta automáticamente a una vista de contingencia con mensaje amigable y botón **"Reintentar conexión"**.
 
-### RF-03: Búsqueda Libre Predictiva en Tiempo Real
-- **Descripción:** Barra de búsqueda predictiva ubicada en la barra de herramientas principal.
-- **Comportamiento:**
-  - Filtra instantáneamente por coincidencia insensible a mayúsculas y minúsculas sobre *Asignatura*, *Oferta Educativa*, *Grado* y los nombres de **todos** los archivos de cada registro. Una coincidencia en cualquier archivo conserva la fila completa y todos sus chips.
-  - Actualiza de forma reactiva el contador de registros encontrados y recalcula la paginación.
+### RF-03: Flujo Visual Guiado en 4 Pantallas Progresivas (Cero Buscador de Texto)
+- **Descripción:** En lugar de una tabla general con caja de búsqueda o filtros de columna, el sistema guía a la persona docente a través de **4 pantallas sucesivas de selección visual** que siempre se recorren en su totalidad (incluso cuando en algún paso intermedio exista una única opción):
+  1. **Vista 1 — `Ofertas Educativas`:** Muestra en el centro la ilustración redimensionable de la persona docente con su bolso (`/assets/images/profe.png`) y alrededor los **7 botones 3D** correspondientes a las Ofertas Educativas Oficiales.
+  2. **Vista 2 — `Asignaturas`:** Al seleccionar una Oferta Educativa, muestra en el centro la ilustración del bolso pedagógico (`/assets/images/bolso.png`) con la insignia de la Oferta elegida debajo, y alrededor únicamente los botones 3D de las **Asignaturas** que pertenecen a esa oferta (ordenadas alfabéticamente según el idioma español).
+  3. **Vista 3 — `Grado`:** Al seleccionar una Asignatura, muestra en el centro la ilustración del cuaderno espiral (`/assets/images/cuaderno.png`) con el **nombre de la Asignatura impreso dinámicamente en mayúsculas sobre la portada**, y alrededor únicamente los botones 3D de los **Grados / Niveles / Subáreas** aplicables (ordenados por progresión académica: *Materno Infantil, Interactivo II, Transición, Grupo Heterogéneo*, seguidos de *1° a 12° año* en orden numérico, y las demás subáreas en orden alfabético español).
+  4. **Vista 4 — `Contenido`:** Al seleccionar un Grado, presenta la tabla oficial titulada **`CONTENIDO DESCARGABLE`** con los archivos disponibles para ese planeamiento.
 
-### RF-04: Filtros Multidimensionales en Cabeceras de Columna (`ColumnFilter`)
-- **Descripción:** Menús popover flotantes integrados en los encabezados `<th>` de las columnas *Oferta Educativa*, *Asignatura* y *Grado*.
+### RF-04: Barra Discreta de Migas de Pan (`Breadcrumbs`) y Retorno Rápido
+- **Descripción:** En la parte superior de cada ventana se presenta el título de la etapa actual a la izquierda y, a la derecha, una barra discreta de navegación curricular (`<nav aria-label="Ruta de navegación curricular">`).
 - **Comportamiento:**
-  - Las opciones de *Oferta Educativa* y *Asignatura / Área* se presentan alfabéticamente por su nombre visible, según el idioma español. *Grado / Subárea* sigue la progresión académica: Materno Infantil (Interactivo I), Interactivo II, Transición, Grupo Heterogéneo y los años individuales de 1° a 12° en orden numérico; las demás categorías y subáreas aparecen después en orden alfabético español. Este orden solo afecta las opciones disponibles del filtro, sin reordenar las filas del catálogo ni alterar sus conteos o selecciones.
-  - Operación en modo **borrador (draft)**: El usuario puede marcar/desmarcar opciones sin alterar la tabla hasta que presione explícitamente el botón **"Aplicar Filtro"**.
-  - Opciones de acción rápida: Botones para **"Marcar todas"**, **"Desmarcar todas"** y **"Cancelar"**.
-  - Buscador interno dentro del popover para listas largas de opciones.
-  - Indicador visual destacado en el encabezado de la columna cuando tiene un filtro activo.
-  - Los menús flotan sobre la tabla y se mantienen visibles en pantallas estrechas sin reservar altura vacía bajo los resultados.
+  - En las Vistas 2, 3 y 4 ofrece el botón **`← Volver`** (para regresar un paso atrás, también activable con la tecla `Escape`) y los eslabones clicables de las migas de pan (`Ofertas Educativas › [Oferta] › [Asignatura] › [Grado]`).
+  - Adicionalmente, el botón **`Inicio`** en el `Header` permite restablecer la navegación a la Vista 1 (`Ofertas Educativas`) en cualquier momento.
 
-### RF-05: Descarga individual y múltiple por planeamiento
-- **Descripción:** Cada documento se descarga desde su chip de archivo; los registros con dos o más archivos ofrecen además una acción para solicitar todos los de esa fila.
+### RF-05: Tabla `CONTENIDO DESCARGABLE`, Descarga Individual y Botón «Descargar todo»
+- **Descripción:** En la Vista 4 (`Contenido`), los documentos del planeamiento seleccionado se presentan en una tabla de dos columnas acompañada de un botón maestro de descarga total debajo de la tabla.
 - **Comportamiento:**
-  - **Descarga desde la tabla:** La tabla presenta cuatro columnas (*Oferta Educativa*, *Asignatura*, *Grado* y *Archivos*). Cada chip de la columna *Archivos* descarga exclusivamente el archivo seleccionado. No se muestran columnas de *Descargas* ni *Acción*.
-  - **Descargar todos:** El botón «Descargar todos (N)» aparece inmediatamente después del último chip dentro de la misma celda y secuencia flexible, también en móvil. Solo se muestra si hay al menos dos archivos. Solicita las descargas de esa fila de forma escalonada e impide repetir la acción mientras se despachan; el navegador puede requerir permiso para descargas múltiples.
-  - **Altura de la tabla:** Cuando el filtro deja uno o pocos registros, el contenedor se ajusta al contenido sin una altura mínima ni relleno inferior permanente.
+  - **Tabla de 2 columnas (`CONTENIDO DESCARGABLE`):** La columna izquierda muestra el nombre del archivo y la columna derecha presenta el botón de descarga individual con el formato, tamaño legible y flecha (`ZIP (1.1 KB) ↓`).
+  - **Botón «Descargar todo» debajo de la tabla:** Ubicado inmediatamente debajo de la tabla, alineado a la derecha en escritorio y a ancho completo en móvil. Permite descargar el archivo o la totalidad de los archivos del planeamiento (despachándolos de forma escalonada con intervalos de 350 ms cuando son múltiples archivos e informando mediante un aviso accesible `role="status"` que el navegador puede solicitar permiso para descargas múltiples).
 
-### RF-07: Paginador Seguro con Ventana Deslizante
-- En anchos menores de 640 px, los cuatro controles de navegación muestran solo iconos con nombres accesibles y hasta tres números alrededor de la página actual, en una sola fila. Desde 640 px se conservan las etiquetas y hasta siete números. Los extremos mantienen sus estados deshabilitados.
-- **Descripción:** Controles de navegación en tabla con selector de filas por página (`15`, `20`, `50`, `Todos`).
+### RF-06: Botones 3D 100% Dinámicos en CSS + SVG (`<PillButton3D />`)
+- **Descripción:** Todos los botones de Ofertas, Asignaturas, Grados y «Descargar todo» se generan dinámicamente mediante CSS y SVG vectorial nativo (`Icons.jsx`), sin utilizar imágenes PNG estáticas de botones.
 - **Comportamiento:**
-  - Ventana deslizante matemática de hasta tres páginas en móvil y siete en escritorio, manteniendo visible la página actual.
-  - Botones de salto rápido: **« Primero**, **‹ Anterior**, **Siguiente ›** y **Último »**.
-  - Generación de claves DOM únicas (`pag-btn-${pNum}`) para evitar duplicación de nodos y errores de renderizado.
+  - Cada botón presenta cuerpo con gradiente luminoso, bisel inferior 3D presionable, medallón circular blanco traslúcido a la izquierda (con el icono relativo a la Oferta/Asignatura o el numeral del Grado `1°`..`11°`) y texto blanco nítido alimentado en vivo desde `/data/ddc-datos.json`.
 
-### RF-09: Soporte Nativo de Temas Claro / Oscuro
-- **Descripción:** Selector de modo en el encabezado con conmutación fluida de clases Tailwind en `<html>`.
+### RF-09: Lienzo Único en Modo Claro Institucional Luminoso (`#FFFFFF`)
+- **Descripción:** La aplicación opera de forma estandarizada en **Modo Claro Institucional (`#FFFFFF`)** sin interruptor de modo oscuro.
 - **Comportamiento:**
-  - Persiste la preferencia en `localStorage` bajo la clave `mep-theme` (`'light'` o `'dark'`).
-  - Detección automática de preferencia del sistema operativo (`prefers-color-scheme`) en la primera visita.
+  - Garantiza la fusión perfecta e invisible del fondo blanco de las 3 ilustraciones centrales (`profe.png`, `bolso.png`, `cuaderno.png`) con el escenario central y el máximo contraste de los botones 3D.
 
-### RF-10: Modales Institucionales
+### RF-10: Modales y Controles Institucionales
 - **Acerca de (`AboutModal.jsx`):** Muestra el contexto normativo, créditos institucionales de la DDC y directrices del CSE.
+- **¡Califícame!:** Enlace oficial al formulario de evaluación del servicio del MEP.
 
 ---
 
@@ -127,10 +116,10 @@ Proveer a todo el cuerpo docente de Costa Rica un canal institucional centraliza
 
 | Identificador | Requisito | Criterio de Aceptación |
 | :--- | :--- | :--- |
-| **RNF-01** | **Arquitectura App Shell** | Header fijo (`z-20`), Footer fijo (`z-20`). El desplazamiento vertical ocurre en el cuerpo central (`flex-1 overflow-y-auto`). La página no debe desbordar horizontalmente entre 320px y 4K; la tabla puede tener desplazamiento horizontal local en pantallas estrechas. |
+| **RNF-01** | **Arquitectura App Shell y Responsividad Fluida** | Header fijo (`z-20`), Footer fijo (`z-20`). El desplazamiento vertical ocurre en el cuerpo central (`flex-1 overflow-y-auto bg-white`). Las 3 ilustraciones centrales (`profe.png`, `bolso.png`, `cuaderno.png`) y la tipografía sobre el cuaderno escalan fluidamente (`clamp()`) según el tamaño de pantalla sin desbordamiento horizontal entre 320px y 4K. |
 | **RNF-02** | **Rendimiento y Peso** | El bundle JavaScript final compilado (`dist/assets/*.js`) no debe exceder los 300 KB. El tiempo de carga interactivo (LCP) debe ser inferior a 1.2 segundos sobre conexiones estándar. |
 | **RNF-03** | **Portabilidad y Despliegue** | 100% estático. Debe ejecutarse de manera idéntica en Apache, NGINX, Azure Static Web Apps, AWS S3, IIS o GitHub Pages sin requerir motores PHP, Node.js ni bases de datos en el servidor de producción. |
-| **RNF-04** | **Tratamiento y Accesibilidad** | Redacción formal dirigida al usuario mediante tratamiento de respeto de «usted» (*«seleccione»*, *«consulte»*, *«descargue»*). Contraste de colores apto para estándar WCAG AA. |
+| **RNF-04** | **Tratamiento y Accesibilidad** | Redacción formal dirigida al usuario mediante tratamiento de respeto de «usted» (*«seleccione»*, *«consulte»*, *«descargue»*). Contraste de colores apto para estándar WCAG AA y Ley 7600. |
 | **RNF-05** | **Dualidad Ortográfica Estricta** | **En la Interfaz (UI):** Respeto riguroso de la ortografía RAE con todas las tildes y diacríticos oficiales (*Matemática*, *Educación Cívica*, *Sétimo*, *II Ciclos*, etc.). **En el Sistema de Archivos / Rutas:** Carpetas y nombres en disco limpios, sin tildes ni caracteres conflictivos para compatibilidad con servidores Linux/Apache. |
 | **RNF-06** | **Blindaje Anti-Mojibake y UTF-8** | Todos los archivos de código, marcado, estilos y datos deben persistirse estrictamente en **UTF-8 sin BOM**. Todo script o tool debe forzar explícitamente `encoding: utf8` para impedir la corrupción de caracteres (`Ã¡`, `Ã©`, `Ã±`). |
 | **RNF-07** | **Certificación Multi-Pantalla (20 Viewports)** | Layout certificado bajo una matriz exhaustiva de 20 resoluciones comerciales estándar (desde móviles plegables de 320px hasta monitores 4K de 3840px, pasando por tablets, netbooks escolares y pizarras interactivas de aula) sin quiebre de componentes. |
@@ -154,11 +143,11 @@ interface ArchivoCurricular {
 
 interface PlaneamientoCurricular2027 {
   id: string;                  // Identificador oficial único (Ej: "DDC-2027-001")
-  ofertaCodigo: string;        // Código normalizado (Ej: "PREESCOLAR", "PRIMARIA", "SECUNDARIA")
+  ofertaCodigo: string;        // Código normalizado (Ej: "PREESCOLAR", "I-II-CICLOS", "III-DIVERSIFICADA")
   ofertaNombre: string;        // Nombre visual institucional oficial (Ej: "Educación Preescolar")
   ofertaBadgeColor: string;    // Color temático Tailwind (Ej: "amber", "emerald", "blue", "indigo", "rose", "cyan", "violet")
   asignatura: string;          // Nombre de la asignatura o área curricular (Ej: "Educación Cívica", "Matemática")
-  grado: string;               // Nivel o grado académico (Ej: "Primer Año (1°)", "Sétimo Año")
+  grado: string;               // Nivel o grado académico (Ej: "Primer Año (1°)", "Sétimo Año (7°)")
   rutaRelativa: string;        // Subruta física dentro de ddc-planeamientos (Ej: "preescolar/interactivo-i")
   archivos: ArchivoCurricular[]; // Lista de todos los archivos disponibles para esta materia
   archivoPrincipal: string;    // Nombre del archivo representativo primario
@@ -167,27 +156,21 @@ interface PlaneamientoCurricular2027 {
 }
 ```
 
-### 4.2 Almacenamiento en `localStorage`
-
-1. **Tema Visual:**
-   - **Clave:** `mep-theme`
-   - **Valor:** `"light"` | `"dark"`
-
 ---
 
 ## 5. Taxonomía Oficial de las 7 Ofertas Educativas de la DDC
 
-| # | Código | Oferta Curricular Oficial | Color Temático | Distribución de Registros |
+| # | Código | Oferta Curricular Oficial | Tema Visual 3D | Distribución de Registros |
 | :---: | :--- | :--- | :---: | :--- |
-| **1** | `PREESCOLAR` | **Educación Preescolar** | Turquesa (`teal`) | Materno Infantil (Interactivo I) y Transición (Interactivo II). |
-| **2** | `I-II-CICLOS` | **I y II Ciclos** | Anaranjado pastel con texto rojizo (clave `amber`) | Primaria regular de 1° a 6° año (todas las asignaturas básicas y complementarias). |
-| **3** | `III-DIVERSIFICADA` | **III Ciclo y Educación Diversificada** | Azul (`blue`) | Secundaria Académica y Técnica de 7° a 11°/12° año. |
-| **4** | `EPJA` | **Educación de Personas Jóvenes y Adultas** | Amarillo pastel (`yellow`) con texto oliva oscuro | Orientaciones y guías modulares para IPEC y CINDEA. |
-| **5** | `ESPECIAL` | **Educación Especial** | Rosa (`rose`) | Centros Especiales, Aula Integrada, Audición, Lenguaje, PNV y Primera Infancia. |
-| **6** | `INTERCULTURAL` | **Educación Intercultural** | Violeta (`purple`) | Culturas y Lenguas Indígenas oficiales: Bribri, Cabécar, Boruca, Ngäbe y Maleku. |
-| **7** | `UNIDOCENTES` | **Escuelas Unidocentes** | Verde (`emerald`) | Programas multigrado adaptados de 1° a 6° año de primaria rural. |
+| **1** | `PREESCOLAR` | **Educación Preescolar** | Ámbar Dorado (`amber`) | Materno Infantil (Interactivo I), Interactivo II, Transición y Grupo Heterogéneo. |
+| **2** | `I-II-CICLOS` | **I y II Ciclos** | Verde Vivo (`green`) | Primaria regular de 1° a 6° año (13 asignaturas básicas y complementarias). |
+| **3** | `III-DIVERSIFICADA` | **III Ciclo y Educación Diversificada** | Violeta Real (`violet`) | Secundaria Académica y Técnica de 7° a 11° año (21 asignaturas). |
+| **4** | `EPJA` | **Educación de Personas Jóvenes y Adultas (EPJA)** | Azul Océano (`ocean`) | Orientaciones y guías modulares para IPEC y CINDEA (7 asignaturas). |
+| **5** | `ESPECIAL` | **Educación Especial** | Magenta Inclusivo (`magenta`) | Centros Especiales, Aula Integrada, Audición y Lenguaje, PNV y Primera Infancia. |
+| **6** | `INTERCULTURAL` | **Educación Intercultural** | Turquesa (`teal`) | Culturas y Lenguas Indígenas oficiales: Bribri, Cabécar, Boruca y Ngäbe-Buglé. |
+| **7** | `UNIDOCENTES` | **Escuelas Unidocentes** | Naranja Terracota (`orange`) | Programas multigrado adaptados de 1° a 6° año de primaria rural (11 asignaturas). |
 
-**Total Auditado:** 197 carpetas y registros oficiales.
+**Total Auditado:** 197 carpetas y registros oficiales (207 paquetes ZIP).
 
 ---
 
@@ -204,6 +187,6 @@ Estas reglas son obligatorias y no pueden ser alteradas por ningún desarrollado
 4. **BLINDAJE DE CODIFICACIÓN UTF-8 SIN BOM:**
    - Cualquier archivo generado o editado debe garantizar codificación UTF-8 sin BOM para prevenir el mojibake.
 5. **PRESERVACIÓN DEL APP SHELL:**
-   - El Header y Footer deben permanecer fijos en la pantalla (`flex-shrink-0 z-20`). El desplazamiento vertical principal ocurre en el área de contenido (`flex-1 overflow-y-auto`); el desplazamiento horizontal local de la tabla no debe causar desbordamiento de la página.
+   - El Header y Footer deben permanecer fijos en la pantalla (`flex-shrink-0 z-20`). El desplazamiento vertical principal ocurre en el área de contenido (`flex-1 overflow-y-auto`); ninguna de las 4 vistas debe causar desbordamiento horizontal de la página.
 6. **ÚNICA FUENTE DE VERDAD (SSOT):**
    - Cualquier cambio en la arquitectura, requisitos o estructura debe actualizarse prioritariamente en `app/docs/spec.md` y documentarse en `app/docs/MEMORY.md`.

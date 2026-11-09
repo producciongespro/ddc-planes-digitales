@@ -180,11 +180,14 @@ for (let i = 0; i < leafDirs.length; i++) {
     grado = 'Escuelas Unidocentes (Multigrado 1° a 6°)';
   }
 
-  // Encontrar los archivos en la carpeta
-  const filesInDir = fs.readdirSync(leaf).filter(f => !fs.statSync(path.join(leaf, f)).isDirectory());
+  // Encontrar los archivos en la carpeta (orden natural numérico 1, 2, ..., 10, 11)
+  const filesInDir = fs
+    .readdirSync(leaf)
+    .filter(f => !fs.statSync(path.join(leaf, f)).isDirectory())
+    .sort((a, b) => a.localeCompare(b, 'es', { numeric: true }));
   const archivos = filesInDir.map(f => {
     const stat = fs.statSync(path.join(leaf, f));
-    const ext = path.extname(f).toUpperCase().replace('.', '') || 'ZIP';
+    const ext = path.extname(f).toUpperCase().replace('.', '') || 'PDF';
     const webPath = `/data/ddc-planeamientos/${rel}/${f}`;
     return {
       nombre: f,

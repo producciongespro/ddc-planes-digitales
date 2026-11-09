@@ -1,6 +1,6 @@
 # AGENTS.md — ddc-planes-digitales (Directrices del Proyecto)
 
-Aplicación web profesional oficial tipo Repositorio Curricular Digital para que los docentes del Ministerio de Educación Pública (MEP) de Costa Rica consulten, filtren y descarguen los planeamientos de estudio oficiales correspondientes al ciclo 2027 aprobados por el Consejo Superior de Educación (CSE).
+Aplicación web profesional oficial tipo Repositorio Curricular Digital para que los docentes del Ministerio de Educación Pública (MEP) de Costa Rica consulten y descarguen los planeamientos de estudio oficiales correspondientes al ciclo 2027 aprobados por el Consejo Superior de Educación (CSE).
 
 ## Ámbito de trabajo y Única Fuente de Verdad (SSOT)
 - **Carpeta de trabajo del proyecto:** `app/`.
@@ -43,19 +43,19 @@ Aplicación web profesional oficial tipo Repositorio Curricular Digital para que
 ## Stack y Estructura
 - **Tecnologías:** React 19 + JavaScript (ES Modules) + Vite + Tailwind CSS (dentro de `app/`).
 - **Arquitectura de Datos:** **100% Estática y Desacoplada**. No utiliza PHP ni escaneo de backend. El frontend consulta asíncronamente `/data/ddc-datos.json` como una API externa con cabeceras anti-caché.
-- **Iconografía:** Iconos en SVG nativo sin dependencias pesadas (`src/components/Icons.jsx`).
-- **Arquitectura de Maquetación:** **App Shell** (Header fijo superior `flex-shrink-0 z-20`, Footer fijo inferior `flex-shrink-0 z-20`, y contenedor principal `flex-1 overflow-y-auto` como único elemento con scroll).
+- **Iconografía y Botones:** Iconos en SVG nativo sin dependencias pesadas (`src/components/Icons.jsx`) y botones 3D 100% dinámicos en CSS (`<PillButton3D />`) sin polución de imágenes de botones.
+- **Ilustraciones Centrales:** Únicamente 3 ilustraciones protagonistas en `app/public/assets/images/` (`profe.png`, `bolso.png`, `cuaderno.png`), redimensionables de forma fluida (`clamp()`) en cualquier pantalla y fundidas sobre lienzo blanco institucional (`#FFFFFF`).
+- **Arquitectura de Maquetación:** **App Shell** (Header fijo superior `flex-shrink-0 z-20`, Footer fijo inferior `flex-shrink-0 z-20`, y contenedor principal `flex-1 overflow-y-auto bg-white` como único elemento con scroll).
 - **Repositorio Físico de Documentos:** Reside **ÚNICAMENTE** en `app/public/data/ddc-planeamientos/`.
   - Organizado en las **7 Ofertas Educativas Oficiales de la DDC** en kebab-case limpio:
-    1. `preescolar` (Materno Infantil y Transición).
+    1. `preescolar` (Materno Infantil, Interactivo II, Transición, Grupo Heterogéneo).
     2. `primero-y-segundo-ciclos` (Primaria: 1° a 6° año).
-    3. `tercer-ciclo-y-educacion-diversificada` (Secundaria: 7° a 11°/12° año en modalidades Académica y Técnica).
-    4. `4.EDUCACION PERSONAS JOVENES Y ADULTAS` (EPJA: Orientaciones Generales y Guías Específicas IPEC/CINDEA).
-    5. `5.EDUCACION ESPECIAL` (Centros Especiales, Aula Integrada, Audición y Lenguaje, Primera Infancia, Plan Nacional Vocacional).
-    6. `6.EDUCACION INTERCULTURAL` (Culturas y Lenguas Indígenas: Bribri, Cabécar, Boruca, Ngäbe-Buglé, Maleku).
-    7. `7.UNIDOCENTES` (Escuelas Unidocentes multigrado de 1° a 6°).
-  - Total exacto: **197 carpetas finales con paquetes ZIP y documentos normados**.
-  - Estructura multi-archivo: Cada fila soporta múltiples archivos ZIP/anexos con descarga secuencial en lote y chips interactivos individuales.
+    3. `tercer-ciclo-y-educacion-diversificada` (Secundaria: 7° a 11° año).
+    4. `educacion-personas-jovenes-y-adultas` (EPJA: Orientaciones Generales y Guías Específicas IPEC/CINDEA).
+    5. `educacion-especial` (Centros Especiales, Aula Integrada, Audición y Lenguaje, Primera Infancia, Plan Nacional Vocacional).
+    6. `educacion-intercultural` (Culturas y Lenguas Indígenas: Bribri, Cabécar, Boruca, Ngäbe-Buglé).
+    7. `unidocentes` (Escuelas Unidocentes multigrado de 1° a 6°).
+  - Total exacto: **197 carpetas finales con 207 paquetes ZIP normados**.
 
 ## Comandos Oficiales y Arnés de Pruebas
 - **Servidor local de desarrollo:** `npm run dev` (ejecutado dentro de `app/`, accesible en `http://localhost:5173`).
@@ -71,38 +71,28 @@ Aplicación web profesional oficial tipo Repositorio Curricular Digital para que
   - `git commit -m "DD-MM-YYYY: [descripción de cambios]"`
   - `git push origin ddc-planes-digitales-2.0.0`
 
-## Arquitectura de Componentes y Flujo UI
+## Arquitectura de Componentes y Flujo UI (4 Pantallas Progresivas)
 1. **Pantalla de Carga y Contingencia de Red (`SplashScreen.jsx`):**
-   - Isotipo curricular provisional institucional (escudo y libro académico MEP · DDC 2027).
-   - Spinner de doble anillo en rotación suave.
-   - Manejo de contingencia por desconexión o fallo HTTP con botón de reintento.
+   - Isotipo curricular institucional (escudo y libro académico MEP · DDC 2027), spinner de doble anillo y manejo de contingencia con botón de reintento.
 2. **Encabezado Institucional Fijo (`Header.jsx`):**
-   - Identidad visual oficial MEP / DDC (`header.jpg`).
-   - Botón institucional "Acerca de" con modal informativo (`AboutModal.jsx`).
-   - Botón toggle de tema Claro / Oscuro con persistencia en `localStorage`.
-3. **Encabezado de tres secciones:** Logo MEP a la izquierda, título y descripción al centro, y controles de tema, Acerca de y Califícame a la derecha.
-4. **Catálogo Oficial 2027 (`GeneralTable.jsx`):**
-   - **Encabezado Institucional:** Título oficial y subtítulo normativo de la DDC.
-   - **Barra de Herramientas Unificada (Opción A):** Franja de una sola fila compacta con buscador predictivo libre, métricas, botón "Restablecer" y selector de paginado (`15`, `20`, `50`, `Todos`).
-   - **Filtros por Columna con Checkboxes (`ColumnFilter.jsx`):** Popovers flotantes multiselección con estado borrador (draft), botones *Aplicar*, *Cancelar*, *Marcar todas* y *Desmarcar todas*.
-   - **Tabla interactiva de 4 columnas:** *Oferta Educativa*, *Asignatura* (con icono vectorial temático), *Grado* y *Archivos* (chips interactivos individuales con tamaño en KB/MB y descarga directa).
-   - **Paginador matemático seguro:** Ventana deslizante (`paginasVisibles`) con botones *« Primero*, *‹ Anterior*, numéricos, *Siguiente ›* y *Último »*.
-5. **Pie de Página Fijo (`Footer.jsx`):**
-   - Fondo transparente con imagen institucional `footer.jpg` escalada al 100% (`bg-cover`) y badge oficial con versión `1.0.1`.
+   - Tres secciones: Logo MEP (`header.jpg`) a la izquierda, título «Repositorio de Planeamientos Curriculares» al centro con ayuda flotante, y controles **`Inicio`**, **`Acerca de`** (`AboutModal.jsx`) y **`¡Califícame!`** a la derecha (sin selector de modo oscuro; tema único claro institucional `#FFFFFF`).
+3. **Navegador Visual Guiado en 4 Pantallas (`GeneralTable.jsx`):**
+   - **Barra Discreta de Migas de Pan (`<BreadcrumbBar />`):** Muestra el título de la etapa actual a la izquierda y a la derecha el botón `← Volver` junto con la ruta clicable (`Ofertas Educativas › Asignatura › Grado`).
+   - **Vista 1 (`Ofertas Educativas`):** Ilustración central `profe.png` redimensionable rodeada en órbita por los 7 botones 3D de las Ofertas Educativas Oficiales.
+   - **Vista 2 (`Asignaturas`):** Ilustración central `bolso.png` + insignia de la Oferta seleccionada al pie, rodeada por los botones 3D de las asignaturas de esa oferta con su icono relativo.
+   - **Vista 3 (`Grado`):** Ilustración central `cuaderno.png` con el nombre de la Asignatura impreso dinámicamente en mayúsculas sobre la portada, rodeado por los botones 3D de los grados aplicables en orden académico.
+   - **Vista 4 (`Contenido`):** Tabla limpia con encabezado **`CONTENIDO DESCARGABLE`** (nombre del archivo a la izquierda y botón `ZIP (tamaño) ↓` a la derecha) y, justo **debajo de la tabla**, el botón 3D **`Descargar todo`**.
+4. **Pie de Página Fijo (`Footer.jsx`):**
+   - Imagen institucional `footer.jpg` escalada al 100% (`bg-cover`) y badge oficial con versión `1.0.1`.
 
 ## Datos y Persistencia
 - **Catálogo Maestro:** Reside exclusivamente en `app/public/data/ddc-datos.json` (rutas relativas universales, sin rutas físicas de Windows).
-- **Persistencia de preferencia visual:** Solo el tema se guarda en `localStorage` con la clave `mep-theme`. No se registran descargas.
+- **Tema Visual Único:** Lienzo blanco institucional (`#FFFFFF`) sin persistencia de modo oscuro ni estadísticas locales.
 
 ## Convenciones de Código y Calidad
 - **Tratamiento en UI:** Todo texto dirigido a la persona usuaria debe emplear tratamiento formal de usted («seleccione», «consulte», «descargue»).
 - **Ortografía RAE estricta en UI vs Rutas:** En la interfaz visual todos los nombres llevan acentuación y diacríticos oficiales (*Matemática*, *Educación Cívica*, *Sétimo*, *Décimo*, *II Ciclos*, *III Ciclo*, etc.). Las rutas en disco se mantienen limpias y sin tildes para compatibilidad con servidores Apache/Linux.
 - **Regla Estricta Anti-Mojibake y Codificación UTF-8:**
-  El **mojibake** (corrupción de caracteres diacríticos como tildes, eñes o signos: `Ã¡`, `Ã©`, `Ã­`, `Ã³`, `Ãº`, `Ã±`, `Â°`, `â€“`) está terminantemente prohibido en cualquier archivo del proyecto. Para prevenirlo de forma infalible, se establecen las siguientes directrices obligatorias:
-  1. **Codificación Universal UTF-8 sin BOM:** Todo archivo creado o modificado (`.json`, `.jsx`, `.js`, `.html`, `.md`, `.css`, `.txt`) DEBE guardarse estrictamente en formato **UTF-8 sin BOM** (Byte Order Mark).
-  2. **Operaciones en Terminal y Scripts (PowerShell / Node.js):** Nunca asumir la codificación por defecto del sistema operativo (evitar Windows-1252 o ANSI). En Node.js, siempre declarar explícitamente `encoding: 'utf8'` en lecturas y escrituras (`fs.readFileSync(path, 'utf8')`, `fs.writeFileSync(path, data, 'utf8')`). En PowerShell, forzar `[Console]::OutputEncoding = [System.Text.Encoding]::UTF8` y parámetros `-Encoding utf8` en `Set-Content` / `Out-File`.
-  3. **Catálogo `public/data/ddc-datos.json`:** Los valores con tildes (*Educación*, *Orientación*, *Ciencias*, *Español*, *Francés*, *Guía*, *Música*, *Filosofía*, etc.) deben conservarse como caracteres UTF-8 nativos directos y legibles, nunca con dobles codificaciones ni caracteres rotos.
-  4. **Metadatos Web y HTTP:** `index.html` debe mantener `<meta charset="UTF-8" />` como primer hijo del `<head>`.
-  5. **Auditoría Preventiva Obligatoria:** Antes de dar por concluida cualquier edición, se debe verificar que los textos con caracteres especiales en español (`á, é, í, ó, ú, ñ, Ñ, ¿, ¡, °`) se lean limpios e impecables en la interfaz y en disco.
+  Todo archivo creado o modificado (`.json`, `.jsx`, `.js`, `.html`, `.md`, `.css`, `.txt`, `.toml`) DEBE guardarse estrictamente en formato **UTF-8 sin BOM**.
 - **Certificación Multi-Pantalla Obligatoria (20 Viewports):** Única y exclusivamente al momento de ejecutar commit y sincronización en la nube, todo cambio se somete a la batería de pruebas en 20 resoluciones comerciales estándar (de 320px a 3840px) para certificar cero desbordamientos horizontales (`overflow-x`) y preservación del App Shell.
 - **Memoria técnica:** Mantener actualizado `app/docs/MEMORY.md` al concluir cada tarea relevante.

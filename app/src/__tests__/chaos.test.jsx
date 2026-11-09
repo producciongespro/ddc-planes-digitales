@@ -10,18 +10,28 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
     vi.restoreAllMocks();
   });
 
-  it('El catálogo es la única sección y descargar un chip no registra estadísticas', async () => {
+  it('El flujo guiado de 4 pantallas permite llegar a Contenido y descargar un archivo sin registrar estadísticas', async () => {
     const archivo = { nombre: 'plan.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/plan.zip', tamanoLegible: '1 KB' };
     global.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: async () => [{
-        id: 'DDC-2027-001', ofertaNombre: 'Educación Preescolar',
-        asignatura: 'Matemática', grado: 'Transición', archivos: [archivo]
+        id: 'DDC-2027-001',
+        ofertaCodigo: 'PREESCOLAR',
+        ofertaNombre: 'Educación Preescolar',
+        asignatura: 'Matemática',
+        grado: 'Transición',
+        archivos: [archivo]
       }]
     });
     const clickSpy = vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(() => {});
 
     render(<App />);
+
+    // Recorrer las 4 pantallas progresivas: Ofertas Educativas -> Asignaturas -> Grado -> Contenido
+    fireEvent.click(await screen.findByRole('button', { name: /Educación Preescolar/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Matemática/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Transición/i }));
+
     const chip = await screen.findByTitle(/Descargar archivo individual: plan.zip/i);
     expect(screen.queryByText(/Top de Descargas Docentes/i)).not.toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Reiniciar datos|Reiniciar descargas/i })).not.toBeInTheDocument();
@@ -33,13 +43,17 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
     clickSpy.mockRestore();
   });
 
-  it('solicita en orden todos los ZIP de una fila sin registrar estadísticas', async () => {
+  it('solicita en orden todos los ZIP en la Vista 4 (Contenido) mediante Descargar todo sin registrar estadísticas', async () => {
     const archivos = [1, 2].map((n) => ({ nombre: `plan-${n}.zip`, tipo: 'ZIP', ruta: `/data/ddc-planeamientos/plan-${n}.zip`, tamanoLegible: '1 KB' }));
     global.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: async () => [{
-        id: 'DDC-2027-001', ofertaNombre: 'Educación Preescolar',
-        asignatura: 'Matemática', grado: 'Transición', archivos
+        id: 'DDC-2027-001',
+        ofertaCodigo: 'PREESCOLAR',
+        ofertaNombre: 'Educación Preescolar',
+        asignatura: 'Matemática',
+        grado: 'Transición',
+        archivos
       }]
     });
     const rutasSolicitadas = [];
@@ -48,8 +62,14 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
     });
 
     render(<App />);
-    fireEvent.click(await screen.findByRole('button', { name: 'Descargar todos (2)' }));
-    expect(screen.getByRole('button', { name: 'Solicitando...' })).toBeDisabled();
+
+    // Avanzar hasta Vista 4 (Contenido)
+    fireEvent.click(await screen.findByRole('button', { name: /Educación Preescolar/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Matemática/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Transición/i }));
+
+    fireEvent.click(await screen.findByRole('button', { name: /Descargar todo \(2\)/i }));
+    expect(screen.getByRole('button', { name: /Solicitando descargas/i })).toBeDisabled();
     await waitFor(() => expect(rutasSolicitadas).toEqual(archivos.map((archivo) => archivo.ruta)));
     expect(await screen.findByRole('status')).toHaveTextContent('Se solicitaron 2 descargas');
     expect(localStorage.getItem('mep-ddc-planes-2027-downloads')).toBeNull();
@@ -87,15 +107,15 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
       json: async () => [
         {
           id: 'DDC-2027-001',
-          ofertaCodigo: 'PRIMARIA',
-          ofertaNombre: 'I y II Ciclos (Primaria)',
-          ofertaBadgeColor: 'emerald',
+          ofertaCodigo: 'I-II-CICLOS',
+          ofertaNombre: 'I y II Ciclos',
+          ofertaBadgeColor: 'amber',
           asignatura: 'Ciencias',
-          grado: '4° Año',
+          grado: 'Cuarto Año (4°)',
           rutaRelativa: 'ciencias/4',
-          archivos: [{ nombre: 'Plan.zip', tipo: 'ZIP', ruta: '/p.zip', tamanoBytes: 500, tamanoLegible: '500 B' }],
+          archivos: [{ nombre: 'Plan.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/p.zip', tamanoBytes: 500, tamanoLegible: '500 B' }],
           archivoPrincipal: 'Plan.zip',
-          rutaDescarga: '/p.zip',
+          rutaDescarga: '/data/ddc-planeamientos/p.zip',
           vigencia: '2027'
         }
       ]
@@ -103,10 +123,15 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
 
     fireEvent.click(retryBtn);
 
-    // Debe salir del SplashScreen y montar la aplicación principal
+    // Debe salir del SplashScreen y montar la Vista 1 de Ofertas Educativas
     const mainElement = await screen.findByRole('main');
     expect(mainElement).toBeInTheDocument();
-    expect(screen.getByText('Ciencias')).toBeInTheDocument();
+    const ofertaBtn = screen.getByRole('button', { name: /I y II Ciclos/i });
+    expect(ofertaBtn).toBeInTheDocument();
+
+    // Al seleccionar la oferta debe mostrar la asignatura Ciencias en la Vista 2
+    fireEvent.click(ofertaBtn);
+    expect(screen.getByRole('button', { name: /Ciencias/i })).toBeInTheDocument();
   });
 
   it('CHAOS-03: JSON corrupto sintácticamente en el servidor no rompe el ciclo de vida de React', async () => {
@@ -148,26 +173,27 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
     expect(errorDetails).toBeInTheDocument();
   });
 
-  it('CHAOS-07: GeneralTable renderiza de forma tolerante ante registros con datos nulos o corruptos', () => {
+  it('CHAOS-07: GeneralTable renderiza de forma tolerante ante registros con datos nulos o corruptos a lo largo de las 4 vistas', () => {
     const corruptPlanes = [
       {
         id: 'DDC-2027-ERR-1',
         ofertaCodigo: null,
         ofertaNombre: 'Educación Especial',
-        ofertaBadgeColor: undefined, // Color no definido
+        ofertaBadgeColor: undefined,
         asignatura: 'Estimulación Temprana',
-        grado: null, // Grado nulo
+        grado: 'Aula Integrada',
         rutaRelativa: '',
-        archivos: null, // Lista de archivos nula
+        archivos: null,
         archivoPrincipal: null,
         rutaDescarga: '',
         vigencia: null
       },
       {
         id: 'DDC-2027-ERR-2',
-        ofertaNombre: 'Educación Unidocente',
+        ofertaNombre: 'Escuelas Unidocentes',
         asignatura: 'Guía General',
-        archivos: [] // Sin archivos
+        grado: 'Primer Año (1°)',
+        archivos: []
       }
     ];
 
@@ -175,26 +201,29 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
       render(
         <GeneralTable
           planes={corruptPlanes}
-          filtros={{ ofertas: [], asignaturas: [], grados: [], texto: '' }}
           onDownload={vi.fn()}
-          onFiltrosChange={vi.fn()}
-          onResetFiltros={vi.fn()}
+          onDownloadAll={vi.fn()}
         />
       );
     }).not.toThrow();
 
-    expect(screen.getByText('Estimulación Temprana')).toBeInTheDocument();
-    expect(screen.getAllByText('Sin archivos')).toHaveLength(2);
+    // Navegar hasta la Vista 4 de un registro con archivos: null sin lanzar excepción
+    fireEvent.click(screen.getByRole('button', { name: /Educación Especial/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Estimulación Temprana/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Aula Integrada/i }));
+
+    expect(screen.getByText(/No se encontraron archivos asociados a este nivel curricular/i)).toBeInTheDocument();
   });
 
-  it('CHAOS-08: Ráfaga de clics frenéticos en descarga actualiza el estado de forma consistente', () => {
+  it('CHAOS-08: Ráfaga de clics frenéticos en descarga individual en Vista 4 mantiene consistencia', () => {
     const mockPlanes = [
       {
         id: 'DDC-2027-RAPID',
-        ofertaNombre: 'I y II Ciclos (Primaria)',
+        ofertaCodigo: 'I-II-CICLOS',
+        ofertaNombre: 'I y II Ciclos',
         asignatura: 'Matemática',
-        grado: '1° Año',
-        archivos: [{ nombre: 'M.zip', tipo: 'ZIP', ruta: '/m.zip', tamanoBytes: 100, tamanoLegible: '100 B' }]
+        grado: 'Primer Año (1°)',
+        archivos: [{ nombre: 'M.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/m.zip', tamanoBytes: 100, tamanoLegible: '100 B' }]
       }
     ];
 
@@ -203,12 +232,15 @@ describe('Suite 6: chaos (Arnés de Caos y Resiliencia Extrema)', () => {
     render(
       <GeneralTable
         planes={mockPlanes}
-        filtros={{ ofertas: [], asignaturas: [], grados: [], texto: '' }}
         onDownload={downloadMock}
-        onFiltrosChange={vi.fn()}
-        onResetFiltros={vi.fn()}
+        onDownloadAll={vi.fn()}
       />
     );
+
+    // Avanzar por las 4 pantallas hasta Contenido
+    fireEvent.click(screen.getByRole('button', { name: /I y II Ciclos/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Matemática/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Primer Año \(1°\)/i }));
 
     const downloadBtn = screen.getByTitle(/Descargar archivo individual:/i);
 

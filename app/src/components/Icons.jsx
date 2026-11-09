@@ -122,7 +122,7 @@ export function IconFrances({ className = "w-6 h-6" }) {
   );
 }
 
-// 11. Educación Física (Movimiento y deporte / Silbato)
+// 11. Educación Física (Movimiento y deporte)
 export function IconEducacionFisica({ className = "w-6 h-6" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -178,11 +178,161 @@ export function IconFilosofia({ className = "w-6 h-6" }) {
   );
 }
 
-// Selector dinámico institucional de icono por asignatura
-export function AsignaturaIcon({ asignatura, className = "w-6 h-6" }) {
+// 16. Artes Industriales (Engranaje / Herramienta técnica)
+export function IconArtesIndustriales({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="3" />
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+    </svg>
+  );
+}
+
+// 17. Educación para el Hogar / Vida Cotidiana
+export function IconEducacionHogar({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.5z" />
+      <path d="M12 17s-3.5-2.2-3.5-4.2a2 2 0 0 1 3.5-1.3 2 2 0 0 1 3.5 1.3C15.5 14.8 12 17 12 17z" />
+    </svg>
+  );
+}
+
+// 18. Orientación (Brújula de proyecto de vida)
+export function IconOrientacion({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+    </svg>
+  );
+}
+
+// 19. Psicología / Afectividad (Bienestar emocional y empatía)
+export function IconPsicologia({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+    </svg>
+  );
+}
+
+// 20. Italiano / Lenguas Extranjeras (Diálogo lingüístico)
+export function IconIdioma({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      <path d="M8 9h8" />
+      <path d="M8 13h5" />
+    </svg>
+  );
+}
+
+// 21. Cultura y Lengua Indígena (Patrimonio ancestral / Sol)
+export function IconIntercultural({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v3" />
+      <path d="M12 19v3" />
+      <path d="M4.93 4.93l2.12 2.12" />
+      <path d="M16.95 16.95l2.12 2.12" />
+      <path d="M2 12h3" />
+      <path d="M19 12h3" />
+      <path d="M4.93 19.07l2.12-2.12" />
+      <path d="M16.95 7.05l2.12-2.12" />
+    </svg>
+  );
+}
+
+// 22. Tecnologías / Informática (Computadora)
+export function IconTecnologia({ className = "w-6 h-6" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="3" width="20" height="14" rx="2" />
+      <line x1="8" y1="21" x2="16" y2="21" />
+      <line x1="12" y1="17" x2="12" y2="21" />
+    </svg>
+  );
+}
+
+// Selector dinámico institucional de icono por Oferta Educativa (Vista 1)
+export function OfertaIcon({ ofertaCodigo = '', ofertaNombre = '', className = "w-5 h-5" }) {
+  const key = `${ofertaCodigo} ${ofertaNombre}`.toUpperCase();
+
+  if (key.includes('PREESCOLAR')) {
+    // Bloques / Estrella de primera infancia
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </svg>
+    );
+  }
+
+  if (key.includes('I-II-CICLOS') || key.includes('PRIMARIA') || key.includes('I Y II CICLOS')) {
+    // Libro abierto escolar
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      </svg>
+    );
+  }
+
+  if (key.includes('DIVERSIFICADA') || key.includes('III CICLO')) {
+    // Birrete académico de secundaria
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+      </svg>
+    );
+  }
+
+  if (key.includes('EPJA') || key.includes('ADULTAS') || key.includes('JÓVENES') || key.includes('JOVENES')) {
+    // Comunidad de personas jóvenes y adultas
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+    );
+  }
+
+  if (key.includes('ESPECIAL')) {
+    // Corazón de inclusión y apoyo educativo
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+      </svg>
+    );
+  }
+
+  if (key.includes('INTERCULTURAL')) {
+    return <IconIntercultural className={className} />;
+  }
+
+  if (key.includes('UNIDOCENTES')) {
+    // Escuela rural multigrado
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.5z" />
+        <path d="M9 21V12h6v9" />
+      </svg>
+    );
+  }
+
+  return <IconDocument className={className} />;
+}
+
+// Selector dinámico institucional de icono por asignatura (Vista 2)
+export function AsignaturaIcon({ asignatura = '', className = "w-6 h-6" }) {
   switch (asignatura) {
     case 'Estudios Sociales':
       return <IconEstudiosSociales className={className} />;
+    case 'Matemática':
     case 'Matemáticas':
       return <IconMatematicas className={className} />;
     case 'Español':
@@ -201,22 +351,76 @@ export function AsignaturaIcon({ asignatura, className = "w-6 h-6" }) {
       return <IconIngles className={className} />;
     case 'Francés':
       return <IconFrances className={className} />;
+    case 'Italiano':
+      return <IconIdioma className={className} />;
     case 'Educación Física':
       return <IconEducacionFisica className={className} />;
     case 'Educación Musical':
       return <IconEducacionMusical className={className} />;
     case 'Artes Plásticas':
       return <IconArtesPlasticas className={className} />;
+    case 'Artes Industriales':
+      return <IconArtesIndustriales className={className} />;
+    case 'Educación para el Hogar':
+      return <IconEducacionHogar className={className} />;
     case 'Educación Religiosa':
       return <IconEducacionReligiosa className={className} />;
+    case 'Orientación':
+      return <IconOrientacion className={className} />;
+    case 'Psicología':
+    case 'Afectividad y Sexualidad Integral':
+    case 'Educación para la Paz y la Convivencia':
+      return <IconPsicologia className={className} />;
     case 'Filosofía':
       return <IconFilosofia className={className} />;
-    default:
+    default: {
+      const norm = String(asignatura).toLowerCase();
+      if (norm.includes('matem')) return <IconMatematicas className={className} />;
+      if (norm.includes('social')) return <IconEstudiosSociales className={className} />;
+      if (norm.includes('español') || norm.includes('espanol') || norm.includes('lectoescritura')) return <IconEspanol className={className} />;
+      if (norm.includes('cienc')) return <IconCiencias className={className} />;
+      if (norm.includes('cívic') || norm.includes('civic')) return <IconEducacionCivica className={className} />;
+      if (norm.includes('biolog')) return <IconBiologia className={className} />;
+      if (norm.includes('físic') && !norm.includes('educación')) return <IconFisica className={className} />;
+      if (norm.includes('químic') || norm.includes('quimic')) return <IconQuimica className={className} />;
+      if (norm.includes('inglés') || norm.includes('ingles')) return <IconIngles className={className} />;
+      if (norm.includes('francés') || norm.includes('frances')) return <IconFrances className={className} />;
+      if (norm.includes('italiano') || norm.includes('lengua')) return <IconIdioma className={className} />;
+      if (norm.includes('cultura') || norm.includes('indígena') || norm.includes('indigena')) return <IconIntercultural className={className} />;
+      if (norm.includes('músic') || norm.includes('music')) return <IconEducacionMusical className={className} />;
+      if (norm.includes('plástic') || norm.includes('plastic') || norm.includes('arte')) return <IconArtesPlasticas className={className} />;
+      if (norm.includes('industrial') || norm.includes('vocacional')) return <IconArtesIndustriales className={className} />;
+      if (norm.includes('hogar') || norm.includes('cotidiana')) return <IconEducacionHogar className={className} />;
+      if (norm.includes('orientac') || norm.includes('guía') || norm.includes('guia')) return <IconOrientacion className={className} />;
+      if (norm.includes('psicolog') || norm.includes('afectividad') || norm.includes('especial') || norm.includes('audición') || norm.includes('infancia')) return <IconPsicologia className={className} />;
+      if (norm.includes('filosof')) return <IconFilosofia className={className} />;
+      if (norm.includes('informát') || norm.includes('tecnolog')) return <IconTecnologia className={className} />;
+      if (norm.includes('preescolar')) return <OfertaIcon ofertaCodigo="PREESCOLAR" className={className} />;
+      if (norm.includes('unidocent')) return <OfertaIcon ofertaCodigo="UNIDOCENTES" className={className} />;
       return <IconDocument className={className} />;
+    }
   }
 }
 
 // Iconos UI utilitarios
+export function IconHome({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.5z" />
+      <polyline points="9 21 9 12 15 12 15 21" />
+    </svg>
+  );
+}
+
+export function IconArrowLeft({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="19" y1="12" x2="5" y2="12" />
+      <polyline points="12 19 5 12 12 5" />
+    </svg>
+  );
+}
+
 export function IconSearch({ className = "w-5 h-5" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -306,7 +510,7 @@ export function IconTable({ className = "w-5 h-5" }) {
   );
 }
 
-// Icono Sol para modo claro
+// Icono Sol (mantenido por compatibilidad de exportación)
 export function IconSun({ className = "w-5 h-5" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -323,7 +527,7 @@ export function IconSun({ className = "w-5 h-5" }) {
   );
 }
 
-// Icono Luna para modo oscuro
+// Icono Luna (mantenido por compatibilidad de exportación)
 export function IconMoon({ className = "w-5 h-5" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -353,5 +557,3 @@ export function IconInfo({ className = "w-5 h-5" }) {
     </svg>
   );
 }
-
-

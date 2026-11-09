@@ -201,7 +201,7 @@ describe('Suite 4: guardrails (Auditoría Automatizada de Seguridad y Arnés)', 
     ).toEqual([]);
   });
 
-  it('TEST-29: Guardrail Físico de Archivos ZIP (File Kebab-Case Guardrail)', () => {
+  it('TEST-29: Guardrail Físico de Documentos Descomprimidos (Cero archivos .zip, Kebab-Case estricto)', () => {
     expect(fs.existsSync(baseFilesDir)).toBe(true);
     const allFiles = getFilesRecursively(baseFilesDir);
     expect(allFiles.length).toBeGreaterThan(0);
@@ -212,19 +212,19 @@ describe('Suite 4: guardrails (Auditoría Automatizada de Seguridad y Arnés)', 
       const fileName = path.basename(filePath);
       const relativeFile = path.relative(publicDir, filePath).replace(/\\/g, '/');
 
-      // Validar: nombre kebab-case terminado en .zip, sin espacios, sin mayúsculas, sin puntos intermedios
-      if (!/^[a-z0-9]+(-[a-z0-9]+)*\.zip$/.test(fileName)) {
+      // Validar: nombre kebab-case terminado en documento descomprimido (.pdf, .docx, .doc, .xlsx, .pptx) y prohibición absoluta de .zip
+      if (!/^[a-z0-9]+(-[a-z0-9]+)*\.(pdf|docx|doc|xlsx|pptx)$/.test(fileName)) {
         offendingFiles.push({
           archivo: relativeFile,
           nombreArchivo: fileName,
-          motivo: 'Debe terminar en .zip y contener exclusivamente minúsculas y guiones (ej: "plan-matematica-primero.zip"), sin espacios ni puntos extra.'
+          motivo: 'Los documentos deben estar descomprimidos (.pdf, .docx, .doc, .xlsx, .pptx) en kebab-case sin archivos .zip.'
         });
       }
     });
 
     expect(
       offendingFiles,
-      `[GUARDRAIL ERROR - ARCHIVO INVÁLIDO DETECTADO EN DISCO]\nLos siguientes archivos violan las mejores prácticas web:\n${JSON.stringify(offendingFiles, null, 2)}`
+      `[GUARDRAIL ERROR - ARCHIVO INVÁLIDO O COMPRIMIDO DETECTADO EN DISCO]\nLos siguientes archivos violan la política de documentos descomprimidos:\n${JSON.stringify(offendingFiles, null, 2)}`
     ).toEqual([]);
   });
 
@@ -262,9 +262,8 @@ describe('Suite 4: guardrails (Auditoría Automatizada de Seguridad y Arnés)', 
     ).toEqual([]);
 
     expect(principalesSinAnexo, 'Las rutas principales deben aparecer en archivos[].ruta').toEqual([]);
-    expect(referenciasDuplicadas, 'Cada ZIP debe figurar una sola vez en archivos[]').toEqual([]);
+    expect(referenciasDuplicadas, 'Cada documento debe figurar una sola vez en archivos[]').toEqual([]);
 
     expect(physicalFiles.length).toBe(catalogFiles.length);
   });
 });
-

@@ -30,7 +30,7 @@ export const COMMERCIAL_VIEWPORTS = [
 describe('Suite 5: responsive (Matriz de 20 Dimensiones Comerciales de Pantalla)', () => {
   beforeEach(() => {
     localStorage.clear();
-    // Simular respuesta exitosa inmediata para que App renderice el App Shell
+    // Simular respuesta exitosa inmediata para que App renderice el App Shell y la Vista 1
     global.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: async () => [
@@ -38,9 +38,9 @@ describe('Suite 5: responsive (Matriz de 20 Dimensiones Comerciales de Pantalla)
           id: 'DDC-2027-001',
           ofertaCodigo: 'PREESCOLAR',
           ofertaNombre: 'Educación Preescolar',
-          ofertaBadgeColor: 'amber',
-          asignatura: 'Interactivo I',
-          grado: 'Materno Infantil',
+          ofertaBadgeColor: 'teal',
+          asignatura: 'Educación Preescolar',
+          grado: 'Materno Infantil (Interactivo I)',
           rutaRelativa: 'preescolar/interactivo-i',
           archivos: [{ nombre: 'plan-interactivo-i.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/preescolar/interactivo-i/plan-interactivo-i.zip', tamanoBytes: 1000, tamanoLegible: '1 KB' }],
           archivoPrincipal: 'plan-interactivo-i.zip',
@@ -65,7 +65,12 @@ describe('Suite 5: responsive (Matriz de 20 Dimensiones Comerciales de Pantalla)
       const mainElement = await screen.findByRole('main');
       expect(mainElement).toBeInTheDocument();
 
-      // Validar anclaje de Header fijo (flex-shrink-0 z-20)
+      // Validar renderizado de la Vista 1 (Ofertas Educativas) y ausencia de selector de modo oscuro
+      expect(screen.getByRole('heading', { name: 'Ofertas Educativas' })).toBeInTheDocument();
+      expect(screen.getByAltText('Docente guía de Ofertas Educativas')).toBeInTheDocument();
+      expect(screen.queryByRole('button', { name: /modo oscuro|cambiar tema/i })).not.toBeInTheDocument();
+
+      // Validar anclaje de Header fijo y Footer fijo (flex-shrink-0 z-20)
       const headerContainers = container.querySelectorAll('.flex-shrink-0.z-20');
       expect(headerContainers.length).toBeGreaterThanOrEqual(2); // Header y Footer
 

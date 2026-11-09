@@ -13,6 +13,7 @@ export default function App() {
   const [loadError, setLoadError] = useState(null);
   const [downloadingId, setDownloadingId] = useState(null);
   const [downloadNotice, setDownloadNotice] = useState(null);
+  const [resetKey, setResetKey] = useState(0);
   const bulkInProgress = useRef(false);
 
   // Carga asíncrona desacoplada del catálogo curricular oficial desde /data/ddc-datos.json
@@ -36,77 +37,45 @@ export default function App() {
   };
 
   useEffect(() => {
+    // Asegurar lienzo claro institucional limpio eliminando cualquier clase 'dark' residual
+    document.documentElement.classList.remove('dark');
     cargarCatalogo();
   }, []);
 
-  // Estado unificado de filtros
-  const [filtros, setFiltros] = useState({
-    texto: '',
-    ofertas: [],
-    asignaturas: [],
-    grados: []
-  });
-
   // Modales institucionales
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
-
-  // Estado del tema Claro / Oscuro con persistencia en localStorage
-  const [darkMode, setDarkMode] = useState(() => {
-    try {
-      const savedTheme = localStorage.getItem('mep-theme');
-      if (savedTheme) {
-        return savedTheme === 'dark';
-      }
-      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    } catch {
-      return false;
-    }
-  });
-
-  // Aplicar clase 'dark' a <html> y persistir preferencia de tema
-  useEffect(() => {
-    const root = document.documentElement;
-    if (darkMode) {
-      root.classList.add('dark');
-      try {
-        localStorage.setItem('mep-theme', 'dark');
-      } catch (e) {
-        console.error(e);
-      }
-    } else {
-      root.classList.remove('dark');
-      try {
-        localStorage.setItem('mep-theme', 'light');
-      } catch (e) {
-        console.error(e);
-      }
-    }
-  }, [darkMode]);
-
-  const toggleTheme = () => {
-    setDarkMode((prev) => !prev);
-  };
 
   // Disparador unitario de descarga segura en el navegador
   const triggerBrowserDownload = (ruta, nombre) => {
     if (!ruta) return;
     const link = document.createElement('a');
     link.href = ruta;
-    link.download = nombre || 'planeamiento.zip';
+    link.download = nombre || 'planeamiento.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  // Cada chip descarga únicamente el archivo seleccionado.
+  // Descarga individual de un archivo curricular
   const handleDownload = (_doc, fileObj) => {
     if (fileObj) triggerBrowserDownload(fileObj.ruta, fileObj.nombre);
   };
 
-  // El navegador puede limitar las descargas múltiples; solo confirmamos que se solicitaron.
+  // Descarga completa de los archivos del nivel seleccionado (1 o múltiples archivos)
   const handleDownloadAll = async (doc) => {
+    if (!doc || bulkInProgress.current) return;
     const files = Array.isArray(doc.archivos) ? doc.archivos : [];
-    if (files.length < 2 || bulkInProgress.current) return;
+    if (files.length === 0) return;
+
+    if (files.length === 1) {
+      triggerBrowserDownload(files[0].ruta, files[0].nombre);
+      setDownloadNotice({
+        id: doc.id,
+        message: 'Se inició la descarga del archivo curricular oficial.'
+      });
+      return;
+    }
+
     bulkInProgress.current = true;
     setDownloadingId(doc.id);
     setDownloadNotice(null);
@@ -120,21 +89,20 @@ export default function App() {
         message: `Se solicitaron ${files.length} descargas. Si el navegador solicita permiso para descargar varios archivos, permítalo.`
       });
     } catch {
-      setDownloadNotice({ id: doc.id, message: 'No se pudieron solicitar todas las descargas. Descargue los archivos individualmente.' });
+      setDownloadNotice({
+        id: doc.id,
+        message: 'No se pudieron solicitar todas las descargas. Descargue los archivos individualmente.'
+      });
     } finally {
       bulkInProgress.current = false;
       setDownloadingId(null);
     }
   };
 
-  // Limpiar todos los filtros activos
-  const handleResetFiltros = () => {
-    setFiltros({
-      texto: '',
-      ofertas: [],
-      asignaturas: [],
-      grados: []
-    });
+  // Volver a la Vista 1 (Ofertas Educativas) desde el botón Inicio del Header
+  const handleGoHome = () => {
+    setDownloadNotice(null);
+    setResetKey((prev) => prev + 1);
   };
 
   // 0. PANTALLA DE CARGA (SPLASH SCREEN) O ERROR DE RED
@@ -148,7 +116,7 @@ export default function App() {
   }
 
   return (
-    <div className="h-screen flex flex-col bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-200 overflow-hidden">
+    <div className="h-screen flex flex-col bg-white text-slate-800 font-sans selection:bg-blue-600 selection:text-white overflow-hidden">
       {/* 0. WCAG 2.4.1: Enlace accesible de salto al contenido principal (Skip Link) */}
       <a
         href="#main-content"
@@ -160,31 +128,31 @@ export default function App() {
       {/* 1. SECCIÓN: ENCABEZADO (Siempre fijo arriba) */}
       <div className="flex-shrink-0 z-20 shadow-md">
         <Header
-          darkMode={darkMode}
-          onToggleTheme={toggleTheme}
+          onGoHome={handleGoHome}
           onOpenAbout={() => setIsAboutModalOpen(true)}
         />
       </div>
 
       {/* 2. SECCIÓN: CONTENIDO PRINCIPAL (Única área con scroll vertical fluido) */}
-      <div className="flex-1 overflow-y-auto min-h-0 focus:outline-none">
-        <main id="main-content" tabIndex="-1" className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 focus:outline-none">
-          {/* Catálogo oficial con filtros y tabla */}
+      <div className="flex-1 overflow-y-auto min-h-0 bg-white focus:outline-none">
+        <main
+          id="main-content"
+          tabIndex="-1"
+          className="max-w-[1600px] w-full mx-auto px-3 sm:px-6 lg:px-10 py-4 sm:py-6 focus:outline-none min-h-full flex flex-col"
+        >
+          {/* Flujo interactivo guiado de 4 vistas progresivas */}
           <GeneralTable
             planes={planes}
             onDownload={handleDownload}
             onDownloadAll={handleDownloadAll}
             downloadingId={downloadingId}
             downloadNotice={downloadNotice}
-            filtros={filtros}
-            onFiltrosChange={setFiltros}
-            onResetFiltros={handleResetFiltros}
+            resetKey={resetKey}
           />
-
         </main>
       </div>
 
-      {/* 3. SECCIÓN: PIE DE PÁGINA (Siempre fijo abajo con animación DDC) */}
+      {/* 3. SECCIÓN: PIE DE PÁGINA (Siempre fijo abajo) */}
       <div className="flex-shrink-0 z-20 shadow-lg">
         <Footer />
       </div>

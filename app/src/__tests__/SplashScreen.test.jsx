@@ -7,7 +7,7 @@ describe('Suite 3: SplashScreen (Resiliencia y Ciclo de Vida)', () => {
   it('TEST-14: SplashScreen renderiza spinner y textos de carga cuando no hay error', () => {
     render(<SplashScreen error={null} onRetry={vi.fn()} />);
 
-    expect(screen.getByText(/Planes de Estudio Digitales/i)).toBeInTheDocument();
+    expect(screen.getByText(/Plantillas de Planeamientos Didácticos/i)).toBeInTheDocument();
     expect(screen.getByText(/Ministerio de Educación Pública de Costa Rica/i)).toBeInTheDocument();
     expect(screen.getByText(/Cargando catálogo curricular\.\.\./i)).toBeInTheDocument();
   });

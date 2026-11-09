@@ -1,221 +1,348 @@
 import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
-import { render, screen, fireEvent, waitFor, within } from '@testing-library/react';
+import { render, screen, fireEvent, within, act } from '@testing-library/react';
 import { GeneralTable } from '../components/GeneralTable';
+import { Header } from '../components/Header';
 
-const mockPlanes = Array.from({ length: 45 }, (_, i) => ({
-  id: `DDC-2027-${String(i + 1).padStart(3, '0')}`,
-  ofertaCodigo: i < 15 ? 'PRIMARIA' : (i < 30 ? 'SECUNDARIA' : 'PREESCOLAR'),
-  ofertaNombre: i < 15 ? 'I y II Ciclos (Primaria)' : (i < 30 ? 'III Ciclo y Diversificada (Secundaria)' : 'Educación Preescolar'),
-  ofertaBadgeColor: i < 15 ? 'emerald' : (i < 30 ? 'blue' : 'amber'),
-  asignatura: i % 2 === 0 ? 'Educación Musical' : 'Matemática',
-  grado: `${(i % 6) + 1}° Año`,
-  rutaRelativa: `ruta/${i}`,
-  archivos: [
-    { nombre: `Plan_${i}.zip`, tipo: 'ZIP', ruta: `/plan_${i}.zip`, tamanoBytes: 1024, tamanoLegible: '1.0 KB' }
-  ],
-  archivoPrincipal: `Plan_${i}.zip`,
-  rutaDescarga: `/plan_${i}.zip`,
-  vigencia: '2027'
-}));
+const mockPlanes = [
+  {
+    id: 'DDC-2027-001',
+    ofertaCodigo: 'PREESCOLAR',
+    ofertaNombre: 'Educación Preescolar',
+    ofertaBadgeColor: 'teal',
+    asignatura: 'Educación Preescolar',
+    grado: 'Transición',
+    rutaRelativa: 'preescolar/transicion',
+    archivos: [
+      { nombre: 'plan-transicion.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/preescolar/transicion/plan-transicion.zip', tamanoBytes: 1024, tamanoLegible: '1.0 KB' }
+    ],
+    archivoPrincipal: 'plan-transicion.zip',
+    rutaDescarga: '/data/ddc-planeamientos/preescolar/transicion/plan-transicion.zip',
+    vigencia: '2027'
+  },
+  {
+    id: 'DDC-2027-002',
+    ofertaCodigo: 'I-II-CICLOS',
+    ofertaNombre: 'I y II Ciclos',
+    ofertaBadgeColor: 'amber',
+    asignatura: 'Matemática',
+    grado: 'Sexto Año (6°)',
+    rutaRelativa: 'primero-y-segundo-ciclos/matematica/sexto',
+    archivos: [
+      { nombre: 'plan-mate-6.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/primaria/mate-6.zip', tamanoBytes: 2048, tamanoLegible: '2.0 KB' }
+    ],
+    archivoPrincipal: 'plan-mate-6.zip',
+    rutaDescarga: '/data/ddc-planeamientos/primaria/mate-6.zip',
+    vigencia: '2027'
+  },
+  {
+    id: 'DDC-2027-003',
+    ofertaCodigo: 'I-II-CICLOS',
+    ofertaNombre: 'I y II Ciclos',
+    ofertaBadgeColor: 'amber',
+    asignatura: 'Ciencias',
+    grado: 'Primer Año (1°)',
+    rutaRelativa: 'primero-y-segundo-ciclos/ciencias/primero',
+    archivos: [
+      { nombre: 'plan-ciencias-1.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/primaria/ciencias-1.zip', tamanoBytes: 1024, tamanoLegible: '1.0 KB' }
+    ],
+    archivoPrincipal: 'plan-ciencias-1.zip',
+    rutaDescarga: '/data/ddc-planeamientos/primaria/ciencias-1.zip',
+    vigencia: '2027'
+  },
+  {
+    id: 'DDC-2027-004',
+    ofertaCodigo: 'I-II-CICLOS',
+    ofertaNombre: 'I y II Ciclos',
+    ofertaBadgeColor: 'amber',
+    asignatura: 'Español',
+    grado: 'Segundo Año (2°)',
+    rutaRelativa: 'primero-y-segundo-ciclos/espanol/segundo',
+    archivos: [
+      { nombre: 'plan-espanol-2-s1.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/primaria/espanol-2-s1.zip', tamanoBytes: 1024, tamanoLegible: '1.0 KB' },
+      { nombre: 'plan-espanol-2-s2.zip', tipo: 'ZIP', ruta: '/data/ddc-planeamientos/primaria/espanol-2-s2.zip', tamanoBytes: 2048, tamanoLegible: '2.0 KB' }
+    ],
+    archivoPrincipal: 'plan-espanol-2-s1.zip',
+    rutaDescarga: '/data/ddc-planeamientos/primaria/espanol-2-s1.zip',
+    vigencia: '2027'
+  }
+];
 
-describe('Suite 2: GeneralTable (Paginación Matemática y Filtros)', () => {
-  const defaultFiltros = {
-    ofertas: [],
-    asignaturas: [],
-    grados: [],
-    texto: ''
-  };
+describe('Suite 2: GeneralTable (Flujo Progresivo de 4 Pantallas Curriculares)', () => {
+  it('Vista 1 (Ofertas Educativas): renderiza las ofertas, la imagen profe.png y no incluye buscador de texto', () => {
+    render(<GeneralTable planes={mockPlanes} />);
 
-  it('TEST-07 & TEST-08: Paginador inicia en página 1 con « Primero y ‹ Anterior deshabilitados', () => {
-    render(
-      <GeneralTable
-        planes={mockPlanes}
-        filtros={defaultFiltros}
-        onDownload={vi.fn()}
-        onFiltrosChange={vi.fn()}
-        onResetFiltros={vi.fn()}
-      />
-    );
+    expect(screen.getByRole('heading', { name: 'Ofertas Educativas' })).toBeInTheDocument();
+    const imgProfe = screen.getByAltText('Docente guía de Ofertas Educativas');
+    expect(imgProfe).toBeInTheDocument();
+    expect(imgProfe).toHaveAttribute('src', '/assets/images/profe.png');
 
-    const primeroBtn = screen.getByTitle('Ir a la primera página');
-    const anteriorBtn = screen.getByTitle('Página anterior');
-    const siguienteBtn = screen.getByTitle('Página siguiente');
-    const ultimoBtn = screen.getByTitle('Ir a la última página');
+    expect(screen.getByRole('button', { name: /Educación Preescolar/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /I y II Ciclos/i })).toBeInTheDocument();
 
-    expect(primeroBtn).toBeDisabled();
-    expect(anteriorBtn).toBeDisabled();
-    expect(siguienteBtn).not.toBeDisabled();
-    expect(ultimoBtn).not.toBeDisabled();
+    // Ausencia total de buscador de texto
+    expect(screen.queryByRole('textbox')).not.toBeInTheDocument();
+    expect(screen.queryByPlaceholderText(/Buscar/i)).not.toBeInTheDocument();
   });
 
-  it('TEST-09: En la última página, Siguiente › y Último » se deshabilitan', () => {
-    render(
-      <GeneralTable
-        planes={mockPlanes}
-        filtros={defaultFiltros}
-        onDownload={vi.fn()}
-        onFiltrosChange={vi.fn()}
-        onResetFiltros={vi.fn()}
-      />
-    );
+  it('Vista 2 (Asignaturas): al seleccionar una oferta muestra bolso.png, insignia de oferta, migas de pan y asignaturas en orden alfabético español', () => {
+    render(<GeneralTable planes={mockPlanes} />);
 
-    const ultimoBtn = screen.getByTitle('Ir a la última página');
-    fireEvent.click(ultimoBtn);
+    fireEvent.click(screen.getByRole('button', { name: /I y II Ciclos/i }));
 
-    const siguienteBtn = screen.getByTitle('Página siguiente');
-    expect(siguienteBtn).toBeDisabled();
-    expect(ultimoBtn).toBeDisabled();
+    expect(screen.getByRole('heading', { name: 'Asignaturas' })).toBeInTheDocument();
+    const imgBolso = screen.getByAltText('Bolso escolar de Asignaturas');
+    expect(imgBolso).toBeInTheDocument();
+    expect(imgBolso).toHaveAttribute('src', '/assets/images/bolso.png');
+
+    // Cinta interactiva «Volver a:» con el botón 3D de la oferta seleccionada
+    const nav = screen.getByRole('navigation', { name: 'Ruta de navegación curricular' });
+    expect(within(nav).getByText('Volver a:')).toBeInTheDocument();
+    const btnOfertaSeleccionada = within(nav).getByRole('button', { name: 'I y II Ciclos' });
+    expect(btnOfertaSeleccionada).toBeInTheDocument();
+    expect(btnOfertaSeleccionada).toHaveAttribute('aria-current', 'step');
+
+    // Asignaturas ordenadas alfabéticamente en español: Ciencias, Español, Matemática
+    const btnCiencias = screen.getByRole('button', { name: /Ciencias/i });
+    const btnEspanol = screen.getByRole('button', { name: /Español/i });
+    const btnMatematica = screen.getByRole('button', { name: /Matemática/i });
+
+    const allButtons = screen.getAllByRole('button');
+    expect(allButtons.indexOf(btnCiencias)).toBeLessThan(allButtons.indexOf(btnEspanol));
+    expect(allButtons.indexOf(btnEspanol)).toBeLessThan(allButtons.indexOf(btnMatematica));
   });
 
-  it('TEST-10: Paginador numérico no genera números duplicados jamás', () => {
-    render(
-      <GeneralTable
-        planes={mockPlanes}
-        filtros={defaultFiltros}
-        onDownload={vi.fn()}
-        onFiltrosChange={vi.fn()}
-        onResetFiltros={vi.fn()}
-      />
-    );
-
-    // Con 45 registros a 20 por página hay 3 páginas (1, 2, 3)
-    const pageButtons = screen.getAllByRole('button', { name: /^Ir a la página [0-9]+$/ });
-    const groups = new Set(pageButtons.map((button) => button.parentElement));
-    groups.forEach((group) => {
-      const numbers = Array.from(group.querySelectorAll('button'), (button) => button.textContent);
-      expect(numbers).toEqual([...new Set(numbers)]);
-    });
-  });
-
-  it('TEST-13: Buscador predictivo libre dispara onFiltrosChange con texto ingresado', () => {
-    const handleFiltrosChange = vi.fn();
-    render(
-      <GeneralTable
-        planes={mockPlanes}
-        filtros={defaultFiltros}
-        onDownload={vi.fn()}
-        onFiltrosChange={handleFiltrosChange}
-        onResetFiltros={vi.fn()}
-      />
-    );
-
-    const inputBuscador = screen.getByPlaceholderText(/Buscar por palabra clave, materia o grado/i);
-    fireEvent.change(inputBuscador, { target: { value: 'Musical' } });
-
-    expect(handleFiltrosChange).toHaveBeenCalledWith({
-      ...defaultFiltros,
-      texto: 'Musical'
-    });
-  });
-
-  it('ordena las opciones de grado por progresión académica y deja las subáreas al final', () => {
-    const grados = [
-      'Décimo Año (10°)', 'Noveno Año (9°)', 'Grupo Heterogéneo',
-      'Segundo Año (2°)', 'Transición', 'Undécimo Año (11°)',
-      'Octavo Año (8°)', 'Materno Infantil (Interactivo I)',
-      'Escuelas Unidocentes (Multigrado 1° a 6°)', 'Primer Año (1°)',
-      'Sétimo Año (7°)', 'Interactivo II', 'Documento Rector',
-      'Duodécimo Año (12°)'
+  it('Vista 3 (Grado): al seleccionar una asignatura muestra cuaderno.png con la asignatura en portada y los grados ordenados por progresión académica', () => {
+    const gradosDesordenados = [
+      'Décimo Año (10°)',
+      'Grupo Heterogéneo',
+      'Segundo Año (2°)',
+      'Transición',
+      'Primer Año (1°)',
+      'Materno Infantil (Interactivo I)',
+      'Documento Rector',
+      'Interactivo II'
     ];
-    const planes = grados.map((grado, index) => ({
-      ...mockPlanes[0],
-      id: `grado-${index}`,
+    const planesGrados = gradosDesordenados.map((grado, idx) => ({
+      ...mockPlanes[1],
+      id: `DDC-GRADO-${idx}`,
+      asignatura: 'Educación Musical',
       grado
     }));
-    render(<GeneralTable planes={planes} filtros={defaultFiltros} onDownload={vi.fn()} onFiltrosChange={vi.fn()} onResetFiltros={vi.fn()} />);
 
-    fireEvent.click(screen.getByRole('button', { name: 'Filtrar por Grado / Subárea' }));
-    const dialog = screen.getByRole('dialog', { name: 'Filtrar por Grado / Subárea' });
-    const opciones = within(dialog).getAllByRole('checkbox').map((checkbox) =>
-      checkbox.closest('label').querySelector('span').textContent
+    render(<GeneralTable planes={planesGrados} />);
+
+    // Vista 1 -> Vista 2 -> Vista 3
+    fireEvent.click(screen.getByRole('button', { name: /I y II Ciclos/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Educación Musical/i }));
+
+    expect(screen.getByRole('heading', { name: 'Grado' })).toBeInTheDocument();
+    const imgCuaderno = screen.getByAltText('Cuaderno de Educación Musical');
+    expect(imgCuaderno).toBeInTheDocument();
+    expect(imgCuaderno).toHaveAttribute('src', '/assets/images/cuaderno.png');
+
+    // Portada del cuaderno con clase uppercase y el nombre de la asignatura
+    const portadaTexto = imgCuaderno.parentElement.querySelector('span');
+    expect(portadaTexto).toHaveTextContent('Educación Musical');
+    expect(portadaTexto.className).toContain('uppercase');
+
+    // Verificar orden progresivo de los botones de grado
+    const ordenEsperado = [
+      'Materno Infantil (Interactivo I)',
+      'Interactivo II',
+      'Transición',
+      'Grupo Heterogéneo',
+      'Primer Año (1°)',
+      'Segundo Año (2°)',
+      'Décimo Año (10°)',
+      'Documento Rector'
+    ];
+
+    const botonesVista = screen.getAllByRole('button');
+    const indices = ordenEsperado.map((nombreGrado) =>
+      botonesVista.findIndex((btn) => btn.textContent.includes(nombreGrado))
     );
-    expect(opciones).toEqual([
-      'Materno Infantil (Interactivo I)', 'Interactivo II', 'Transición',
-      'Grupo Heterogéneo', 'Primer Año (1°)', 'Segundo Año (2°)',
-      'Sétimo Año (7°)', 'Octavo Año (8°)', 'Noveno Año (9°)',
-      'Décimo Año (10°)', 'Undécimo Año (11°)', 'Duodécimo Año (12°)',
-      'Documento Rector', 'Escuelas Unidocentes (Multigrado 1° a 6°)'
-    ]);
+    for (let i = 0; i < indices.length - 1; i++) {
+      expect(indices[i]).toBeLessThan(indices[i + 1]);
+    }
   });
 
-  it.each(['s1', 'S2'])('encuentra el registro por el archivo %s y conserva ambos chips', (texto) => {
-    const planeamiento = {
-      ...mockPlanes[0],
-      asignatura: 'Español',
-      grado: 'Octavo Año (8°)',
-      archivoPrincipal: 'plan-espanol-octavo-s1.zip',
-      archivos: [
-        { nombre: 'plan-espanol-octavo-s1.zip', tipo: 'ZIP', ruta: '/s1.zip', tamanoLegible: '1 KB' },
-        { nombre: 'plan-espanol-octavo-s2.zip', tipo: 'ZIP', ruta: '/s2.zip', tamanoLegible: '1 KB' }
-      ]
-    };
-    render(<GeneralTable planes={[planeamiento]} filtros={{ ...defaultFiltros, texto }} onDownload={vi.fn()} onFiltrosChange={vi.fn()} onResetFiltros={vi.fn()} />);
+  it('recorre siempre las 4 pantallas completas sin saltar pasos aunque exista solo 1 asignatura y 1 grado', () => {
+    const unSoloPlan = [mockPlanes[0]]; // Educación Preescolar -> Educación Preescolar -> Transición
+    render(<GeneralTable planes={unSoloPlan} />);
 
-    expect(screen.getByText('Español')).toBeInTheDocument();
-    expect(screen.getAllByTitle(/Descargar archivo individual:/i)).toHaveLength(2);
+    // Pantalla 1: Ofertas Educativas
+    expect(screen.getByRole('heading', { name: 'Ofertas Educativas' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Educación Preescolar/i }));
+
+    // Pantalla 2: Asignaturas (no salta directo a Grado ni a Contenido)
+    expect(screen.getByRole('heading', { name: 'Asignaturas' })).toBeInTheDocument();
+    expect(screen.getByAltText('Bolso escolar de Asignaturas')).toBeInTheDocument();
+    const btnsPreescolar = screen.getAllByRole('button', { name: /Educación Preescolar/i });
+    fireEvent.click(btnsPreescolar[btnsPreescolar.length - 1]);
+
+    // Pantalla 3: Grado (no salta directo a Contenido)
+    expect(screen.getByRole('heading', { name: 'Grado' })).toBeInTheDocument();
+    expect(screen.getByAltText('Cuaderno de Educación Preescolar')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Transición/i }));
+
+    // Pantalla 4: Contenido
+    expect(screen.getByRole('heading', { name: 'Contenido' })).toBeInTheDocument();
+    expect(screen.getByRole('columnheader', { name: 'CONTENIDO DESCARGABLE' })).toBeInTheDocument();
   });
 
-  it('tolera un registro sin archivos al buscar por asignatura', () => {
-    render(<GeneralTable planes={[{ ...mockPlanes[0], archivos: null, archivoPrincipal: '' }]} filtros={{ ...defaultFiltros, texto: 'Musical' }} onDownload={vi.fn()} onFiltrosChange={vi.fn()} onResetFiltros={vi.fn()} />);
-    expect(screen.getByText('Sin archivos')).toBeInTheDocument();
-  });
-
-  it('ofrece descargar todos al final de los chips solo para filas con varios archivos y sin altura vacía', () => {
-    const archivos = [1, 2, 3].map((n) => ({ nombre: `plan-${n}.zip`, tipo: 'ZIP', ruta: `/plan-${n}.zip`, tamanoLegible: '1 KB' }));
-    const docMultiple = { ...mockPlanes[0], archivos };
-    const docUnico = { ...mockPlanes[1] };
+  it('Vista 4 (Contenido): muestra la tabla CONTENIDO DESCARGABLE, dispara descarga individual y el botón Descargar todo debajo de la tabla', () => {
+    const onDownload = vi.fn();
     const onDownloadAll = vi.fn();
-    const { container } = render(<GeneralTable planes={[docMultiple, docUnico]} filtros={defaultFiltros} onDownload={vi.fn()} onDownloadAll={onDownloadAll} onFiltrosChange={vi.fn()} onResetFiltros={vi.fn()} />);
 
-    const fila = screen.getByText(docMultiple.asignatura).closest('tr');
-    const controles = Array.from(fila.querySelectorAll('td:last-child button'));
-    expect(controles).toHaveLength(4);
-    expect(controles.slice(0, 3).every((button) => button.title.startsWith('Descargar archivo individual:'))).toBe(true);
-    expect(controles[3]).toHaveTextContent('Descargar todos (3)');
-    expect(screen.getAllByRole('button', { name: 'Descargar todos (3)' })).toHaveLength(1);
-    fireEvent.click(controles[3]);
-    expect(onDownloadAll).toHaveBeenCalledWith(docMultiple);
-    expect(container.querySelector('.overflow-x-auto')).not.toHaveClass('min-h-[480px]', 'pb-32');
-  });
-
-  it('mantiene accesible el filtro al abrirlo desde una tabla compacta', async () => {
-    const { container } = render(<GeneralTable planes={mockPlanes.slice(0, 1)} filtros={defaultFiltros} onDownload={vi.fn()} onFiltrosChange={vi.fn()} onResetFiltros={vi.fn()} />);
-    const trigger = screen.getByRole('button', { name: 'Filtrar por Oferta Educativa' });
-    fireEvent.click(trigger);
-    const dialog = screen.getByRole('dialog', { name: 'Filtrar por Oferta Educativa' });
-    expect(container.contains(dialog)).toBe(false);
-    expect(trigger).toHaveAttribute('aria-expanded', 'true');
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Desmarcar todas' })).toHaveFocus());
-    fireEvent.keyDown(document, { key: 'Escape' });
-    expect(screen.queryByRole('dialog', { name: 'Filtrar por Oferta Educativa' })).not.toBeInTheDocument();
-    expect(trigger).toHaveFocus();
-    fireEvent.click(trigger);
-    fireEvent.click(screen.getByRole('button', { name: 'Cancelar' }));
-    expect(trigger).toHaveFocus();
-    fireEvent.click(trigger);
-    fireEvent.click(screen.getByRole('button', { name: 'Aplicar Filtro' }));
-    expect(trigger).toHaveFocus();
-  });
-
-  it('TEST-17: La tabla tiene cuatro columnas y el chip descarga el archivo seleccionado', () => {
-    const downloadMock = vi.fn();
     render(
       <GeneralTable
-        planes={mockPlanes.slice(0, 5)}
-        filtros={defaultFiltros}
-        onDownload={downloadMock}
-        onFiltrosChange={vi.fn()}
-        onResetFiltros={vi.fn()}
+        planes={mockPlanes}
+        onDownload={onDownload}
+        onDownloadAll={onDownloadAll}
       />
     );
 
-    expect(screen.getAllByRole('columnheader')).toHaveLength(4);
-    expect(screen.queryByRole('columnheader', { name: 'Descargas' })).not.toBeInTheDocument();
-    expect(screen.queryByRole('columnheader', { name: 'Acción' })).not.toBeInTheDocument();
-    const downloadButtons = screen.getAllByTitle(/Descargar archivo individual:/i);
-    fireEvent.click(downloadButtons[0]);
-    expect(downloadMock).toHaveBeenCalledTimes(1);
-    expect(downloadMock).toHaveBeenCalledWith(mockPlanes[0], mockPlanes[0].archivos[0]);
+    // Navegar a I y II Ciclos -> Español -> Segundo Año (2°) (tiene 2 archivos)
+    fireEvent.click(screen.getByRole('button', { name: /I y II Ciclos/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Español/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Segundo Año \(2°\)/i }));
+
+    expect(screen.getByRole('heading', { name: 'Contenido' })).toBeInTheDocument();
+    expect(screen.getByRole('columnheader', { name: 'CONTENIDO DESCARGABLE' })).toBeInTheDocument();
+
+    // Descarga individual desde la tabla
+    const botonesIndividuales = screen.getAllByTitle(/Descargar archivo individual:/i);
+    expect(botonesIndividuales).toHaveLength(2);
+    fireEvent.click(botonesIndividuales[0]);
+    expect(onDownload).toHaveBeenCalledTimes(1);
+    expect(onDownload).toHaveBeenCalledWith(mockPlanes[3], mockPlanes[3].archivos[0]);
+
+    // Botón Descargar todo debajo de la tabla
+    const btnDescargarTodo = screen.getByRole('button', { name: /Descargar todo \(2\)/i });
+    expect(btnDescargarTodo).toBeInTheDocument();
+    fireEvent.click(btnDescargarTodo);
+    expect(onDownloadAll).toHaveBeenCalledTimes(1);
+    expect(onDownloadAll).toHaveBeenCalledWith(mockPlanes[3]);
+  });
+
+  it('permite navegar hacia atrás usando los botones 3D de la cinta «Volver a:» y resetKey', () => {
+    const { rerender } = render(<GeneralTable planes={mockPlanes} resetKey={0} />);
+
+    // Avanzar hasta Vista 4
+    fireEvent.click(screen.getByRole('button', { name: /I y II Ciclos/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Español/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Segundo Año \(2°\)/i }));
+    expect(screen.getByRole('heading', { name: 'Contenido' })).toBeInTheDocument();
+
+    // En Vista 4, clic en el 3er botón 3D (Grado: Segundo Año (2°)) regresa a Vista 3 (Grado)
+    const navVista4 = screen.getByRole('navigation', { name: 'Ruta de navegación curricular' });
+    fireEvent.click(within(navVista4).getByRole('button', { name: 'Segundo Año (2°)' }));
+    expect(screen.getByRole('heading', { name: 'Grado' })).toBeInTheDocument();
+
+    // En Vista 3, clic en el 2do botón 3D (Asignatura: Español) regresa a Vista 2 (Asignaturas)
+    const navVista3 = screen.getByRole('navigation', { name: 'Ruta de navegación curricular' });
+    fireEvent.click(within(navVista3).getByRole('button', { name: 'Español' }));
+    expect(screen.getByRole('heading', { name: 'Asignaturas' })).toBeInTheDocument();
+
+    // Desde Vista 2, clic en el 1er botón 3D (Oferta: I y II Ciclos) regresa a Vista 1 (Ofertas Educativas)
+    const navVista2 = screen.getByRole('navigation', { name: 'Ruta de navegación curricular' });
+    fireEvent.click(within(navVista2).getByRole('button', { name: 'I y II Ciclos' }));
+    expect(screen.getByRole('heading', { name: 'Ofertas Educativas' })).toBeInTheDocument();
+
+    // Al cambiar resetKey desde cualquier vista interna, vuelve a Vista 1
+    fireEvent.click(screen.getByRole('button', { name: /I y II Ciclos/i }));
+    expect(screen.getByRole('heading', { name: 'Asignaturas' })).toBeInTheDocument();
+    rerender(<GeneralTable planes={mockPlanes} resetKey={1} />);
+    expect(screen.getByRole('heading', { name: 'Ofertas Educativas' })).toBeInTheDocument();
+  });
+
+  it('reorganiza dinámicamente la disposición según relación de aspecto (Alto > Ancho portrait vs Ancho > Alto landscape) y muestra el título oficial en Header', () => {
+    // 1. Verificar el nuevo título oficial en Header
+    render(<Header onGoHome={vi.fn()} onOpenAbout={vi.fn()} />);
+    expect(screen.getByRole('heading', { level: 1, name: 'Plantillas de Planeamientos Didácticos' })).toBeInTheDocument();
+
+    // 2. Verificar modo Horizontal (Ancho > Alto -> landscape)
+    window.innerWidth = 1366;
+    window.innerHeight = 768;
+    const { container } = render(<GeneralTable planes={mockPlanes} />);
+    const rootSection = container.querySelector('section[data-orientation]');
+    expect(rootSection).toHaveAttribute('data-orientation', 'landscape');
+
+    // 3. Cambiar a modo Vertical (Alto > Ancho -> portrait)
+    act(() => {
+      window.innerWidth = 390;
+      window.innerHeight = 844;
+      window.dispatchEvent(new Event('resize'));
+    });
+    expect(rootSection).toHaveAttribute('data-orientation', 'portrait');
+    expect(screen.getByAltText('Docente guía de Ofertas Educativas')).toBeInTheDocument();
+
+    // Restaurar dimensiones estándar de prueba
+    act(() => {
+      window.innerWidth = 1024;
+      window.innerHeight = 768;
+      window.dispatchEvent(new Event('resize'));
+    });
+  });
+
+  it('distribuye 21 asignaturas (III Ciclo y Diversificada - Secundaria) en zonas orbitales CSS Flow sin position:absolute ni superposición', () => {
+    window.innerWidth = 1366;
+    window.innerHeight = 768;
+
+    const asignaturasSecundaria = [
+      'Artes Industriales',
+      'Artes Plásticas',
+      'Biología',
+      'Ciencias',
+      'Educación Cívica',
+      'Educación Física',
+      'Educación Musical',
+      'Educación para el Hogar',
+      'Educación para la Paz y la Convivencia',
+      'Educación Religiosa',
+      'Español',
+      'Estudios Sociales',
+      'Filosofía',
+      'Física',
+      'Francés',
+      'Inglés',
+      'Italiano',
+      'Matemática',
+      'Orientación',
+      'Psicología',
+      'Química'
+    ];
+
+    const planesSecundaria = asignaturasSecundaria.map((asig, idx) => ({
+      id: `DDC-SEC-${idx}`,
+      ofertaCodigo: 'III-CICLO-DIVERSIFICADA',
+      ofertaNombre: 'III Ciclo y Diversificada (Secundaria)',
+      ofertaBadgeColor: 'blue',
+      asignatura: asig,
+      grado: 'Décimo Año (10°)',
+      rutaRelativa: `secundaria/${idx}`,
+      archivos: [{ nombre: `plan-${idx}.zip`, tipo: 'ZIP', ruta: `/data/${idx}.zip`, tamanoBytes: 1024, tamanoLegible: '1.0 KB' }],
+      archivoPrincipal: `plan-${idx}.zip`,
+      rutaDescarga: `/data/${idx}.zip`,
+      vigencia: '2027'
+    }));
+
+    const { container } = render(<GeneralTable planes={planesSecundaria} />);
+    fireEvent.click(screen.getByRole('button', { name: /III Ciclo y Diversificada \(Secundaria\)/i }));
+
+    const orbitalStage = container.querySelector('[data-orbital-stage="true"]');
+    expect(orbitalStage).toBeInTheDocument();
+    expect(orbitalStage).toHaveAttribute('data-orbital-density', 'high');
+
+    // Los 21 botones están dentro del escenario orbital sin ningún envoltorio position:absolute
+    const botonesOrbitales = within(orbitalStage).getAllByRole('button');
+    expect(botonesOrbitales).toHaveLength(21);
+    expect(orbitalStage.querySelectorAll('.absolute')).toHaveLength(0);
+
+    // Verificar que Biología y Química están ambos presentes y en orden alfabético
+    expect(botonesOrbitales[0]).toHaveTextContent('Artes Industriales');
+    expect(botonesOrbitales[2]).toHaveTextContent('Biología');
+    expect(botonesOrbitales[20]).toHaveTextContent('Química');
   });
 });
