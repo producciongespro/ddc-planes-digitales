@@ -345,4 +345,47 @@ describe('Suite 2: GeneralTable (Flujo Progresivo de 4 Pantallas Curriculares)',
     expect(botonesOrbitales[2]).toHaveTextContent('Biología');
     expect(botonesOrbitales[20]).toHaveTextContent('Química');
   });
+
+  it('Vista 4 (Contenido) con lista extensa de archivos habilita scroll en la tabla con cabecera fija y mantiene visible el botón Descargar todo', () => {
+    const archivosExtensos = Array.from({ length: 15 }, (_, idx) => ({
+      nombre: `documento-curricular-${idx + 1}.pdf`,
+      tipo: 'PDF',
+      ruta: `/data/ddc-planeamientos/preescolar/documento-curricular-${idx + 1}.pdf`,
+      tamanoBytes: 204800,
+      tamanoLegible: '200.0 KB'
+    }));
+
+    const planExtenso = [
+      {
+        ...mockPlanes[0],
+        archivos: archivosExtensos,
+        archivoPrincipal: archivosExtensos[0].nombre,
+        rutaDescarga: archivosExtensos[0].ruta
+      }
+    ];
+
+    const { container } = render(<GeneralTable planes={planExtenso} />);
+
+    // Avanzar Vista 1 -> Vista 2 -> Vista 3 -> Vista 4
+    fireEvent.click(screen.getByRole('button', { name: /Educación Preescolar/i }));
+    const btnsAsig = screen.getAllByRole('button', { name: /Educación Preescolar/i });
+    fireEvent.click(btnsAsig[btnsAsig.length - 1]);
+    fireEvent.click(screen.getByRole('button', { name: /Transición/i }));
+
+    // Verificar contenedor scrollable de la tabla y cabecera sticky
+    const scrollWrapper = container.querySelector('[data-contenido-table-scroll="true"]');
+    expect(scrollWrapper).toBeInTheDocument();
+    expect(scrollWrapper.className).toContain('overflow-y-auto');
+    expect(scrollWrapper.className).toContain('min-h-0');
+
+    const thead = scrollWrapper.querySelector('thead');
+    expect(thead.className).toContain('sticky');
+    expect(thead.className).toContain('top-0');
+
+    // Los 15 archivos están presentes en la tabla y el botón Descargar todo (15) permanece visible en barra shrink-0
+    expect(screen.getAllByTitle(/Descargar archivo individual:/i)).toHaveLength(15);
+    const btnDescargarTodo = screen.getByRole('button', { name: /Descargar todo \(15\)/i });
+    expect(btnDescargarTodo).toBeInTheDocument();
+    expect(btnDescargarTodo.parentElement.className).toContain('shrink-0');
+  });
 });

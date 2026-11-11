@@ -134,11 +134,11 @@ export default function App() {
       </div>
 
       {/* 2. SECCIÓN: CONTENIDO PRINCIPAL (Única área con scroll vertical fluido) */}
-      <div className="flex-1 overflow-y-auto min-h-0 bg-white focus:outline-none">
+      <div className="flex-1 overflow-y-auto min-h-0 bg-white focus:outline-none flex flex-col">
         <main
           id="main-content"
           tabIndex="-1"
-          className="max-w-[1600px] w-full mx-auto px-3 sm:px-6 lg:px-10 py-4 sm:py-6 focus:outline-none min-h-full flex flex-col"
+          className="max-w-[1680px] w-full mx-auto px-3 sm:px-5 lg:px-8 py-2 sm:py-3 focus:outline-none flex-1 min-h-0 flex flex-col"
         >
           {/* Flujo interactivo guiado de 4 vistas progresivas */}
           <GeneralTable

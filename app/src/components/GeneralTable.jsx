@@ -199,31 +199,31 @@ function obtenerFontSizeCuaderno(texto = '') {
 function PillButton3D({ label, badge, themeClasses, onClick, density = 'normal', className = '' }) {
   const paddingClasses =
     density === 'high'
-      ? 'gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl border-b-[4px]'
+      ? 'gap-2.5 px-3 py-1.5 sm:py-2 rounded-xl border-b-[4px]'
       : density === 'medium'
-        ? 'gap-3.5 px-4 py-3 rounded-2xl border-b-[5px]'
-        : 'gap-3.5 sm:gap-4 px-4 sm:px-5 py-3.5 sm:py-4 rounded-2xl border-b-[6px]';
+        ? 'gap-3 px-3.5 py-2 sm:py-2.5 rounded-2xl border-b-[5px]'
+        : 'gap-3 sm:gap-3.5 px-4 sm:px-4.5 py-2.5 sm:py-3 rounded-2xl border-b-[5px]';
 
   const medallionClasses =
     density === 'high'
-      ? 'w-9 h-9 sm:w-10 sm:h-10'
+      ? 'w-8 h-8 sm:w-9 sm:h-9'
       : density === 'medium'
-        ? 'w-10 h-10 sm:w-11 sm:h-11'
-        : 'w-12 h-12 sm:w-14 sm:h-14';
+        ? 'w-9 h-9 sm:w-10 sm:h-10'
+        : 'w-10 h-10 sm:w-12 sm:h-12';
 
   const textClasses =
     density === 'high'
-      ? 'text-xs sm:text-sm lg:text-[14.5px] leading-tight'
+      ? 'text-xs sm:text-sm lg:text-[14px] leading-tight'
       : density === 'medium'
-        ? 'text-sm sm:text-base lg:text-[16.5px] leading-tight'
-        : 'text-base sm:text-lg xl:text-xl leading-snug';
+        ? 'text-sm sm:text-base lg:text-[15.5px] leading-tight'
+        : 'text-sm sm:text-base lg:text-lg leading-snug';
 
   const widthClasses =
     density === 'high'
       ? 'w-full min-w-0 max-w-[305px]'
       : density === 'medium'
-        ? 'w-full min-w-0 max-w-[360px]'
-        : 'w-full min-w-0 sm:min-w-[270px] lg:min-w-[310px] max-w-[395px]';
+        ? 'w-full min-w-0 max-w-[355px]'
+        : 'w-full min-w-0 sm:min-w-[260px] lg:min-w-[295px] max-w-[385px]';
 
   return (
     <button
@@ -245,7 +245,7 @@ function PillButton3D({ label, badge, themeClasses, onClick, density = 'normal',
 }
 
 /**
- * Escenario Orbital en Flujo Real CSS Grid / Flexbox de Área Completa (Cero position:absolute, imposible solapamiento).
+ * Escenario Orbital en Flujo Real CSS Grid / Flexbox de Área Completa (Cero position:absolute, cero scroll vertical).
  */
 function OrbitalFlowStage({ items, density = 'normal', centerNode, renderButton }) {
   const { topItems, leftItems, rightItems, bottomItems } = obtenerZonasOrbitales(items);
@@ -255,46 +255,46 @@ function OrbitalFlowStage({ items, density = 'normal', centerNode, renderButton 
     if (topItems.length === 0) return null;
     if (topItems.length === 1) {
       return (
-        <div className="flex justify-center w-full mb-2">
+        <div className="flex justify-center w-full">
           {renderButton(topItems[0].item, topItems[0].globalIndex, '')}
         </div>
       );
     }
     if (topItems.length === 2) {
       return (
-        <div className="flex flex-wrap justify-center gap-8 lg:gap-16 w-full mb-2">
+        <div className="flex flex-wrap justify-center gap-8 lg:gap-16 w-full">
           {topItems.map(({ item, globalIndex }) => renderButton(item, globalIndex, ''))}
         </div>
       );
     }
     if (topItems.length === 3) {
       return (
-        <div className="grid grid-cols-3 gap-5 lg:gap-8 xl:gap-10 items-end justify-items-center w-full max-w-[1260px] mx-auto mb-2">
+        <div className="grid grid-cols-3 gap-4 lg:gap-7 xl:gap-9 items-end justify-items-center w-full max-w-[1260px] mx-auto">
           {topItems.map(({ item, globalIndex }, i) =>
-            renderButton(item, globalIndex, i === 1 ? '-translate-y-2' : 'translate-y-1')
+            renderButton(item, globalIndex, i === 1 ? '-translate-y-1.5' : 'translate-y-1')
           )}
         </div>
       );
     }
     if (topItems.length === 4) {
       return (
-        <div className="grid grid-cols-4 gap-4 lg:gap-6 items-end justify-items-center w-full max-w-[1440px] mx-auto mb-2">
+        <div className="grid grid-cols-4 gap-3 lg:gap-5 items-end justify-items-center w-full max-w-[1440px] mx-auto">
           {topItems.map(({ item, globalIndex }, i) =>
-            renderButton(item, globalIndex, i === 1 || i === 2 ? '-translate-y-2' : 'translate-y-1.5')
+            renderButton(item, globalIndex, i === 1 || i === 2 ? '-translate-y-1.5' : 'translate-y-1')
           )}
         </div>
       );
     }
     // 5 botones en el arco superior (ej. Secundaria 21 asignaturas: 5 arriba + 6 izq + 6 der + 4 abajo)
     return (
-      <div className="grid grid-cols-5 gap-3 lg:gap-4 xl:gap-5 items-end justify-items-center w-full max-w-[1620px] mx-auto mb-2">
+      <div className="grid grid-cols-5 gap-2.5 lg:gap-4 items-end justify-items-center w-full max-w-[1620px] mx-auto">
         {topItems.map(({ item, globalIndex }, i) => {
           const curve =
             i === 2
-              ? '-translate-y-2.5'
+              ? '-translate-y-1.5'
               : i === 1 || i === 3
-                ? '-translate-y-1'
-                : 'translate-y-2';
+                ? '-translate-y-0.5'
+                : 'translate-y-1.5';
           return renderButton(item, globalIndex, curve);
         })}
       </div>
@@ -305,32 +305,32 @@ function OrbitalFlowStage({ items, density = 'normal', centerNode, renderButton 
     if (bottomItems.length === 0) return null;
     if (bottomItems.length === 1) {
       return (
-        <div className="flex justify-center w-full mt-2">
+        <div className="flex justify-center w-full">
           {renderButton(bottomItems[0].item, bottomItems[0].globalIndex, '')}
         </div>
       );
     }
     if (bottomItems.length === 2) {
       return (
-        <div className="flex flex-wrap justify-center gap-8 lg:gap-16 xl:gap-24 w-full mt-2">
+        <div className="flex flex-wrap justify-center gap-8 lg:gap-16 xl:gap-24 w-full">
           {bottomItems.map(({ item, globalIndex }) => renderButton(item, globalIndex, ''))}
         </div>
       );
     }
     if (bottomItems.length === 3) {
       return (
-        <div className="grid grid-cols-3 gap-5 lg:gap-8 xl:gap-10 items-start justify-items-center w-full max-w-[1260px] mx-auto mt-2">
+        <div className="grid grid-cols-3 gap-4 lg:gap-7 xl:gap-9 items-start justify-items-center w-full max-w-[1260px] mx-auto">
           {bottomItems.map(({ item, globalIndex }, i) =>
-            renderButton(item, globalIndex, i === 1 ? 'translate-y-2' : '-translate-y-1')
+            renderButton(item, globalIndex, i === 1 ? 'translate-y-1.5' : '-translate-y-1')
           )}
         </div>
       );
     }
     if (bottomItems.length === 4) {
       return (
-        <div className="grid grid-cols-4 gap-4 lg:gap-6 items-start justify-items-center w-full max-w-[1440px] mx-auto mt-2">
+        <div className="grid grid-cols-4 gap-3 lg:gap-5 items-start justify-items-center w-full max-w-[1440px] mx-auto">
           {bottomItems.map(({ item, globalIndex }, i) =>
-            renderButton(item, globalIndex, i === 1 || i === 2 ? 'translate-y-2' : '-translate-y-1.5')
+            renderButton(item, globalIndex, i === 1 || i === 2 ? 'translate-y-1.5' : '-translate-y-1')
           )}
         </div>
       );
@@ -339,14 +339,14 @@ function OrbitalFlowStage({ items, density = 'normal', centerNode, renderButton 
     const filaSuperiorInferior = bottomItems.slice(0, 4);
     const apiceInferior = bottomItems.slice(4);
     return (
-      <div className="flex flex-col items-center gap-4 w-full mt-2">
-        <div className="grid grid-cols-4 gap-4 lg:gap-6 items-start justify-items-center w-full max-w-[1440px] mx-auto">
+      <div className="flex flex-col items-center gap-2.5 w-full">
+        <div className="grid grid-cols-4 gap-3 lg:gap-5 items-start justify-items-center w-full max-w-[1440px] mx-auto">
           {filaSuperiorInferior.map(({ item, globalIndex }, i) =>
-            renderButton(item, globalIndex, i === 1 || i === 2 ? 'translate-y-1.5' : '-translate-y-1')
+            renderButton(item, globalIndex, i === 1 || i === 2 ? 'translate-y-1' : '-translate-y-1')
           )}
         </div>
         {apiceInferior.length > 0 && (
-          <div className="flex flex-wrap justify-center gap-6 w-full">
+          <div className="flex flex-wrap justify-center gap-4 w-full">
             {apiceInferior.map(({ item, globalIndex }) => renderButton(item, globalIndex, ''))}
           </div>
         )}
@@ -358,40 +358,40 @@ function OrbitalFlowStage({ items, density = 'normal', centerNode, renderButton 
     <div
       data-orbital-stage="true"
       data-orbital-density={density}
-      className="w-full max-w-[1640px] flex-1 min-h-[calc(100vh-225px)] mx-auto flex flex-col items-center justify-evenly py-4 sm:py-6 gap-y-5 lg:gap-y-7"
+      className="w-full max-w-[1640px] flex-1 min-h-0 mx-auto flex flex-col items-center justify-evenly py-1 sm:py-2 gap-y-2 lg:gap-y-3"
     >
       {/* ZONA 1: ARCO SUPERIOR */}
       {renderTopZone()}
 
       {/* ZONA 2: ECUADOR CENTRAL (Ala Izquierda · Figura Central · Ala Derecha) */}
       <div
-        className={`grid grid-cols-[1fr_auto_1fr] items-stretch w-full flex-1 ${
-          isHighDensity ? 'gap-4 lg:gap-7 xl:gap-9 my-1' : 'gap-6 lg:gap-12 xl:gap-16 my-1'
+        className={`grid grid-cols-[1fr_auto_1fr] items-stretch w-full flex-1 min-h-0 ${
+          isHighDensity ? 'gap-3 lg:gap-6 xl:gap-8' : 'gap-5 lg:gap-10 xl:gap-14'
         }`}
       >
         {/* Ala Izquierda */}
         {isHighDensity ? (
-          <div className="grid grid-cols-2 content-between gap-y-5 lg:gap-y-7 xl:gap-y-8 gap-x-3.5 lg:gap-x-5 items-center justify-items-end w-full min-h-[290px] lg:min-h-[360px]">
+          <div className="grid grid-cols-2 content-evenly gap-y-2.5 lg:gap-y-3.5 xl:gap-y-4 gap-x-3 lg:gap-x-4 items-center justify-items-end w-full h-full">
             {leftItems.map(({ item, globalIndex }, i) => {
               const rowIdx = Math.floor(i / 2);
-              const curve = rowIdx === 1 ? '-translate-x-1.5 lg:-translate-x-2.5' : 'translate-x-1.5 lg:translate-x-2.5';
+              const curve = rowIdx === 1 ? '-translate-x-1 lg:-translate-x-2' : 'translate-x-1 lg:translate-x-2';
               return renderButton(item, globalIndex, curve);
             })}
           </div>
         ) : (
-          <div className="flex flex-col justify-between items-end gap-6 lg:gap-9 xl:gap-11 w-full min-h-[260px] lg:min-h-[350px] py-2">
+          <div className="flex flex-col justify-evenly items-end gap-3 lg:gap-5 xl:gap-6 w-full h-full">
             {leftItems.map(({ item, globalIndex }, i) => {
               let curveClass = '';
               if (leftItems.length === 4) {
                 curveClass =
                   i === 0 || i === 3
-                    ? 'translate-x-6 lg:translate-x-12'
+                    ? 'translate-x-5 lg:translate-x-10'
                     : '-translate-x-2 lg:-translate-x-4';
               } else if (leftItems.length === 3) {
                 curveClass =
                   i === 1
                     ? '-translate-x-2 lg:-translate-x-5 xl:-translate-x-8'
-                    : 'translate-x-6 lg:translate-x-12 xl:translate-x-16';
+                    : 'translate-x-5 lg:translate-x-10 xl:translate-x-14';
               } else if (leftItems.length === 2) {
                 curveClass = 'translate-x-4 lg:translate-x-8';
               }
@@ -407,27 +407,27 @@ function OrbitalFlowStage({ items, density = 'normal', centerNode, renderButton 
 
         {/* Ala Derecha */}
         {isHighDensity ? (
-          <div className="grid grid-cols-2 content-between gap-y-5 lg:gap-y-7 xl:gap-y-8 gap-x-3.5 lg:gap-x-5 items-center justify-items-start w-full min-h-[290px] lg:min-h-[360px]">
+          <div className="grid grid-cols-2 content-evenly gap-y-2.5 lg:gap-y-3.5 xl:gap-y-4 gap-x-3 lg:gap-x-4 items-center justify-items-start w-full h-full">
             {rightItems.map(({ item, globalIndex }, i) => {
               const rowIdx = Math.floor(i / 2);
-              const curve = rowIdx === 1 ? 'translate-x-1.5 lg:translate-x-2.5' : '-translate-x-1.5 lg:-translate-x-2.5';
+              const curve = rowIdx === 1 ? 'translate-x-1 lg:translate-x-2' : '-translate-x-1 lg:-translate-x-2';
               return renderButton(item, globalIndex, curve);
             })}
           </div>
         ) : (
-          <div className="flex flex-col justify-between items-start gap-6 lg:gap-9 xl:gap-11 w-full min-h-[260px] lg:min-h-[350px] py-2">
+          <div className="flex flex-col justify-evenly items-start gap-3 lg:gap-5 xl:gap-6 w-full h-full">
             {rightItems.map(({ item, globalIndex }, i) => {
               let curveClass = '';
               if (rightItems.length === 4) {
                 curveClass =
                   i === 0 || i === 3
-                    ? '-translate-x-6 lg:-translate-x-12'
+                    ? '-translate-x-5 lg:-translate-x-10'
                     : 'translate-x-2 lg:translate-x-4';
               } else if (rightItems.length === 3) {
                 curveClass =
                   i === 1
                     ? 'translate-x-2 lg:translate-x-5 xl:translate-x-8'
-                    : '-translate-x-6 lg:-translate-x-12 xl:-translate-x-16';
+                    : '-translate-x-5 lg:-translate-x-10 xl:-translate-x-14';
               } else if (rightItems.length === 2) {
                 curveClass = '-translate-x-4 lg:-translate-x-8';
               }
@@ -498,9 +498,9 @@ function BreadcrumbBar({
   return (
     <div className="sticky top-0 z-30 bg-white">
       {/* Parte 1: Barra Azul Superior limpia */}
-      <div className="bg-gradient-to-r from-[#003B71] via-[#017EC1] to-[#0267a0] px-5 py-4 sm:px-7 sm:py-5 text-white border-b-2 border-amber-500 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+      <div className="bg-gradient-to-r from-[#003B71] via-[#017EC1] to-[#0267a0] px-4 py-2.5 sm:px-6 sm:py-3.5 text-white border-b-2 border-amber-500 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
         <div className="flex items-center gap-3">
-          <span className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#003B71] border border-white/30 text-amber-300 text-sm sm:text-base font-black shrink-0 shadow-xs">
+          <span className="inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#003B71] border border-white/30 text-amber-300 text-sm sm:text-base font-black shrink-0 shadow-xs">
             {pasoNumero}
           </span>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-black tracking-tight text-white">
@@ -517,7 +517,7 @@ function BreadcrumbBar({
       {!enVistaInicial && (
         <nav
           aria-label="Ruta de navegación curricular"
-          className="bg-slate-50/90 border-b border-slate-200 px-5 py-3 sm:px-7 sm:py-3.5 flex flex-wrap items-center gap-3 shadow-2xs"
+          className="bg-slate-50/90 border-b border-slate-200 px-4 py-2 sm:px-6 sm:py-2.5 flex flex-wrap items-center gap-2.5 shadow-2xs"
         >
           {/* Etiqueta Volver a: */}
           <span className="text-sm sm:text-base lg:text-lg font-black text-slate-900 tracking-tight">
@@ -764,7 +764,7 @@ export function GeneralTable({
     return (
       <section
         data-orientation={isPortrait ? 'portrait' : 'landscape'}
-        className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden mb-6 flex-1 flex flex-col"
+        className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex-1 min-h-0 flex flex-col"
       >
         <BreadcrumbBar
           vistaTitulo={vistaTitulo}
@@ -801,7 +801,7 @@ export function GeneralTable({
     // Disposición Vertical (Alto > Ancho o pantalla < 1000px): Ilustración arriba y lista ordenada debajo
     if (!useOrbitalLandscape) {
       return (
-        <div className="p-5 sm:p-8 bg-white flex-1 flex flex-col items-center justify-center">
+        <div className="p-5 sm:p-8 bg-white flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-start">
           <div className="flex flex-col items-center mb-6">
             <img
               src="/assets/images/profe.png"
@@ -834,7 +834,7 @@ export function GeneralTable({
 
     // Disposición Horizontal Panorámica (Ancho >= Alto y >= 1000px): Escenario Orbital CSS Flow (Cero superposición garantizado)
     return (
-      <div className="px-4 py-4 sm:px-6 sm:py-6 bg-white flex-1 flex flex-col items-center justify-center">
+      <div className="px-3 py-2 sm:px-5 sm:py-3 bg-white flex-1 min-h-0 flex flex-col items-center justify-center">
         <OrbitalFlowStage
           items={ofertasDisponibles}
           density="normal"
@@ -842,8 +842,8 @@ export function GeneralTable({
             <img
               src="/assets/images/profe.png"
               alt="Docente guía de Ofertas Educativas"
-              style={{ width: 'clamp(250px, 23vw, 370px)' }}
-              className="h-auto object-contain select-none mx-auto mix-blend-multiply"
+              style={{ width: 'clamp(210px, 20vw, 330px)' }}
+              className="max-h-[38vh] h-auto object-contain select-none mx-auto mix-blend-multiply"
             />
           }
           renderButton={(item, idx, curveClass) => (
@@ -880,7 +880,7 @@ export function GeneralTable({
     // Disposición Vertical (Alto > Ancho o pantalla < 1000px): Bolso arriba y botones ordenados debajo
     if (!useOrbitalLandscape) {
       return (
-        <div className="p-5 sm:p-8 bg-white flex-1 flex flex-col items-center justify-center">
+        <div className="p-5 sm:p-8 bg-white flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-start">
           <div className="flex flex-col items-center mb-6">
             <img
               src="/assets/images/bolso.png"
@@ -910,10 +910,10 @@ export function GeneralTable({
     const density = totalAsignaturas >= 15 ? 'high' : totalAsignaturas >= 9 ? 'medium' : 'normal';
     const widthBolsoCentral =
       density === 'high'
-        ? 'clamp(175px, 16vw, 250px)'
+        ? 'clamp(155px, 14vw, 220px)'
         : density === 'medium'
-          ? 'clamp(205px, 19vw, 295px)'
-          : 'clamp(240px, 22vw, 360px)';
+          ? 'clamp(185px, 17vw, 265px)'
+          : 'clamp(215px, 20vw, 320px)';
     const iconSizeClass =
       density === 'high'
         ? 'w-5 h-5 text-white'
@@ -922,7 +922,7 @@ export function GeneralTable({
           : 'w-7 h-7 sm:w-8 sm:h-8 text-white';
 
     return (
-      <div className="px-4 py-4 sm:px-6 sm:py-6 bg-white flex-1 flex flex-col items-center justify-center">
+      <div className="px-3 py-2 sm:px-5 sm:py-3 bg-white flex-1 min-h-0 flex flex-col items-center justify-center">
         <OrbitalFlowStage
           items={asignaturasDisponibles}
           density={density}
@@ -931,7 +931,7 @@ export function GeneralTable({
               src="/assets/images/bolso.png"
               alt="Bolso escolar de Asignaturas"
               style={{ width: widthBolsoCentral }}
-              className="h-auto object-contain select-none mx-auto mix-blend-multiply"
+              className="max-h-[30vh] h-auto object-contain select-none mx-auto mix-blend-multiply"
             />
           }
           renderButton={(asig, idx, curveClass) => (
@@ -956,7 +956,7 @@ export function GeneralTable({
   const renderVistaGrado = () => {
     const renderCuaderno = (widthClamp) => (
       <div
-        className="relative aspect-square flex items-center justify-center select-none"
+        className="relative aspect-square max-h-[36vh] flex items-center justify-center select-none"
         style={{ width: widthClamp }}
       >
         <img
@@ -981,7 +981,7 @@ export function GeneralTable({
     // Disposición Vertical (Alto > Ancho o pantalla < 1000px): Cuaderno arriba y grados ordenados debajo
     if (!useOrbitalLandscape) {
       return (
-        <div className="p-5 sm:p-8 bg-white flex-1 flex flex-col items-center justify-center">
+        <div className="p-5 sm:p-8 bg-white flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-start">
           <div className="flex flex-col items-center mb-6">
             {renderCuaderno('clamp(240px, 52vw, 350px)')}
           </div>
@@ -1010,11 +1010,11 @@ export function GeneralTable({
     const density = totalGrados >= 15 ? 'high' : totalGrados >= 9 ? 'medium' : 'normal';
 
     return (
-      <div className="px-4 py-4 sm:px-6 sm:py-6 bg-white flex-1 flex flex-col items-center justify-center">
+      <div className="px-3 py-2 sm:px-5 sm:py-3 bg-white flex-1 min-h-0 flex flex-col items-center justify-center">
         <OrbitalFlowStage
           items={gradosDisponibles}
           density={density}
-          centerNode={renderCuaderno('clamp(290px, 26vw, 420px)')}
+          centerNode={renderCuaderno('clamp(230px, 22vw, 350px)')}
           renderButton={(grado, idx, curveClass) => (
             <PillButton3D
               key={grado}
@@ -1082,93 +1082,98 @@ export function GeneralTable({
     };
 
     return (
-      <div className="p-5 sm:p-8 lg:p-10 bg-white flex-1 flex flex-col items-center">
-        {/* Tabla limpia centrada con cabecera CONTENIDO DESCARGABLE (+60% escala) */}
-        <div className="max-w-5xl w-full mx-auto rounded-2xl border-2 border-[#017EC1]/35 overflow-hidden shadow-md bg-white">
-          <table className="w-full text-left border-collapse">
-            <thead>
-              <tr className="bg-gradient-to-r from-[#003B71] to-[#017EC1] text-white">
-                <th
-                  scope="col"
-                  className="py-4 sm:py-5 px-6 text-base sm:text-xl lg:text-2xl font-black uppercase tracking-wide"
-                >
-                  CONTENIDO DESCARGABLE
-                </th>
-                <th
-                  scope="col"
-                  className="py-4 sm:py-5 px-6 text-right text-base sm:text-xl font-black uppercase tracking-wide"
-                >
-                  <span className="inline-flex items-center px-3.5 py-1 rounded-full bg-white/15 border border-white/30 text-amber-300 text-xs sm:text-sm font-extrabold tracking-normal normal-case">
-                    {archivos.length}{' '}
-                    {archivos.length === 1 ? 'documento disponible' : 'documentos disponibles'}
-                  </span>
-                  <span className="sr-only">
-                    Descargar archivo ({archivos.length} {archivos.length === 1 ? 'archivo disponible' : 'archivos disponibles'})
-                  </span>
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-200">
-              {archivos.length > 0 ? (
-                archivos.map((arch, idx) => {
-                  const tipoDoc = (arch.tipo || 'PDF').toUpperCase();
-                  const estiloTipo = obtenerEstiloTipoArchivo(tipoDoc);
-                  const tituloLegible = formatearNombreEditorial(arch.nombre);
-                  return (
-                    <tr
-                      key={`${arch.nombre || 'archivo'}-${idx}`}
-                      className="bg-white hover:bg-blue-50/50 transition-colors"
-                    >
-                      <td className="py-4 sm:py-5 px-5 sm:px-6 align-middle">
-                        <div className="flex items-center gap-4">
-                          <span
-                            className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl border flex items-center justify-center shrink-0 ${estiloTipo.iconoBox}`}
-                          >
-                            <IconDocument className="w-6 h-6" />
-                          </span>
-                          <div className="min-w-0">
-                            <p
-                              className="text-base sm:text-lg lg:text-xl font-extrabold text-slate-800 break-words leading-snug"
-                              title={arch.nombre}
-                            >
-                              {tituloLegible}
-                            </p>
-                            <p className="text-xs sm:text-sm text-slate-500 break-all">
-                              {arch.nombre}
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="py-4 sm:py-5 px-5 sm:px-6 align-middle text-right whitespace-nowrap">
-                        <button
-                          type="button"
-                          onClick={() => onDownload(doc, arch)}
-                          className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl border-2 font-black text-sm sm:text-base shadow-xs transition-all cursor-pointer ${estiloTipo.boton}`}
-                          title={`Descargar archivo individual: ${arch.nombre} (${arch.tamanoLegible})`}
-                        >
-                          <span>
-                            {tipoDoc} ({arch.tamanoLegible}) ↓
-                          </span>
-                          <IconDownload className={`w-5 h-5 shrink-0 ${estiloTipo.iconoDescarga}`} />
-                        </button>
-                      </td>
-                    </tr>
-                  );
-                })
-              ) : (
-                <tr>
-                  <td colSpan={2} className="py-10 px-6 text-center text-base font-semibold text-slate-500">
-                    No se encontraron archivos asociados a este nivel curricular.
-                  </td>
+      <div className="p-4 sm:p-6 lg:p-7 bg-white flex-1 min-h-0 overflow-y-auto flex flex-col items-center">
+        {/* Tabla limpia centrada con cabecera fija CONTENIDO DESCARGABLE y cuerpo con scroll interno (+60% escala) */}
+        <div
+          data-contenido-table-card="true"
+          className="max-w-5xl w-full mx-auto min-h-0 flex flex-col rounded-2xl border-2 border-[#017EC1]/35 overflow-hidden shadow-md bg-white"
+        >
+          <div data-contenido-table-scroll="true" className="flex-1 min-h-0 overflow-y-auto">
+            <table className="w-full text-left border-collapse">
+              <thead className="sticky top-0 z-10">
+                <tr className="bg-gradient-to-r from-[#003B71] to-[#017EC1] text-white shadow-xs">
+                  <th
+                    scope="col"
+                    className="py-3.5 sm:py-4 px-6 text-base sm:text-xl lg:text-2xl font-black uppercase tracking-wide"
+                  >
+                    CONTENIDO DESCARGABLE
+                  </th>
+                  <th
+                    scope="col"
+                    className="py-3.5 sm:py-4 px-6 text-right text-base sm:text-xl font-black uppercase tracking-wide"
+                  >
+                    <span className="inline-flex items-center px-3.5 py-1 rounded-full bg-white/15 border border-white/30 text-amber-300 text-xs sm:text-sm font-extrabold tracking-normal normal-case">
+                      {archivos.length}{' '}
+                      {archivos.length === 1 ? 'documento disponible' : 'documentos disponibles'}
+                    </span>
+                    <span className="sr-only">
+                      Descargar archivo ({archivos.length} {archivos.length === 1 ? 'archivo disponible' : 'archivos disponibles'})
+                    </span>
+                  </th>
                 </tr>
-              )}
-            </tbody>
-          </table>
+              </thead>
+              <tbody className="divide-y divide-slate-200">
+                {archivos.length > 0 ? (
+                  archivos.map((arch, idx) => {
+                    const tipoDoc = (arch.tipo || 'PDF').toUpperCase();
+                    const estiloTipo = obtenerEstiloTipoArchivo(tipoDoc);
+                    const tituloLegible = formatearNombreEditorial(arch.nombre);
+                    return (
+                      <tr
+                        key={`${arch.nombre || 'archivo'}-${idx}`}
+                        className="bg-white hover:bg-blue-50/50 transition-colors"
+                      >
+                        <td className="py-3.5 sm:py-4 px-5 sm:px-6 align-middle">
+                          <div className="flex items-center gap-4">
+                            <span
+                              className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl border flex items-center justify-center shrink-0 ${estiloTipo.iconoBox}`}
+                            >
+                              <IconDocument className="w-6 h-6" />
+                            </span>
+                            <div className="min-w-0">
+                              <p
+                                className="text-base sm:text-lg lg:text-xl font-extrabold text-slate-800 break-words leading-snug"
+                                title={arch.nombre}
+                              >
+                                {tituloLegible}
+                              </p>
+                              <p className="text-xs sm:text-sm text-slate-500 break-all">
+                                {arch.nombre}
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                        <td className="py-3.5 sm:py-4 px-5 sm:px-6 align-middle text-right whitespace-nowrap">
+                          <button
+                            type="button"
+                            onClick={() => onDownload(doc, arch)}
+                            className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl border-2 font-black text-sm sm:text-base shadow-xs transition-all cursor-pointer ${estiloTipo.boton}`}
+                            title={`Descargar archivo individual: ${arch.nombre} (${arch.tamanoLegible})`}
+                          >
+                            <span>
+                              {tipoDoc} ({arch.tamanoLegible}) ↓
+                            </span>
+                            <IconDownload className={`w-5 h-5 shrink-0 ${estiloTipo.iconoDescarga}`} />
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td colSpan={2} className="py-10 px-6 text-center text-base font-semibold text-slate-500">
+                      No se encontraron archivos asociados a este nivel curricular.
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
         </div>
 
-        {/* Botón maestro «Descargar todo» ubicado justo debajo de la tabla (+60% escala) */}
+        {/* Barra inferior fija (shrink-0) con el botón maestro «Descargar todo» siempre visible al hacer scroll en la tabla (+60% escala) */}
         {doc && archivos.length > 0 && (
-          <div className="max-w-5xl w-full mx-auto mt-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="max-w-5xl w-full mx-auto mt-3 sm:mt-4 shrink-0 flex flex-col sm:flex-row items-center justify-between gap-4 bg-white pt-1">
             <div className="text-sm sm:text-base text-slate-600">
               {avisoTexto ? (
                 <p role="status" className="font-bold text-[#003B71]">
@@ -1185,7 +1190,7 @@ export function GeneralTable({
               type="button"
               onClick={() => onDownloadAll(doc)}
               disabled={Boolean(downloadingId)}
-              className="px-7 sm:px-9 py-4 rounded-2xl bg-gradient-to-b from-[#017EC1] to-[#005a8d] hover:from-[#0284c7] hover:to-[#017EC1] border-b-[6px] border-[#003B71] text-white font-black text-base sm:text-lg lg:text-xl shadow-xl active:translate-y-[2px] disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-3.5 cursor-pointer shrink-0"
+              className="px-7 sm:px-9 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-b from-[#017EC1] to-[#005a8d] hover:from-[#0284c7] hover:to-[#017EC1] border-b-[6px] border-[#003B71] text-white font-black text-base sm:text-lg lg:text-xl shadow-xl active:translate-y-[2px] disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-3.5 cursor-pointer shrink-0"
               title={`Solicitar la descarga de los ${archivos.length} archivos de ${doc.asignatura} (${doc.grado})`}
             >
               <span className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/20 border-2 border-white/70 flex items-center justify-center shrink-0">
@@ -1206,7 +1211,7 @@ export function GeneralTable({
   return (
     <section
       data-orientation={isPortrait ? 'portrait' : 'landscape'}
-      className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden mb-6 flex-1 flex flex-col"
+      className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex-1 min-h-0 flex flex-col"
     >
       <BreadcrumbBar
         vistaTitulo={vistaTitulo}
